@@ -12,7 +12,13 @@ Breakpoint: min-width: 1441px
 */
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
-
+    h1{
+        font-size: 3.3em;
+    }
+    #p_header{
+        margin-bottom: 185px;
+        margin-left: 30px;
+    }
     div#container_box{
         display: flex;
         flex-wrap: nowrap;
