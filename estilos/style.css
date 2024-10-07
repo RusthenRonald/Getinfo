@@ -21,6 +21,8 @@ nav{
 }
 a{
     padding: 5px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
 }
 div h1{
     margin-bottom: 190px;
