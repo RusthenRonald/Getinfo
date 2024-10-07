@@ -19,7 +19,7 @@ Breakpoint: min-width: 1441px
     }
     .box {
         width: 100%; /* Faz com que cada caixa ocupe 100% da largura */
-        height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+        height: auto; 
     }
 
 }
