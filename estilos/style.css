@@ -13,7 +13,7 @@ html,body{
 /*container principal*/
 header{
     background-image: url(../img/header.png);
-    height: 500px;
+    height: 470px;
     display: flex;
     flex-direction: column;/*para divs ficarem uma abaixo da outra*/
     align-items: flex-start;/*para div h1 continuar a esquerda*/
@@ -52,13 +52,13 @@ main{
 }
 div#container_box{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 0px;
 }
 /*Configuração geral das caixas*/
 .box{
-    width: calc(33.33%);
-    height: 280px;
+    width: 100%;
+    height: 185px;
     padding: 20px;
     display: flex;
     flex-direction: column;
