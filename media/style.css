@@ -12,14 +12,23 @@ Breakpoint: min-width: 1441px
 */
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
-    
+    div#container_box{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .box {
+        width: 100%; /* Faz com que cada caixa ocupe 100% da largura */
+        height: auto; /* Ajusta a altura automaticamente para o conteúdo */
+    }
+
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
-@media screen and (min-width:1025x) and (max-width:1440px){
+@media screen and (min-width:1025x) and (max-width:1440px){ 
     
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
     
 }
-
+/*
