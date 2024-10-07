@@ -3,3 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
+header{
+    background-image: url(../img/header.png);
+    height: 500px;
+}
