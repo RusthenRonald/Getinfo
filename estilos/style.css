@@ -61,6 +61,8 @@ div#container_box{
     height: 310px;
     padding: 20px;
     display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 /* Imagens de fundo das caixas */
 .box1 {
