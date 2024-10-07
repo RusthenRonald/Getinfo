@@ -8,6 +8,7 @@ header{
     background-image: url(../img/header.png);
     height: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 div h1{
@@ -15,10 +16,4 @@ div h1{
 }
 h1{
     font-size: 2.5em;
-}
-
-/*container
-nav{
-    display: flex;
-    justify-content: center;
 }
