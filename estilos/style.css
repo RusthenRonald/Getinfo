@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
 }
+/*container principal*/
 header{
     background-image: url(../img/header.png);
     height: 500px;
@@ -12,6 +13,7 @@ header{
     align-items: flex-start;/*para div h1 continuar a esquerda*/
     justify-content: space-between; /*para menu ficar no topo e h1 em baixo/no meio*/
 }
+/*Container interno*/
 nav{
     width: 100%;
     display: flex;
