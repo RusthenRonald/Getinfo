@@ -50,4 +50,8 @@ span.h1_cor{
 main{
     
 }
+div#container_box{
+    display: flex;
+    flex-wrap: wrap;
+}
 
