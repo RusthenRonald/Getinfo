@@ -48,5 +48,6 @@ span.h1_cor{
     color: #F15B43;
 }
 main{
-
+    display: flex;
+    justify-content: space-between;
 }
