@@ -21,6 +21,10 @@ Breakpoint: min-width: 1441px
     .box {
         width: calc(33.33%);
         height: 250px; 
+        transition: transform 0.3s ease;
+    }
+    .box:hover {
+        transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
 
 }
@@ -34,7 +38,12 @@ Breakpoint: min-width: 1441px
     .box {
         width: calc(33.33%);
         height: 250px; 
+        transition: transform 0.3s ease;
     }
+    .box:hover {
+        transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+    }
+
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -46,6 +55,10 @@ Breakpoint: min-width: 1441px
     .box {
         width: calc(33.33%);
         height: 300px; 
+        transition: transform 0.3s ease;
+    }
+    .box:hover {
+        transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
 }
-/*
+
