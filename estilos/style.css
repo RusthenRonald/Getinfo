@@ -94,7 +94,18 @@ div#container_box{
     color: white;
 }
 footer{
+    margin-top: 10px;
     display: flex;
     justify-content: space-around;
     background-color: #212121;
+}
+footer div{
+    margin: 10px;
+}
+footer a {
+    color: #FE8F20;
+}
+footer p{
+    color:white ;
+    line-height: 1.5em;
 }
