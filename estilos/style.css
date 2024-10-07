@@ -89,3 +89,6 @@ div#container_box{
 .box:hover {
     transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
 }
+#a_doeagora{
+    color: white;
+}
