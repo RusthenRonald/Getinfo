@@ -51,3 +51,16 @@ main{
     display: flex;
     justify-content: space-between;
 }
+/*img de fundo das caixas*/
+.box1 {
+    background: linear-gradient(rgba(32, 177, 153, 0.8), rgba(32, 177, 153, 0.8)), url('../img/edu.jpg');
+}
+
+.box2 {
+    background: linear-gradient(rgba(235, 189, 42, 0.8), rgba(235, 189, 42, 0.8)), url('../img/saude\ \(2\).jpg');
+}
+
+.box3 {
+    background: linear-gradient(rgba(255, 99, 71, 0.8), rgba(255, 99, 71, 0.8)), url('../img/comida.jpg');
+    background-position: bottom;
+}
