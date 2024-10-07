@@ -8,11 +8,17 @@ header{
     background-image: url(../img/header.png);
     height: 500px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;/*para divs ficarem uma abaixo da outra*/
+    align-items: flex-start;/*para div h1 continuar a esquerda*/
+    justify-content: space-between; /*para menu ficar no topo e h1 em baixo/no meio*/
+}
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 div h1{
-    margin: 20px;
+    margin-bottom: 190px;
 }
 h1{
     font-size: 2.5em;
