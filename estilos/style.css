@@ -55,8 +55,10 @@ div#container_box{
     flex-wrap: nowrap;
     gap: 0px;
 }
+/*Configuração geral das caixas*/
 .box{
     width: calc(33.33%);
+    height: 310px;
 }
 /* Imagens de fundo das caixas */
 .box1 {
