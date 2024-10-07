@@ -30,6 +30,7 @@ Breakpoint: min-width: 1441px
 @media screen and (min-width:768px) and (max-width:1024px){
     a{
         font-size: 0.8em;
+        padding: 7px;
     }
     h1{
         font-size: 3.3em;
@@ -63,6 +64,7 @@ Breakpoint: min-width: 1441px
     }
     a{
         font-size: 0.9em;
+        padding: 10px;
     }
     h1{
         font-size: 3.9em;
@@ -99,6 +101,7 @@ Breakpoint: min-width: 1441px
     }
     a{
         font-size: 1em;
+        padding: 10px;
     }
     h1{
         font-size: 4.4em;
