@@ -4,6 +4,12 @@
     margin: 0px;
     padding: 0px;
 }
+html,body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    overflow-y: auto;
+}
 /*container principal*/
 header{
     background-image: url(../img/header.png);
@@ -26,6 +32,7 @@ a{
     color: rgb(102, 102, 102);
     text-decoration: none;
 }
+/*efeito ao passar mouse em menu*/
 a:hover{
     color: #F15B43;
 }
@@ -36,6 +43,10 @@ div h1{
 h1{
     font-size: 2.8em;
 }
+/*Para mudar a cor da palavra "Juntos"*/
 span.h1_cor{
     color: #F15B43;
+}
+main{
+
 }
