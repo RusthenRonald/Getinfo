@@ -7,9 +7,12 @@
 header{
     background-image: url(../img/header.png);
     height: 500px;
-    display: flex;
-    align-items: center;
 }
+div#container_nav{
+    display: flex;
+    justify-content: center;
+}
+/*
 div#item_h1{
     margin: 20px;
 }
