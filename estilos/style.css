@@ -25,7 +25,7 @@ a{
     text-decoration: none;
 }
 a:hover{
-    color: #FE8F1F;
+    color: #F15B43;
 }
 div h1{
     margin-bottom: 190px;
@@ -33,4 +33,7 @@ div h1{
 }
 h1{
     font-size: 3em;
+}
+span.h1_cor{
+    color: #F15B43;
 }
