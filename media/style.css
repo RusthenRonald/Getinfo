@@ -127,5 +127,19 @@ Breakpoint: min-width: 1441px
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
+    /*tamanho do texto das caixas*/
+    div.box p{
+        font-size: 2em;
+        font-weight: bold;
+    }
+    span#comida{
+        font-size: 54px;
+    }
+    span#saude{
+        font-size: 54px;
+    }
+    span#educacao{
+        font-size: 54px;
+    }
 }
 
