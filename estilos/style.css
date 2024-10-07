@@ -8,14 +8,7 @@ header{
     background-image: url(../img/header.png);
     height: 500px;
 }
-div#container_nav{
+nav{
     display: flex;
     justify-content: center;
-}
-/*
-div#item_h1{
-    margin: 20px;
-}
-h1{
-    font-size: 3em;
 }
