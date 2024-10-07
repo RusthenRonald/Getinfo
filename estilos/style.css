@@ -60,6 +60,7 @@ div#container_box{
     width: calc(33.33%);
     height: 310px;
     padding: 20px;
+    display: flex;
 }
 /* Imagens de fundo das caixas */
 .box1 {
