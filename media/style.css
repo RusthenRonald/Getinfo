@@ -10,14 +10,30 @@ Breakpoint: min-width: 1025px e max-width: 1440px
 Desktops Grandes (4K e telas maiores):
 Breakpoint: min-width: 1441px
 */
+/*Telas celulares maiores*/
+@media screen and (min-width:420px) and (max-width:767px){
+    h1{
+        font-size: 3.1em;
+    }
+    div h1{
+        margin-left: 30px;
+    }
+    #p_header{
+        margin-bottom: 150px;
+        margin-left: 30px;
+    }
+}
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
     h1{
         font-size: 3.3em;
     }
+    div h1{
+        margin-left: 50px;
+    }
     #p_header{
         margin-bottom: 185px;
-        margin-left: 30px;
+        margin-left: 50px;
     }
     div#container_box{
         display: flex;
@@ -36,6 +52,16 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
+    h1{
+        font-size: 3.5em;
+    }
+    div h1{
+        margin-left: 50px;
+    }
+    #p_header{
+        margin-bottom: 185px;
+        margin-left: 50px;
+    }
     div#container_box{
         display: flex;
         flex-wrap: nowrap;
@@ -53,6 +79,16 @@ Breakpoint: min-width: 1441px
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
+    h1{
+        font-size: 3.8em;
+    }
+    div h1{
+        margin-left: 50px;
+    }
+    #p_header{
+        margin-bottom: 185px;
+        margin-left: 50px;
+    }
     div#container_box{
         display: flex;
         flex-wrap: nowrap;
