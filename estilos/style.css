@@ -20,6 +20,7 @@ nav{
     justify-content: center;
 }
 a{
+    font-size: 0.8em;
     padding: 5px;
     color: rgb(102, 102, 102);
     text-decoration: none;
@@ -32,7 +33,7 @@ div h1{
     margin-left: 15px;
 }
 h1{
-    font-size: 3em;
+    font-size: 2.8em;
 }
 span.h1_cor{
     color: #F15B43;
