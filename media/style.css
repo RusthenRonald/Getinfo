@@ -14,17 +14,16 @@ Breakpoint: min-width: 1441px
 @media screen and (min-width:420px) and (max-width:767px){
     a{
         font-size: 0.8em;
-        
     }
     h1{
         font-size: 3.1em;
     }
     div h1{
-        margin-left: 30px;/*espaçamento lateral esquerdo*/
+        margin-left: 40px;/*espaçamento lateral esquerdo*/
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
         margin-bottom: 150px;
-        margin-left: 30px;
+        margin-left: 40px;
     }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
@@ -36,11 +35,11 @@ Breakpoint: min-width: 1441px
         font-size: 3.3em;
     }
     div h1{
-        margin-left: 50px; /*espaçamento lateral esquerdo*/
+        margin-left: 70px; /*espaçamento lateral esquerdo*/
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
         margin-bottom: 185px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     div#container_box{
         display: flex;
@@ -59,18 +58,21 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
+    header{
+        height: 520px;
+    }
     a{
         font-size: 0.9em;
     }
     h1{
-        font-size: 3.5em;
+        font-size: 3.9em;
     }
     div h1{
-        margin-left: 50px;
+        margin-left: 100px;
     }
     #p_header{
         margin-bottom: 185px;
-        margin-left: 50px;
+        margin-left: 100px;
     }
     div#container_box{
         display: flex;
@@ -89,18 +91,24 @@ Breakpoint: min-width: 1441px
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
+    header{
+        height: 610px;
+    }
+    nav{
+        margin-top: 15px;
+    }
     a{
         font-size: 1em;
     }
     h1{
-        font-size: 3.8em;
+        font-size: 4.4em;
     }
     div h1{
-        margin-left: 50px;
+        margin-left: 125px;
     }
     #p_header{
-        margin-bottom: 185px;
-        margin-left: 50px;
+        margin-bottom: 235px;
+        margin-left: 125px;
     }
     div#container_box{
         display: flex;
