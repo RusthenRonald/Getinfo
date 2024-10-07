@@ -4,6 +4,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    
 }
 html,body{
     height: 100vh;
@@ -50,6 +51,7 @@ span.h1_cor{
 #p_header{
     margin-bottom: 150px;
     margin-left: 30px;
+    color: rgb(110, 110, 110);
 }
 main{
     
@@ -90,7 +92,7 @@ div#container_box{
     background-position: bottom;
 }
 /*Link que levará ao formulário*/
-#a_doeagora{
+.a_doeagora{
     color: white;
 }
 footer{

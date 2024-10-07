@@ -112,6 +112,7 @@ Breakpoint: min-width: 1441px
     #p_header{
         margin-bottom: 235px;
         margin-left: 125px;
+        font-size: 1.2em;
     }
     div#container_box{
         display: flex;
