@@ -15,6 +15,11 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 0.8em;
     }
+    .dropdown {
+        position: relative; /* Necessário para posicionar o submenu */
+        display: inline-block; /* Pra menu ficar ao lado dos links*/
+        margin-top: 2px;
+    }
     h1{
         font-size: 3.1em;
     }
@@ -48,6 +53,11 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 0.8em;
         padding: 7px;
+    }
+    .dropdown {
+        position: relative; /* Necessário para posicionar o submenu */
+        display: inline-block; /* Pra menu ficar ao lado dos links*/
+        margin-top: 2px;
     }
     h1{
         font-size: 3.3em;
@@ -98,6 +108,11 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 0.9em;
         padding: 10px;
+    }
+    .dropdown {
+        position: relative; /* Necessário para posicionar o submenu */
+        display: inline-block; /* Pra menu ficar ao lado dos links*/
+        margin-top: 8px;
     }
     h1{
         font-size: 3.9em;
@@ -152,6 +167,12 @@ Breakpoint: min-width: 1441px
         font-size: 1em;
         padding: 10px;
     }
+    .dropdown {
+        position: relative; /* Necessário para posicionar o submenu */
+        display: inline-block; /* Pra menu ficar ao lado dos links*/
+        margin-top: 8px;
+    }
+    
     h1{
         font-size: 4.4em;
     }
