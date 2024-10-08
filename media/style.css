@@ -14,6 +14,7 @@ Breakpoint: min-width: 1441px
 @media screen and (min-width:420px) and (max-width:767px){
     a{
         font-size: 0.8em;
+        font-weight: normal;
     }
     .dropdown {
         position: relative; /* Necessário para posicionar o submenu */
@@ -53,12 +54,13 @@ Breakpoint: min-width: 1441px
     div#container_sobrenos p{
         font-size: 0.9em;
         color: gray;
-        
+        width: 60vw;
     }
     /* menu_sobrenos */
     div#container_menu_sobrenos {
         display: flex;
         margin-left: 9vw;
+        width: 60vw;
     }
 
     /* configuração do link */
@@ -77,9 +79,9 @@ Breakpoint: min-width: 1441px
         border-radius: 5px;
         border-bottom: 3px solid #F15B43;
         display: block;
-        min-height: 35px; /* Definindo a altura mínima */
-        line-height: 35px; /* Centralizando o texto verticalmente */
-        width: 100px;
+        min-height: 45px; /* Definindo a altura mínima */
+        line-height: 45px; /* Centralizando o texto verticalmente */
+        width: 20vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -93,6 +95,7 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 0.8em;
         padding: 7px;
+        font-weight: normal;
     }
     .dropdown {
         position: relative; /* Necessário para posicionar o submenu */
@@ -136,6 +139,46 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+     /*Sobre nós*/ /*apenas h1 e p*/
+
+     div#container_sobrenos h2{
+        color: #F15B43;
+        font-size: 1.8em;
+    }
+    div#container_sobrenos p{
+        font-size: 1em;
+        color: gray;
+        width: 60vw;
+    }
+    /* menu_sobrenos */
+    div#container_menu_sobrenos {
+        display: flex;
+        margin-left: 9vw;
+    }
+
+    /* configuração do link */
+    div#container_menu_sobrenos a {
+        font-weight: bold;
+        padding: 2px 2px;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    /* configuração base das caixas */ /*para os a*/
+    .missao {
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        display: block;
+        min-height: 55px; /* Definindo a altura mínima */
+        line-height: 55px; /* Centralizando o texto verticalmente */
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     footer{
         margin-top: 10px;
         display: flex;
@@ -156,6 +199,7 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 0.9em;
         padding: 10px;
+        font-weight: normal;
     }
     .dropdown {
         position: relative; /* Necessário para posicionar o submenu */
@@ -202,6 +246,46 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+        /*Sobre nós*/ /*apenas h1 e p*/
+
+        div#container_sobrenos h2{
+        color: #F15B43;
+        font-size: 1.8em;
+    }
+    div#container_sobrenos p{
+        font-size: 1.2em;
+        color: gray;
+        width: 60vw;
+    }
+    /* menu_sobrenos */
+    div#container_menu_sobrenos {
+        display: flex;
+        margin-left: 9vw;
+    }
+
+    /* configuração do link */
+    div#container_menu_sobrenos a {
+        font-weight: bold;
+        padding: 2px 2px;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    /* configuração base das caixas */ /*para os a*/
+    .missao {
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        display: block;
+        min-height: 55px; /* Definindo a altura mínima */
+        line-height: 55px; /* Centralizando o texto verticalmente */
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     footer{
         margin-top: 10px;
         display: flex;
@@ -225,6 +309,7 @@ Breakpoint: min-width: 1441px
     a{
         font-size: 1em;
         padding: 10px;
+        font-weight: normal;
     }
     .dropdown {
         position: relative; /* Necessário para posicionar o submenu */
@@ -273,6 +358,46 @@ Breakpoint: min-width: 1441px
     }
     span#educacao{
         font-size: 64px;
+    }
+    /*Sobre nós*/ /*apenas h1 e p*/
+
+    div#container_sobrenos h2{
+        color: #F15B43;
+        font-size: 3em;
+    }
+    div#container_sobrenos p{
+        font-size: 1.2em;
+        color: gray;
+        width: 30vw;
+    }
+    /* menu_sobrenos */
+    div#container_menu_sobrenos {
+        display: flex;
+        margin-left: 9vw;
+    }
+
+    /* configuração do link */
+    div#container_menu_sobrenos a {
+        font-weight: bold;
+        padding: 2px 2px;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    /* configuração base das caixas */ /*para os a*/
+    .missao {
+        font-size: 1.1em;
+        font-weight: bold;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        display: block;
+        min-height: 55px; /* Definindo a altura mínima */
+        line-height: 55px; /* Centralizando o texto verticalmente */
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer{
         margin-top: 10px;

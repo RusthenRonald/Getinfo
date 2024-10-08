@@ -30,7 +30,8 @@ nav{
     justify-content: center;
 }
 a{
-    font-size: 0.7em;
+    font-size: 0.5em;
+    font-weight: bold;
     padding: 5px;
     color: rgb(102, 102, 102);
     text-decoration: none;
@@ -44,7 +45,6 @@ a:hover{
 .dropdown {
     position: relative; /* Necessário para posicionar o submenu */
     display: inline-block; /* Pra menu ficar ao lado dos links*/
-    
 }
 
 /* Esconde o submenu por padrão */
@@ -64,7 +64,7 @@ a:hover{
 }
 
 .dropdown-menu li a {
-    padding: 10px;
+    padding: 5px;
     text-decoration: none;
     display: block;
     color: rgb(102, 102, 102); /* Mesma cor dos outros links */
@@ -178,7 +178,7 @@ div#container_sobrenos h2{
 div#container_sobrenos p{
     font-size: 0.7em;
     color: gray;
-    
+    width: 75vw;
 }
 /* menu_sobrenos */
 div#container_menu_sobrenos {
@@ -202,9 +202,9 @@ div#container_menu_sobrenos a {
     border-radius: 5px;
     border-bottom: 3px solid #F15B43;
     display: block;
-    min-height: 25px; /* Definindo a altura mínima */
-    line-height: 25px; /* Centralizando o texto verticalmente */
-    width: 80px;
+    min-height: 35px; /* Definindo a altura mínima */
+    line-height: 35px; /* Centralizando o texto verticalmente */
+    width: 25vw;
     display: flex;
     justify-content: center;
     align-items: center;
