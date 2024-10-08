@@ -16,7 +16,7 @@ html,body{
 /*container principal*/
 header{
     background-image: url(../img/header.png);
-    height: 470px;
+    height: 430px;
     display: flex;
     flex-direction: column;/*para divs ficarem uma abaixo da outra*/
     align-items: flex-start;/*para div h1 continuar a esquerda*/
@@ -90,7 +90,7 @@ div h1{
     margin-left: 30px;
 }
 h1{
-    font-size: 2.4em;
+    font-size: 2.2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*Para mudar a cor da palavra "Juntos"*/
@@ -98,8 +98,9 @@ span.h1_cor{
     color: #F15B43;
 }
 #p_header{
-    margin-bottom: 150px;
+    margin-bottom: 130px;
     margin-left: 30px;
+    width: 70vw;
     color: rgb(110, 110, 110);
 }
 
@@ -173,7 +174,7 @@ div#container_sobrenos{
 }
 div#container_sobrenos h2{
     color: #F15B43;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 div#container_sobrenos p{
     font-size: 0.7em;
@@ -224,6 +225,23 @@ div#container_menu_sobrenos a {
 .missao.active:hover {
     background-color: #F15B43; /* Mantém a cor de fundo ativa */
     color: white; /* Mantém a cor de texto ativa */
+}
+/*texto do sobre nós*/
+div#container_textosobrenos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+    margin-left: 10vw;
+}
+div#container_textosobrenos h2{
+    color: #F15B43;
+    font-size: 1.4em;
+}
+div#container_textosobrenos p{
+    width: 80vw;
+    text-align: justify;
+    color: gray;
+    line-height: 1.7em;
 }
 /*Inicio do cabeçalho*/
 footer{

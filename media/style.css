@@ -28,7 +28,7 @@ Breakpoint: min-width: 1441px
         margin-left: 40px;/*espaçamento lateral esquerdo*/
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
-        margin-bottom: 150px;
+        margin-bottom: 120px;
         margin-left: 40px;
     }
     /*tamanho do texto das caixas*/
@@ -49,7 +49,7 @@ Breakpoint: min-width: 1441px
 
     div#container_sobrenos h2{
         color: #F15B43;
-        font-size: 1.7em;
+        font-size: 2em;
     }
     div#container_sobrenos p{
         font-size: 0.9em;
@@ -85,6 +85,14 @@ Breakpoint: min-width: 1441px
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    div#container_textosobrenos h2{
+        color: #F15B43;
+        font-size: 1.6em;
+    }
+    div#container_textosobrenos p{
+        width: 65vw;
+        text-align: justify;
     }
     footer div{
         font-size: 0.7em;
@@ -143,7 +151,7 @@ Breakpoint: min-width: 1441px
 
      div#container_sobrenos h2{
         color: #F15B43;
-        font-size: 1.8em;
+        font-size: 2.4em;
     }
     div#container_sobrenos p{
         font-size: 1em;
@@ -178,6 +186,15 @@ Breakpoint: min-width: 1441px
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    div#container_textosobrenos h2{
+        color: #F15B43;
+        font-size: 1.8em;
+    }
+    div#container_textosobrenos p{
+        width: 500px;
+        text-align: justify;
+        font-size: 1.2em;
     }
     footer{
         margin-top: 10px;
@@ -250,7 +267,7 @@ Breakpoint: min-width: 1441px
 
         div#container_sobrenos h2{
         color: #F15B43;
-        font-size: 1.8em;
+        font-size: 2.8em;
     }
     div#container_sobrenos p{
         font-size: 1.2em;
@@ -285,6 +302,15 @@ Breakpoint: min-width: 1441px
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    div#container_textosobrenos h2{
+        color: #F15B43;
+        font-size: 2.0em;
+    }
+    div#container_textosobrenos p{
+        width: 500px;
+        text-align: justify;
+        font-size: 1.3em;
     }
     footer{
         margin-top: 10px;
@@ -335,7 +361,7 @@ Breakpoint: min-width: 1441px
     }
     .box {
         width: calc(33.33%);
-        height: 380px; 
+        height: 390px; 
         transition: transform 0.3s ease;
         padding-bottom: 40px;
     }
@@ -398,6 +424,15 @@ Breakpoint: min-width: 1441px
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    div#container_textosobrenos h2{
+        color: #F15B43;
+        font-size: 2.3em;
+    }
+    div#container_textosobrenos p{
+        width: 500px;
+        text-align: justify;
+        font-size: 1.5em;
     }
     footer{
         margin-top: 10px;
