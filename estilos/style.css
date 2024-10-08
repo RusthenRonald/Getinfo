@@ -40,11 +40,10 @@ a:hover{
     color: #F15B43;
 }
 /*Menu dropdown*/
-/* Estilo específico para o dropdown */
+/* Estilo específico para o dropdown *//*container*/
 .dropdown {
     position: relative; /* Necessário para posicionar o submenu */
     display: inline-block; /* Pra menu ficar ao lado dos links*/
-    margin-top: 10px;
 }
 
 /* Esconde o submenu por padrão */
@@ -54,7 +53,7 @@ a:hover{
     background-color: white;
     min-width: 65px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+    z-index: 1; 
 }
 
 /* Itens do submenu */
