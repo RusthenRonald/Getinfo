@@ -162,19 +162,23 @@ span#saude{
 span#educacao{
     font-size: 44px;
 }
-/*Sobre nós*/
+/*Sobre nós*/ /*apenas h1 e p*/
 div#container_sobrenos{
     display: flex;
     flex-direction: column;
     margin-top: 10vh;
     margin-left: 10vw;
+    margin-bottom: 5vh;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 div#container_sobrenos h2{
     color: #F15B43;
     font-size: 3em;
 }
-
+/*menu_sobrenos*/
+div#container_menu_sobrenos{
+    dis
+}
 footer{
     margin-top: 10px;
     display: flex;
