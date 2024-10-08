@@ -39,6 +39,48 @@ a{
 a:hover{
     color: #F15B43;
 }
+/*Menu dropdown*/
+/* Estilo específico para o dropdown */
+.dropdown {
+    position: relative; /* Necessário para posicionar o submenu */
+    display: inline-block; /* Pra menu ficar ao lado dos links*/
+    margin-top: 10px;
+}
+
+/* Esconde o submenu por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 65px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Itens do submenu */
+.dropdown-menu li {
+    list-style-type: none;
+    margin: 0; 
+}
+
+.dropdown-menu li a {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: rgb(102, 102, 102); /* Mesma cor dos outros links */
+    font-size: 0.7em; /* Mesmo tamanho de fonte */
+}
+
+/* Exibe o submenu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Efeito de hover no submenu */
+.dropdown-menu li a:hover {
+    background-color: rgb(240, 240, 240); /* Cor de fundo ao passar o mouse */
+}
+
 div h1{
     margin-left: 30px;
 }
@@ -54,9 +96,12 @@ span.h1_cor{
     margin-left: 30px;
     color: rgb(110, 110, 110);
 }
+
 main{
     
 }
+
+
 div#container_box{
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +155,8 @@ span#saude{
 span#educacao{
     font-size: 44px;
 }
+
+
 footer{
     margin-top: 10px;
     display: flex;
