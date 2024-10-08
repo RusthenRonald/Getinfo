@@ -91,6 +91,7 @@ div h1{
 }
 h1{
     font-size: 2.4em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 /*Para mudar a cor da palavra "Juntos"*/
 span.h1_cor{
