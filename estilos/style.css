@@ -163,7 +163,12 @@ span#educacao{
     font-size: 44px;
 }
 /*Sobre nós*/
-
+div#container_sobrenos{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
 
 footer{
     margin-top: 10px;
