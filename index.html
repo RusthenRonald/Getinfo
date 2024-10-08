@@ -59,21 +59,22 @@
         </div>
 
         <!-- Sobre nós -->
-            <div id="container_sobrenos">
+        <div id="container_sobrenos">
             <h2>Sobre nós</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti <br> dolor laboriosam delectus ab numquam. Aliquid fugit, debitis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti <br> dolor laboriosam delectus ab numquam. Aliquid fugit, debitis.</p>
+        </div>
+
+        <div id="container_menu_sobrenos">
+            <div>
+                <a href="#" class="missao">Nossa Missão</a>
             </div>
-            <div id="container_menu_sobrenos">
-                <div>
-                    <a href="#">Nossa Missão</a>
-                </div>
-                <div>
-                    <a href="#">Nossos Valores</a>
-                </div>
-                <div>
-                    <a href="#">Nossa História</a>
-                </div>
+            <div>
+                <a href="#" class="missao">Nossos Valores</a>
             </div>
+            <div>
+                <a href="#" class="missao">Nossa História</a>
+            </div>
+        </div>
     </main>
     <footer>
         <!-- Navegação no rodapé -->
@@ -117,8 +118,17 @@
     </footer>
 </body>
 </html>
-<!--
-
-
-
--->
+<!-- Script para adicionar a classe 'active' ao link/menu clicado -->
+<script>
+    const links = document.querySelectorAll('.missao');
+    
+    links.forEach(link => {
+        link.addEventListener('click', function() {
+            // Remove a classe 'active' de todos os links
+            links.forEach(item => item.classList.remove('active'));
+            
+            // Adiciona a classe 'active' ao link clicado
+            this.classList.add('active');
+        });
+    });
+</script>
