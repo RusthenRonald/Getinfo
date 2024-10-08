@@ -168,6 +168,11 @@ div#container_sobrenos{
     flex-direction: column;
     margin-top: 10vh;
     margin-left: 10vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div#container_sobrenos h2{
+    color: #F15B43;
+    font-size: 3em;
 }
 
 footer{
