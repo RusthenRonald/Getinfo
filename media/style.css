@@ -96,6 +96,14 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+    footer{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #212121;
+    }
     footer div{
         font-size: 0.7em;
     }
@@ -154,6 +162,14 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+    footer{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #212121;
+    }
     footer div{
         font-size: 0.8em;
     }
@@ -177,7 +193,7 @@ Breakpoint: min-width: 1441px
     }
     
     h1{
-        font-size: 4.4em;
+        font-size: 4.1em;
     }
     div h1{
         margin-left: 125px;
@@ -217,6 +233,14 @@ Breakpoint: min-width: 1441px
     }
     span#educacao{
         font-size: 64px;
+    }
+    footer{
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: #212121;
     }
     footer div{
         font-size: 1em;
