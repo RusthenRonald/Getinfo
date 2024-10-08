@@ -25,6 +25,9 @@ Breakpoint: min-width: 1441px
         margin-bottom: 150px;
         margin-left: 40px;
     }
+    footer div{
+        font-size: 0.7em;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -55,7 +58,9 @@ Breakpoint: min-width: 1441px
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
-
+    footer div{
+        font-size: 0.7em;
+    }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
@@ -89,7 +94,9 @@ Breakpoint: min-width: 1441px
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
-
+    footer div{
+        font-size: 0.8em;
+    }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -140,6 +147,9 @@ Breakpoint: min-width: 1441px
     }
     span#educacao{
         font-size: 54px;
+    }
+    footer div{
+        font-size: 1em;
     }
 }
 
