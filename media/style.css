@@ -193,24 +193,27 @@ Breakpoint: min-width: 1441px
         width: calc(33.33%);
         height: 380px; 
         transition: transform 0.3s ease;
-        padding-bottom: 120px;
+        padding-bottom: 40px;
     }
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
     }
     /*tamanho do texto das caixas*/
     div.box p{
-        font-size: 2em;
+        font-size: 2.4em;
         font-weight: bold;
     }
+    a.a_doeagora{
+        font-size: 1.3em;
+    }
     span#comida{
-        font-size: 54px;
+        font-size: 64px;
     }
     span#saude{
-        font-size: 54px;
+        font-size: 64px;
     }
     span#educacao{
-        font-size: 54px;
+        font-size: 64px;
     }
     footer div{
         font-size: 1em;
