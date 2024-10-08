@@ -95,6 +95,20 @@ div#container_box{
 div .a_doeagora{
     color: white;
 }
+/*tamanho do texto das caixas*/
+div.box p{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+span#comida{
+    font-size: 44px;
+}
+span#saude{
+    font-size: 44px;
+}
+span#educacao{
+    font-size: 44px;
+}
 footer{
     margin-top: 10px;
     display: flex;

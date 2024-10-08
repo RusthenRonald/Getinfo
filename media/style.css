@@ -25,6 +25,20 @@ Breakpoint: min-width: 1441px
         margin-bottom: 150px;
         margin-left: 40px;
     }
+    /*tamanho do texto das caixas*/
+    div.box p{
+        font-size: 1.9em;
+        font-weight: bold;
+    }
+    span#comida{
+        font-size: 50px;
+    }
+    span#saude{
+        font-size: 50px;
+    }
+    span#educacao{
+        font-size: 50px;
+    }
     footer div{
         font-size: 0.7em;
     }
@@ -57,6 +71,20 @@ Breakpoint: min-width: 1441px
     }
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+    }
+    /*tamanho do texto das caixas*/
+    div.box p{
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+    span#comida{
+        font-size: 50px;
+    }
+    span#saude{
+        font-size: 50px;
+    }
+    span#educacao{
+        font-size: 50px;
     }
     footer div{
         font-size: 0.7em;
@@ -93,6 +121,20 @@ Breakpoint: min-width: 1441px
     }
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+    }
+    /*tamanho do texto das caixas*/
+    div.box p{
+        font-size: 1.9em;
+        font-weight: bold;
+    }
+    span#comida{
+        font-size: 50px;
+    }
+    span#saude{
+        font-size: 50px;
+    }
+    span#educacao{
+        font-size: 50px;
     }
     footer div{
         font-size: 0.8em;
