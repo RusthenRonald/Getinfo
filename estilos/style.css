@@ -200,7 +200,7 @@ div#container_menu_sobrenos a {
     display: block;
     min-height: 50px; /* Definindo a altura mínima */
     line-height: 50px; /* Centralizando o texto verticalmente */
-    width: 150px;
+    width: 135px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,6 +221,7 @@ div#container_menu_sobrenos a {
     background-color: #F15B43; /* Mantém a cor de fundo ativa */
     color: white; /* Mantém a cor de texto ativa */
 }
+/*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
     display: flex;
