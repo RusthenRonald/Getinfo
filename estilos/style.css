@@ -188,6 +188,7 @@ div#container_menu_sobrenos a {
     border-radius: 5px;
     border-bottom: 3px solid #F15B43;
     text-decoration: none;
+    margin-left: 10px;
 }
 /* configuração base das caixas */ /*para os a*/
 .missao {
@@ -199,6 +200,10 @@ div#container_menu_sobrenos a {
     display: block;
     min-height: 50px; /* Definindo a altura mínima */
     line-height: 50px; /* Centralizando o texto verticalmente */
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* estilo para quando a caixa está ativa */
