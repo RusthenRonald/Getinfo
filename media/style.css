@@ -193,6 +193,7 @@ Breakpoint: min-width: 1441px
         width: calc(33.33%);
         height: 380px; 
         transition: transform 0.3s ease;
+        padding-bottom: 120px;
     }
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */

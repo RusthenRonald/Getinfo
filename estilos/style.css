@@ -120,6 +120,7 @@ div#container_box{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    box-sizing: border-box;
 }
 .box{
     color: white;
