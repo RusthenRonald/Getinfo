@@ -11,6 +11,7 @@ html,body{
     width: 100vw;
     overflow: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 /*container principal*/
 header{
