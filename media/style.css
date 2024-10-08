@@ -36,13 +36,53 @@ Breakpoint: min-width: 1441px
         font-weight: bold;
     }
     span#comida{
-        font-size: 50px;
+        font-size: 45px;
     }
     span#saude{
-        font-size: 50px;
+        font-size: 45px;
     }
     span#educacao{
-        font-size: 50px;
+        font-size: 45px;
+    }
+    /*Sobre nós*/ /*apenas h1 e p*/
+
+    div#container_sobrenos h2{
+        color: #F15B43;
+        font-size: 1.7em;
+    }
+    div#container_sobrenos p{
+        font-size: 0.9em;
+        color: gray;
+        
+    }
+    /* menu_sobrenos */
+    div#container_menu_sobrenos {
+        display: flex;
+        margin-left: 9vw;
+    }
+
+    /* configuração do link */
+    div#container_menu_sobrenos a {
+        font-weight: bold;
+        padding: 2px 2px;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    /* configuração base das caixas */ /*para os a*/
+    .missao {
+        font-size: 0.8em;
+        font-weight: bold;
+        border-radius: 5px;
+        border-bottom: 3px solid #F15B43;
+        display: block;
+        min-height: 35px; /* Definindo a altura mínima */
+        line-height: 35px; /* Centralizando o texto verticalmente */
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer div{
         font-size: 0.7em;

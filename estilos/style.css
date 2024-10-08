@@ -173,18 +173,23 @@ div#container_sobrenos{
 }
 div#container_sobrenos h2{
     color: #F15B43;
-    font-size: 3em;
+    font-size: 1.5em;
+}
+div#container_sobrenos p{
+    font-size: 0.7em;
+    color: gray;
+    
 }
 /* menu_sobrenos */
 div#container_menu_sobrenos {
     display: flex;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
 /* configuração do link */
 div#container_menu_sobrenos a {
     font-weight: bold;
-    padding: 8px 5px;
+    padding: 2px 2px;
     border-radius: 5px;
     border-bottom: 3px solid #F15B43;
     text-decoration: none;
@@ -192,15 +197,14 @@ div#container_menu_sobrenos a {
 }
 /* configuração base das caixas */ /*para os a*/
 .missao {
-    font-size: 0.9em;
+    font-size: 0.7em;
     font-weight: bold;
-    height: 50px;
     border-radius: 5px;
     border-bottom: 3px solid #F15B43;
     display: block;
-    min-height: 50px; /* Definindo a altura mínima */
-    line-height: 50px; /* Centralizando o texto verticalmente */
-    width: 135px;
+    min-height: 25px; /* Definindo a altura mínima */
+    line-height: 25px; /* Centralizando o texto verticalmente */
+    width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
