@@ -175,17 +175,46 @@ div#container_sobrenos h2{
     color: #F15B43;
     font-size: 3em;
 }
-/*menu_sobrenos*/
-div#container_menu_sobrenos{
+/* menu_sobrenos */
+div#container_menu_sobrenos {
     display: flex;
     margin-left: 10vw;
 }
-/*configuração do link*/
-div#container_menu_sobrenos a{
+
+/* configuração do link */
+div#container_menu_sobrenos a {
     font-weight: bold;
     padding: 8px 5px;
     border-radius: 5px;
     border-bottom: 3px solid #F15B43;
+    text-decoration: none;
+}
+/* configuração base das caixas */ /*para os a*/
+.missao {
+    font-size: 0.9em;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 5px;
+    border-bottom: 3px solid #F15B43;
+    display: block;
+    min-height: 50px; /* Definindo a altura mínima */
+    line-height: 50px; /* Centralizando o texto verticalmente */
+}
+
+/* estilo para quando a caixa está ativa */
+.missao.active {
+    background-color: #F15B43;
+    color: white;
+}
+
+.missao:hover {
+    background-color: #f15a4394;
+}
+
+/* quando a caixa está ativa, desabilitar o hover */
+.missao.active:hover {
+    background-color: #F15B43; /* Mantém a cor de fundo ativa */
+    color: white; /* Mantém a cor de texto ativa */
 }
 footer{
     margin-top: 10px;
