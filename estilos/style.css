@@ -160,11 +160,13 @@ span#saude{
 span#educacao{
     font-size: 44px;
 }
+/*Sobre nós*/
 
 
 footer{
     margin-top: 10px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: #212121;
 }
