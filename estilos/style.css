@@ -177,7 +177,15 @@ div#container_sobrenos h2{
 }
 /*menu_sobrenos*/
 div#container_menu_sobrenos{
-    dis
+    display: flex;
+    margin-left: 10vw;
+}
+/*configuração do link*/
+div#container_menu_sobrenos a{
+    font-weight: bold;
+    padding: 8px 5px;
+    border-radius: 5px;
+    border-bottom: 3px solid #F15B43;
 }
 footer{
     margin-top: 10px;
