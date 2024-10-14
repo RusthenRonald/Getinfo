@@ -317,7 +317,7 @@ Breakpoint: min-width: 1441px
         display: block;
         min-height: 55px; /* Definindo a altura mínima */
         line-height: 55px; /* Centralizando o texto verticalmente */
-        width: 150px;
+        width: 135px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -432,14 +432,14 @@ Breakpoint: min-width: 1441px
     }
     /* configuração base das caixas */ /*para os a*/
     .missao {
-        font-size: 1.1em;
+        font-size: 0.9em;
         font-weight: bold;
         border-radius: 5px;
         border-bottom: 3px solid #F15B43;
         display: block;
         min-height: 55px; /* Definindo a altura mínima */
         line-height: 55px; /* Centralizando o texto verticalmente */
-        width: 150px;
+        width: 135px;
         display: flex;
         justify-content: center;
         align-items: center;
