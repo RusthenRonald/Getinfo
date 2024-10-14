@@ -248,7 +248,7 @@ footer{
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     background-color: #212121;
 }
@@ -262,4 +262,7 @@ footer a {
 footer p{
     color:white ;
     line-height: 1.5em;
+}
+.item_footer{
+    flex-basis: 150px;
 }
