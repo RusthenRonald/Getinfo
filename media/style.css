@@ -144,7 +144,7 @@ Breakpoint: min-width: 1441px
     /*container principal que separa img e texto*/
     /*sobre nós*/
     div#container_sobre_nos {
-        margin-top: 150px;
+        margin-top: 180px;
     }
     div#menu_sobre_nos a {
         width: 10vw;
@@ -156,17 +156,18 @@ Breakpoint: min-width: 1441px
         font-size: 2.9em;
     }
     div#sobre_nos p{
-        font-size: 1.0em;
+        font-size: 1.2em;
         width: 50vw;
     }
     img#kids2{
         width: 40vw;
-        height: 300px;
+        height: 360px;
         border-radius: 5px;
     }
     /*texto do sobre nós*/
     div#texto_sobre_nos p{
-        width: 50vw;
+        width: 45vw;
+        font-size: 1.3em;
     }
     /*cabeçalho*/
     footer{
@@ -350,6 +351,10 @@ Breakpoint: min-width: 1441px
         border-radius: 5px;
     }
     /*texto do sobre nós*/
+    div#titulo_texto_sobre h3{
+        color: #F15B43;
+        font-size: 2em;
+    }
     div#texto_sobre_nos p{
         width: 450px;
         font-size: 1.5em;

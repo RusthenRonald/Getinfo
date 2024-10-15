@@ -229,6 +229,10 @@ img#kids2{
     cursor: pointer;
 }
 /*texto do sobre nós*/
+div#titulo_texto_sobre h3{
+    margin-top: 20px;
+    color: #F15B43;
+}
 div#texto_sobre_nos p{
     margin-top: 20px;
     width: 75vw;

@@ -59,29 +59,33 @@
             </div>
 
             <!-- Sobre nós -->
-            <div id="container_sobre_nos">
-                <div id="sobre_nos">
-                    <div id="quem_somos">
-                        <h3>Quem nós somos</h3>
-                    </div>
-                    <h2>Sobre Nós</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sint  quae cumque vitae sed aliquid, voluptatibus, doloremque?</p>
-                    <div id="menu_sobre_nos">
-                        <a href="#" class="missao active">Nossa Missão</a>
-                        <a href="#" class="missao">Nossos Valores</a>
-                        <a href="#" class="missao">Nossa História</a>
-                    </div>
-                    <div id="texto_sobre_nos">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet voluptates eligendi maxime ad. Quas commodi distinctio modi, aspernatur, quos neque omnis magnam voluptatibus, sapiente fugiat cupiditate velit impedit praesentium.</p>
-                        <p>
-                            Reprehenderit hic illo, nulla autem odit molestiae molestias, dolores accusantium eos? Ut aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore illo dicta, exercitationem natus ducimus?
-                        </p>
-                    </div>
-                </div>
-                <div >
-                    <img id="kids2" src="img/img p 2 kids.jpg" alt="">
-                </div>
-            </div>
+<div id="container_sobre_nos">
+    <div id="sobre_nos">
+        <div id="quem_somos">
+            <h3>Quem nós somos</h3>
+        </div>
+        <h2>Sobre Nós</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus sint  quae cumque vitae sed aliquid, voluptatibus, doloremque?</p>
+        <div id="menu_sobre_nos">
+            <a href="#" class="missao active" data-title="Nossa Missão">Nossa Missão</a>
+            <a href="#" class="missao" data-title="Nossos Valores">Nossos Valores</a>
+            <a href="#" class="missao" data-title="Nossa História">Nossa História</a>
+        </div>
+        <div id="titulo_texto_sobre">
+            <h3 id="tituloAtivo">Nossa missão</h3> <!-- Adicionei um id aqui para referenciar -->
+        </div>
+        <div id="texto_sobre_nos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eveniet voluptates eligendi maxime ad. Quas commodi distinctio modi, aspernatur, quos neque omnis magnam voluptatibus, sapiente fugiat cupiditate velit impedit praesentium.</p>
+            <p>
+                Reprehenderit hic illo, nulla autem odit molestiae molestias, dolores accusantium eos? Ut aspernatur fuga labore eius sequi nihil sit iusto, enim. Aliquam, cumque! Quaerat inventore illo dicta, exercitationem natus ducimus?
+            </p>
+        </div>
+    </div>
+    <div>
+        <img id="kids2" src="img/img p 2 kids.jpg" alt="">
+    </div>
+</div>
+
         </main>
     <footer>
         <!-- Navegação no rodapé -->
@@ -125,17 +129,23 @@
     </footer>
 </body>
 </html>
-<!-- Script para adicionar a classe 'active' ao link/menu clicado -->
+// Script para adicionar a classe 'active' ao link/menu clicado
 <script>
     const links = document.querySelectorAll('.missao');
-    
+    const tituloAtivo = document.getElementById('tituloAtivo'); // Pega o elemento h3
+
     links.forEach(link => {
-        link.addEventListener('click', function() {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); //para previnir o comportamento padrão do link
+
             // vai remover a classe 'active' de todos os links
             links.forEach(item => item.classList.remove('active'));
             
-            // vai adicionar a classe 'active' ao link clicado
+            // Adicionei a classe 'active' ao link clicado
             this.classList.add('active');
+
+            // Muda o texto do h3 com base no link clicado
+            tituloAtivo.textContent = this.getAttribute('data-title');
         });
     });
 </script>
