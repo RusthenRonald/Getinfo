@@ -74,6 +74,11 @@ Breakpoint: min-width: 1441px
         width: 70vw;
         font-size: 1.4em;
     }
+    /*texto do sobre nós*/
+    div#titulo_texto_sobre h3{
+        color: #F15B43;
+        font-size: 1.6em;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -169,6 +174,11 @@ Breakpoint: min-width: 1441px
         width: 45vw;
         font-size: 1.3em;
     }
+    /*texto do sobre nós*/
+    div#titulo_texto_sobre h3{
+        color: #F15B43;
+        font-size: 1.8em;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -259,6 +269,12 @@ Breakpoint: min-width: 1441px
         width: 450px;
         height: 350px;
         border-radius: 5px;
+    }
+    
+    /*texto do sobre nós*/
+    div#titulo_texto_sobre h3{
+        color: #F15B43;
+        font-size: 2em;
     }
     /*cabeçalho*/
     footer{
@@ -356,7 +372,7 @@ Breakpoint: min-width: 1441px
         font-size: 2em;
     }
     div#texto_sobre_nos p{
-        width: 450px;
+        width: 550px;
         font-size: 1.5em;
         color: rgba(128, 128, 128, 0.774);
     }
