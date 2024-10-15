@@ -213,6 +213,17 @@ img#kids2{
     height: 200px;
     border-radius: 5px;
 }
+#quem_somos {
+    width: 130px;
+    border-radius: 10px;
+    padding: 8px;
+    color: #ebb503;
+    background-color: #dbc90015;
+    font-size: 0.9em;
+}
+#quem_somos:hover{
+    cursor: pointer;
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
