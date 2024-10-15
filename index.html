@@ -122,10 +122,10 @@
     
     links.forEach(link => {
         link.addEventListener('click', function() {
-            // Remove a classe 'active' de todos os links
+            // vai remover a classe 'active' de todos os links
             links.forEach(item => item.classList.remove('active'));
             
-            // Adiciona a classe 'active' ao link clicado
+            // vai adicionar a classe 'active' ao link clicado
             this.classList.add('active');
         });
     });

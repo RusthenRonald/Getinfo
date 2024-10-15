@@ -257,6 +257,11 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 64px;
     }
+    img#kids2{
+        width: 600px;
+        height: 500px;
+        border-radius: 5px;
+    }
     footer{
         margin-top: 10px;
         display: flex;
