@@ -137,6 +137,9 @@ Breakpoint: min-width: 1441px
     }
     /*sobre nós*/
     /*container principal que separa img e texto*/
+    div#menu_sobre_nos a {
+        width: 10vw;
+    }
     div#container_sobre_nos {
         flex-wrap: nowrap;
     }
@@ -225,6 +228,9 @@ Breakpoint: min-width: 1441px
         font-size: 50px;
     }
     /*sobre nós*/
+    div#menu_sobre_nos a {
+        width: 10vw;
+    }
     div#sobre_nos h2{
         font-size: 3.2em;
     }
@@ -312,6 +318,9 @@ Breakpoint: min-width: 1441px
         font-size: 64px;
     }
     /*sobre nós*/
+    div#menu_sobre_nos a {
+        width: 110px;
+    }
     div#sobre_nos h2{
         font-size: 3.5em;
     }
