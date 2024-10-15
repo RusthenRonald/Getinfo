@@ -236,3 +236,12 @@ footer p{
 .item_footer{
     flex-basis: 150px;
 }
+
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
