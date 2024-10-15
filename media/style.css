@@ -60,14 +60,19 @@ Breakpoint: min-width: 1441px
         font-size: 2.9em;
     }
     div#sobre_nos p{
-        font-size: 1.0em;
-        color: gray;
+        font-size: 1.2em;
+        width: 80vw;
     }
     img#kids2{
         margin-top: 30px;
         width: 65vw;
         height: 280px;
         border-radius: 5px;
+    }
+    /*texto do sobre nós*/
+    div#texto_sobre_nos p{
+        width: 70vw;
+        font-size: 1.4em;
     }
     /*cabeçalho*/
     footer{
@@ -137,6 +142,10 @@ Breakpoint: min-width: 1441px
     }
     /*sobre nós*/
     /*container principal que separa img e texto*/
+    /*sobre nós*/
+    div#container_sobre_nos {
+        margin-top: 150px;
+    }
     div#menu_sobre_nos a {
         width: 10vw;
     }
@@ -148,12 +157,16 @@ Breakpoint: min-width: 1441px
     }
     div#sobre_nos p{
         font-size: 1.0em;
-        color: gray;
+        width: 50vw;
     }
     img#kids2{
         width: 40vw;
         height: 300px;
         border-radius: 5px;
+    }
+    /*texto do sobre nós*/
+    div#texto_sobre_nos p{
+        width: 50vw;
     }
     /*cabeçalho*/
     footer{
@@ -228,15 +241,18 @@ Breakpoint: min-width: 1441px
         font-size: 50px;
     }
     /*sobre nós*/
+    div#container_sobre_nos {
+        margin-top: 180px;
+    }
     div#menu_sobre_nos a {
-        width: 10vw;
+        width: 9vw;
     }
     div#sobre_nos h2{
         font-size: 3.2em;
     }
     div#sobre_nos p{
         font-size: 1.1em;
-        color: gray;
+        width: 40vw;
     }
     img#kids2{
         width: 450px;
@@ -326,12 +342,18 @@ Breakpoint: min-width: 1441px
     }
     div#sobre_nos p{
         font-size: 1.1em;
-        color: gray;
+        width: 30vw;
     }
     img#kids2{
-        width: 580px;
-        height: 480px;
+        width: 540px;
+        height: 460px;
         border-radius: 5px;
+    }
+    /*texto do sobre nós*/
+    div#texto_sobre_nos p{
+        width: 450px;
+        font-size: 1.5em;
+        color: rgba(128, 128, 128, 0.774);
     }
     /*cabeçalho*/
     footer{

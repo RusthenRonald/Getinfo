@@ -165,7 +165,7 @@ span#educacao{
 }
 /*container principal que separa img e texto*/
 div#container_sobre_nos {
-    margin-top: 110px;
+    margin-top: 80px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -205,14 +205,18 @@ div#sobre_nos h2{
     font-size: 2em;
 }
 div#sobre_nos p{
-    font-size: 0.7em;
+    font-size: 0.8em;
+    width: 80vw;
+    color: rgba(128, 128, 128, 0.774);
 }
+/*imagem da parte sobre nós*/
 img#kids2{
     margin-top: 30px;
     width: 65vw;
     height: 200px;
     border-radius: 5px;
 }
+/*Botão quem somos nós*/
 #quem_somos {
     width: 130px;
     border-radius: 10px;
@@ -223,6 +227,13 @@ img#kids2{
 }
 #quem_somos:hover{
     cursor: pointer;
+}
+/*texto do sobre nós*/
+div#texto_sobre_nos p{
+    margin-top: 20px;
+    width: 75vw;
+    font-size: 1.0em;
+    color: rgba(128, 128, 128, 0.774);
 }
 /*Inicio do cabeçalho*/
 footer{
