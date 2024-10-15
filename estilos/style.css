@@ -180,6 +180,8 @@ div#menu_sobre_nos {
 div#menu_sobre_nos a {
     font-weight: bold;
     padding: 15px; 
+    width: 15vw;
+    color: rgba(128, 128, 128, 0.815);
     border-radius: 3px;
     border-bottom: 3px solid #F15B43;
     text-decoration: none;
@@ -187,7 +189,7 @@ div#menu_sobre_nos a {
 }
 /*link ao passar mouse*/
 div#menu_sobre_nos a:hover{
-    background-color: #f15a43cc;
+    background-color: #f15a43b7;
     color: white;
 }
 /* Estilo para o link ativo */
@@ -195,7 +197,22 @@ div#menu_sobre_nos a.active {
     background-color: #F15B43; 
     color: #fff; 
 }
-
+div#sobre_nos{
+    padding-left: 10px;
+}
+div#sobre_nos h2{
+    color: #F15B43;
+    font-size: 2em;
+}
+div#sobre_nos p{
+    font-size: 0.7em;
+}
+img#kids2{
+    margin-top: 30px;
+    width: 65vw;
+    height: 200px;
+    border-radius: 5px;
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;

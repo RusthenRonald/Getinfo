@@ -48,6 +48,28 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 45px;
     }
+        /*sobre nós*/
+    /*container principal que separa img e texto*/
+    div#container_sobre_nos {
+        flex-wrap: wrap;
+    }
+    div#sobre_nos {
+        padding-left: 20px;
+    }
+    div#sobre_nos h2{
+        font-size: 2.9em;
+    }
+    div#sobre_nos p{
+        font-size: 1.0em;
+        color: gray;
+    }
+    img#kids2{
+        margin-top: 30px;
+        width: 65vw;
+        height: 280px;
+        border-radius: 5px;
+    }
+    /*cabeçalho*/
     footer{
         margin-top: 10px;
         display: flex;
@@ -113,6 +135,24 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+    /*sobre nós*/
+    /*container principal que separa img e texto*/
+    div#container_sobre_nos {
+        flex-wrap: nowrap;
+    }
+    div#sobre_nos h2{
+        font-size: 2.9em;
+    }
+    div#sobre_nos p{
+        font-size: 1.0em;
+        color: gray;
+    }
+    img#kids2{
+        width: 40vw;
+        height: 300px;
+        border-radius: 5px;
+    }
+    /*cabeçalho*/
     footer{
         margin-top: 10px;
         display: flex;
@@ -184,6 +224,20 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 50px;
     }
+    /*sobre nós*/
+    div#sobre_nos h2{
+        font-size: 3.2em;
+    }
+    div#sobre_nos p{
+        font-size: 1.1em;
+        color: gray;
+    }
+    img#kids2{
+        width: 450px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    /*cabeçalho*/
     footer{
         margin-top: 10px;
         display: flex;
@@ -257,11 +311,20 @@ Breakpoint: min-width: 1441px
     span#educacao{
         font-size: 64px;
     }
+    /*sobre nós*/
+    div#sobre_nos h2{
+        font-size: 3.5em;
+    }
+    div#sobre_nos p{
+        font-size: 1.1em;
+        color: gray;
+    }
     img#kids2{
         width: 600px;
         height: 500px;
         border-radius: 5px;
     }
+    /*cabeçalho*/
     footer{
         margin-top: 10px;
         display: flex;
