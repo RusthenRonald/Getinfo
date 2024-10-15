@@ -163,7 +163,27 @@ span#saude{
 span#educacao{
     font-size: 44px;
 }
+/*container principal que separa img e texto*/
+div#container_sobre_nos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
+/*div menu do sobre nos*/
+div#menu_sobre_nos {
+    margin-top: 20px;
+}
+
+/*configuração só pra os links*/
+div#menu_sobre_nos a {
+    font-weight: bold;
+    padding: 15px; 
+    border-radius: 3px;
+    border-bottom: 3px solid #F15B43;
+    text-decoration: none;
+    display: inline-block; /* Melhora a área clicável */
+}
 
 
 /*Inicio do cabeçalho*/
