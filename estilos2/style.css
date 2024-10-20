@@ -14,7 +14,7 @@ section.container_lista_causas{
 }
 /*container em volta do texto e foto*/
 div.container_item{
-
+    margin-left: 30px;
 }
 /*img*/
 div img{
