@@ -8,4 +8,9 @@ body{
 }
 section.container_lista_causas{
     display: flex;
+    justify-content: center;
+}
+div img{
+    width: 450px;
+    height: 350px;
 }
