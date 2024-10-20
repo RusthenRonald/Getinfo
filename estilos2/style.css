@@ -6,12 +6,20 @@
 body{
     height: 100vh;
 }
+/*container principal*/
 section.container_lista_causas{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
 }
+/*container em volta do texto e foto*/
+div.container_item{
+
+}
+/*img*/
 div img{
-    width: 450px;
+    width: 400px;
     height: 350px;
     border-radius: 5px;
+    
 }
