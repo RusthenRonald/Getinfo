@@ -29,6 +29,7 @@ div img{
     
 }
 /* Estilos para a barra de progresso */
+/*div da barra*/
 .progresso-barra {
     width: 100%;
     background-color: #e0e0e0;
@@ -38,7 +39,7 @@ div img{
     position: relative;
     overflow: hidden;
 }
-
+/*barra em si*/
 .progresso {
     height: 100%;
     background-color: #F15B43;
@@ -51,7 +52,7 @@ div img{
     font-weight: bold;
     
 }
-
+/*apenas texto da barra*/
 .progresso-texto {
     position: absolute;
     width: 100%;

@@ -1,0 +1,29 @@
+/*
+Breakpoints Atualizados seguindo a w3c
+
+Tablets:
+Breakpoint: min-width: 768px e max-width: 1024px
+
+Laptops e Desktops:
+Breakpoint: min-width: 1025px e max-width: 1440px
+
+Desktops Grandes (4K e telas maiores):
+Breakpoint: min-width: 1441px
+*/ 
+/*Telas celulares maiores*/
+@media screen and (min-width:420px) and (max-width:767px){
+    
+}
+/*Telas de Tablet: entre 768px e 1024px*/
+@media screen and (min-width:768px) and (max-width:1024px){
+
+}
+/*Telas de desktop ou laptop: entre 1025px e 1440*/
+@media screen and (min-width:1025px) and (max-width:1440px){
+
+}
+/*Telas grandes : acima de 1441px*/
+@media screen and (min-width:1441px) {
+
+}
+
