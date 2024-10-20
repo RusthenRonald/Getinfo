@@ -17,6 +17,9 @@ section.container_lista_causas{
 div.container_item{
     margin-left: 30px;
 }
+div.container_item h2{
+    color: #F15B43;
+}
 /*img*/
 div img{
     width: 400px;
