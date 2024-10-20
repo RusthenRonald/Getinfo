@@ -16,6 +16,7 @@ section.container_lista_causas{
 /*container em volta do texto e foto*/
 div.container_item{
     margin-left: 30px;
+    margin-bottom: 50px;
 }
 div.container_item h2{
     color: #F15B43;
@@ -38,7 +39,7 @@ div img{
     overflow: hidden;
 }
 
-.progress {
+.progresso {
     height: 100%;
     background-color: #F15B43;
     border-radius: 5px;
@@ -51,7 +52,7 @@ div img{
     
 }
 
-.progress-text {
+.progresso-texto {
     position: absolute;
     width: 100%;
     text-align: center;
