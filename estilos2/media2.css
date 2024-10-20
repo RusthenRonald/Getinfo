@@ -34,6 +34,9 @@ Breakpoint: min-width: 1441px
     div.container_item h2{
         font-size: 1.7em;
     }
+    div.container_item p{
+        font-size: 1.1em;
+    }
     .valores span{
         color: gray;
         font-size: 1.2em;
