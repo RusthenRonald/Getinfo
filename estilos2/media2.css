@@ -20,12 +20,23 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
-
+    
+    div.container_item h2{
+        font-size: 1.6em;
+    }
+    .valores span{
+        color: gray;
+        font-size: 1.1em;
+    }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
     div.container_item h2{
         font-size: 1.7em;
+    }
+    .valores span{
+        color: gray;
+        font-size: 1.2em;
     }
 }
 

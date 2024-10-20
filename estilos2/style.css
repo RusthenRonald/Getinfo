@@ -24,6 +24,10 @@ div.container_item h2{
     color: #F15B43;
     
 }
+div.container_item p{
+    color: gray;
+    line-height: 1.3em;
+}
 /*img*/
 div img{
     width: 400px;
@@ -37,7 +41,7 @@ div img{
     width: 100%;
     background-color: #e0e0e0;
     border-radius: 10px;
-    height: 20px;
+    height: 15px;
     margin-top: 10px;
     position: relative;
     overflow: hidden;
@@ -66,4 +70,23 @@ div img{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
+}
+.valores span{
+    color: gray;
+}
+.botao {
+    margin-top: 20px;
+    background-color: #F15B43; 
+    width: 150px; 
+    padding: 10px 0; 
+    text-align: center; 
+    border-radius: 25px; 
+    cursor: pointer; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+}
+
+.botao span {
+    display: block; /* Faz com que o span se comporte como bloco, ocupando toda a largura */
 }
