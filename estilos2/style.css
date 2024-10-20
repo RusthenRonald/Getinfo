@@ -19,7 +19,10 @@ div.container_item{
     margin-bottom: 50px;
 }
 div.container_item h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: #F15B43;
+    
 }
 /*img*/
 div img{
@@ -57,4 +60,10 @@ div img{
     position: absolute;
     width: 100%;
     text-align: center;
+}
+/* Estilos para os valores de arrecadado e meta */
+.valores {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
