@@ -37,12 +37,12 @@ div.container_item p{
 }
 /*div de texto so para adcionar padding sem alterar foto junto*/
 div.texto_container{
-    padding: 10px;
+    padding: 15px;
 }
 /*img*/
 div img{
-    width: 420px;
-    height: 350px;
+    width: 435px;
+    height: 330px;
     
     
 }
@@ -100,4 +100,8 @@ div img{
 
 .botao span {
     display: block; /* Faz com que o span se comporte como bloco, ocupando toda a largura */
+}
+.botao:hover{
+    background-color: #eb7563;
+    transform: translate(1.5px);
 }
