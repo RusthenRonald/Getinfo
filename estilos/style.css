@@ -282,6 +282,13 @@ div#texto_sobre_nos p{
 .dados p{
     color: gray;
 }
+/* Estilo para os ícones na parte de dados */
+.dados i,
+.dados .material-symbols-outlined {
+    color: #FE8F20; /* Cor desejada para os ícones */
+    font-size: 40px; /* Ajuste o tamanho do ícone se necessário */
+    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
