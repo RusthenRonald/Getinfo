@@ -50,6 +50,7 @@ div.container_item{
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
+    transition: all 0.3s ease; 
 }
 div.container_item h2{
     margin-top: 20px;
