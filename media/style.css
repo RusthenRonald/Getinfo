@@ -16,15 +16,22 @@ Breakpoint: min-width: 1441px
     .dados_container{
         flex-direction: column;
         align-items: center;
+        
     }
     .dados_caixas{
         display: flex;
         flex-direction: column;
         width: 70%;
+        padding: 0;
     }
     .dados{
         width: 100%;
         margin-bottom: 20px;
+        margin: 0;
+    }
+    /*configuração só pra os links*/
+    div#menu_sobre_nos a {
+        width: 25vw;
     }
 }
 /*Telas celulares maiores*/
@@ -112,6 +119,11 @@ Breakpoint: min-width: 1441px
     }
     .dados_caixas h3{
         font-size: 1.7em;
+    }
+    /* Estilo para os ícones na parte de dados */
+    .dados i,
+    .dados .material-symbols-outlined {
+        font-size: 35px; 
     }
     /*cabeçalho*/
     footer{
@@ -230,6 +242,11 @@ Breakpoint: min-width: 1441px
     .dados_caixas h3{
         font-size: 1.9em;
     }
+    /* Estilo para os ícones na parte de dados */
+    .dados i,
+    .dados .material-symbols-outlined {
+        font-size: 40px; 
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -337,6 +354,11 @@ Breakpoint: min-width: 1441px
     }
     .dados_caixas h3{
         font-size: 2.0em;
+    }
+    /* Estilo para os ícones na parte de dados */
+    .dados i,
+    .dados .material-symbols-outlined {
+        font-size: 30px; 
     }
     /*cabeçalho*/
     footer{
@@ -451,6 +473,12 @@ Breakpoint: min-width: 1441px
     /*container de dados*/
     .dados_caixas{
         gap: 70px;
+    }
+    /* Estilo para os ícones na parte de dados */
+    .dados i,
+    .dados .material-symbols-outlined {
+        font-size: 40px; 
+        
     }
     /*cabeçalho*/
     footer{

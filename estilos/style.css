@@ -4,7 +4,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    box-sizing: border-box;
 }
 html,body{
     height: 100vh;
@@ -180,7 +180,6 @@ div#menu_sobre_nos {
 div#menu_sobre_nos a {
     font-weight: bold;
     padding: 15px; 
-    width: 15vw;
     color: rgba(128, 128, 128, 0.815);
     border-radius: 3px;
     border-bottom: 3px solid #F15B43;
@@ -285,9 +284,10 @@ div#texto_sobre_nos p{
 /* Estilo para os ícones na parte de dados */
 .dados i,
 .dados .material-symbols-outlined {
-    color: #FE8F20; /* Cor desejada para os ícones */
-    font-size: 40px; /* Ajuste o tamanho do ícone se necessário */
-    margin-bottom: 10px; /* Espaçamento abaixo do ícone */
+    color: #FE8F20; 
+    font-size: 25px; 
+    margin-bottom: 10px; 
+    margin-left: 10px;
 }
 /*Inicio do cabeçalho*/
 footer{
