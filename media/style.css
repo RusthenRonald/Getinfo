@@ -110,6 +110,9 @@ Breakpoint: min-width: 1441px
         width: 100%;
         margin-bottom: 20px;
     }
+    .dados_caixas h3{
+        font-size: 1.7em;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -224,6 +227,9 @@ Breakpoint: min-width: 1441px
         width: 100%;
         margin-bottom: 20px;
     }
+    .dados_caixas h3{
+        font-size: 1.9em;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -328,6 +334,9 @@ Breakpoint: min-width: 1441px
     /*container de dados*/
     .dados_caixas{
         gap: 50px;
+    }
+    .dados_caixas h3{
+        font-size: 2.0em;
     }
     /*cabeçalho*/
     footer{

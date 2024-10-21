@@ -259,6 +259,7 @@ div#texto_sobre_nos p{
 /*cada h3 em div dados caixas*/
 .dados_caixas h3{
     color: #F15B43;
+    font-size: 1.4em;
 }
 /*container de dados*/
 .dados_caixas{
