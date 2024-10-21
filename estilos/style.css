@@ -240,6 +240,14 @@ div#texto_sobre_nos p{
     font-size: 1.0em;
     color: rgba(128, 128, 128, 0.774);
 }
+/*dados da plataforma*/
+.dados_container{
+    display: flex;
+    justify-content: center;
+}
+.dados_texto p{
+    width: 400px;
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
