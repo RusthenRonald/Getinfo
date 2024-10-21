@@ -47,4 +47,7 @@ Breakpoint: min-width: 1441px
         color: gray;
         font-size: 1.2em;
     }
+    #p{
+        margin-top: 30px;
+    }
 }
