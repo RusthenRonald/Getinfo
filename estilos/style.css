@@ -259,10 +259,19 @@ div#texto_sobre_nos p{
 .dados_caixas h3{
     color: #F15B43;
 }
+/*caixa que tem o dado*/
 .dados_caixas{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    gap: 90px;
+}
+/*dados dentro da caixa*/
+.dados{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
+    height: 150px;
+    width: 200px;
 }
 /*Inicio do cabeçalho*/
 footer{
