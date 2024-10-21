@@ -9,11 +9,31 @@ body{
     background-color: #E0E0E0;
     
 }
+/*texto principal*/
+.botao_causas{
+    margin-top: 20px;
+}
+.botao_causas span{
+    font-weight: bold;
+    color: #f1b958;
+    background-color: #f8dba942;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+}
 div.texto_lista_causas{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+div.texto_lista_causas h1{
     color: #F15B43;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+div.texto_lista_causas p{
+    color: gray;
 }
 /*container principal*/
 section.container_lista_causas{
@@ -21,21 +41,20 @@ section.container_lista_causas{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 30px;
 }
 /*container em volta do texto e foto*/
 div.container_item{
-    margin-left: 30px;
+    flex-basis: 400px; 
     margin-bottom: 50px;
     background-color: white;
     border-radius: 5px;
     overflow: hidden;
-    
 }
 div.container_item h2{
     margin-top: 20px;
     margin-bottom: 20px;
     color: #F15B43;
-    
 }
 div.container_item p{
     color: gray;
@@ -47,10 +66,8 @@ div.texto_container{
 }
 /*img*/
 div img{
-    width: 435px;
+    width: 100%;
     height: 330px;
-    
-    
 }
 /* Estilos para a barra de progresso */
 /*div da barra*/
