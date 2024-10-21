@@ -9,6 +9,76 @@ body{
     background-color: #E0E0E0;
     
 }
+/*Container interno*/
+nav{
+    margin-top: 5px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+a{
+    font-size: 0.5em;
+    font-weight: normal;
+    padding: 5px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    margin: 0 10px; /* Adiciona 10px de margem lateral */
+}
+/*efeito ao passar mouse em menu*/
+a:hover{
+    color: #F15B43;
+}
+/*Menu dropdown*/
+/* Estilo específico para o dropdown *//*container*/
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+.dropdown a {
+    display: inline-flex; 
+    align-items: center; 
+    padding: 5px;
+}
+/* Esconde o submenu por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 65px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+/* Itens do submenu */
+.dropdown-menu li {
+    list-style-type: none;
+    margin: 0; 
+}
+
+.dropdown-menu li a {
+    padding: 5px;
+    text-decoration: none;
+    display: block;
+    color: rgb(102, 102, 102); 
+    font-size: 0.7em; 
+}
+
+/* Exibe o submenu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu li a:hover {
+    background-color: rgb(240, 240, 240); 
+}
+/*Icone ao lado do menu de causas*/
+.material-icons {
+    font-size: 14px; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
+
 /*texto principal*/
 .botao_causas{
     margin-top: 20px;
