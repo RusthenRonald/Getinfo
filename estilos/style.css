@@ -259,7 +259,7 @@ div#texto_sobre_nos p{
 .dados_caixas h3{
     color: #F15B43;
 }
-/*caixa que tem o dado*/
+/*container de dados*/
 .dados_caixas{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -267,6 +267,9 @@ div#texto_sobre_nos p{
 }
 /*dados dentro da caixa*/
 .dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.26);
