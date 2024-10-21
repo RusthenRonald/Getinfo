@@ -33,6 +33,16 @@ Breakpoint: min-width: 1441px
     div#menu_sobre_nos a {
         width: 25vw;
     }
+    /*dados da plataforma*/
+    div.dados_texto h2{
+        font-size: 2.0em;
+        margin-left: 20px;
+    }
+    div.dados_texto p{
+        font-size: 0.9em;
+        width: 80vw;
+        margin-left: 20px;
+    }
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
@@ -119,6 +129,14 @@ Breakpoint: min-width: 1441px
     }
     .dados_caixas h3{
         font-size: 1.7em;
+    }
+    /*dados da plataforma*/
+    div.dados_texto h2{
+        font-size: 2.5em;
+    }
+    div.dados_texto p{
+        font-size: 1.2em;
+        width: 70vw;
     }
     /* Estilo para os ícones na parte de dados */
     .dados i,
@@ -242,6 +260,14 @@ Breakpoint: min-width: 1441px
     .dados_caixas h3{
         font-size: 1.9em;
     }
+    /*dados da plataforma*/
+    div.dados_texto h2{
+        font-size: 2.5em;
+    }
+    div.dados_texto p{
+        font-size: 1.2em;
+        width: 600px;
+    }
     /* Estilo para os ícones na parte de dados */
     .dados i,
     .dados .material-symbols-outlined {
@@ -324,7 +350,7 @@ Breakpoint: min-width: 1441px
         margin-top: 180px;
     }
     div#menu_sobre_nos a {
-        width: 9vw;
+        width: 110px;
     }
     div#sobre_nos h2{
         font-size: 3.2em;
@@ -348,9 +374,12 @@ Breakpoint: min-width: 1441px
     div.dados_texto h2{
         font-size: 2.5em;
     }
+    div.dados_texto p{
+        font-size: 1.2em;
+    }
     /*container de dados*/
     .dados_caixas{
-        gap: 50px;
+        gap: 40px;
     }
     .dados_caixas h3{
         font-size: 2.0em;
@@ -436,7 +465,7 @@ Breakpoint: min-width: 1441px
     }
     /*sobre nós*/
     div#menu_sobre_nos a {
-        width: 110px;
+        width: 120px;
     }
     div#sobre_nos h2{
         font-size: 3.5em;
@@ -465,7 +494,8 @@ Breakpoint: min-width: 1441px
         font-size: 2.7em;
     }
     .dados_texto p{
-        
+        font-size: 1.3em;
+        width: 600px;
     }
     .dados_caixas h3{
         font-size: 2.3em;

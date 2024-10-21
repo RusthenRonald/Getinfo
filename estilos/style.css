@@ -250,8 +250,7 @@ div#texto_sobre_nos p{
 .dados_texto h2{
     color: #F15B43;
 }
-.dados_texto p{
-    width: 400px;
+.dados_texto p{  
     color: gray;
     margin-bottom: 35px;
 }
