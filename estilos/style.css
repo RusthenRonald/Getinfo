@@ -242,12 +242,22 @@ div#texto_sobre_nos p{
 }
 /*dados da plataforma*/
 .dados_container{
+    margin-top: 250px;
     display: flex;
-    justify-content: center;
-    gap: 200px;
+    justify-content: space-evenly;
+    gap: 150px;
+    
+}
+/*div dados texto*/
+.dados_texto h2{
+    color: #F15B43;
 }
 .dados_texto p{
     width: 400px;
+}
+/*cada h3 em div dados caixas*/
+.dados_caixas h3{
+    color: #F15B43;
 }
 /*Inicio do cabeçalho*/
 footer{
