@@ -219,7 +219,7 @@ img#kids2{
 /*Botão quem somos nós*/
 #quem_somos {
     width: 130px;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 8px;
     color: #ebb503;
     background-color: #dbc90015;
@@ -239,9 +239,70 @@ div#texto_sobre_nos p{
     font-size: 1.0em;
     color: rgba(128, 128, 128, 0.774);
 }
+/*Foto com frase motivacional*/
+section.frase_motivacional{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    background-image: url(../img/pexels-rdne-6646917\ \(1\).jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    background-color: #434B56; 
+    background-blend-mode: multiply; /*vai  mesclar a cor com a imagem */
+}
+section.frase_motivacional h2{
+    color: white;
+    font-size: 0.9em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+.botao-ajude-agora {
+    display: inline-block;
+    border-radius: 20px;
+    color: white; 
+    background-color: rgba(209, 204, 204, 0.37); 
+    padding: 10px 20px; 
+    font-size: 7px; 
+    text-transform: uppercase; 
+    cursor: pointer;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+/*Botão doe agora*/
+ .botao-doe-agora {
+    margin-top: 30px;
+    display: inline-block;
+    border: 2px solid white; 
+    border-radius: 30px;
+    color: white; 
+    background-color: transparent; 
+    padding: 10px 20px; 
+    font-size: 12px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.botao-doe-agora:hover {
+    background-color: white; 
+    color: #434B56;
+}
 /*dados da plataforma*/
+.botao_impacto {
+    margin-bottom: 10px;
+}
+.botao_impacto span{
+    color: #ebb503;
+    background-color: #dbc90015;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
 .dados_container{
-    margin-top: 250px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

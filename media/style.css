@@ -113,6 +113,20 @@ Breakpoint: min-width: 1441px
         color: #F15B43;
         font-size: 1.6em;
     }
+    /*Foto com frase motivacional*/
+    section.frase_motivacional{
+        height: 350px;
+    }
+    /*frase_motivacional*/
+    section.frase_motivacional h2{
+        font-size: 1.3em;
+    }
+    /*Botão doe agora*/
+     .botao-doe-agora {
+        padding: 10px 20px; 
+        font-size: 12px; 
+    }
+    /*
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -243,6 +257,19 @@ Breakpoint: min-width: 1441px
         color: #F15B43;
         font-size: 1.8em;
     }
+    /*Foto com frase motivacional*/
+    section.frase_motivacional{
+        height: 400px;
+    }
+    /*frase_motivacional*/
+    section.frase_motivacional h2{
+        font-size: 2.3em;
+    }
+    /*Botão doe agora*/
+     .botao-doe-agora {
+        padding: 10px 20px; 
+        font-size: 14px; 
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -370,6 +397,24 @@ Breakpoint: min-width: 1441px
         color: #F15B43;
         font-size: 2em;
     }
+    /*Foto com frase motivacional*/
+    section.frase_motivacional{
+        height: 450px;
+    }
+    /*frase_motivacional*/
+    section.frase_motivacional h2{
+        font-size: 2.6em;
+    }
+    /*botao ajude agora*/
+    .botao-ajude-agora {
+        padding: 10px 20px; 
+        font-size: 9px; 
+    }
+    /*Botão doe agora*/
+     .botao-doe-agora {
+        padding: 10px 20px; 
+        font-size: 20px; 
+    }
     /*dados da plataforma*/
     div.dados_texto h2{
         font-size: 2.5em;
@@ -383,6 +428,10 @@ Breakpoint: min-width: 1441px
     }
     .dados_caixas h3{
         font-size: 2.0em;
+    }
+    .dados_texto p{
+        font-size: 1.3em;
+        width: 500px;
     }
     /* Estilo para os ícones na parte de dados */
     .dados i,
@@ -489,6 +538,25 @@ Breakpoint: min-width: 1441px
         font-size: 1.5em;
         color: rgba(128, 128, 128, 0.774);
     }
+    /*Foto com frase motivacional*/
+    section.frase_motivacional{
+        height: 500px;
+    }
+    /*frase_motivacional*/
+    section.frase_motivacional h2{
+        font-size: 2.8em;
+    }
+    /*botao ajude agora*/
+    .botao-ajude-agora {
+        padding: 10px 20px; 
+        font-size: 10px; 
+    }
+    /*Botão doe agora*/
+     .botao-doe-agora {
+        padding: 10px 20px; 
+        font-size: 23px; 
+    }
+
     /*dados da plataforma*/
     div.dados_texto h2{
         font-size: 2.7em;
