@@ -259,6 +259,11 @@ div#texto_sobre_nos p{
 .dados_caixas h3{
     color: #F15B43;
 }
+.dados_caixas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
