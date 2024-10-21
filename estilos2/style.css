@@ -11,12 +11,13 @@ body{
 }
 /*Container interno*/
 nav{
-    margin-top: 5px;
+    margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 a{
+   
     font-size: 0.5em;
     font-weight: normal;
     padding: 5px;
