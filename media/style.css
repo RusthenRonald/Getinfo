@@ -10,6 +10,23 @@ Breakpoint: min-width: 1025px e max-width: 1440px
 Desktops Grandes (4K e telas maiores):
 Breakpoint: min-width: 1441px
 */
+/*criado para tela de celular em especifico , caso tenha alguma configuração que n faça no geral*/
+@media screen and (min-width:200px) and (max-width:420px){
+    /*dados da plataforma*/
+    .dados_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dados_caixas{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .dados{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
     a{
@@ -78,6 +95,20 @@ Breakpoint: min-width: 1441px
     div#titulo_texto_sobre h3{
         color: #F15B43;
         font-size: 1.6em;
+    }
+    /*dados da plataforma*/
+    .dados_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dados_caixas{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .dados{
+        width: 100%;
+        margin-bottom: 20px;
     }
     /*cabeçalho*/
     footer{
@@ -179,6 +210,20 @@ Breakpoint: min-width: 1441px
         color: #F15B43;
         font-size: 1.8em;
     }
+    /*dados da plataforma*/
+    .dados_container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dados_caixas{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+    .dados{
+        width: 100%;
+        margin-bottom: 20px;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -275,6 +320,14 @@ Breakpoint: min-width: 1441px
     div#titulo_texto_sobre h3{
         color: #F15B43;
         font-size: 2em;
+    }
+    /*dados da plataforma*/
+    div.dados_texto h2{
+        font-size: 2.5em;
+    }
+    /*container de dados*/
+    .dados_caixas{
+        gap: 50px;
     }
     /*cabeçalho*/
     footer{
@@ -380,6 +433,9 @@ Breakpoint: min-width: 1441px
     div.dados_texto h2{
         font-size: 2.7em;
     }
+    .dados_texto p{
+        
+    }
     .dados_caixas h3{
         font-size: 2.3em;
     }
@@ -387,7 +443,6 @@ Breakpoint: min-width: 1441px
     .dados_caixas{
         gap: 70px;
     }
-    
     /*cabeçalho*/
     footer{
         margin-top: 10px;
