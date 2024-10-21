@@ -244,6 +244,7 @@ div#texto_sobre_nos p{
 .dados_container{
     display: flex;
     justify-content: center;
+    gap: 200px;
 }
 .dados_texto p{
     width: 400px;
