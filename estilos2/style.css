@@ -9,6 +9,10 @@ body{
     background-color: #E0E0E0;
     
 }
+header{
+    background-image: url(../img/header.png);
+    height: 400px;
+}
 /*Container interno*/
 nav{
     margin-top: 20px;
