@@ -169,11 +169,11 @@
             <form action="login.html" method="post" autocomplete="on">
                 <div class="campo_email">
                     <label for="email">E-mail</label >
-                    <input type="email" id="mask" placeholder="Digite seu e-mail" autocomplete="email" required >
+                    <input type="email" id="mask" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="35">
                 </div>
                 <div class="campo_senha" >
                     <label for="senha">Senha</label>
-                    <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required>
+                    <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
                 </div>
                 <button class="botao_login" type="submit">Entrar</button>
             </form>
