@@ -24,10 +24,125 @@
         }
         /*div que pega apenas a foto e h1*/
         .foto_login img{
-            width: 700px;
-            height: 500px;
+            width: 300px;
+            height: 300px;
         }
-
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+            background-color: #edecec;
+            padding: 30px;
+            width: 300px;
+            height: 420px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px #00000056;
+            margin-bottom: 25px;
+        }
+        /*campo email*/
+        .campo_email label{
+            display: block;
+        }
+        .campo_email input{
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background: #ecedd5;
+            border-radius: 6px;
+            padding: 10px;
+            height: 30px;
+            border: none;
+            width: 95%;
+            box-shadow: 0px 10px 30px #0000002f;
+        }
+        /*campo senha*/
+        .campo_senha label{
+            display: block;
+        }
+        .campo_senha input{
+            margin-top: 5px;
+            background: #ecedd5;
+            border-radius: 6px;
+            padding: 10px;
+            height: 30px;
+            border: none;
+            width: 95%;
+            box-shadow: 0px 10px 30px #0000002f;
+        }
+        /*botao login*/
+        .botao_login{
+            margin-top: 35px;
+            width: 100%;
+            background: linear-gradient(to right, #2AF598 , #08AEEA );
+            border: none;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        /*botao login*/
+        .botao_login:hover{
+            transform: scale(1.02);
+        }
+        /*redes*/
+        .redes{
+            margin-top: 35px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 30px;
+        }
+        /*Telas celulares maiores*/
+        @media screen and (min-width:420px) and (max-width:767px){
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 300px;
+                height: 400px;
+                margin-bottom: 20px;
+        }
+            /*div que pega apenas a foto e h1*/
+            .foto_login img{
+                width: 420px;
+                height: 350px;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 300px;
+                height: 390px;
+                margin-bottom: 15px;
+        }
+            /*div que pega apenas a foto e h1*/
+            .foto_login img{
+                width: 500px;
+                height: 400px;
+        }
+        }
+        @media screen and (min-width:1025px) and (max-width:1440px) {
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 350px;
+                height: 400px;
+        }
+            /*div que pega apenas a foto e h1*/
+            .foto_login img{
+                width: 600px;
+                height: 450px;
+        }
+        }
+        @media screen and (min-width:1441px) {
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 400px;
+                height: 450px;
+        }
+            /*div que pega apenas a foto e h1*/
+            .foto_login img{
+                width: 650px;
+                height: 450px;
+        }
+            i{
+                font-size: 35px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -37,179 +152,38 @@
             <img src="img/foto login.jpg" alt="">
         </div>
 
-        <div class="container_interno__login">
-            <h1 style="text-align: center;">LOGIN</h1>
-            <div class="textfield">
+        <div class="container_interno_login">
+            <h1 style="text-align: center; margin-bottom: 20px;">LOGIN</h1>
+            <div class="campo_email">
                 <label for="email">E-mail</label>
                 <input type="email" id="mask" placeholder="Digite seu e-mail">
             </div>
-            <div class="textfield">
+            <div class="campo_senha">
                 <label for="senha">Senha</label>
                 <input type="password" name="senha" placeholder="Digite sua senha">
             </div>
-            <button class="btn-login" type="submit">Entrar</button>
+            <button class="botao_login" type="submit">Entrar</button>
             <div class="redes">
-                <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-facebook"></i></a>
             <a href="#"><i class="bi bi-google"></i></a>
             </div>
-            <h5>Clique <a href="#">aqui</a> para cadastrar-se</h5>
+            <h5 style="text-align: center;">Clique <a href="#">aqui</a> para cadastrar-se</h5>
         </div>
     </div>
 </body>
 </html>
 
-
-
-
-
 <!--
-body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-}
+Breakpoints Atualizados seguindo a w3c
 
-body * {
-    box-sizing: border-box;
-}
+Tablets:
+Breakpoint: min-width: 768px e max-width: 1024px
 
-.main-login {
-    width: 100vw;
-    height: 100vh;
-    background: #efedede7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+Laptops e Desktops:
+Breakpoint: min-width: 1025px e max-width: 1440px
 
-.left-login {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+Desktops Grandes (4K e telas maiores):
+Breakpoint: min-width: 1441px
 
-.left-login > h1 {
-    color: #000000;
-    font-size: 25px;
-}
-
-.right-login { 
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-card {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #edecec;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
-}
-
-.login-card > h1 {
-    color: #000000;
-    font-weight:800;
-    margin: 0;
-}
-
-.login-card a {
-    color: rgb(77, 77, 248);
-    cursor: pointer;
-    text-decoration: none;
-    transition: .2s;
-    display:inline-block;
-}
-
-.login-card a:hover{
-    transform: scale(1.05);
-}
-
-.left-login img {
-    width: 600px;
-    height: 600px;
-}
-
-.textfield {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
-}
-
-label {
-    margin-left: 15px;
-    margin-bottom: 7px;
-}
-
-.textfield > input {
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: #ecedd5;
-    color: #020202de;
-    font-size: 12pt;
-    box-shadow: 0px 10px 30px #00000056;
-    outline: none;
-    box-sizing: border-box;
-}
-
-.textfield > input:hover {
-    background-color: #e4e1e175
-}
-
-.textfield >input:focus-visible {
-    outline: 1px solid #6c63ff;
-}
-
-
-.textfield > input::placeholder {
-    color: #00000094;
-}
-
-.btn-login {
-    width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 3px;
-    color: #ffffff;
-    cursor: pointer;
-    background: linear-gradient(to right, #2AF598 , #08AEEA );
-    transition: .2s;
-}
-
-.btn-login:hover {
-    transform: scale(1.05);
-}
-
-.redes {
-    font-size: 30px;
-
-}
-
-.redes a {
-    margin-left: 17px;
-    transition: .2s;
-}
-
-.redes a:hover {
-    transform: scale(1.05);
-}
-    -->
+-->
