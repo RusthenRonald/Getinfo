@@ -303,6 +303,7 @@ section.frase_motivacional h2{
 }
 .dados_container{
     margin-top: 200px;
+    margin-bottom: 130px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
