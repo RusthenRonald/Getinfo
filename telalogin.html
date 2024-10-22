@@ -160,15 +160,17 @@
 
         <div class="container_interno_login">
             <h1 style="text-align: center; margin-bottom: 20px;">LOGIN</h1>
-            <div class="campo_email">
-                <label for="email">E-mail</label>
-                <input type="email" id="mask" placeholder="Digite seu e-mail">
-            </div>
-            <div class="campo_senha">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="Digite sua senha">
-            </div>
-            <button class="botao_login" type="submit">Entrar</button>
+            <form action="login.html" method="post" autocomplete="on">
+                <div class="campo_email">
+                    <label for="email">E-mail</label >
+                    <input type="email" id="mask" placeholder="Digite seu e-mail" autocomplete="email" required>
+                </div>
+                <div class="campo_senha" >
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required>
+                </div>
+                <button class="botao_login" type="submit">Entrar</button>
+            </form>
             <div class="redes">
             <a href="#"><i class="bi bi-instagram"></i></a>
             <a href="#"><i class="bi bi-facebook"></i></a>
