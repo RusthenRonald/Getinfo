@@ -15,15 +15,19 @@
         body{
             height: 100vh;
         }
+        /*container que envelopa a foto e o login*/
         .container_login{
             margin-top: 80px;
             display: flex;
             justify-content: space-around;
+            flex-wrap: wrap;
         }
+        /*div que pega apenas a foto e h1*/
         .foto_login img{
             width: 700px;
             height: 500px;
         }
+
     </style>
 </head>
 <body>
@@ -34,24 +38,22 @@
         </div>
 
         <div class="container_interno__login">
-            <div class="login-cadastro">
-                <h1>LOGIN</h1>
-                    <div class="textfield">
-                        <label for="email">E-mail</label>
-                        <input type="email" id="mask" placeholder="Digite seu e-mail">
-                    </div>
-                    <div class="textfield">
-                        <label for="senha">Senha</label>
-                        <input type="password" name="senha" placeholder="Digite sua senha">
-                    </div>
-                    <button class="btn-login" type="submit">Entrar</button>
-                    <div class="redes">
-                        <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                    <a href="#"><i class="bi bi-google"></i></a>
-                    </div>
-                    <h5>Clique <a href="#">aqui</a> para cadastrar-se</h5>
+            <h1>LOGIN</h1>
+            <div class="textfield">
+                <label for="email">E-mail</label>
+                <input type="email" id="mask" placeholder="Digite seu e-mail">
             </div>
+            <div class="textfield">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Digite sua senha">
+            </div>
+            <button class="btn-login" type="submit">Entrar</button>
+            <div class="redes">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+            <h5>Clique <a href="#">aqui</a> para cadastrar-se</h5>
         </div>
     </div>
 </body>
