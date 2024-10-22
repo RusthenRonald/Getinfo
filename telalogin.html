@@ -8,232 +8,30 @@
     <title>Login Page</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
-    body {
-        margin: 0;
-        font-family: 'Inter', sans-serif;
-    }
-
-    body * {
-        box-sizing: border-box;
-    }
-
-    .main-login {
-        width: 100vw;
-        height: 100vh;
-        background: #efedede7;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .left-login {
-        width: 50vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .left-login > h1 {
-        color: #000000;
-        font-size: 25px;
-    }
-
-    .right-login { 
-        width: 50vw;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .login-card {
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 30px 35px;
-        background: #edecec;
-        border-radius: 20px;
-        box-shadow: 0px 10px 40px #00000056;
-    }
-
-    .login-card > h1 {
-        color: #000000;
-        font-weight:800;
-        margin: 0;
-    }
-
-    .login-card a {
-        color: rgb(77, 77, 248);
-        cursor: pointer;
-        text-decoration: none;
-        transition: .2s;
-        display:inline-block;
-    }
-
-    .login-card a:hover{
-        transform: scale(1.05);
-    }
-
-    .left-login img {
-        width: 600px;
-        height: 600px;
-    }
-
-    .textfield {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-        margin: 10px 0px;
-    }
-
-    label {
-        margin-left: 15px;
-        margin-bottom: 7px;
-    }
-
-    .textfield > input {
-        width: 100%;
-        border: none;
-        border-radius: 10px;
-        padding: 15px;
-        background: #ecedd5;
-        color: #020202de;
-        font-size: 12pt;
-        box-shadow: 0px 10px 30px #00000056;
-        outline: none;
-        box-sizing: border-box;
-    }
-
-    .textfield > input:hover {
-        background-color: #e4e1e175
-    }
-
-    .textfield >input:focus-visible {
-        outline: 1px solid #6c63ff;
-    }
-
-
-    .textfield > input::placeholder {
-        color: #00000094;
-    }
-
-    .btn-login {
-        width: 100%;
-        padding: 16px 0px;
-        margin: 25px;
-        border: none;
-        border-radius: 8px;
-        outline: none;
-        text-transform: uppercase;
-        font-weight: 800;
-        letter-spacing: 3px;
-        color: #ffffff;
-        cursor: pointer;
-        background: linear-gradient(to right, #2AF598 , #08AEEA );
-        transition: .2s;
-    }
-
-    .btn-login:hover {
-        transform: scale(1.05);
-    }
-
-    .redes {
-        font-size: 30px;
-
-    }
-
-    .redes a {
-        margin-left: 17px;
-        transition: .2s;
-    }
-
-    .redes a:hover {
-        transform: scale(1.05);
-    }
-    /*media query*/
-    @media only screen and (max-width: 950px) {
-    .login-card {
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .main-login {
-        flex-direction: column;
-    }
-
-    .left-login > h1 {
-        font-size: 20px;
-    }
-
-    .left-login {
-        width: 100%;
-        height: auto;
-    }
-
-    .right-login {
-        width: 100%;
-        height: auto;
-    }
-
-    .left-login > img {
-        width: 30vh;
-        height: 30vh;
-    }
-
-    .login-card {
-        width: 90%;
-        margin-top:10px;
-    }
-    @media only screen and (max-width: 600px) {
-        .main-login {
-            flex-direction: column;
+        *{
+            margin: 0px;
+            padding: 0px;
         }
-
-        .left-login > h1 {
-            font-size: 20px;
+        body{
+            height: 100vh;
         }
-
-        .left-login {
-            width: 100%;
-            height: auto;
+        .container_login{
+            display: flex;
         }
-
-        .right-login {
-            width: 100%;
-            height: auto;
+        .foto_login img{
+            width: 700px;
+            height: 500px;
         }
-
-        .left-login > img {
-            width: 30vh;
-            height: 30vh;
-        }
-
-        .login-card {
-            width: 90%;
-            margin-top: 10px;
-    }
-}
-}
-
-
     </style>
 </head>
 <body>
-    <div class="main-login">
-        <div class="left-login">
+    <div class="container_login">
+        <div class="foto_login">
             <h1>Doe amor, espalhe solidariedade.</h1>
             <img src="img/foto login.jpg" alt="">
         </div>
-        <div class="right-login">
-            <div class="login-card">
+        <div class="container_interno__login">
+            <div class="login-cadastro">
                 <h1>LOGIN</h1>
                     <div class="textfield">
                         <label for="email">E-mail</label>
@@ -253,6 +51,160 @@
             </div>
         </div>
     </div>
-    <script src="login.js"></script>
 </body>
 </html>
+
+
+
+
+
+<!--
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #efedede7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1 {
+    color: #000000;
+    font-size: 25px;
+}
+
+.right-login { 
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #edecec;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.login-card > h1 {
+    color: #000000;
+    font-weight:800;
+    margin: 0;
+}
+
+.login-card a {
+    color: rgb(77, 77, 248);
+    cursor: pointer;
+    text-decoration: none;
+    transition: .2s;
+    display:inline-block;
+}
+
+.login-card a:hover{
+    transform: scale(1.05);
+}
+
+.left-login img {
+    width: 600px;
+    height: 600px;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+label {
+    margin-left: 15px;
+    margin-bottom: 7px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #ecedd5;
+    color: #020202de;
+    font-size: 12pt;
+    box-shadow: 0px 10px 30px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > input:hover {
+    background-color: #e4e1e175
+}
+
+.textfield >input:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+
+.textfield > input::placeholder {
+    color: #00000094;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    background: linear-gradient(to right, #2AF598 , #08AEEA );
+    transition: .2s;
+}
+
+.btn-login:hover {
+    transform: scale(1.05);
+}
+
+.redes {
+    font-size: 30px;
+
+}
+
+.redes a {
+    margin-left: 17px;
+    transition: .2s;
+}
+
+.redes a:hover {
+    transform: scale(1.05);
+}
+    -->
