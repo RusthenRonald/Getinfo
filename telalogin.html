@@ -19,14 +19,8 @@
         .container_login{
             margin-top: 80px;
             display: flex;
-            justify-content: space-around;
+            justify-content:center;
             flex-wrap: wrap;
-        }
-        /*div que pega apenas a foto e h1*/
-        .foto_login img{
-            display: none;
-            width: 300px;
-            height: 300px;
         }
         /*container de todo a parte de campos e botoes*/
         .container_interno_login{
@@ -106,10 +100,6 @@
                 height: 400px;
                 margin-bottom: 20px;
         }
-            /*div que pega apenas a foto e h1*/
-            .foto_login img{
-                display: none;
-        }
         }
         @media screen and (min-width:768px) and (max-width:1024px) {
             /*container de todo a parte de campos e botoes*/
@@ -119,24 +109,12 @@
                 height: 390px;
                 margin-bottom: 15px;
         }
-            /*div que pega apenas a foto e h1*/
-            .foto_login img{
-                display: block;
-                width: 550px;
-                height: 400px;
-        }
         }
         @media screen and (min-width:1025px) and (max-width:1440px) {
             /*container de todo a parte de campos e botoes*/
             .container_interno_login{
                 width: 350px;
                 height: 400px;
-        }
-            /*div que pega apenas a foto e h1*/
-            .foto_login img{
-                display: block;
-                width: 600px;
-                height: 450px;
         }
         }
         @media screen and (min-width:1441px) {
@@ -145,25 +123,15 @@
                 width: 400px;
                 height: 450px;
         }
-            /*div que pega apenas a foto e h1*/
-            .foto_login img{
-                display: block;
-                width: 650px;
-                height: 450px;
+
+        i{
+            font-size: 35px;
         }
-            i{
-                font-size: 35px;
-            }
         }
     </style>
 </head>
 <body>
     <div class="container_login">
-        <div class="foto_login">
-            <h1 style="text-align: center;">Doe amor, espalhe solidariedade.</h1>
-            <img src="img/foto login.jpg" alt="">
-        </div>
-
         <div class="container_interno_login">
             <h1 style="text-align: center; margin-bottom: 20px;">LOGIN</h1>
             <form action="login.html" method="post" autocomplete="on">
