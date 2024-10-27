@@ -28,7 +28,6 @@
             flex-wrap: wrap;
             height: 100vh;
             box-shadow: 0px 10px 30px #00000056;
-            /*background-color: #fe8f20d7;*/
         }
         /*container de todo a parte de campos e botoes*/
         .container_interno_login{
@@ -107,6 +106,13 @@
         background-clip: text; /* Para Firefox */
         color: transparent; /* Torna o texto (ícone) transparente */
     }
+    /*Só para adicionar a cor em tela de celular*/
+     /* Cor de fundo específica para telas de celular */
+     @media screen and (max-width: 420px) {
+        .container_login {
+            background-color: #fe8f20d7;
+        }
+    }
         /*Telas celulares maiores*/
         @media screen and (min-width:420px) and (max-width:767px){
             /*container de todo a parte de campos e botoes*/
@@ -118,6 +124,9 @@
             .img_login img{
                display: none;
             }
+            .container_login {
+            background-color: #fe8f20d7;
+        }
         }
         @media screen and (min-width:768px) and (max-width:1024px) {
             /*botao login*/
