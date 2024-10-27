@@ -38,6 +38,15 @@ footer{
     color: var(--cor-neutra);
     border-radius: 50%;
 }
+.footer_link{
+    text-decoration: none;
+}
+.footer_link:hover{
+    opacity: 0.8;
+}
 #instagram{
     background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
+}
+#facebook{
+    background-color: #4267b3;
 }
