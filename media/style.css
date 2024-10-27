@@ -440,8 +440,8 @@ Breakpoint: min-width: 1441px
     nav{
         margin-top: 15px;
     }
-    a{
-        font-size: 1em;
+    nav a{
+        font-size: 1.3em;
         padding: 10px;
         font-weight: normal;
     }
