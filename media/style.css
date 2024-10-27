@@ -157,7 +157,13 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 35px; 
     }
-    
+    /*Formulário*/
+    .texto_form h3{
+        font-size: 1.2em;
+    }  
+    .texto_form h2{
+        font-size: 1.5em;
+    } 
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -285,6 +291,13 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 40px; 
     }
+     /*Formulário*/
+     .texto_form h3{
+        font-size: 1.5em;
+    }  
+    .texto_form h2{
+        font-size: 2.4em;
+    } 
     /*cabeçalho*/
 
 }
@@ -409,7 +422,13 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 30px; 
     }
-
+    /*Formulário*/
+    .texto_form h3{
+        font-size: 1.7em;
+    }  
+    .texto_form h2{
+        font-size: 2.7em;
+    } 
     /*cabeçalho*/
 
 }
@@ -540,6 +559,13 @@ Breakpoint: min-width: 1441px
         font-size: 40px; 
         
     }
+    /*Formulário*/
+    .texto_form h3{
+        font-size: 1.9em;
+    }  
+    .texto_form h2{
+        font-size: 2.9em;
+    }    
     /*cabeçalho*/
 
 }
