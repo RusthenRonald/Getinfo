@@ -350,27 +350,9 @@ section.frase_motivacional h2{
     margin-bottom: 10px; 
     margin-left: 10px;
 }
-/*Formulário de doação*/
+/*Formulário de doação
 
-.center_form{ /*só para centralizar formulário*/
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-}
-/*envolve as div foto e form*/
-.container_form{
-    display: flex;
-}
-/*texto do form*/
-.form{
-    width: 90vw;
-}
-/*foto do form*/
-.foto_form img{
-    display: none;
-}
-
-/*container dos valores*/
+container dos valores
 .botao_doacao {
     display: flex;
     justify-content:flex-start;
@@ -378,7 +360,7 @@ section.frase_motivacional h2{
     gap: 20px; 
     
 }
-/*caixa dos valores*/
+/*caixa dos valores
 .valor_doacao {
     padding: 10px 20px; 
     border: 1px solid rgba(128, 128, 128, 0.548); 
@@ -394,13 +376,13 @@ section.frase_motivacional h2{
     color: white;
 }
 
-/* Estilo para o botão ativo */
+ Estilo para o botão ativo 
 .valor_doacao.ativo {
     background-color: #FE8F20; 
     color: white; 
     border: 1px solid rgba(128, 128, 128, 0); 
 }
-
+*/
 
 /*Inicio do cabeçalho*/
 footer{
