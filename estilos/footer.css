@@ -4,14 +4,18 @@ footer{
     margin-top: 200px;
     height: 500px;
     background-color: #212121;
-}
-.container_footer{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+}
+footer div{
+    padding-top: 100px;
+}
+footer h4{
     color: #FE8F20;
 }
-.container_footer>div{
-    margin-top: 20px;
+footer p{
+    color: white;
 }
 .navegacao{
 
