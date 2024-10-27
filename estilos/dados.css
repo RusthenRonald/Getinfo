@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/*dados da plataforma*/
+.botao_impacto {
+    margin-bottom: 10px;
+}
+.botao_impacto span{
+    color: #ebb503;
+    background-color: #dbc90015;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.dados_container{
+    margin-top: 200px;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*div dados texto*/
+.dados_texto h2{
+    color: #F15B43;
+}
+.dados_texto p{  
+    color: gray;
+    margin-bottom: 35px;
+}
+/*cada h3 em div dados caixas*/
+.dados_caixas h3{
+    color: #F15B43;
+    font-size: 1.4em;
+}
+/*container de dados*/
+.dados_caixas{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+/*dados dentro da caixa*/
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.26);
+    height: 150px;
+    width: 250px;
+}
+
+.dados p{
+    color: gray;
+}
+/* Estilo para os ícones na parte de dados */
+.dados i,
+.dados .material-symbols-outlined {
+    color: #FE8F20; 
+    font-size: 25px; 
+    margin-bottom: 10px; 
+    margin-left: 10px;
+}

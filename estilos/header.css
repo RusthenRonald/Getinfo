@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*container principal*/
+header{
+    background-image: url(../img/header.png);
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between; 
+}
+/*Container interno*/
+nav{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    font-size: 0.6em;
+    padding: 7px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+}
+#iconenav{
+    font-size: 15px;
+}
+/*efeito ao passar mouse em menu*/
+a:hover{
+    color: #F15B43;
+}
+/*Menu dropdown*/
+/* Estilo específico para o dropdown *//*container*/
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+/* Esconde o submenu por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+/* Itens do submenu */
+.dropdown-menu li {
+    list-style-type: none;
+    margin: 0; 
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(102, 102, 102); 
+    font-size: 0.7em; 
+}
+
+/* Exibe o submenu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Efeito de hover no submenu */
+.dropdown-menu li a:hover {
+    background-color: rgb(240, 240, 240); 
+}
+/*Icone ao lado do menu de causas*/
+.material-icons {
+    font-size: 14px; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
+div h1{
+    margin-left: 30px;
+}
+h1{
+    font-size: 2.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Para mudar a cor da palavra "Juntos"*/
+span.h1_cor{
+   color: #F15B43;
+}
+#p_header{
+    margin-bottom: 130px;
+    margin-left: 30px;
+    width: 70vw;
+    color: rgb(110, 110, 110);
+}
