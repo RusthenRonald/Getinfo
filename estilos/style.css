@@ -395,6 +395,13 @@ section.frase_motivacional h2{
     color: white;
 }
 
+/* Estilo para o botão ativo */
+.valor_doacao.ativo {
+    background-color: #FE8F20; /* Cor de fundo quando ativo */
+    color: white; /* Cor do texto quando ativo */
+    border: 1px solid rgba(128, 128, 128, 0); /* Remove a borda quando ativo */
+}
+
 
 /*Inicio do cabeçalho*/
 footer{

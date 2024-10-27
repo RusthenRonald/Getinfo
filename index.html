@@ -223,3 +223,17 @@
 </script>
 
 
+<script>
+    // Seleciona todos os botões de doação
+    const botoesDoacao = document.querySelectorAll('.valor_doacao');
+
+    // Adiciona um evento de clique para cada botão
+    botoesDoacao.forEach(botao => {
+        botao.addEventListener('click', () => {
+            // Remove a classe 'ativo' de todos os botões
+            botoesDoacao.forEach(b => b.classList.remove('ativo'));
+            // Adiciona a classe 'ativo' ao botão clicado
+            botao.classList.add('ativo');
+        });
+    });
+</script>
