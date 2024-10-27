@@ -70,8 +70,11 @@
         }
         /*botao login*/
         .botao_login{
+            display: block;
             margin-top: 35px;
-            width: 100%;
+            width: 90%;
+            text-align: center;
+            text-decoration: none;
             background: linear-gradient(to right, #2AF598 , #08AEEA );
             border: none;
             color: white;
@@ -107,6 +110,10 @@
         }
         }
         @media screen and (min-width:768px) and (max-width:1024px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.1em;
+        }
             /*container de todo a parte de campos e botoes*/
             .container_interno_login{
                 width: 400px;
@@ -115,6 +122,10 @@
         }
         }
         @media screen and (min-width:1025px) and (max-width:1440px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.2em;
+        }
             /*container de todo a parte de campos e botoes*/
             .container_interno_login{
                 width: 400px;
@@ -123,6 +134,10 @@
         }
         }
         @media screen and (min-width:1441px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.2em;
+        }
             /*container de todo a parte de campos e botoes*/
             .container_interno_login{
                 width: 400px;
@@ -149,7 +164,7 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
                 </div>
-                <button class="botao_login" type="submit">Entrar</button>
+                <a href="login.html" class="botao_login">Entrar</a>
             </form>
             <div class="redes">
             <a href="#"><i class="bi bi-instagram"></i></a>
@@ -157,7 +172,7 @@
             <a href="#"><i class="bi bi-google"></i></a>
             </div>
             <h5 style="text-align: center; font-size: 1em;">
-                <a class="esq_senha" href="#">esqueceu sua senha?</a>
+                <a class="esq_senha" href="#">Equeceu sua senha?</a>
             </h5>            
             <h5 style="text-align: center; font-size: 1.0em;">Clique <a class="lin_cadas" href="telacadastro.html">aqui</a> para cadastrar-se</h5>
         </div>
