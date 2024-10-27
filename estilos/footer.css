@@ -37,16 +37,28 @@ footer{
     width: 2.5rem;
     color: var(--cor-neutra);
     border-radius: 50%;
+    transition: all 0.4s;
 }
+/*configuração do link*/
 .footer_link{
     text-decoration: none;
 }
 .footer_link:hover{
     opacity: 0.8;
 }
+/*tamanho do icone*/
+.footer_link i{
+    font-size: 1.25rem;
+}
 #instagram{
     background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
 }
 #facebook{
     background-color: #4267b3;
+}
+/*listas*/
+.footer_list{ /*para adiconar gap */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
 }
