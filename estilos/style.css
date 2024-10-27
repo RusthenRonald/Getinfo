@@ -363,12 +363,11 @@ section.frase_motivacional h2{
 }
 /*texto do form*/
 .form{
-    width: 500px;
+    width: 90vw;
 }
 /*foto do form*/
 .foto_form img{
-    width: 450px;
-    height: 700px;
+    display: none;
 }
 
 /*container dos valores*/
@@ -391,15 +390,15 @@ section.frase_motivacional h2{
 }
 
 .valor_doacao:hover {
-    background-color: #FE8F20; 
+    background-color: #fe8f2094; 
     color: white;
 }
 
 /* Estilo para o botão ativo */
 .valor_doacao.ativo {
-    background-color: #FE8F20; /* Cor de fundo quando ativo */
-    color: white; /* Cor do texto quando ativo */
-    border: 1px solid rgba(128, 128, 128, 0); /* Remove a borda quando ativo */
+    background-color: #FE8F20; 
+    color: white; 
+    border: 1px solid rgba(128, 128, 128, 0); 
 }
 
 
