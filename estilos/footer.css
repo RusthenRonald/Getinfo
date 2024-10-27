@@ -8,4 +8,20 @@ footer{
 .container_footer{
     display: flex;
     justify-content: space-around;
+    color: #FE8F20;
+}
+.container_footer>div{
+    margin-top: 20px;
+}
+.navegacao{
+
+}
+.servicos{
+
+}
+.nossas_causas{
+
+}
+.contato{
+
 }
