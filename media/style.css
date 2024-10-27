@@ -157,6 +157,16 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 35px; 
     }
+    /*formulário*/
+    /*texto do form*/
+    .form{
+        width: 500px;
+        height: 600px;
+    }
+    /*foto do form*/
+    .foto_form img{
+        display: none;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -300,6 +310,17 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 40px; 
     }
+    /*formulário*/
+    /*texto do form*/
+    .form{
+        width: 410px;
+    }
+    /*foto do form*/
+    .foto_form img{
+        display: block;
+        width: 350px;
+        height: 700px;
+    }
     /*cabeçalho*/
     footer{
         margin-top: 10px;
@@ -437,6 +458,17 @@ Breakpoint: min-width: 1441px
     .dados i,
     .dados .material-symbols-outlined {
         font-size: 30px; 
+    }
+    /*formulário*/
+    /*texto do form*/
+    .form{
+        width: 500px;
+    }
+    /*foto do form*/
+    .foto_form img{
+        display: block;
+        width: 450px;
+        height: 700px;
     }
     /*cabeçalho*/
     footer{
@@ -578,6 +610,18 @@ Breakpoint: min-width: 1441px
         font-size: 40px; 
         
     }
+    /*formulário*/
+    /*texto do form*/
+    .form{
+        width: 500px;
+    }
+    /*foto do form*/
+    .foto_form img{
+        display: block;
+        width: 450px;
+        height: 700px;
+    }
+
     /*cabeçalho*/
     footer{
         margin-top: 10px;
