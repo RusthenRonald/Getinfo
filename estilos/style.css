@@ -361,13 +361,41 @@ section.frase_motivacional h2{
 .container_form{
     display: flex;
 }
+/*texto do form*/
 .form{
     width: 500px;
 }
+/*foto do form*/
 .foto_form img{
     width: 450px;
     height: 700px;
 }
+
+/*container dos valores*/
+.botao_doacao {
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 20px;
+    gap: 20px; 
+    
+}
+/*caixa dos valores*/
+.valor_doacao {
+    padding: 10px 20px; 
+    border: 1px solid rgba(128, 128, 128, 0.548); 
+    background-color: white; 
+    color: black ;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: background-color 0.3s; 
+}
+
+.valor_doacao:hover {
+    background-color: #FE8F20; 
+    color: white;
+}
+
+
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
