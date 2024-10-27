@@ -352,9 +352,13 @@ section.frase_motivacional h2{
 }
 /*Formulário de doação*/
 
-.container_form{
+.center_form{ /*só para centralizar formulário*/
+    margin-top: 20px;
     display: flex;
     justify-content: center;
+}
+.container_form{
+    display: flex;
 }
 .foto_form img{
     width: 450px;
