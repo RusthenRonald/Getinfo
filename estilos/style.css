@@ -350,6 +350,16 @@ section.frase_motivacional h2{
     margin-bottom: 10px; 
     margin-left: 10px;
 }
+/*Formulário de doação*/
+
+.container_form{
+    display: flex;
+    justify-content: center;
+}
+.foto_form img{
+    width: 450px;
+    height: 700px;
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 10px;
