@@ -357,8 +357,12 @@ section.frase_motivacional h2{
     display: flex;
     justify-content: center;
 }
+/*envolve as div foto e form*/
 .container_form{
     display: flex;
+}
+.form{
+    width: 500px;
 }
 .foto_form img{
     width: 450px;
