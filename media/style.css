@@ -435,8 +435,6 @@ Breakpoint: min-width: 1441px
     .texto_form h2{
         font-size: 2.7em;
     } 
-    /*cabeçalho*/
-
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -573,6 +571,5 @@ Breakpoint: min-width: 1441px
         font-size: 2.9em;
     }    
     /*cabeçalho*/
-
 }
 

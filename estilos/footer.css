@@ -4,36 +4,5 @@ footer{
     margin-top: 200px;
     height: 500px;
     background-color: #212121;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-footer div{
-    padding-top: 100px;
-}
-footer h4{
-    color: #FE8F20;
-    margin-bottom: 20px;
-}
-footer a{
-    text-decoration: none;
-    color: white;
-}
-footer h5{
-    color:#F15B43 ;
-}
-footer p{
-    color: white;
-}
-.navegacao{
-
-}
-.servicos{
-
-}
-.nossas_causas{
-
-}
-.contato{
-
+    
 }
