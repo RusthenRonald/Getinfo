@@ -5,3 +5,6 @@ footer{
     height: 500px;
     background-color: #212121;
 }
+.container_footer{
+    display: flex;
+}

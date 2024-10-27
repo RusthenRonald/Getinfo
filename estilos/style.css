@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /*mobile first*/
-/*Celulares pequenos*/
 *{
     margin: 0px;
     padding: 0px;
@@ -52,18 +51,6 @@ container dos valores
     border: 1px solid rgba(128, 128, 128, 0); 
 }
 */
-
-
-
-@keyframes flutuar{
-    0%{
-        top:0;
-    }
-    100%{
-        top:30px;
-    }
-}
-
 
 
 
