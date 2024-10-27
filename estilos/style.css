@@ -386,28 +386,9 @@ container dos valores
 
 /*Inicio do cabeçalho*/
 footer{
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
+    height: 500px;
     background-color: #212121;
 }
-footer div{
-    margin: 10px;
-    font-size: 0.6em;
-}
-footer a {
-    color: #FE8F20;
-}
-footer p{
-    color:white ;
-    line-height: 1.5em;
-}
-.item_footer{
-    flex-basis: 150px;
-}
-
 
 @keyframes flutuar{
     0%{

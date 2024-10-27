@@ -157,21 +157,6 @@ Breakpoint: min-width: 1441px
     .dados .material-symbols-outlined {
         font-size: 35px; 
     }
-    /*cabeçalho*/
-    footer{
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #212121;
-    }
-    footer div{
-        font-size: 0.7em;
-    }
-    .item_footer{
-        flex-basis: 200px;
-    }
     
 }
 /*Telas de Tablet: entre 768px e 1024px*/
@@ -301,21 +286,7 @@ Breakpoint: min-width: 1441px
         font-size: 40px; 
     }
     /*cabeçalho*/
-    footer{
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #212121;
-        
-    }
-    footer div{
-        font-size: 0.7em;
-    }
-    .item_footer{
-        flex-basis: 400px;
-    }
+
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
@@ -440,17 +411,7 @@ Breakpoint: min-width: 1441px
     }
 
     /*cabeçalho*/
-    footer{
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #212121;
-    }
-    footer div{
-        font-size: 0.8em;
-    }
+
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -580,16 +541,6 @@ Breakpoint: min-width: 1441px
         
     }
     /*cabeçalho*/
-    footer{
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        background-color: #212121;
-    }
-    footer div{
-        font-size: 1em;
-    }
+
 }
 
