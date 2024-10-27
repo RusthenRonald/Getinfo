@@ -24,17 +24,19 @@ header{
 }
 /*Container interno*/
 nav{
-    margin-top: 5px;
+    margin-top: 15px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
-a{
-    font-size: 0.5em;
-    font-weight: bold;
-    padding: 5px;
+nav a{
+    font-size: 0.6em;
+    padding: 7px;
     color: rgb(102, 102, 102);
     text-decoration: none;
+}
+#iconenav{
+    font-size: 15px;
 }
 /*efeito ao passar mouse em menu*/
 a:hover{
@@ -51,7 +53,6 @@ a:hover{
     display: none;
     position: absolute;
     background-color: white;
-    min-width: 65px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1; 
 }
@@ -63,7 +64,6 @@ a:hover{
 }
 
 .dropdown-menu li a {
-    padding: 5px;
     text-decoration: none;
     display: block;
     color: rgb(102, 102, 102); 
@@ -144,6 +144,9 @@ div#container_box{
     background: linear-gradient(rgba(255, 99, 71, 0.8), rgba(255, 99, 71, 0.8)), url('../img/comida.jpg');
     background-size: cover;
     background-position: bottom;
+}
+.box a{
+    text-decoration: none;
 }
 /*Link que levará ao formulário*/
 div .a_doeagora{
