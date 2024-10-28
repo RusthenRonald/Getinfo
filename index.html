@@ -86,11 +86,11 @@
             <a href="#" class="missao" id="missao" data-title="Nossa História">Nossa Missão</a>
         </div>
         <div id="titulo_texto_sobre">
-            <h3 id="tituloAtivo">Nossa missão</h3> <!-- Adicionei um id aqui para referenciar -->
+            <h3 id="tituloAtivo">Nossa História</h3> <!-- Adicionei um id aqui para referenciar -->
         </div>
         <div id="texto_sobre_nos">
             <p id="conteudoAtivo">Fundada em 2009, a GetInfo nasceu com o objetivo de suprir uma demanda crescente por soluções de tecnologia inovadoras e acessíveis em Aracaju e região. Desde os primeiros projetos, a empresa se destacou pela atenção aos detalhes e pela entrega de serviços personalizados, crescendo junto com os nossos clientes. Ao longo dos anos, expandimos nossas áreas de atuação e incorporamos novas especializações, incluindo governança de TI, infraestrutura de redes, e soluções de Business Intelligence (BI), sempre mantendo nosso foco em um atendimento próximo e focado nas necessidades de cada cliente.</p>
-            <p>
+            <p id="segundo_paragrafo"><!--id pra fazer ele sumir ao clicar em outro botão-->
                  A GetInfo tem se destacado pela sua abordagem orientada ao cliente e pelo compromisso com a inovação contínua. Nosso crescimento é impulsionado pela dedicação em atender às necessidades específicas de cada projeto, oferecendo soluções sob medida que combinam eficiência e tecnologia de ponta. Mantemos um compromisso constante com a ética e a excelência, valores que sustentam nossa trajetória de sucesso no setor.
             </p>
         </div>
@@ -260,6 +260,7 @@
     });
 </script>
 
+<!--Para texto alterar na parte sobre nós-->
 <script>
     document.getElementById("historia").addEventListener("click", function (event) {
         event.preventDefault();
@@ -279,74 +280,3 @@
         document.getElementById("conteudoAtivo").textContent = "A missão da GetInfo é empoderar empresas e organizações por meio da tecnologia, fornecendo soluções eficientes e adaptáveis que simplifiquem operações e melhorem a tomada de decisão. Estamos comprometidos com a entrega de soluções robustas, que proporcionem segurança e aprimorem os processos de negócios dos nossos clientes. Trabalhamos para ser uma referência em tecnologia na nossa região, sempre investindo em nossa equipe e em inovação para atender às demandas em constante evolução do mercado.";
     });
 </script>
-
-
-<!--
-
-
-<div class="navegacao">
-                <h4></h4>
-                <a href="#" style="display: block;">Campanhas</a>
-                <a href="#" style="display: block;">Sobre Nós</a>
-                <a href="#" style="display: block;">Dados da Plataforma</a>
-                <a href="#" style="display: block;">Doe Agora</a>          
-           </div>
-           <div class="">
-                <h4 >Serviços</h4>
-                <a href="#" style="display: block;"></a>
-                <a href="#" style="display: block;"></a>
-                <a href="#" style="display: block;"></a>
-            </div>
-           <div class="nossas_causas">
-                <h4 >Nossas Campanhas</h4>
-                <a href="#" style="display: block;">Programa de acesso a saúde</a>
-                <a href="#" style="display: block;">Projetos de Educação na África</a>
-                <a href="#" style="display: block;">Alimentos para pessoas em situação de fome</a>
-                <a href="#" style="display: block;">Ajudando os moradores de ruas</a>
-                <a href="#" style="display: block;">Recuperação de áreas desmatadas</a>
-           </div>
-           <div class="contato">
-                <h4 ></h4>
-                <h5>Sede</h5>
-                
-
-                <h5>SergipeTec</h5>
-                <p></p>
-                <p>/p>
-                <h5>Telefone</h5>
-                <p>/p>
-            </div>
-
-/*css/
-            footer div{
-    padding-top: 100px;
-}
-footer h4{
-    color: #FE8F20;
-    margin-bottom: 20px;
-}
-footer a{
-    text-decoration: none;
-    color: white;
-}
-footer a,h5{
-    line-height: 2.5em;
-}
-footer h5{
-    color:#F15B43 ;
-}
-footer p{
-    color: white;
-}
-
-
-
-
-footer               display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 70px;
-                -->
-
-
-  
