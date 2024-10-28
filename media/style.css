@@ -99,7 +99,7 @@ Breakpoint: min-width: 1441px
         width: 80vw;
     }
     img#kids2{
-        margin-top: 30px;
+        margin-top: 150px;
         width: 65vw;
         height: 280px;
         border-radius: 5px;
@@ -176,7 +176,7 @@ Breakpoint: min-width: 1441px
         padding-bottom: 0px;
     }
     .dropdown {
-        position: relative; /* Necessário para posicionar o submenu */
+        position: relative; 
         display: inline-block; /* Pra menu ficar ao lado dos links*/
         margin-top: 2px;
     }
@@ -240,6 +240,7 @@ Breakpoint: min-width: 1441px
         width: 50vw;
     }
     img#kids2{
+        margin-top: 400px;
         width: 40vw;
         height: 360px;
         border-radius: 5px;
@@ -377,6 +378,7 @@ Breakpoint: min-width: 1441px
         width: 40vw;
     }
     img#kids2{
+        margin-top: 200px;
         width: 450px;
         height: 350px;
         border-radius: 5px;
@@ -509,6 +511,7 @@ Breakpoint: min-width: 1441px
         width: 30vw;
     }
     img#kids2{
+        margin-top: 290px;
         width: 540px;
         height: 460px;
         border-radius: 5px;
