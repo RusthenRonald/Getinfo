@@ -20,6 +20,7 @@ nav a{
     padding: 7px;
     color: rgb(102, 102, 102);
     text-decoration: none;
+    transition: all 0.5s;
 }
 #iconenav{
     font-size: 15px;
@@ -27,6 +28,7 @@ nav a{
 /*efeito ao passar mouse em menu*/
 a:hover{
     color: #F15B43;
+   
 }
 /*Menu dropdown*/
 /* Estilo específico para o dropdown *//*container*/
