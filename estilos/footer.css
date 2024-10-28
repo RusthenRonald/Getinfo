@@ -60,6 +60,13 @@ footer{
 #facebook{
     background-color: #4267b3;
 }
+#linkedin {
+    background-color: #0A66C2; 
+}
+
+#email {
+    background-color: #5f6368; 
+}
 /*listas*/
 .footer_list{ /*para adiconar gap */
     display: flex;
