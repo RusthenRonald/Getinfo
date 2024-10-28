@@ -254,7 +254,7 @@
             // Adicionei a classe 'active' ao link clicado
             this.classList.add('active');
 
-            // Muda o texto do h3 com base no link clicado
+            // Mudei o texto do h3 com base no link clicado
             tituloAtivo.textContent = this.getAttribute('data-title');
         });
     });
@@ -263,8 +263,8 @@
 <!--Para texto alterar na parte sobre nós-->
 <script>
     document.getElementById("historia").addEventListener("click", function (event) {
-        event.preventDefault();
-        document.getElementById("tituloAtivo").textContent = "Nossa História";
+        event.preventDefault();/*ele tira a função original do link q é navegar*/
+        document.getElementById("tituloAtivo").textContent = "Nossa história";
         document.getElementById("conteudoAtivo").textContent = "Fundada em 2009, a GetInfo nasceu com o objetivo de suprir uma demanda crescente por soluções de tecnologia inovadoras e acessíveis em Aracaju e região. Desde os primeiros projetos, a empresa se destacou pela atenção aos detalhes e pela entrega de serviços personalizados, crescendo junto com os nossos clientes. Ao longo dos anos, expandimos nossas áreas de atuação e incorporamos novas especializações, incluindo governança de TI, infraestrutura de redes, e soluções de Business Intelligence (BI), sempre mantendo nosso foco em um atendimento próximo e focado nas necessidades de cada cliente.";
     });
     
@@ -279,4 +279,31 @@
         document.getElementById("tituloAtivo").textContent = "Nossa Missão";
         document.getElementById("conteudoAtivo").textContent = "A missão da GetInfo é empoderar empresas e organizações por meio da tecnologia, fornecendo soluções eficientes e adaptáveis que simplifiquem operações e melhorem a tomada de decisão. Estamos comprometidos com a entrega de soluções robustas, que proporcionem segurança e aprimorem os processos de negócios dos nossos clientes. Trabalhamos para ser uma referência em tecnologia na nossa região, sempre investindo em nossa equipe e em inovação para atender às demandas em constante evolução do mercado.";
     });
+</script>
+
+<!--Pra esconder parágrafo-->
+<script>
+    const historiaLink = document.getElementById('historia');
+    const valoresLink = document.getElementById('valores');
+    const missaoLink = document.getElementById('missao');
+    const segundoParagrafo = document.getElementById('segundo_paragrafo');
+
+    // Função para alternar a visibilidade do segundo parágrafo
+    function alternarParagrafo() {
+        if (segundoParagrafo.style.display === 'none' || segundoParagrafo.style.display === '') {
+            segundoParagrafo.style.display = 'block'; 
+        } else {
+            segundoParagrafo.style.display = 'none'; 
+        }
+    }
+
+    // Função para esconder o segundo parágrafo
+    function esconderParagrafo() {
+        segundoParagrafo.style.display = 'none';
+    }
+
+    // Adiciona evento de clique para os links
+    historiaLink.addEventListener('click', alternarParagrafo);
+    valoresLink.addEventListener('click', esconderParagrafo);
+    missaoLink.addEventListener('click', esconderParagrafo);
 </script>
