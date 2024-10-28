@@ -17,23 +17,23 @@ footer{
     color: var(--cor-neutra-branca);
 }
 /*container*/
-#footer_content{
+#footer_container{
     background-color: var(--cor-neutra-10);
     display: grid;
     grid-template-columns: repeat(4,1fr);
     padding: 3rem 3.5rem;
 }
 /*palavra logo*/
-#footer_contacts h4{
+#footer_contatos h4{
     margin-bottom: 0.75rem;
 }
 /*container dos icones*/
-#social_media{
+#midias_sociais{
     display: flex;
     gap: 2rem;
 }
 /*links e icones*/
-#social_media .footer_link {
+#midias_sociais .link_midias{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,16 +44,17 @@ footer{
     transition: all 0.4s;
 }
 /*configuração do link*/
-#social_media .footer_link{
+#midias_sociais .link_midias{
     text-decoration: none;
 }
-#social_media .footer_link:hover{
+#midias_sociais .link_midias:hover{
     opacity: 0.8;
 }
 /*tamanho do icone*/
-#social_media .footer_link i{
+#midias_sociais .link_midias i{
     font-size: 1.25rem;
 }
+/*icone em individual*/
 #instagram{
     background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
 }
@@ -74,12 +75,12 @@ footer{
     list-style: none;
 }
 /*links da parte de listas*/
-.footer_list .footer_link{
+.footer_list .link_midias{
     text-decoration: none;
     color:var(--cor-ciza) ;
     transition: all 0.4s;
 }
-.footer_list .footer_link:hover{
+.footer_list .link_midias:hover{
     color: #F15B43;
 }
 /*copyright*/
@@ -91,13 +92,13 @@ footer{
 }
 /*media query só pra footer*/
 @media screen and (max-width:968px){
-    #footer_content{
+    #footer_container{
         grid-template-columns: repeat(2,1fr);
         gap: 2rem;
     }
 }
 @media screen and (max-width:426px){
-    #footer_content{
+    #footer_container{
         grid-template-columns: repeat(1,1fr);
         
     }
