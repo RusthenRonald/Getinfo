@@ -89,7 +89,7 @@
             <h3 id="tituloAtivo">Nossa missão</h3> <!-- Adicionei um id aqui para referenciar -->
         </div>
         <div id="texto_sobre_nos">
-            <p>Fundada em 2009, a GetInfo nasceu com o objetivo de suprir uma demanda crescente por soluções de tecnologia inovadoras e acessíveis em Aracaju e região. Desde os primeiros projetos, a empresa se destacou pela atenção aos detalhes e pela entrega de serviços personalizados, crescendo junto com os nossos clientes. Ao longo dos anos, expandimos nossas áreas de atuação e incorporamos novas especializações, incluindo governança de TI, infraestrutura de redes, e soluções de Business Intelligence (BI), sempre mantendo nosso foco em um atendimento próximo e focado nas necessidades de cada cliente.</p>
+            <p id="conteudoAtivo">Fundada em 2009, a GetInfo nasceu com o objetivo de suprir uma demanda crescente por soluções de tecnologia inovadoras e acessíveis em Aracaju e região. Desde os primeiros projetos, a empresa se destacou pela atenção aos detalhes e pela entrega de serviços personalizados, crescendo junto com os nossos clientes. Ao longo dos anos, expandimos nossas áreas de atuação e incorporamos novas especializações, incluindo governança de TI, infraestrutura de redes, e soluções de Business Intelligence (BI), sempre mantendo nosso foco em um atendimento próximo e focado nas necessidades de cada cliente.</p>
             <p>
                  A GetInfo tem se destacado pela sua abordagem orientada ao cliente e pelo compromisso com a inovação contínua. Nosso crescimento é impulsionado pela dedicação em atender às necessidades específicas de cada projeto, oferecendo soluções sob medida que combinam eficiência e tecnologia de ponta. Mantemos um compromisso constante com a ética e a excelência, valores que sustentam nossa trajetória de sucesso no setor.
             </p>
@@ -239,7 +239,7 @@
     </footer>
 </body>
 </html>
-<!--Script para adicionar a classe 'active' ao link/menu clicado--> 
+<!-- classe 'active' ao link/menu clicado--> 
 <script>
     const links = document.querySelectorAll('.missao');
     const tituloAtivo = document.getElementById('tituloAtivo'); // Pega o elemento h3
@@ -260,21 +260,26 @@
     });
 </script>
 
-<!--Parte do formulário-->
 <script>
-    // Seleciona todos os botões de doação
-    const botoesDoacao = document.querySelectorAll('.valor_doacao');
-
-    // Adiciona um evento de clique para cada botão
-    botoesDoacao.forEach(botao => {
-        botao.addEventListener('click', () => {
-            // Remove a classe 'ativo' de todos os botões
-            botoesDoacao.forEach(b => b.classList.remove('ativo'));
-            // Adiciona a classe 'ativo' ao botão clicado
-            botao.classList.add('ativo');
-        });
+    document.getElementById("historia").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("tituloAtivo").textContent = "Nossa História";
+        document.getElementById("conteudoAtivo").textContent = "Fundada em 2009, a GetInfo nasceu com o objetivo de suprir uma demanda crescente por soluções de tecnologia inovadoras e acessíveis em Aracaju e região. Desde os primeiros projetos, a empresa se destacou pela atenção aos detalhes e pela entrega de serviços personalizados, crescendo junto com os nossos clientes. Ao longo dos anos, expandimos nossas áreas de atuação e incorporamos novas especializações, incluindo governança de TI, infraestrutura de redes, e soluções de Business Intelligence (BI), sempre mantendo nosso foco em um atendimento próximo e focado nas necessidades de cada cliente.";
+    });
+    
+    document.getElementById("valores").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("tituloAtivo").textContent = "Nossos Valores";
+        document.getElementById("conteudoAtivo").textContent = "Na GetInfo, somos guiados por princípios fundamentais que impulsionam cada serviço e solução que oferecemos. Valorizamos a transparência e responsabilidade, garantindo que nossos clientes tenham uma comunicação clara e confiável em todas as etapas de cada projeto. Com compromisso inabalável com a inovação tecnológica, buscamos sempre as soluções mais modernas e eficazes, priorizando a segurança da informação e o respeito pelos dados dos nossos clientes. Esses valores sustentam nosso objetivo de oferecer serviços de TI que transformem empresas e agreguem valor real aos negócios.";
+    });
+    
+    document.getElementById("missao").addEventListener("click", function (event) {
+        event.preventDefault();
+        document.getElementById("tituloAtivo").textContent = "Nossa Missão";
+        document.getElementById("conteudoAtivo").textContent = "A missão da GetInfo é empoderar empresas e organizações por meio da tecnologia, fornecendo soluções eficientes e adaptáveis que simplifiquem operações e melhorem a tomada de decisão. Estamos comprometidos com a entrega de soluções robustas, que proporcionem segurança e aprimorem os processos de negócios dos nossos clientes. Trabalhamos para ser uma referência em tecnologia na nossa região, sempre investindo em nossa equipe e em inovação para atender às demandas em constante evolução do mercado.";
     });
 </script>
+
 
 <!--
 
