@@ -51,18 +51,3 @@ section.frase_motivacional h2{
     color: #434B56;
 }
 
-/*Formulário de doação*/
-
-.texto_form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.texto_form h3{
-    font-size: 1.0em;
-    color: #F15B43;
-}  
-.texto_form h2{
-    font-size: 1.0em;
-}
