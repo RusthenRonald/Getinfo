@@ -25,7 +25,7 @@
             display: flex;
             box-shadow: 5px 5px 10px rgba(0,0,0, .212);
             border-radius: 8px;
-            overflow: hidden; /* Adicionado para evitar overflow */
+            overflow: hidden; 
         }
         .img_form {
             width: 50%;
@@ -45,14 +45,14 @@
             align-items: center;
             flex-direction: column;
             background-color: white;
-            padding: 2rem; /* Adicionado para melhorar o espaçamento */
+            padding: 2rem; 
         }
         .form_header {
             display: flex;
-            justify-content: space-between; /* Ajustado para mais clareza */
-            align-items: center; /* Adicionado para alinhar verticalmente */
+            justify-content: space-between; 
+            align-items: center; 
             margin-bottom: 2rem;
-            position: relative; /* Necessário para o pseudo-elemento */
+            position: relative;
         }
         .form_header h1::after {
             content: '';
@@ -61,7 +61,7 @@
             height: 0.3rem;
             background-color: #F15B43;
             position: absolute;
-            bottom: -5px; /* Ajustado para melhor posicionamento */
+            bottom: -5px; 
             left: 0;
             border-radius: 10px;
         }
@@ -74,7 +74,7 @@
             padding: 0.4rem 1rem;
             border-radius: 5px;
             cursor: pointer;
-            color: white; /* Mover a cor para o botão */
+            color: white; 
             font-weight: 500;
         }
         .pessoa_botao button:hover {
@@ -98,7 +98,7 @@
             border-radius: 10px;
             border: none;
             box-shadow: 1px 1px 6px #0000001c;
-            transition: background-color 0.3s; /* Transição suave */
+            transition: background-color 0.3s; 
         }
         .input_caixa input:hover {
             background-color: #eeeeee75;
@@ -121,7 +121,7 @@
             justify-content: space-around;
             margin-top: 0.62rem;
             padding: 0 0.5rem;
-            flex-wrap: wrap; /* Permite que eles se ajustem em telas pequenas */
+            flex-wrap: wrap; 
         }
         .genero_input {
             display: flex;
@@ -140,9 +140,9 @@
             border-radius: 5px;
             cursor: pointer;
             border: none;
-            color: white; /* Adicionando cor ao botão */
+            color: white;
             font-weight: 600;
-            transition: background 0.4s; /* Transição suave */
+            transition: background 0.4s; 
         }
         .botao_continuar button:hover {
             background: linear-gradient(to right, #FE8F20, #F15B43); /* Inverte as cores no hover */
@@ -152,13 +152,13 @@
                 display: none;
             }
             .container_form {
-                width: 50%;
+                width: 80%;
             }
             .form {
                 width: 100%;
             }
         }
-        @media screen and (max-width: 1064px) {
+        @media screen and (max-width: 660px) {
             .container_form {
                 width: 90%;
                 height: auto;
@@ -174,6 +174,9 @@
             }
             .genero_grupo {
                 flex-direction: column;
+            }
+            .form_header {
+                gap: 30px;
             }
         }
     </style>
