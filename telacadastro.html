@@ -4,145 +4,211 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        body {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0c0ce94d;
+        }
+        .container_form {
+            width: 80%;
+            height: 80vh;
+            display: flex;
+            box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+            border-radius: 8px;
+            overflow: hidden; /* Adicionado para evitar overflow */
+        }
+        .img_form {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fde3a7d7;
+            padding: 1rem;
+        }
+        .img_form img {
+            width: 31rem;
+        }
+        .form {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            padding: 2rem; /* Adicionado para melhorar o espaçamento */
+        }
+        .form_header {
+            display: flex;
+            justify-content: space-between; /* Ajustado para mais clareza */
+            align-items: center; /* Adicionado para alinhar verticalmente */
+            margin-bottom: 2rem;
+            position: relative; /* Necessário para o pseudo-elemento */
+        }
+        .form_header h1::after {
+            content: '';
+            display: block;
+            width: 5rem;
+            height: 0.3rem;
+            background-color: #F15B43;
+            position: absolute;
+            bottom: -5px; /* Ajustado para melhor posicionamento */
+            left: 0;
+            border-radius: 10px;
+        }
+        .pessoa_botao {
+            display: flex;
+        }
+        .pessoa_botao button {
+            border: none;
+            background-color: #FE8F20;
+            padding: 0.4rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white; /* Mover a cor para o botão */
+            font-weight: 500;
+        }
+        .pessoa_botao button:hover {
+            background-color: #F15B43;
+        }
+        .input_grupo {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 1rem 0;
+        }
+        .input_caixa {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            margin-bottom: 1.1rem;
+        }
+        .input_caixa input {
+            margin: 0.6rem 0;
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            border: none;
+            box-shadow: 1px 1px 6px #0000001c;
+            transition: background-color 0.3s; /* Transição suave */
+        }
+        .input_caixa input:hover {
+            background-color: #eeeeee75;
+        }
+        .input_caixa input:focus {
+            outline: 1px solid #FE8F20;
+        }
+        .input_caixa label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #000000c0;
+        }
+        .titulo_genero h6 {
+            font-size: 0.75rem;
+            font-weight: 600;
+            color: #000000c0;
+        }
+        .genero_grupo {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 0.62rem;
+            padding: 0 0.5rem;
+            flex-wrap: wrap; /* Permite que eles se ajustem em telas pequenas */
+        }
+        .genero_input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .botao_continuar {
+            display: flex;
+            justify-content: center;
+            margin-top: 2.5rem;
+        }
+        .botao_continuar button {
+            width: 80%;
+            padding: 0.62rem;
+            background: linear-gradient(to right, #F15B43, #FE8F20);
+            border-radius: 5px;
+            cursor: pointer;
+            border: none;
+            color: white; /* Adicionando cor ao botão */
+            font-weight: 600;
+            transition: background 0.4s; /* Transição suave */
+        }
+        .botao_continuar button:hover {
+            background: linear-gradient(to right, #FE8F20, #F15B43); /* Inverte as cores no hover */
+        }
+        @media screen and (max-width: 1330px) {
+            .img_form {
+                display: none;
+            }
+            .container_form {
+                width: 50%;
+            }
+            .form {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 1064px) {
+            .container_form {
+                width: 90%;
+                height: auto;
+            }
+            .input_grupo {
+                flex-direction: column;
+                overflow-y: scroll;
+                flex-wrap: nowrap;
+                padding-right: 2rem;
+            }
+            .input_caixa {
+                width: 100%;
+            }
+            .genero_grupo {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-    *{
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-        font-family: 'Inter',sans-serif;
-    }
-    body{
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #0c0ce94d;
-    }
-    .container_form{
-        width: 80%;
-        height: 80vh;
-        display: flex;
-        box-shadow: 5px 5px 10px rgba(0,0,0, .212);
-    }
-    .img_form{
-        width: 50%;/*referente ao container*/
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #fde3a7d7;
-        padding: 1rem;
-    }
-    .img_form img{
-        width: 31rem;
-    }
-    .form{
-        width: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background-color: white;
-    }
-    .form_header{
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 3rem;
-    }
-    /*borda laranja q fica em baixo do texto*/
-    .form_header h1::after{
-        content: '';
-        display: block;/*so pra pular de linha*/
-        width: 5rem;
-        height:0.3rem ;
-        background-color: #F15B43;
-        margin: 0 auto;
-        position: absolute;
-        border-radius: 10px;
-    }
-    /*botao de fisica e juridica*/
-    .pessoa_botao{
-        display: flex;
-        align-items: center;
-    }
-    .pessoa_botao button{
-        border: none;
-        background-color: #FE8F20;
-        padding: 0.4rem 1rem;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-    .pessoa_botao button:hover{
-        background-color: #F15B43;
-    }
-    .pessoa_botao button a{
-        text-decoration: none;
-        font-weight: 500;
-        color: white;
-    }
-    .input_grupo{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 1rem 0;
-    }
-    .input_caixa{
-        display: flex;
-        flex-direction: column;
-        width: 40%;
-        margin-bottom: 1.1rem;
-    }
-
-    .input_caixa input{
-        margin: 0.6rem 0;
-        padding: 0.8rem 1.2rem;
-        border-radius: 10px;
-        border: none;
-        box-shadow: 1px 1px 6px #0000001c;
-    }
-    .input_caixa input:hover{
-       
-    }
-</style>
 <body>
     <div class="container_form">
         <div class="img_form">
-            <img src="img/img cadastro.svg" alt="">
+            <img src="img/foto_cadastro.svg" alt="Imagem de cadastro">
         </div>
         <div class="form">
             <form action="#" method="post">
                 <div class="form_header">
-                    <div class="title">
-                        <h1>cadastre-se</h1>
-                    </div>
+                    <h1>Cadastre-se</h1>
                     <div class="pessoa_botao">
-                        <button><a href="#">Pessoa Física</a></button>
+                        <button>Pessoa Física</button>
                     </div>
                 </div>
-
                 <div class="input_grupo">
                     <div class="input_caixa">
                         <label for="nomecompleto">Nome</label>
-                        <input type="text"  id="nomecompleto" placeholder="Digite seu nome completo" required>
+                        <input type="text" id="nomecompleto" placeholder="Digite seu nome completo" required>
                     </div>
-
                     <div class="input_caixa">
-                        <label for="cpf">Cpf</label>
-                        <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX" required>
                     </div>
-
                     <div class="input_caixa">
-                        <label for="data_nascimento">Nascimento</label>
-                        <input type="date" id="data_nascimento" placeholder="Data de Nascimento" required>
+                        <label for="data_nascimento">Data de Nascimento</label>
+                        <input type="date" id="data_nascimento" required>
                     </div>
-
                     <div class="input_caixa">
-                        <label for="tel">Sexo</label>
-                        <input type="tel" id="telefone" placeholder="Telefone/Celular" required>
+                        <label for="telefone">Telefone/Celular</label>
+                        <input type="tel" id="telefone" placeholder="(XX) XXXX-XXXX" required>
                     </div>
-
                     <div class="input_caixa">
                         <label for="email">E-mail</label>
                         <input type="email" id="email" placeholder="E-mail" required>
@@ -152,37 +218,18 @@
                         <input type="password" id="senha" placeholder="Senha" required>
                     </div>
                 </div>
-
                 <div class="genero">
-                    <div class="titulo_genero">
-                        <h6>Gênero</h6>
-                    </div>
-
+                    <h6>Gênero</h6>
                     <div class="genero_grupo">
                         <div class="genero_input">
-                            <input type="radio" name="feminino" id="genero">
+                            <input type="radio" name="genero" id="feminino" value="feminino">
                             <label for="feminino">Feminino</label>
                         </div>
                         <div class="genero_input">
-                            <input type="radio" name="masculino" id="genero">
+                            <input type="radio" name="genero" id="masculino" value="masculino">
                             <label for="masculino">Masculino</label>
                         </div>
                         <div class="genero_input">
-                            <input type="radio" name="outros" id="genero">
+                            <input type="radio" name="genero" id="outros" value="outros">
                             <label for="outros">Outros</label>
-                        </div>
-                        <div class="genero_input">
-                            <input type="radio" name="nenhum" id="genero">
-                            <label for="nenhum">Prefiro não dizer</label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="botao_continuar">
-                    <button><a href="#">Continuar</a></button>
-                </div>
-            </form>
-        </div>
-    </div>
-</body>
-</html>
+                        </
