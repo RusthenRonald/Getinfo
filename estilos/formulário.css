@@ -70,4 +70,52 @@
 .input_campo{
     display: flex;
     flex-direction: column;
+    margin-bottom: 1.1rem;
+    margin-right: 1rem;
+}
+.input_campo input{
+   margin: 0.6rem 0;
+   padding: 0.8rem 1.2rem;
+   border: none;
+   border-radius: 10px;
+   box-shadow: 1px 1px 6px #0000001c;
+}
+.input_campo input:hover{
+   background-color: #eeeeee75;
+ }
+ .input_campo input:focus-visible{
+    outline: 1px solid #FE8F20;
+ }
+ 
+/*telas de tablet*/
+@media screen and (max-width: 1330px) {
+    .img_doacao {
+        display: none;
+    }
+    .container_doacao {
+        width: 80%;
+    }
+    .formulario {
+        width: 100%;
+    }
+
+}
+/*telas de celular fica essa*/
+@media screen and (max-width: 660px) {
+    .container_doacao {
+        width: 90%;
+        height: auto;
+    }
+    .grupo_input {
+        flex-direction: column;
+        overflow-y: scroll;
+        flex-wrap: nowrap;
+        padding-right: 2rem;
+    }
+    .input_campo {
+        width: 100%;
+    }
+    .doacao_header {
+        gap: 30px;
+    }
 }
