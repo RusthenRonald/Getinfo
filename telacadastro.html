@@ -19,6 +19,91 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: #0c0ce94d;
+    }
+    .container_form{
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+    }
+    .img_form{
+        width: 50%;/*referente ao container*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fde3a7d7;
+        padding: 1rem;
+    }
+    .img_form img{
+        width: 31rem;
+    }
+    .form{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+    }
+    .form_header{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+    /*borda laranja q fica em baixo do texto*/
+    .form_header h1::after{
+        content: '';
+        display: block;/*so pra pular de linha*/
+        width: 5rem;
+        height:0.3rem ;
+        background-color: #F15B43;
+        margin: 0 auto;
+        position: absolute;
+        border-radius: 10px;
+    }
+    /*botao de fisica e juridica*/
+    .pessoa_botao{
+        display: flex;
+        align-items: center;
+    }
+    .pessoa_botao button{
+        border: none;
+        background-color: #FE8F20;
+        padding: 0.4rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .pessoa_botao button:hover{
+        background-color: #F15B43;
+    }
+    .pessoa_botao button a{
+        text-decoration: none;
+        font-weight: 500;
+        color: white;
+    }
+    .input_grupo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 1rem 0;
+    }
+    .input_caixa{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-bottom: 1.1rem;
+    }
+
+    .input_caixa input{
+        margin: 0.6rem 0;
+        padding: 0.8rem 1.2rem;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 1px 1px 6px #0000001c;
+    }
+    .input_caixa input:hover{
+       
     }
 </style>
 <body>
@@ -32,8 +117,8 @@
                     <div class="title">
                         <h1>cadastre-se</h1>
                     </div>
-                    <div class="login_botao">
-                        <button><a href="#">Entrar</a></button>
+                    <div class="pessoa_botao">
+                        <button><a href="#">Pessoa Física</a></button>
                     </div>
                 </div>
 
