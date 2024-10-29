@@ -162,7 +162,7 @@
                 <div class="formulario">
                     <form action="doacao.html" method="post">
                         <div class="doacao_header">
-                            <h5>Doe Agora</h5>
+                            <h2>Doe Agora</h2>
                             <div class="logo">
                                 <img src="img/logo getinfo2.jpg" alt="">
                             </div>
@@ -182,8 +182,16 @@
                                 <input type="number" id="telefone" placeholder="Telefone" required>
                             </div>
                             <div class="input_campo">
+                                <label for="estado">Estado</label>
+                                <input type="text" id="estado" placeholder="Digite seu estado" required>
+                            </div>
+                            <div class="input_campo">
                                 <label for="endereco">Endereço</label>
                                 <input type="text" id="endereco" placeholder="Endereço" required>
+                            </div>
+                            <div class="input_campo">
+                                <label for="cep">CEP</label>
+                                <input type="text" id="cep" placeholder="00000-000" required pattern="\d{5}-?\d{3}">
                             </div>
                         </div>
                     </form>

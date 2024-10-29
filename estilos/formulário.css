@@ -31,4 +31,43 @@
 .img_doacao img{
     width: 31rem;
 }
-
+.formulario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+}
+.doacao_header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+.doacao_header h2::after{
+    content: ' ';
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #F15B43;
+    margin: 0.5rem 0;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width: 100px;
+    
+}
+.grupo_input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+.input_campo{
+    display: flex;
+    flex-direction: column;
+}
