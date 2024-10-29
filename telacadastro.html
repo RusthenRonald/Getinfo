@@ -112,7 +112,7 @@
             color: #000000c0;
         }
         .titulo_genero h6 {
-            font-size: 0.75rem;
+            font-size: 0.85rem;
             font-weight: 600;
             color: #000000c0;
         }
@@ -147,6 +147,7 @@
         .botao_continuar button:hover {
             background: linear-gradient(to right, #FE8F20, #F15B43); /* Inverte as cores no hover */
         }
+        /*telas de tablet*/
         @media screen and (max-width: 1330px) {
             .img_form {
                 display: none;
@@ -157,7 +158,12 @@
             .form {
                 width: 100%;
             }
+            .titulo_genero h6 {
+                text-align: center;
+                font-size: 0.85rem;
+            }
         }
+        /*telas de celular fica essa*/
         @media screen and (max-width: 660px) {
             .container_form {
                 width: 90%;
@@ -221,7 +227,9 @@
                     </div>
                 </div>
                 <div class="genero">
-                    <h6>Gênero</h6>
+                    <div class="titulo_genero">
+                        <h6>Gênero</h6>
+                    </div>
                     <div class="genero_grupo">
                         <div class="genero_input">
                             <input type="radio" name="genero" id="feminino" value="feminino">
