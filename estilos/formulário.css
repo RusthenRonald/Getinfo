@@ -1,15 +1,34 @@
 @charset "UTF-8";
 /*Formulário de doação*/
-#form_container{
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-    background-color: aqua;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+/*pra centralizar meu item*/
+.container_principal_doacao{
     width: 100vw;
-}
-.formulario{
+    height: 1000px;
     display: flex;
     justify-content: center;
-    background-color: blue;
-    width: 50%;
+    align-items: center;
 }
+/*container form*/
+.container_doacao{
+    display: flex;
+    width: 80%;
+    height: 800px;
+    box-shadow: 5px 5px 10px rgba(0,0,0, .212);
+}
+.img_doacao{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fde3a7d7;
+}
+.img_doacao img{
+    width: 31rem;
+}
+
