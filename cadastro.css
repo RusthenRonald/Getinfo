@@ -11,9 +11,17 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
-
- 
+body{
+    height: 100vh;
+}
+.container{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     /*menu*/
     header{
         display: flex;

@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="cadastro.css">
 </head>
+<body>
 <header>
     <div class="logo_getinfo">
         <img src="img/logo getinfo2.jpg" alt="">
@@ -27,103 +28,174 @@
         <a href="telalogin.html" target="_blank" rel="external">Login</a>
         <a href="#footer_container">Contato</a>
     </nav>
-    
 </header>
-<body>
-    <main>
-        <section class="container">
-            <div class="img_cadastro">
+<main>
+    <!-- Pessoa fisisca -->
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/cadastroIMG.svg">
+        </div>
+        <div class="form">
+            <form id="pessoa-fisica-form" action="#">
+                <div class="form-header">
+                    <div class="tittle">
+                        <h1>Cadastre-se como <br> Pessoa Física</h1>
+                    </div>
+                    <div class="trocar-cadastro">
+                        <a id="empresa" class="empresa" href="#" onclick="toggleForms()">Cadastro Juridico</a>
+                    </div>
+                </div>
+                <div class="inputs">
+                    <div class="input-box column-input">
+                        <label for="primeiro_nome">Nome</label>
+                        <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required>
+                    </div>
+                    <div class="gender-inputs">
+                        <div class="gender__tittle">
+                            <h6>Gênero</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender_input">
+                                <input type="radio" id="feminino" name="genero">
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="masculino" name="genero">
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="outro" name="genero">
+                                <label for="outro">Outro</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="nao-dizer" name="genero">
+                                <label for="nao-dizer">Prefiro não dizer</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-box column-input">
+                        <label for="endereco">Endereço</label>
+                        <input id="end" type="text" name="end" placeholder="Endereço" required>
+                    </div>
+                    <div class="input-box column-input">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="data-nasc">Data de nascimento</label>
+                        <input id="date" type="date" name="date" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="tel">Telefone</label>
+                        <input id="tel" type="tel" name="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required>
+                    </div>
+                    <div class="input-box">
+                        <label for="senha">Senha</label>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua Senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmar-senha">Confirmar Senha</label>
+                        <input id="confirmar_senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required>
+                    </div>
+                </div>
+                <div class="continue-button">
+                    <button type="submit">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
 
-            </div>
-            <div class="formulario_cadastro">
-
-            </div>
-        </section>
-    </main>
-
-   
-
-</body>
+</main>
     <footer >
         <div id="footer_container" >
-              <div id="footer_contatos">
-                  <img style="margin-bottom: 20px; width: 160px;" src="img/logo getinfo_processed.jpg" alt="">
-    
-                  <div id="midias_sociais">
-                      <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
-                          <i class="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="https://www.facebook.com/getinfosolucoes/ " target="_blank" class="link_midias" id="facebook">
-                          <i class="fa-brands fa-facebook-f"></i>
-                      </a>
-                      <a href="https://mail.google.com/mail/u/0/#search/contato%40getinfo.net.br?compose=new" target="_blank" class="link_midias" id="email">
-                          <i class="fa-regular fa-envelope"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/getinfocolucoes/" target="_blank" class="link_midias" id="linkedin" >
-                          <i class="fa-brands fa-linkedin-in"></i>
-                      </a>
-                  </div>
-              </div>
-    
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Navegação</h3>
-                  </li>
-                  <li>
-                      <a href="#container_box" class="link_midias">Campanhas</a>
-                  </li>
-                  <li>
-                      <a href="#container_sobre_nos" class="link_midias">Sobre Nós</a>
-                  </li>
-                  <li>
-                      <a href="#dados" class="link_midias">Dados da Plataforma</a>
-                  </li>
-                  <li>
-                      <a href="#form_container" class="link_midias">Doe Agora</a>
-                  </li>
-              </ul>
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Servicos</h3>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Desenvolvimento de Software</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Business Intelligence (BI)</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Governança de TI</a>
-                  </li>
-              </ul>
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Contato</h3>
-                  </li>
-                  <li>
-                      <a target="_blank" href="https://www.google.com/maps/@-10.9206848,-37.0561677,3a,75y,277.58h,90t/data=!3m7!1e1!3m5!1sU8RQn-RUf3xqfRFF-WCVsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DU8RQn-RUf3xqfRFF-WCVsw%26yaw%3D277.58!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">Rua Zaqueu Brandão, 226, Bairro São José</a>
-                  </li>
-                  <li>
-                      <a target="_blank" href="https://www.google.com/maps/place/R.+Zaqueu+Brand%C3%A3o+-+S%C3%A3o+Jos%C3%A9,+Aracaju+-+SE,+49015-330/@-10.9218321,-37.056242,19z/data=!4m6!3m5!1s0x71ab39eaea4a853:0xac9ac8d5055e894c!8m2!3d-10.9217076!4d-37.056189!16s%2Fg%2F1trcgmhk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">CEP 49015-330 | Aracaju - SE</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Av. José Conrado de Araujo, 731, Bairro Rosa Elze, <br> SergipeTec  - Bloco B3 - Sala 06</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">CEP 49100-000 | São Cristóvão - SE</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">(79) 3022-9002</a>
-                  </li>
-                  
-              </ul>
-              
+            <div id="footer_contatos">
+                <img style="margin-bottom: 20px; width: 160px;" src="img/logo getinfo_processed.jpg" alt="">
+
+                <div id="midias_sociais">
+                    <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/getinfosolucoes/ " target="_blank" class="link_midias" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://mail.google.com/mail/u/0/#search/contato%40getinfo.net.br?compose=new" target="_blank" class="link_midias" id="email">
+                        <i class="fa-regular fa-envelope"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/getinfocolucoes/" target="_blank" class="link_midias" id="linkedin" >
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer_lista">
+                <li>
+                    <h3>Navegação</h3>
+                </li>
+                <li>
+                    <a href="#container_box" class="link_midias">Campanhas</a>
+                </li>
+                <li>
+                    <a href="#container_sobre_nos" class="link_midias">Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="#dados" class="link_midias">Dados da Plataforma</a>
+                </li>
+                <li>
+                    <a href="#form_container" class="link_midias">Doe Agora</a>
+                </li>
+            </ul>
+            <ul class="footer_lista">
+                <li>
+                    <h3>Servicos</h3>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">Desenvolvimento de Software</a>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">Business Intelligence (BI)</a>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">Governança de TI</a>
+                </li>
+            </ul>
+            <ul class="footer_lista">
+                <li>
+                    <h3>Contato</h3>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.google.com/maps/@-10.9206848,-37.0561677,3a,75y,277.58h,90t/data=!3m7!1e1!3m5!1sU8RQn-RUf3xqfRFF-WCVsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DU8RQn-RUf3xqfRFF-WCVsw%26yaw%3D277.58!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">Rua Zaqueu Brandão, 226, Bairro São José</a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.google.com/maps/place/R.+Zaqueu+Brand%C3%A3o+-+S%C3%A3o+Jos%C3%A9,+Aracaju+-+SE,+49015-330/@-10.9218321,-37.056242,19z/data=!4m6!3m5!1s0x71ab39eaea4a853:0xac9ac8d5055e894c!8m2!3d-10.9217076!4d-37.056189!16s%2Fg%2F1trcgmhk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">CEP 49015-330 | Aracaju - SE</a>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">Av. José Conrado de Araujo, 731, Bairro Rosa Elze, <br> SergipeTec  - Bloco B3 - Sala 06</a>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">CEP 49100-000 | São Cristóvão - SE</a>
+                </li>
+                <li>
+                    <a href="#" class="link_midias">(79) 3022-9002</a>
+                </li>
+                
+            </ul>
+            
         </div> 
-          <div id="copyright">
-              &#169
-              2024 Todos os direitos reservados
-          </div>
+        <div id="copyright">
+            &#169
+            2024 Todos os direitos reservados
+        </div>
     </footer>
+</body>
 </html>
 <!--
 <script>
