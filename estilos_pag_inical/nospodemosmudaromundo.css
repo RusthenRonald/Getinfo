@@ -34,6 +34,10 @@ section.frase_motivacional h2{
 }
 /*Botão doe agora*/
  .botao-doe-agora {
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
     margin-top: 30px;
     display: inline-block;
     border: 2px solid white; 
