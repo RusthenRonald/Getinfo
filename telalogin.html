@@ -8,6 +8,7 @@
     <title>Login Page</title>
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
         *{
             margin: 0px;
             padding: 0px;
@@ -182,6 +183,114 @@
             font-size: 35px;
         }
         }
+
+
+
+
+
+:root{
+    --cor-neutra-branca:#f5f5f5;
+    --cor-preta:#171717;
+    --cor-copyright:#0e0c0c;
+    --cor-ciza:#a8a29e;
+}
+/*Inicio do cabeçalho*/
+footer{
+    margin-top: 200px;
+    height: 220px;
+    font-family: 'Inter',sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--cor-neutra-branca);
+}
+/*container*/
+#footer_container{
+    background-color: var(--cor-preta);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+/*palavra logo*/
+#footer_contatos h4{
+    margin-bottom: 0.75rem;
+}
+/*container dos icones*/
+#midias_sociais{
+    display: flex;
+    gap: 2rem;
+}
+/*links e icones*/
+#midias_sociais .link_midias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor-neutra-branca);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+/*configuração do link*/
+#midias_sociais .link_midias{
+    text-decoration: none;
+}
+#midias_sociais .link_midias:hover{
+    opacity: 0.8;
+}
+/*tamanho do icone*/
+#midias_sociais .link_midias i{
+    font-size: 1.25rem;
+}
+/*icone em individual*/
+#instagram{
+    background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
+}
+#facebook{
+    background-color: #4267b3;
+}
+#linkedin {
+    background-color: #0A66C2; 
+}
+
+#email {
+    background-color: #5f6368; 
+}
+/*listas*/
+.footer_lista{ /*para adiconar gap */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/*links da parte de listas*/
+.footer_lista .link_midias{
+    text-decoration: none;
+    color:var(--cor-ciza) ;
+    transition: all 0.4s;
+}
+.footer_lista .link_midias:hover{
+    color: #F15B43;
+}
+/*copyright*/
+#copyright{
+    display: flex;
+    justify-content: center;
+    background-color:var(--cor-copyright);
+    padding: 1.2rem;
+}
+
+/*media query só pra footer*/
+@media screen and (max-width:968px){
+    #footer_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:626px){
+    #footer_container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
     </style>
 </head>
 <header>
@@ -216,9 +325,88 @@
             <h5 style="text-align: center; font-size: 1.0em;">Clique <a class="lin_cadas" href="telacadastro.html" style="color: #F15B43;">aqui</a> para cadastrar-se</h5>
         </div>
     </div>
-
-    
 </body>
+
+<footer>
+    <div id="footer_container">
+          <div id="footer_contatos">
+              <img style="margin-bottom: 20px; width: 160px;" src="img/logo getinfo_processed.jpg" alt="">
+
+              <div id="midias_sociais">
+                  <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
+                      <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="https://www.facebook.com/getinfosolucoes/ " target="_blank" class="link_midias" id="facebook">
+                      <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="https://mail.google.com/mail/u/0/#search/contato%40getinfo.net.br?compose=new" target="_blank" class="link_midias" id="email">
+                      <i class="fa-regular fa-envelope"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/company/getinfocolucoes/" target="_blank" class="link_midias" id="linkedin" >
+                      <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+              </div>
+          </div>
+
+          <ul class="footer_lista">
+              <li>
+                  <h3>Navegação</h3>
+              </li>
+              <li>
+                  <a href="#container_box" class="link_midias">Campanhas</a>
+              </li>
+              <li>
+                  <a href="#container_sobre_nos" class="link_midias">Sobre Nós</a>
+              </li>
+              <li>
+                  <a href="#dados" class="link_midias">Dados da Plataforma</a>
+              </li>
+              <li>
+                  <a href="#form_container" class="link_midias">Doe Agora</a>
+              </li>
+          </ul>
+          <ul class="footer_lista">
+              <li>
+                  <h3>Servicos</h3>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">Desenvolvimento de Software</a>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">Business Intelligence (BI)</a>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">Governança de TI</a>
+              </li>
+          </ul>
+          <ul class="footer_lista">
+              <li>
+                  <h3>Contato</h3>
+              </li>
+              <li>
+                  <a target="_blank" href="https://www.google.com/maps/@-10.9206848,-37.0561677,3a,75y,277.58h,90t/data=!3m7!1e1!3m5!1sU8RQn-RUf3xqfRFF-WCVsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DU8RQn-RUf3xqfRFF-WCVsw%26yaw%3D277.58!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">Rua Zaqueu Brandão, 226, Bairro São José</a>
+              </li>
+              <li>
+                  <a target="_blank" href="https://www.google.com/maps/place/R.+Zaqueu+Brand%C3%A3o+-+S%C3%A3o+Jos%C3%A9,+Aracaju+-+SE,+49015-330/@-10.9218321,-37.056242,19z/data=!4m6!3m5!1s0x71ab39eaea4a853:0xac9ac8d5055e894c!8m2!3d-10.9217076!4d-37.056189!16s%2Fg%2F1trcgmhk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">CEP 49015-330 | Aracaju - SE</a>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">Av. José Conrado de Araujo, 731, Bairro Rosa Elze, <br> SergipeTec  - Bloco B3 - Sala 06</a>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">CEP 49100-000 | São Cristóvão - SE</a>
+              </li>
+              <li>
+                  <a href="#" class="link_midias">(79) 3022-9002</a>
+              </li>
+              
+          </ul>
+          
+    </div> 
+      <div id="copyright">
+          &#169
+          2024 Todos os direitos reservados
+      </div>
+</footer>
 </html>
 
 <!--

@@ -97,7 +97,7 @@ footer{
         gap: 2rem;
     }
 }
-@media screen and (max-width:426px){
+@media screen and (max-width:626px){
     #footer_container{
         grid-template-columns: repeat(1,1fr);
         
