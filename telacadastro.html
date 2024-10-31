@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="estilos/cadastro.css">
 </head>
 <body>
 <header>
@@ -51,40 +51,40 @@
                             <label for="primeiro_nome">Nome</label>
                             <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required>
                         </div>
-                        <div class="gender-inputs">
-                            <div class="gender__tittle">
+                        
+                            <div class="genero_titulo">
                                 <h6>Gênero</h6>
                             </div>
-                            <div class="gender-group">
-                                <div class="gender_input">
+                            <div class="genero_grupo">
+                                <div class="genero_input">
                                     <input type="radio" id="feminino" name="genero">
                                     <label for="feminino">Feminino</label>
                                 </div>
-                                <div class="gender_input">
+                                <div class="genero_input">
                                     <input type="radio" id="masculino" name="genero">
                                     <label for="masculino">Masculino</label>
                                 </div>
-                                <div class="gender_input">
+                                <div class="genero_input">
                                     <input type="radio" id="outro" name="genero">
                                     <label for="outro">Outro</label>
                                 </div>
-                                <div class="gender_input">
+                                <div class="genero_input">
                                     <input type="radio" id="nao-dizer" name="genero">
                                     <label for="nao-dizer">Prefiro não dizer</label>
                                 </div>
                             </div>
-                        </div>
+
                         <div class="input_box">
                             <label for="endereco">Endereço</label>
                             <input id="end" type="text" name="end" placeholder="Endereço" required>
                         </div>
-                        <div class="input_box ">
-                            <label for="email">E-mail</label>
-                            <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-                        </div>
                         <div class="input_box">
                             <label for="data-nasc">Data de nascimento</label>
                             <input id="date" type="date" name="date" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="e-mail">E-mail</label>
+                            <input id="e-mail" type="email"  required placeholder="E-mail">
                         </div>
                         <div class="input_box">
                             <label for="tel">Telefone</label>
@@ -107,7 +107,7 @@
                             <input id="confirmar_senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required>
                         </div>
                     </div>
-                    <div class="continue-button">
+                    <div class="continuar_botao">
                         <button type="submit">Continuar</button>
                     </div>
                 </form>
