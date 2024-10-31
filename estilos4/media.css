@@ -1,0 +1,91 @@
+
+
+/*Só para adicionar a cor em tela de celular*/
+    /* Cor de fundo específica para telas de celular */
+    @media screen and (max-width: 420px) {
+        .container_login {
+            background-color: #fe8f20d7;
+        }
+    }
+        /*Telas celulares maiores*/
+        @media screen and (min-width:420px) and (max-width:767px){
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 350px;
+                height: 420px;
+                padding: 20px;
+            }
+            .img_login img{
+                display: none;
+            }
+            .container_login {
+            background-color: #fe8f20d7;
+        }
+        }
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.1em;
+        }
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 400px;
+                height: 450px;
+                padding: 20px;
+        }
+        .img_login img{
+            display: block;
+            width: 330px;
+            height: 490px;
+        }
+        }
+        @media screen and (min-width:1025px) and (max-width:1440px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.2em;
+        }
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 400px;
+                height: 450px;
+                padding: 30px;
+        }
+        .img_login img{
+            display: block;
+            width: 450px;
+            height: 510px;
+        }
+        }
+        @media screen and (min-width:1441px) {
+            /*botao login*/
+        .botao_login{
+            font-size: 1.2em;
+        }
+            /*container de todo a parte de campos e botoes*/
+            .container_interno_login{
+                width: 400px;
+                height: 500px;
+                padding: 30px;
+        }
+        .img_login img{
+            display: block;
+            width: 500px;
+            height: 560px;
+        }
+        i{
+            font-size: 35px;
+        }
+        }
+        /*media query só pra footer*/
+        @media screen and (max-width:968px){
+            #footer_container{
+                grid-template-columns: repeat(2,1fr);
+                gap: 2rem;
+            }
+        }
+        @media screen and (max-width:626px){
+            #footer_container{
+                grid-template-columns: repeat(1,1fr);
+                
+            }
+        }

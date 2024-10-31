@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*container principal que separa img e texto*/
+div#container_sobre_nos {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*div menu do sobre nos*/
+div#menu_sobre_nos {
+    margin-top: 20px;
+}
+
+/*configuração só pra os links*/
+div#menu_sobre_nos a {
+    font-weight: bold;
+    padding: 15px; 
+    color: rgba(128, 128, 128, 0.815);
+    border-radius: 3px;
+    border-bottom: 3px solid #F15B43;
+    text-decoration: none;
+    display: inline-block; /* Melhora a área clicável */
+}
+/*link ao passar mouse*/
+div#menu_sobre_nos a:hover{
+    background-color: #f15a43b7;
+    color: white;
+}
+/* Estilo para o link ativo */
+div#menu_sobre_nos a.active {
+    background-color: #F15B43; 
+    color: #fff; 
+}
+div#sobre_nos{
+    padding-left: 10px;
+}
+div#sobre_nos h2{
+    color: #F15B43;
+    font-size: 2em;
+}
+div#sobre_nos p{
+    font-size: 0.8em;
+    width: 80vw;
+    color: rgba(128, 128, 128, 0.774);
+}
+/*imagem da parte sobre nós*/
+img#kids2{
+    margin-top: 100px;
+    width: 65vw;
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.459);
+}
+/*Botão quem somos nós*/
+#quem_somos {
+    width: 130px;
+    border-radius: 20px;
+    padding: 8px;
+    color: #ebb503;
+    background-color: #dbc90015;
+    font-size: 0.9em;
+}
+#quem_somos:hover{
+    cursor: pointer;
+}
+/*texto do sobre nós*/
+div#titulo_texto_sobre h3{
+    margin-top: 20px;
+    color: #F15B43;
+}
+div#texto_sobre_nos p{
+    margin-top: 20px;
+    width: 75vw;
+    font-size: 1.0em;
+    color: rgba(128, 128, 128, 0.774);
+}
