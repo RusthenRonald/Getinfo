@@ -16,24 +16,29 @@
 body{
     height: 100vh;
 }
-/*menu*/
-header{
+menu{
     display: flex;
     height: 70px;
     justify-content: space-around;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
+    position: fixed; /* Fixa o menu no topo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
 }
 .logo_getinfo img{
     margin-top: 10px;
     width: 140px;
 }
 nav{
-    margin-top: 20px;
     display: flex;
+    align-items: center;
     gap: 25px;
 }
 /* Estilos para os links do nav */
-nav a {
+.a_hover {
     text-decoration: none; 
     color: #333; 
     position: relative; 
@@ -41,10 +46,36 @@ nav a {
     transition: color 0.3s ease; 
 }
 
-nav a:hover {
+.a_hover:hover {
     color: #F15B43; 
 }
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F15B43; 
+    color: #fff; 
+    height: 30px;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
 
+button a{
+    color: white;
+}
+button:hover{
+    transform: scale(1.005); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* Estilo para o link dentro do botão */
+button a {
+    text-decoration: none;
+}
 /* Estilos para o menu dropdown */
 .dropdown {
     position: relative;
