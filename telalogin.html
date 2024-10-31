@@ -79,18 +79,20 @@
         .botao_login{
             display: block;
             margin-top: 35px;
-            width: 90%;
+            width: 100%;
             text-align: center;
-            text-decoration: none;
             background: linear-gradient(to right, #F15B43, #FE8F20);
             border: none;
-            color: white;
             padding: 15px;
             border-radius: 10px;
+            text-decoration: none;
+            color: white;
         }
         /*botao login*/
         .botao_login:hover{
-            transform: scale(1.02);
+            transform: scale(1.005); 
+            background: linear-gradient(to right, #FE8F20, #F15B43); 
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
         }
         /*redes*/
         .redes{
@@ -112,6 +114,90 @@
         -webkit-background-clip: text; 
         background-clip: text;
         color: transparent; 
+    }
+
+    /*Inicio do footer*/
+    footer{
+        
+        height: 220px;
+        font-family: 'Inter',sans-serif;
+        letter-spacing: 1px;
+        width: 100%;
+        color: var(--cor-neutra-branca);
+    }
+    /*container*/
+    #footer_container{
+        background-color: var(--cor-preta);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem 3.5rem;
+    }
+    /*palavra logo*/
+    #footer_contatos h4{
+        margin-bottom: 0.75rem;
+    }
+    /*container dos icones*/
+    #midias_sociais{
+        display: flex;
+        gap: 2rem;
+    }
+    /*links e icones*/
+    #midias_sociais .link_midias{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--cor-neutra-branca);
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+    /*configuração do link*/
+    #midias_sociais .link_midias{
+        text-decoration: none;
+    }
+    #midias_sociais .link_midias:hover{
+        opacity: 0.8;
+    }
+    /*tamanho do icone*/
+    #midias_sociais .link_midias i{
+        font-size: 1.25rem;
+    }
+    /*icone em individual*/
+    #instagram{
+        background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
+    }
+    #facebook{
+        background-color: #4267b3;
+    }
+    #linkedin {
+        background-color: #0A66C2; 
+    }
+
+    #email {
+        background-color: #5f6368; 
+    }
+    /*listas*/
+    .footer_lista{ /*para adiconar gap */
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    /*links da parte de listas*/
+    .footer_lista .link_midias{
+        text-decoration: none;
+        color:var(--cor-ciza) ;
+        transition: all 0.4s;
+    }
+    .footer_lista .link_midias:hover{
+        color: #F15B43;
+    }
+    /*copyright*/
+    #copyright{
+        display: flex;
+        justify-content: center;
+        background-color:var(--cor-copyright);
+        padding: 1.2rem;
     }
     /*Só para adicionar a cor em tela de celular*/
      /* Cor de fundo específica para telas de celular */
@@ -189,91 +275,6 @@
             font-size: 35px;
         }
         }
-
-        /*Inicio do footer*/
-        footer{
-            
-            height: 220px;
-            font-family: 'Inter',sans-serif;
-            letter-spacing: 1px;
-            width: 100%;
-            color: var(--cor-neutra-branca);
-        }
-        /*container*/
-        #footer_container{
-            background-color: var(--cor-preta);
-            display: grid;
-            grid-template-columns: repeat(4,1fr);
-            padding: 3rem 3.5rem;
-        }
-        /*palavra logo*/
-        #footer_contatos h4{
-            margin-bottom: 0.75rem;
-        }
-        /*container dos icones*/
-        #midias_sociais{
-            display: flex;
-            gap: 2rem;
-        }
-        /*links e icones*/
-        #midias_sociais .link_midias{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 2.5rem;
-            width: 2.5rem;
-            color: var(--cor-neutra-branca);
-            border-radius: 50%;
-            transition: all 0.4s;
-        }
-        /*configuração do link*/
-        #midias_sociais .link_midias{
-            text-decoration: none;
-        }
-        #midias_sociais .link_midias:hover{
-            opacity: 0.8;
-        }
-        /*tamanho do icone*/
-        #midias_sociais .link_midias i{
-            font-size: 1.25rem;
-        }
-        /*icone em individual*/
-        #instagram{
-            background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
-        }
-        #facebook{
-            background-color: #4267b3;
-        }
-        #linkedin {
-            background-color: #0A66C2; 
-        }
-
-        #email {
-            background-color: #5f6368; 
-        }
-        /*listas*/
-        .footer_lista{ /*para adiconar gap */
-            display: flex;
-            flex-direction: column;
-            list-style: none;
-        }
-        /*links da parte de listas*/
-        .footer_lista .link_midias{
-            text-decoration: none;
-            color:var(--cor-ciza) ;
-            transition: all 0.4s;
-        }
-        .footer_lista .link_midias:hover{
-            color: #F15B43;
-        }
-        /*copyright*/
-        #copyright{
-            display: flex;
-            justify-content: center;
-            background-color:var(--cor-copyright);
-            padding: 1.2rem;
-        }
-
         /*media query só pra footer*/
         @media screen and (max-width:968px){
             #footer_container{
@@ -308,7 +309,7 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
                 </div>
-                <button type="submit" class="botao_login">Entrar</button>
+                <button type="submit" class="botao_login" onclick="window.location.href='index.html';">Entrar</button>
             </form>
             <div class="redes">
             <a href="#"><i class="bi bi-instagram"></i></a>
