@@ -19,39 +19,3 @@ main{
 }
 
 
-
-/*
-container dos valores
-.botao_doacao {
-    display: flex;
-    justify-content:flex-start;
-    margin-left:20px ;
-    gap: 20px; 
-    
-}
-/*caixa dos valores
-.valor_doacao {
-    padding: 10px 20px; 
-    border: 1px solid rgba(128, 128, 128, 0.548); 
-    background-color: white; 
-    color: black ;
-    cursor: pointer;
-    border-radius: 25px;
-    transition: background-color 0.3s; 
-}
-
-.valor_doacao:hover {
-    background-color: #fe8f2094; 
-    color: white;
-}
-
- Estilo para o botão ativo 
-.valor_doacao.ativo {
-    background-color: #FE8F20; 
-    color: white; 
-    border: 1px solid rgba(128, 128, 128, 0); 
-}
-*/
-
-
-
