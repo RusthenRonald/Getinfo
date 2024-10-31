@@ -24,21 +24,6 @@
 </head>
 <body>
     <header>
-        <nav>
-            <a href="#">Home</a>
-            <div class="dropdown">
-                <a href="#container_box">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
-                <ul class="dropdown-menu">
-                    <li><a href="listadecausas.html">Lista de Canpanhas</a></li>
-                    <li><a href="#container_box">Canpanhas Únicas</a></li>
-                </ul>
-            </div>
-            <a href="#doacao">Formulário</a>
-            <a href="#container_sobre_nos">Sobre nós</a>
-            <a href="telalogin.html" target="_blank" rel="external">Login</a>
-            <a href="#footer_container">Contato</a>
-        </nav>
-        
         <div>
             <h1 id="typing-title"><span class="h1_cor">Juntos</span> iremos <br> reconstruir nosso futuro</h1>
             <p id="p_header">A doação está aqui para construir um futuro seguro para as <br> próximas gerações</p>
@@ -306,80 +291,86 @@
 
 <!--
 
-<section class="container_principal_doacao" id="doacao">
-    <div class="container_doacao">
-        <div class="img_doacao">
-            <img src="img/img form doação.svg" alt="">
-        </div>
-        <div class="formulario">
-            <form action="doacao.html" method="post">
-                <div class="doacao_header">
-                    <h2>Doe Agora</h2>
-                    <div class="logo">
-                        <img src="img/logo getinfo2.jpg" alt="">
-                    </div>
-                </div>
-    
-                <div class="grupo_input">
-                    <div class="input_campo">
-                        <label for="nomecompleto">Nome</label>
-                        <input type="text" id="nomecompleto" placeholder="Digite seu nome completo" required>
-                    </div>
-                    <div class="input_campo">
-                        <label for="e-mail">E-mail</label>
-                        <input type="text" id="e-mail" placeholder="E-mail" required>
-                    </div>
-                    <div class="input_campo">
-                        <label for="telefone">Telefone</label>
-                        <input type="number" id="telefone" placeholder="Telefone" required>
-                    </div>
-                    <div class="input_campo">
-                        <label for="estado">Estado</label>
-                        <input type="text" id="estado" placeholder="Digite seu estado" required>
-                    </div>
-                    <div class="input_campo">
-                        <label for="endereco">Endereço</label>
-                        <input type="text" id="endereco" placeholder="Endereço" required>
-                    </div>
-                    <div class="input_campo">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" placeholder="00000-000" required pattern="\d{5}-?\d{3}">
-                    </div>
-                </div>
-                <div class="valor_doacao">
-                    <h5 style="margin-bottom: 10px;">Escolha o valor da sua doação</h5>
-                    <div class="opcoes_valor">
-                        <label>
-                            <input type="radio" name="valor" value="10">
-                            <span>R$10</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="valor" value="20">
-                            <span>R$20</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="valor" value="50">
-                            <span>R$50</span>
-                        </label>
-                        <label>
-                            <input type="radio" name="valor" value="100">
-                            <span>R$100</span>
-                        </label>
-                        <!--Valor personalizado-
-                        <label>
-                            <input type="radio" name="valor" value="custom" id="custom_radio">
-                            <span>Outro valor</span>
-                        </label>
-                        <input type="number" id="custom_valor" placeholder="Digite um valor" min="1" style="display: none;">
-                    </div>
-                </div>
-                <button type="submit" class="botao-doar">Doar</button>
+<nav>
+            <a href="#">Home</a>
+            <div class="dropdown">
+                <a href="#container_box">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="listadecausas.html">Lista de Canpanhas</a></li>
+                    <li><a href="#container_box">Canpanhas Únicas</a></li>
+                </ul>
+            </div>
+            <a href="#doacao">Formulário</a>
+            <a href="#container_sobre_nos">Sobre nós</a>
+            <a href="telalogin.html" target="_blank" rel="external">Login</a>
+            <a href="#footer_container">Contato</a>
+        </nav>
 
-            </form>
-        </div>
-    </div>
-</section>
 
-<div>
-    <h3 style="text-align: center; color:#F15B43 ;">Doação</h3>
-</div>
+
+
+        /*Container interno*/
+nav{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    font-size: 0.6em;
+    padding: 7px;
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+#iconenav{
+    font-size: 15px;
+}
+/*efeito ao passar mouse em menu*/
+a:hover{
+    color: #F15B43;
+   
+}
+/*Menu dropdown*/
+/* Estilo específico para o dropdown *//*container*/
+.dropdown {
+    position: relative; 
+    display: inline-block; 
+}
+/* Esconde o submenu por padrão */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1; 
+}
+
+/* Itens do submenu */
+.dropdown-menu li {
+    list-style-type: none;
+    margin: 0; 
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    display: block;
+    color: rgb(102, 102, 102); 
+    font-size: 0.7em; 
+}
+
+/* Exibe o submenu ao passar o mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Efeito de hover no submenu */
+.dropdown-menu li a:hover {
+    background-color: rgb(240, 240, 240); 
+}
+/*Icone ao lado do menu de causas*/
+.material-icons {
+    font-size: 14px; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+}
