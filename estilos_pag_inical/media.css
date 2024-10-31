@@ -46,16 +46,6 @@ Breakpoint: min-width: 1441px
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
-    nav a{
-        padding-left: 5px;
-        font-size: 0.8em;
-        font-weight: normal;
-    }
-    .dropdown {
-        position: relative; /* Necessário para posicionar o submenu */
-        display: inline-block; /* Pra menu ficar ao lado dos links*/
-        margin-top: 2px;
-    }
     h1{
         font-size: 3.1em;
     }
@@ -63,7 +53,6 @@ Breakpoint: min-width: 1441px
         margin-left: 40px;/*espaçamento lateral esquerdo*/
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
-        margin-bottom: 120px;
         margin-left: 40px;
     }
     .box{
@@ -162,21 +151,6 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
-    nav a{
-        font-size: 1.0em;
-        padding-left: 10px;
-        font-weight: normal;
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-    .dropdown {
-        position: relative; 
-        display: inline-block; /* Pra menu ficar ao lado dos links*/
-        margin-top: 2px;
-    }
-    .dropdown-menu li a {
-       padding: 10px;
-    }
     h1{
         font-size: 3.3em;
     }
@@ -184,7 +158,6 @@ Breakpoint: min-width: 1441px
         margin-left: 70px; /*espaçamento lateral esquerdo*/
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
-        margin-bottom: 155px;
         margin-left: 70px;
     }
     div#container_box{
@@ -301,16 +274,6 @@ Breakpoint: min-width: 1441px
     header{
         height: 520px;
     }
-    nav a{
-        font-size: 1.1em;
-        padding: 10px;
-        font-weight: normal;
-    }
-    .dropdown {
-        position: relative; /* Necessário para posicionar o submenu */
-        display: inline-block; /* Pra menu ficar ao lado dos links*/
-        margin-top: 8px;
-    }
     h1{
         font-size: 3.9em;
     }
@@ -318,7 +281,6 @@ Breakpoint: min-width: 1441px
         margin-left: 100px;
     }
     #p_header{
-        margin-bottom: 185px;
         margin-left: 100px;
     }
     div#container_box{
@@ -425,20 +387,6 @@ Breakpoint: min-width: 1441px
     header{
         height: 650px;
     }
-    nav{
-        margin-top: 15px;
-    }
-    nav a{
-        font-size: 1.3em;
-        padding: 10px;
-        font-weight: normal;
-    }
-    .dropdown {
-        position: relative; /* Necessário para posicionar o submenu */
-        display: inline-block; /* Pra menu ficar ao lado dos links*/
-        margin-top: 8px;
-    }
-    
     h1{
         font-size: 4.1em;
     }
@@ -446,7 +394,6 @@ Breakpoint: min-width: 1441px
         margin-left: 125px;
     }
     #p_header{
-        margin-bottom: 235px;
         margin-left: 125px;
         font-size: 1.2em;
     }
