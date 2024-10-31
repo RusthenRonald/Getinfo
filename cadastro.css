@@ -17,18 +17,34 @@ body{
     height: 100vh;
 }
 .container{
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container_interno{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 70%;
-    box-shadow: 1px 1px 10px black;
-    padding: 20px;
+    height: 800px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+    border-radius: 10px;
 }
+.form_img {
+    width: 40%; /* Ajuste  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff9807f6;
+}
+.form_img img{
+    width: 100%;
+    height: auto; 
+}
+.form {
+    width: 60%; /* Ajuste */
+}
+
     /*menu*/
     header{
         display: flex;
