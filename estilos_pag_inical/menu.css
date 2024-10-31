@@ -1,0 +1,73 @@
+menu{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.384);
+}
+.logo_getinfo img{
+    margin-top: 10px;
+    width: 140px;
+}
+nav{
+    margin-top: 20px;
+    display: flex;
+    gap: 25px;
+}
+/* Estilos para os links do nav */
+nav a {
+    text-decoration: none; 
+    color: #333; 
+    position: relative; 
+    text-transform: uppercase;
+    transition: color 0.3s ease; 
+}
+
+nav a:hover {
+    color: #F15B43; 
+}
+
+/* Estilos para o menu dropdown */
+.dropdown {
+    position: relative;
+}
+
+#iconenav {
+    vertical-align: middle; 
+}
+
+/* Estilos para o menu dropdown */
+.dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; /* Posicionei abaixo do link */
+    left: 0;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    z-index: 1000; 
+    min-width: 130px; 
+}
+
+/*  itens do menu  */
+.dropdown-menu li {
+    list-style: none; 
+
+}
+
+/* links dentro do menu dropdown */
+.dropdown-menu a {
+    text-transform: capitalize;
+    display: block; 
+    padding: 10px 15px; 
+    color: #333; 
+    text-decoration: none; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; 
+}
+
+/*quando passa*/
+.dropdown:hover .dropdown-menu {
+    display: block; /* Mostra o dropdown */
+}
