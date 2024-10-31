@@ -17,7 +17,7 @@ body{
     height: 100vh;
 }
 .container{
-    height: 1000px;
+    height: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     width: 70%;
-    height: 800px;
+    height: 1000px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
     border-radius: 10px;
 }
@@ -76,11 +76,25 @@ body{
     background-color: #F15B43;
     margin: 5px 0;
 }
+/*container inputs*/
 .inputs{
     margin-left: 15px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+/*input individual*/
+.input_box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+.input_box input{
+    margin-top: 0.4rem;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
 }
     /*menu*/
     header{
