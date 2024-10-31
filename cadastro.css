@@ -12,9 +12,7 @@
     margin: 0px;
     padding: 0px;
 }
-body{
-    height: 100vh;
-}
+
  
     /*menu*/
     header{
@@ -92,7 +90,6 @@ body{
     }
 /*Inicio do footer*/
 footer{
-    margin-top: 200px;
     height: 220px;
     font-family: 'Inter',sans-serif;
     letter-spacing: 1px;
