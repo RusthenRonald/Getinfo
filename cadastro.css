@@ -252,10 +252,10 @@ body {
     transition: background 0.4s; 
 }
 .botao_continuar button:hover {
-    background: linear-gradient(to right, #FE8F20, #F15B43); /* Inverte as cores no hover */
-}
+    background: linear-gradient(to right, #FE8F20, #F15B43);  Inverte as cores no hover
 
-/*telas de tablet*/
+
+telas de tablet
 @media screen and (max-width: 1330px) {
     .img_form {
         display: none;
@@ -271,7 +271,7 @@ body {
         font-size: 0.85rem;
     }
 }
-/*telas de celular fica essa*/
+telas de celular fica essa
 @media screen and (max-width: 660px) {
     .container_form {
         width: 90%;
@@ -292,4 +292,4 @@ body {
     .form_header {
         gap: 30px;
     }
-}
+} */
