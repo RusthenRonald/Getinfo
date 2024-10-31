@@ -62,7 +62,7 @@
         border: 1px solid #ccc; 
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
         z-index: 1000; 
-        min-width: 110px; 
+        min-width: 130px; 
     }
 
     /*  itens do menu  */
@@ -118,7 +118,7 @@
     .campo_email input{
         margin-top: 5px;
         margin-bottom: 15px;
-        background: #ecedd594;
+        background: #ecedd53d;
         border-radius: 6px;
         padding: 10px;
         height: 30px;
@@ -132,7 +132,7 @@
     }
     .campo_senha input{
         margin-top: 5px;
-        background: #ecedd594;
+        background: #ecedd53d;
         border-radius: 6px;
         padding: 10px;
         height: 30px;
