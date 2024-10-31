@@ -16,117 +16,96 @@
             height: 100vh;
             
         }
-        
-
-
-
-
-    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-:root{
-    --cor-neutra-branca:#f5f5f5;
-    --cor-preta:#171717;
-    --cor-copyright:#0e0c0c;
-    --cor-ciza:#a8a29e;
-}
-/*Inicio do cabeçalho*/
-footer{
-    margin-top: 200px;
-    height: 220px;
-    font-family: 'Inter',sans-serif;
-    letter-spacing: 1px;
-    width: 100%;
-    color: var(--cor-neutra-branca);
-}
-/*container*/
-#footer_container{
-    background-color: var(--cor-preta);
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 3rem 3.5rem;
-}
-/*palavra logo*/
-#footer_contatos h4{
-    margin-bottom: 0.75rem;
-}
-/*container dos icones*/
-#midias_sociais{
-    display: flex;
-    gap: 2rem;
-}
-/*links e icones*/
-#midias_sociais .link_midias{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
-    color: var(--cor-neutra-branca);
-    border-radius: 50%;
-    transition: all 0.4s;
-}
-/*configuração do link*/
-#midias_sociais .link_midias{
-    text-decoration: none;
-}
-#midias_sociais .link_midias:hover{
-    opacity: 0.8;
-}
-/*tamanho do icone*/
-#midias_sociais .link_midias i{
-    font-size: 1.25rem;
-}
-/*icone em individual*/
-#instagram{
-    background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
-}
-#facebook{
-    background-color: #4267b3;
-}
-#linkedin {
-    background-color: #0A66C2; 
-}
-
-#email {
-    background-color: #5f6368; 
-}
-/*listas*/
-.footer_lista{ /*para adiconar gap */
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-/*links da parte de listas*/
-.footer_lista .link_midias{
-    text-decoration: none;
-    color:var(--cor-ciza) ;
-    transition: all 0.4s;
-}
-.footer_lista .link_midias:hover{
-    color: #F15B43;
-}
-/*copyright*/
-#copyright{
-    display: flex;
-    justify-content: center;
-    background-color:var(--cor-copyright);
-    padding: 1.2rem;
-}
-
-/*media query só pra footer*/
-@media screen and (max-width:968px){
-    #footer_container{
-        grid-template-columns: repeat(2,1fr);
-        gap: 2rem;
+        .img_login img{
+            border-radius: 15px;
+            display: none;
+        }
+        /*container que envelopa a foto e o login*/
+        .container_login{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 100vh;
+            box-shadow: 0px 10px 30px #00000056;
+        }
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+            background-color: #edecec;
+            padding: 10px;
+            width: 300px;
+            height: 420px;
+            padding: 20px;
+            border-radius: 20px;
+            /**/
+        }
+        /*campo email*/
+        .campo_email label{
+            display: block;
+        }
+        .campo_email input{
+            margin-top: 5px;
+            margin-bottom: 15px;
+            background: #ecedd594;
+            border-radius: 6px;
+            padding: 10px;
+            height: 30px;
+            border: none;
+            width: 95%;
+            box-shadow: 0px 10px 30px #0000002f;
+        }
+        /*campo senha*/
+        .campo_senha label{
+            display: block;
+        }
+        .campo_senha input{
+            margin-top: 5px;
+            background: #ecedd594;
+            border-radius: 6px;
+            padding: 10px;
+            height: 30px;
+            border: none;
+            width: 95%;
+            box-shadow: 0px 10px 30px #0000002f;
+        }
+        /*botao login*/
+        .botao_login{
+            display: block;
+            margin-top: 35px;
+            width: 90%;
+            text-align: center;
+            text-decoration: none;
+            background: linear-gradient(to right, #F15B43, #FE8F20);
+            border: none;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+        }
+        /*botao login*/
+        .botao_login:hover{
+            transform: scale(1.02);
+        }
+        /*redes*/
+        .redes{
+            margin-top: 35px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 30px;
+        }
+        .esq_senha {
+            text-decoration: none;
+        }
+        .esq_senha:hover{
+            text-decoration: underline;
+        }
+        .redes a i {
+        background: linear-gradient(to right, #F15B43, #FE8F20); 
+        -webkit-background-clip: text; 
+        background-clip: text;
+        color: transparent; 
     }
-}
-@media screen and (max-width:626px){
-    #footer_container{
-        grid-template-columns: repeat(1,1fr);
-        
-    }
-}
-
-
     /*Só para adicionar a cor em tela de celular*/
      /* Cor de fundo específica para telas de celular */
      @media screen and (max-width: 420px) {
@@ -209,113 +188,36 @@ footer{
     
 </header>
 <body>
-    <div class="img_login">
-        <img src="img/login f.jpg" alt="">
-    </div>
-    <div class="container_interno_login">
-        <h1 style="text-align: center; margin-bottom: 20px;">LOGIN</h1>
-        <form action="login.html" method="post" autocomplete="on">
-            <div class="campo_email">
-                <label for="email">E-mail</label >
-                <input type="email" id="mask" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="35">
-            </div>
-            <div class="campo_senha" >
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
-            </div>
-            <a href="index.html" class="botao_login">Entrar</a>
-        </form>
-        <div class="redes">
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-google"></i></a>
+    <div class="container_login">
+        <div class="img_login">
+            <img src="img/login f.jpg" alt="">
         </div>
-        <h5 style="text-align: center; font-size: 1em;">
-            <a class="esq_senha" href="#" style="color: #F15B43;">Equeceu sua senha?</a>
-        </h5>            
-        <h5 style="text-align: center; font-size: 1.0em;">Clique <a class="lin_cadas" href="telacadastro.html" style="color: #F15B43;">aqui</a> para cadastrar-se</h5>
+        <div class="container_interno_login">
+            <h1 style="text-align: center; margin-bottom: 20px;">LOGIN</h1>
+            <form action="login.html" method="post" autocomplete="on">
+                <div class="campo_email">
+                    <label for="email">E-mail</label >
+                    <input type="email" id="mask" placeholder="Digite seu e-mail" autocomplete="email" required maxlength="35">
+                </div>
+                <div class="campo_senha" >
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
+                </div>
+                <a href="index.html" class="botao_login">Entrar</a>
+            </form>
+            <div class="redes">
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-google"></i></a>
+            </div>
+            <h5 style="text-align: center; font-size: 1em;">
+                <a class="esq_senha" href="#" style="color: #F15B43;">Equeceu sua senha?</a>
+            </h5>            
+            <h5 style="text-align: center; font-size: 1.0em;">Clique <a class="lin_cadas" href="telacadastro.html" style="color: #F15B43;">aqui</a> para cadastrar-se</h5>
+        </div>
     </div>
 
-    <footer>
-        <div id="footer_container">
-              <div id="footer_contatos">
-                  <img style="margin-bottom: 20px; width: 160px;" src="img/logo getinfo_processed.jpg" alt="">
-
-                  <div id="midias_sociais">
-                      <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
-                          <i class="fa-brands fa-instagram"></i>
-                      </a>
-                      <a href="https://www.facebook.com/getinfosolucoes/ " target="_blank" class="link_midias" id="facebook">
-                          <i class="fa-brands fa-facebook-f"></i>
-                      </a>
-                      <a href="https://mail.google.com/mail/u/0/#search/contato%40getinfo.net.br?compose=new" target="_blank" class="link_midias" id="email">
-                          <i class="fa-regular fa-envelope"></i>
-                      </a>
-                      <a href="https://www.linkedin.com/company/getinfocolucoes/" target="_blank" class="link_midias" id="linkedin" >
-                          <i class="fa-brands fa-linkedin-in"></i>
-                      </a>
-                  </div>
-              </div>
-
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Navegação</h3>
-                  </li>
-                  <li>
-                      <a href="#container_box" class="link_midias">Campanhas</a>
-                  </li>
-                  <li>
-                      <a href="#container_sobre_nos" class="link_midias">Sobre Nós</a>
-                  </li>
-                  <li>
-                      <a href="#dados" class="link_midias">Dados da Plataforma</a>
-                  </li>
-                  <li>
-                      <a href="#form_container" class="link_midias">Doe Agora</a>
-                  </li>
-              </ul>
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Servicos</h3>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Desenvolvimento de Software</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Business Intelligence (BI)</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Governança de TI</a>
-                  </li>
-              </ul>
-              <ul class="footer_lista">
-                  <li>
-                      <h3>Contato</h3>
-                  </li>
-                  <li>
-                      <a target="_blank" href="https://www.google.com/maps/@-10.9206848,-37.0561677,3a,75y,277.58h,90t/data=!3m7!1e1!3m5!1sU8RQn-RUf3xqfRFF-WCVsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DU8RQn-RUf3xqfRFF-WCVsw%26yaw%3D277.58!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">Rua Zaqueu Brandão, 226, Bairro São José</a>
-                  </li>
-                  <li>
-                      <a target="_blank" href="https://www.google.com/maps/place/R.+Zaqueu+Brand%C3%A3o+-+S%C3%A3o+Jos%C3%A9,+Aracaju+-+SE,+49015-330/@-10.9218321,-37.056242,19z/data=!4m6!3m5!1s0x71ab39eaea4a853:0xac9ac8d5055e894c!8m2!3d-10.9217076!4d-37.056189!16s%2Fg%2F1trcgmhk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">CEP 49015-330 | Aracaju - SE</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">Av. José Conrado de Araujo, 731, Bairro Rosa Elze, <br> SergipeTec  - Bloco B3 - Sala 06</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">CEP 49100-000 | São Cristóvão - SE</a>
-                  </li>
-                  <li>
-                      <a href="#" class="link_midias">(79) 3022-9002</a>
-                  </li>
-                  
-              </ul>
-              
-        </div> 
-          <div id="copyright">
-              &#169
-              2024 Todos os direitos reservados
-          </div>
-  </footer>
+    
 </body>
 </html>
 
@@ -332,115 +234,3 @@ Desktops Grandes (4K e telas maiores):
 Breakpoint: min-width: 1441px
 
 -->
-<!--
-    .img_login img{
-            border-radius: 15px;
-            display: none;
-        }
-        /*container que envelopa a foto e o login*/
-        .container_login{
-            display: flex;
-            justify-content:center;
-            
-            flex-wrap: wrap;
-            height: 100vh;
-            box-shadow: 0px 10px 30px #00000056;
-        }
-        /*container de todo a parte de campos e botoes*/
-        .container_interno_login{
-            background-color: #edecec;
-            padding: 10px;
-            width: 300px;
-            height: 420px;
-            padding: 20px;
-            border-radius: 20px;
-            /**/
-        }
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*campo email*/
-.campo_email label{
-    display: block;
-}
-.campo_email input{
-    margin-top: 5px;
-    margin-bottom: 15px;
-    background: #ecedd594;
-    border-radius: 6px;
-    padding: 10px;
-    height: 30px;
-    border: none;
-    width: 95%;
-    box-shadow: 0px 10px 30px #0000002f;
-}
-/*campo senha*/
-.campo_senha label{
-    display: block;
-}
-.campo_senha input{
-    margin-top: 5px;
-    background: #ecedd594;
-    border-radius: 6px;
-    padding: 10px;
-    height: 30px;
-    border: none;
-    width: 95%;
-    box-shadow: 0px 10px 30px #0000002f;
-}
-/*botao login*/
-.botao_login{
-    display: block;
-    margin-top: 35px;
-    width: 90%;
-    text-align: center;
-    text-decoration: none;
-    background: linear-gradient(to right, #F15B43, #FE8F20);
-    border: none;
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-}
-/*botao login*/
-.botao_login:hover{
-    transform: scale(1.02);
-}
-/*redes*/
-.redes{
-    margin-top: 35px;
-    margin-bottom: 15px;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    font-size: 30px;
-}
-.esq_senha {
-    text-decoration: none;
-}
-.esq_senha:hover{
-    text-decoration: underline;
-}
-.redes a i {
-background: linear-gradient(to right, #F15B43, #FE8F20); 
--webkit-background-clip: text; 
-background-clip: text;
-color: transparent; 
-}
