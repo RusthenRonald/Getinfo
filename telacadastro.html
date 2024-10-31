@@ -30,69 +30,141 @@
     
 </header>
 <body>
-    <div class="container_form">
-        <div class="img_form">
-            <img src="img/foto_cadastro.svg" alt="Imagem de cadastro">
+    <!-- Pessoa fisisca -->
+    <div class="container">
+        <div class="form-image">
+            <img src="assets/img/cadastroIMG.svg">
         </div>
         <div class="form">
-            <form action="#" method="post" id="formCadastro">
-                <div class="form_header">
-                    <h1>Cadastre-se</h1>
-                    <div class="pessoa_botao">
-                        <button id="tipo_pessoa">Pessoa Física</button>
+            <form id="pessoa-fisica-form" action="#">
+                <div class="form-header">
+                    <div class="tittle">
+                        <h1>Cadastre-se como <br> Pessoa Física</h1>
+                    </div>
+                    <div class="trocar-cadastro">
+                        <a id="empresa" class="empresa" href="#" onclick="toggleForms()">Cadastro Juridico</a>
                     </div>
                 </div>
-                <div class="input_grupo">
-                    <div class="input_caixa">
-                        <label for="nomecompleto">Nome</label>
-                        <input type="text" id="nomecompleto" placeholder="Digite seu nome completo" required>
+                <div class="inputs">
+                    <div class="input-box column-input">
+                        <label for="primeiro_nome">Nome</label>
+                        <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required>
                     </div>
-                    <div class="input_caixa">
-                        <label for="cpf">CPF</label>
-                        <input type="text" id="cpf" placeholder="XXX.XXX.XXX-XX" required>
+                    <div class="gender-inputs">
+                        <div class="gender__tittle">
+                            <h6>Gênero</h6>
+                        </div>
+                        <div class="gender-group">
+                            <div class="gender_input">
+                                <input type="radio" id="feminino" name="genero">
+                                <label for="feminino">Feminino</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="masculino" name="genero">
+                                <label for="masculino">Masculino</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="outro" name="genero">
+                                <label for="outro">Outro</label>
+                            </div>
+                            <div class="gender_input">
+                                <input type="radio" id="nao-dizer" name="genero">
+                                <label for="nao-dizer">Prefiro não dizer</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="input_caixa">
-                        <label for="data_nascimento">Data de Nascimento</label>
-                        <input type="date" id="data_nascimento" required>
+                    <div class="input-box column-input">
+                        <label for="endereco">Endereço</label>
+                        <input id="end" type="text" name="end" placeholder="Endereço" required>
                     </div>
-                    <div class="input_caixa">
-                        <label for="telefone">Telefone/Celular</label>
-                        <input type="tel" id="telefone" placeholder="(XX) XXXX-XXXX" required>
-                    </div>
-                    <div class="input_caixa">
+                    <div class="input-box column-input">
                         <label for="email">E-mail</label>
-                        <input type="email" id="email" placeholder="E-mail" required>
+                        <input id="email" type="email" name="email" placeholder="Digite seu email" required>
                     </div>
-                    <div class="input_caixa">
+                    <div class="input-box">
+                        <label for="data-nasc">Data de nascimento</label>
+                        <input id="date" type="date" name="date" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="tel">Telefone</label>
+                        <input id="tel" type="tel" name="tel" placeholder="Telefone" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cpf">CPF</label>
+                        <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cep">CEP</label>
+                        <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required>
+                    </div>
+                    <div class="input-box">
                         <label for="senha">Senha</label>
-                        <input type="password" id="senha" placeholder="Senha" required>
+                        <input id="senha" type="password" name="senha" placeholder="Digite sua Senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmar-senha">Confirmar Senha</label>
+                        <input id="confirmar_senha" type="password" name="confirmar_senha" placeholder="Confirme sua senha" required>
                     </div>
                 </div>
-                <div class="genero">
-                    <div class="titulo_genero">
-                        <h6>Gênero</h6>
-                    </div>
-                    <div class="genero_grupo">
-                        <div class="genero_input">
-                            <input type="radio" name="genero" id="feminino" value="feminino">
-                            <label for="feminino">Feminino</label>
-                        </div>
-                        <div class="genero_input">
-                            <input type="radio" name="genero" id="masculino" value="masculino">
-                            <label for="masculino">Masculino</label>
-                        </div>
-                        <div class="genero_input">
-                            <input type="radio" name="genero" id="outros" value="outros">
-                            <label for="outros">Outros</label>
-                        </div>
-                    </div>
-                </div>
-                <div class="botao_continuar">
+                <div class="continue-button">
                     <button type="submit">Continuar</button>
                 </div>
             </form>
+
+            <!-- Formulário para Pessoa Jurídica -->
+           
+    <form id="pessoa-juridica-form" action="#" class="hidden">
+    <div class="form-header">
+        <div class="tittle">
+            <h1>Cadastre-se como <br>Pessoa Jurídica</h1>
+        </div>
+        <div class="trocar-cadastro">
+            <a id="pessoa-fisica" class="pessoa-fisica" href="#" onclick="toggleForms()">Cadastro Fisico</a>
         </div>
     </div>
+    <div class="inputs">
+        <div class="input-box column-input">
+            <label for="nome-fant">Nome Fantasia</label>
+            <input id="nome-fant" type="text" name="nome-fant" placeholder="Nome Fantasia" required>
+        </div>
+        <div class="input-box column-input">
+            <label for="razao-soc">Razão Social</label>
+            <input id="razao-soc" type="text" name="razao-soc" placeholder="Razão Social" required>
+        </div>
+        <div class="input-box column-input">
+            <label for="email-jur">E-mail</label>
+            <input id="email-jur" type="email" name="email-jur" placeholder="Digite seu email" required>
+        </div>
+        <div class="input-box column-input">
+            <label for="end-jur">Endereço</label>
+            <input id="end-jur" type="text" name="end-jur" placeholder="Digite seu Endereço" required>
+        </div>
+        <div class="input-box">
+            <label for="cnpj">CNPJ</label>
+            <input id="cnpj" type="text" name="cnpj" placeholder="xx.xx.xxx/xxxx-xx" maxlength="18" pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}" required>
+        </div>
+        <div class="input-box">
+            <label for="tel-jur">Telefone</label>
+            <input id="tel-jur" type="tel" name="tel-jur" placeholder="(xx) xxxx-xxxx" required>
+        </div>
+        <div class="input-box">
+            <label for="senha-jur">Senha</label>
+            <input id="senha-jur" type="password" name="senha-jur" placeholder="Digite sua Senha" required>
+        </div>
+        <div class="input-box">
+            <label for="confirmar-senha-jur">Confirmar Senha</label>
+            <input id="confirmar-senha-jur" type="password" name="confirmar-senha-jur" placeholder="Confirme sua senha" required>
+        </div>
+    </div>
+    <div class="continue-button">
+        <button type="submit">Continuar</button>
+    </div>
+</form>
+
+        </div>
+    </div>
+    <script src="cadastro.js"></script>
+
 </body>
     <footer >
         <div id="footer_container" >
