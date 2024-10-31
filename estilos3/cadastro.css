@@ -50,7 +50,8 @@ nav{
 .a_hover:hover {
     color: #F15B43; 
 }
-button {
+
+.botao_header {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,17 +66,13 @@ button {
     transition: background-color 0.3s ease; 
 }
 
-button a{
+.botao_header a{
     color: white;
+    text-decoration: none;
 }
-button:hover{
+.botao_header:hover{
     transform: scale(1.005); 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
-}
-
-/* Estilo para o link dentro do botão */
-button a {
-    text-decoration: none;
 }
 /* Estilos para o menu dropdown */
 .dropdown {
