@@ -128,7 +128,7 @@ button a {
 }
 /*grupo de capmanhas*/
 main {
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -138,11 +138,26 @@ main {
     gap: 50px;
 }
 .grupo{
-    
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px black;
+    height: 500px;
+    width: 350px;
+}
+/*todas com mesma largura*/
+.img_grupo {
+    width: 100%;
+    height: 60%; 
+    overflow: hidden;
+}
+.img_grupo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*sem distorcer */
+    border-radius: 20px 20px 0 0;
 }
 /*Inicio do cabeçalho*/
 footer{
-    margin-top: 200px;
     height: 220px;
     font-family: 'Inter',sans-serif;
     letter-spacing: 1px;
