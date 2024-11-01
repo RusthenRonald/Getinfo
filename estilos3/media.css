@@ -10,11 +10,77 @@ Breakpoint: min-width: 1025px e max-width: 1440px
 Desktops Grandes (4K e telas maiores):
 Breakpoint: min-width: 1441px
 */
+@media screen and (max-width: 420px) {
+    .container_login {
+        background-color: #fe8f20d7;
+    }
+     /* Para telas menores */
+    #menu_normal {
+        display: none;
+    }
+    #menu_hamburguer {
+        margin-top: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    /* Estilos para o menu hambúrguer quando ativado */
+    .menu-aberto #menu_normal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
 
+    /* Links do menu no modo hambúrguer */
+    .menu-aberto #menu_normal a {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+    }
+    .botao_header{
+    margin-bottom: 25px;
+    }
+
+
+
+}
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
+    /*menu hamburguer*/
+    #menu_normal {
+        display: none;
+    }
+    #menu_hamburguer {
+        margin-top: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    /* Estilos para o menu hambúrguer quando ativado */
+    .menu-aberto #menu_normal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Links do menu no modo hambúrguer */
+    .menu-aberto #menu_normal a {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+    }
+    .botao_header{
+    margin-bottom: 25px;
+    }
     .titulo{
        margin-top: 20px;
+       font-size: 0.7em;
     }
     .input_box{
         
@@ -42,6 +108,13 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
+     /*menu hamburguer*/
+     #menu_hamburguer{
+        display: none;
+    }
+    nav a{
+        font-size: 0.9em;
+    }
     .titulo{
         margin-top: 20px;
      }
@@ -71,6 +144,10 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
+     /*menu hamburguer*/
+     #menu_hamburguer{
+        display: none;
+    }
     .titulo{
         margin-top: 20px;
      }
@@ -87,6 +164,10 @@ Breakpoint: min-width: 1441px
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
+     /*menu hamburguer*/
+     #menu_hamburguer{
+        display: none;
+    }
     .form_img {
         width: 50%; 
     }
