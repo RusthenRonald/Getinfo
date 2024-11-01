@@ -12,6 +12,34 @@ Breakpoint: min-width: 1441px
 */
 /*criado para tela de celular em especifico , caso tenha alguma configuração que n faça no geral*/
 @media screen and (min-width:200px) and (max-width:420px){
+        /* Para telas menores */
+        #menu_normal {
+            display: none;
+        }
+        #menu_hamburguer {
+            margin-top: 20px;
+            display: block;
+        }
+        /* Estilos para o menu hambúrguer quando ativado */
+        .menu-aberto #menu_normal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+    /* Links do menu no modo hambúrguer */
+    .menu-aberto #menu_normal a {
+        padding: 10px;
+        border-top: 1px solid #f0f0f0;
+    }
+    .botao_header{
+        margin-bottom: 25px;
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -49,6 +77,34 @@ Breakpoint: min-width: 1441px
     h1{
         font-size: 3.1em;
     }
+    /* Para telas menores */
+    #menu_normal {
+        display: none;
+    }
+    #menu_hamburguer {
+        margin-top: 20px;
+        display: block;
+    }
+    /* Estilos para o menu hambúrguer quando ativado */
+    .menu-aberto #menu_normal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+/* Links do menu no modo hambúrguer */
+.menu-aberto #menu_normal a {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+}
+.botao_header{
+    margin-bottom: 25px;
+}
     div h1{
         margin-left: 40px;/*espaçamento lateral esquerdo*/
     }
@@ -153,6 +209,9 @@ Breakpoint: min-width: 1441px
 @media screen and (min-width:768px) and (max-width:1024px){
     h1{
         font-size: 3.3em;
+    }
+    nav a{
+        font-size: 0.9em;
     }
     div h1{
         margin-left: 70px; /*espaçamento lateral esquerdo*/
@@ -274,6 +333,9 @@ Breakpoint: min-width: 1441px
     header{
         height: 520px;
     }
+    nav a{
+        font-size: 1.0em;
+    }
     h1{
         font-size: 3.9em;
     }
@@ -386,6 +448,9 @@ Breakpoint: min-width: 1441px
 @media screen and (min-width:1441px) {
     header{
         height: 650px;
+    }
+    nav a{
+        font-size: 1.1em;
     }
     h1{
         font-size: 4.1em;
