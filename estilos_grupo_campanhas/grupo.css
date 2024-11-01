@@ -204,6 +204,12 @@ main {
     border: none;
     border-radius: 5px;
     background-color: #F15B43;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Adicionando a transição */
+}
+.botao_doar button:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.219);
+    transform: translateY(-1px); 
 }
 .botao_doar a {
     color: white;
