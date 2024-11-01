@@ -38,7 +38,7 @@
                 <img src="img/foto_cadastro.svg">
             </div>
             <div class="form">
-                <form id="pessoa_fisica" action="#">
+                <form id="pessoa_fisica" action="index.html">
                     <div class="form_header">
                         <div class="titulo">
                             <h1>Cadastre-se como <br> Pessoa Física</h1>
@@ -112,10 +112,67 @@
                         <button type="submit">Continuar</button>
                     </div>
                 </form>
+                
+
+
+
+                
+                <!-- Formulário de Pessoa Jurídica -->
+                <form id="pessoa_juridica" action="index.html" style="display: none;">
+                    <div class="form_header">
+                        <div class="titulo">
+                            <h1>Cadastre-se como <br> Pessoa Jurídica</h1>
+                        </div>
+                        <div class="trocar_cadastro">
+                            <a id="toggle_form" href="#" onclick="toggleForms()">Cadastro Físico</a>
+                        </div>
+                    </div>
+                    <div class="inputs">
+                        <div class="input_box">
+                            <label for="nome_empresa">Nome da Empresa</label>
+                            <input id="nome_empresa" type="text" name="nome_empresa" placeholder="Digite o Nome da Empresa" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="cnpj">CNPJ</label>
+                            <input id="cnpj" type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" maxlength="18" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="razao_social">Razão Social</label>
+                            <input id="razao_social" type="text" name="razao_social" placeholder="Digite a Razão Social" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="endereco_empresa">Endereço</label>
+                            <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço da Empresa" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="telefone_empresa">Telefone</label>
+                            <input id="telefone_empresa" type="tel" name="telefone_empresa" placeholder="Telefone da Empresa" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="email_empresa">E-mail</label>
+                            <input id="email_empresa" type="email" name="email_empresa" placeholder="E-mail da Empresa" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="cep_empresa">CEP</label>
+                            <input id="cep_empresa" type="text" name="cep_empresa" placeholder="CEP da Empresa" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="senha_empresa">Senha</label>
+                            <input id="senha_empresa" type="password" name="senha_empresa" placeholder="Digite sua Senha" required>
+                        </div>
+                        <div class="input_box">
+                            <label for="confirmar_senha_empresa">Confirmar Senha</label>
+                            <input id="confirmar_senha_empresa" type="password" name="confirmar_senha_empresa" placeholder="Confirme sua Senha" required>
+                        </div>
+                    </div>
+                    <div class="continuar_botao">
+                        <button type="submit">Continuar</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
-    <script src="cadastro.js"></script>
+    
 
 </main>
     <footer >
@@ -200,3 +257,17 @@
     </footer>
 </body>
 </html>
+
+<script>
+    function toggleForms() {
+        const formFisica = document.getElementById('pessoa_fisica');
+        const formJuridica = document.getElementById('pessoa_juridica');
+        if (formFisica.style.display === 'none') {
+            formFisica.style.display = 'block';
+            formJuridica.style.display = 'none';
+        } else {
+            formFisica.style.display = 'none';
+            formJuridica.style.display = 'block';
+        }
+    }
+</script>
