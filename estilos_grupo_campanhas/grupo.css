@@ -125,6 +125,16 @@ button a {
 .dropdown:hover .dropdown-menu {
     display: block; /* Mostra o dropdown */
 }
+/*grupo de capmanhas*/
+main {
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_grupo{
+    
+}
 /*Inicio do cabeçalho*/
 footer{
     margin-top: 200px;
