@@ -43,7 +43,20 @@ Breakpoint: min-width: 1441px
     .botao_header{
     margin-bottom: 25px;
     }
-
+    .container_interno{
+        display: flex;
+        justify-content: flex-start;
+        width: 70%;
+        height: 1100px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+        border-radius: 10px;
+    }
+    .form_img {
+        display: none;
+    }
+    .form {
+        width: 100%; 
+    }
 
 
 }
