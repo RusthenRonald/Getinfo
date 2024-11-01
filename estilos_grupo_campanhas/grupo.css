@@ -124,7 +124,7 @@ button a {
 
 /*quando passa*/
 .dropdown:hover .dropdown-menu {
-    display: block; /* Mostra o dropdown */
+    display: block;
 }
 /*grupo de capmanhas*/
 main {
@@ -135,12 +135,13 @@ main {
 }
 .container_grupo{
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 .grupo{
     border: none;
     border-radius: 20px;
-    box-shadow: 1px 1px 6px black;
+    box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
     height: 500px;
     width: 350px;
 }
@@ -148,13 +149,17 @@ main {
 .img_grupo {
     width: 100%;
     height: 60%; 
-    overflow: hidden;
 }
 .img_grupo img {
     width: 100%;
     height: 100%;
     object-fit: cover; /*sem distorcer */
     border-radius: 20px 20px 0 0;
+}
+.texto_grupo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /*Inicio do cabeçalho*/
 footer{
