@@ -140,30 +140,31 @@ main {
 }
 .grupo{
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
-    height: 500px;
+    height: 590px;
     width: 350px;
 }
 /*todas com mesma largura*/
 .img_grupo {
     width: 100%;
-    height: 60%; 
+    height: 50%; 
 }
 .img_grupo img {
     width: 100%;
     height: 100%;
     object-fit: cover; /*sem distorcer */
-    border-radius: 20px 20px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 .texto_grupo{
     display: flex;
     flex-direction: column;
+    padding: 10px; 
 }
 .texto_grupo h1{
-    margin-top: 5px;
+    margin-top: 15px;
     color: #F15B43;
-    font-size: 1.4em;
+    font-size: 1.6em;
     padding-left: 10px;
 }
 .texto_grupo p{
@@ -184,11 +185,29 @@ main {
     text-align: center;
     color: white;
     height: 100%; 
-    background-color: #ff9807; 
+    background: linear-gradient(to right, #F15B43, #FE8F20);
     border-radius: 25px; 
     transition: width 0.3s;
 }
-
+.valores{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: gray;
+}
+.botao_doar {
+    padding-left: 10px;
+}
+.botao_doar button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #F15B43;
+}
+.botao_doar a {
+    color: white;
+}
 /*Inicio do cabeçalho*/
 footer{
     height: 220px;
