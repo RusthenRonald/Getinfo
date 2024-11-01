@@ -1,91 +1,178 @@
 
 
+/*media do login*/
 /*Só para adicionar a cor em tela de celular*/
-    /* Cor de fundo específica para telas de celular */
-    @media screen and (max-width: 420px) {
-        .container_login {
-            background-color: #fe8f20d7;
-        }
+/* Cor de fundo específica para telas de celular */
+@media screen and (max-width: 420px) {
+    .container_login {
+        background-color: #fe8f20d7;
     }
-        /*Telas celulares maiores*/
-        @media screen and (min-width:420px) and (max-width:767px){
-            /*container de todo a parte de campos e botoes*/
-            .container_interno_login{
-                width: 350px;
-                height: 420px;
-                padding: 20px;
-            }
-            .img_login img{
-                display: none;
-            }
-            .container_login {
-            background-color: #fe8f20d7;
+     /* Para telas menores */
+    #menu_normal {
+        display: none;
+    }
+    #menu_hamburguer {
+        margin-top: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    /* Estilos para o menu hambúrguer quando ativado */
+    .menu-aberto #menu_normal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Links do menu no modo hambúrguer */
+    .menu-aberto #menu_normal a {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+    }
+    .botao_header{
+    margin-bottom: 25px;
+    }
+
+
+
+}
+    /*Telas celulares maiores*/
+    @media screen and (min-width:420px) and (max-width:767px){
+        /*menu hamburguer*/
+        #menu_normal {
+            display: none;
         }
+        #menu_hamburguer {
+            margin-top: 20px;
+            display: block;
+            cursor: pointer;
         }
-        @media screen and (min-width:768px) and (max-width:1024px) {
-            /*botao login*/
+        /* Estilos para o menu hambúrguer quando ativado */
+        .menu-aberto #menu_normal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Links do menu no modo hambúrguer */
+        .menu-aberto #menu_normal a {
+        padding: 10px;
+        border-top: 1px solid #f0f0f0;
+        }
+        .botao_header{
+        margin-bottom: 25px;
+        }
+        /*login*/
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+            width: 350px;
+            height: 420px;
+            padding: 20px;
+        }
+        .img_login img{
+            display: none;
+        }
+        .container_login {
+        background-color: #fe8f20d7;
+    }
+    }
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        /*menu hamburguer*/
+        #menu_hamburguer{
+            display: none;
+        }
+        nav a{
+            font-size: 0.9em;
+        }
+        /*botao login*/
         .botao_login{
             font-size: 1.1em;
         }
-            /*container de todo a parte de campos e botoes*/
-            .container_interno_login{
-                width: 400px;
-                height: 450px;
-                padding: 20px;
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+        width: 400px;
+        height: 450px;
+        padding: 20px;
+    }
+    .img_login img{
+        display: block;
+        width: 330px;
+        height: 490px;
+    }
+    }
+    @media screen and (min-width:1025px) and (max-width:1440px) {
+        /*menu hamburguer*/
+        #menu_hamburguer{
+            display: none;
         }
-        .img_login img{
-            display: block;
-            width: 330px;
-            height: 490px;
+        nav a{
+            font-size: 1.0em;
         }
+        /*botao login*/
+    .botao_login{
+        font-size: 1.2em;
+    }
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+            width: 400px;
+            height: 450px;
+            padding: 30px;
+    }
+    .img_login img{
+        display: block;
+        width: 450px;
+        height: 510px;
+    }
+    }
+    @media screen and (min-width:1441px) {
+        /*menu hamburguer*/
+        #menu_hamburguer{
+            display: none;
         }
-        @media screen and (min-width:1025px) and (max-width:1440px) {
-            /*botao login*/
-        .botao_login{
-            font-size: 1.2em;
+        nav a{
+            font-size: 1.1em;
         }
-            /*container de todo a parte de campos e botoes*/
-            .container_interno_login{
-                width: 400px;
-                height: 450px;
-                padding: 30px;
-        }
-        .img_login img{
-            display: block;
-            width: 450px;
-            height: 510px;
-        }
-        }
-        @media screen and (min-width:1441px) {
-            /*botao login*/
-        .botao_login{
-            font-size: 1.2em;
-        }
-            /*container de todo a parte de campos e botoes*/
-            .container_interno_login{
-                width: 400px;
-                height: 500px;
-                padding: 30px;
-        }
-        .img_login img{
-            display: block;
-            width: 500px;
-            height: 560px;
-        }
-        i{
-            font-size: 35px;
-        }
-        }
-        /*media query só pra footer*/
-        @media screen and (max-width:968px){
-            #footer_container{
-                grid-template-columns: repeat(2,1fr);
-                gap: 2rem;
-            }
-        }
-        @media screen and (max-width:626px){
-            #footer_container{
-                grid-template-columns: repeat(1,1fr);
-                
-            }
-        }
+        /*botao login*/
+    .botao_login{
+        font-size: 1.2em;
+    }
+        /*container de todo a parte de campos e botoes*/
+        .container_interno_login{
+            width: 400px;
+            height: 500px;
+            padding: 30px;
+    }
+    .img_login img{
+        display: block;
+        width: 500px;
+        height: 560px;
+    }
+    i{
+        font-size: 35px;
+    }
+    }
+
+
+
+/*media query só pra footer*/
+@media screen and (max-width:968px){
+    #footer_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:626px){
+    #footer_container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
