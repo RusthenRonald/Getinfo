@@ -114,6 +114,18 @@ Breakpoint: min-width: 1441px
     .box{
         height: 260px;
     }
+    .campanhas_destaque h2{
+        font-size: 2.1em;
+    }
+    /*linha laranja*/
+    .campanhas_destaque h2::after{
+        content: ' ';
+        display: block;
+        width: 10.5rem;
+        height: 0.3rem;
+        background-color: #F15B43;
+        margin-bottom: 20px;
+    }
     /*tamanho do texto das caixas*/
     div.box p{
         font-size: 1.9em;
@@ -218,6 +230,18 @@ Breakpoint: min-width: 1441px
     }
     #p_header{ /*espaçamento na parte de baixo e lateral do p*/
         margin-left: 70px;
+    }
+    .campanhas_destaque h2{
+        font-size: 2.6em;
+    }
+    /*linha laranja*/
+    .campanhas_destaque h2::after{
+        content: ' ';
+        display: block;
+        width: 13.5rem;
+        height: 0.3rem;
+        background-color: #F15B43;
+        margin-bottom: 20px;
     }
     div#container_box{
         display: flex;
@@ -345,6 +369,18 @@ Breakpoint: min-width: 1441px
     #p_header{
         margin-left: 100px;
     }
+    .campanhas_destaque h2{
+        font-size: 2.9em;
+    }
+    /*linha laranja*/
+    .campanhas_destaque h2::after{
+        content: ' ';
+        display: block;
+        width: 15rem;
+        height: 0.3rem;
+        background-color: #F15B43;
+        margin-bottom: 20px;
+    }
     div#container_box{
         display: flex;
         flex-wrap: nowrap;
@@ -461,6 +497,18 @@ Breakpoint: min-width: 1441px
     #p_header{
         margin-left: 125px;
         font-size: 1.2em;
+    }
+    .campanhas_destaque h2{
+        font-size: 3em;
+    }
+    /*linha laranja*/
+    .campanhas_destaque h2::after{
+        content: ' ';
+        display: block;
+        width: 15.5rem;
+        height: 0.3rem;
+        background-color: #F15B43;
+        margin-bottom: 20px;
     }
     div#container_box{
         display: flex;
