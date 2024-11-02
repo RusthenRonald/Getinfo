@@ -42,7 +42,7 @@ Breakpoint: min-width: 1441px
     margin-bottom: 25px;
 }
 main{
-    height: 2000px;
+    height: 4000px;
 }
 }
 /*Telas celulares maiores*/
@@ -78,13 +78,15 @@ margin-bottom: 25px;
 }
 
 main{
-    height: 2000px;
+    margin-top: 60px;
+    height: 4000px;
 }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
     main{
-        height: 1400px;
+        margin-top: 100px;
+        height: 2200px;
     }
 nav a{
     font-size: 0.9em;
@@ -95,7 +97,8 @@ nav a{
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
 main{
-    height: 1400px;
+    margin-top: 100px;
+    height: 1700px;
 }
 nav a{
     font-size: 1.0em;
@@ -105,7 +108,10 @@ nav a{
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
-
+main{
+    margin-top: 100px;
+    height: 1200px;
+}
 nav a{
     font-size: 1.1em;
 }
