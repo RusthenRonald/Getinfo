@@ -128,7 +128,7 @@ button a {
 }
 /*grupo de capmanhas*/
 main {
-    height: 1000px;
+    height: 1700px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@ main {
     padding: 10px; 
 }
 .texto_grupo h1{
-    color: #F15B43;
+    color: black;
     font-size: 1.6em;
     padding-left: 10px;
 }
@@ -194,7 +194,7 @@ main {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    color: gray;
+
 }
 .container_botao_doar{
     display: flex;
