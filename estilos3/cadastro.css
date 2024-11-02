@@ -222,6 +222,9 @@ nav{
     margin-top: 0.62rem;
     margin-bottom: 0.62rem;
 }
+.genero_titulo h6{
+    font-weight: normal;
+}
 /*botão de cadastro*/
 .continuar_botao {
     display: flex;

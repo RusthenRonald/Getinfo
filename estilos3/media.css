@@ -44,12 +44,29 @@ Breakpoint: min-width: 1441px
     margin-bottom: 25px;
     }
     .container_interno{
+        margin-top: 100px;
         display: flex;
         justify-content: flex-start;
-        width: 70%;
-        height: 1100px;
+        width: 95%;
+        height: 1000px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
         border-radius: 10px;
+    }
+    .input_box{
+        width: 90%;
+
+    }
+    .genero_titulo h6{
+        font-size: 1em;
+        font-weight: normal;
+    }
+    .titulo{
+        margin-top: 20px;
+        font-size: 0.7em;
+     }
+     .titulo h1::after{
+        width: 8rem;
+
     }
     .form_img {
         display: none;
@@ -96,7 +113,10 @@ Breakpoint: min-width: 1441px
        font-size: 0.7em;
     }
     .input_box{
-        
+        width: 90%;
+    }
+    .genero_titulo h6{
+        font-size: 1em;
     }
     .container{
         height: 1200px;
@@ -107,7 +127,7 @@ Breakpoint: min-width: 1441px
     .container_interno{
         display: flex;
         justify-content: flex-start;
-        width: 70%;
+        width: 90%;
         height: 1000px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
         border-radius: 10px;
