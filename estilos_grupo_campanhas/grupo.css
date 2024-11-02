@@ -196,6 +196,9 @@ main {
     padding: 10px;
     color: gray;
 }
+.container_botao_doar{
+    display: flex;
+}
 .botao_doar {
     padding-left: 10px;
 }
