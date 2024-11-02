@@ -143,13 +143,13 @@ main {
     border: none;
     border-radius: 10px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
-    height: 600px;
+    height: 500px;
     width: 350px;
 }
 /*todas com mesma largura*/
 .img_grupo {
     width: 100%;
-    height: 45%; 
+    height: 50%; 
 }
 .img_grupo img {
     width: 100%;
