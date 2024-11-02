@@ -7,28 +7,16 @@
     justify-content: center;
 }
 .campanhas_destaque h2{
-    font-size: 1.7em;
+    font-size: 1.5em;
 }
-
-.campanhas_destaque h2, .box p {
-    animation: pulse 1.5s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    50% {
-        opacity: 0.8;
-        transform: translateY(-10px);
-    }
+#mao{
+    font-size: 1.8em;
 }
 /*linha laranja*/
 .campanhas_destaque h2::after{
     content: ' ';
     display: block;
-    width: 9.5rem;
+    width: 7.5rem;
     height: 0.3rem;
     background-color: #F15B43;
     margin-bottom: 20px;

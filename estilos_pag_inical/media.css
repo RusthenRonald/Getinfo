@@ -115,16 +115,19 @@ Breakpoint: min-width: 1441px
         height: 260px;
     }
     .campanhas_destaque h2{
-        font-size: 2.1em;
+        font-size: 1.6em;
     }
     /*linha laranja*/
     .campanhas_destaque h2::after{
         content: ' ';
         display: block;
-        width: 10.5rem;
+        width: 8.5rem;
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
+    }
+    #mao{
+        font-size: 2.4em;
     }
     /*tamanho do texto das caixas*/
     div.box p{
@@ -242,6 +245,9 @@ Breakpoint: min-width: 1441px
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
+    }
+    #mao{
+        font-size: 2.4em;
     }
     div#container_box{
         display: flex;
@@ -381,6 +387,9 @@ Breakpoint: min-width: 1441px
         background-color: #F15B43;
         margin-bottom: 20px;
     }
+    #mao{
+        font-size: 2.7em;
+    }
     div#container_box{
         display: flex;
         flex-wrap: nowrap;
@@ -509,6 +518,9 @@ Breakpoint: min-width: 1441px
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
+    }
+    #mao{
+        font-size: 3em;
     }
     div#container_box{
         display: flex;
