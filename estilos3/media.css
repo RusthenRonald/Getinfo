@@ -113,10 +113,14 @@ Breakpoint: min-width: 1441px
        font-size: 0.7em;
     }
     .input_box{
-        width: 90%;
+        width: 80%;
     }
     .genero_titulo h6{
         font-size: 1em;
+    }
+    .titulo h1::after{
+        width: 8.5rem;
+
     }
     .container{
         height: 1200px;
@@ -152,7 +156,7 @@ Breakpoint: min-width: 1441px
         margin-top: 20px;
      }
      .input_box{
-         
+         width: 90%;
      }
      .container{
          height: 1200px;
