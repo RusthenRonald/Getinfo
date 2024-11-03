@@ -74,6 +74,9 @@ Breakpoint: min-width: 1441px
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
+    header{
+        height: 600px;
+    }
     h1{
         font-size: 3.1em;
     }
@@ -222,6 +225,9 @@ Breakpoint: min-width: 1441px
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
+    header{
+        height: 650px;
+    }
     h1{
         font-size: 3.3em;
     }
@@ -361,7 +367,7 @@ Breakpoint: min-width: 1441px
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
     header{
-        height: 520px;
+        height: 750px;
     }
     nav a{
         font-size: 1.0em;
@@ -492,7 +498,7 @@ Breakpoint: min-width: 1441px
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
     header{
-        height: 650px;
+        height: 850px;
     }
     nav a{
         font-size: 1.1em;

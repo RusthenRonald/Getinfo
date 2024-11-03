@@ -2,11 +2,11 @@
 /*container principal*/
 header{
     background-image: url(../img/header.png);
-    height: 430px;
+    height: 550px;
     display: flex;
     flex-direction: row;
     align-items: center;
-
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
 }
 
 div h1{
