@@ -256,8 +256,10 @@ footer{
 #midias_sociais .link_midias{
     text-decoration: none;
 }
-#midias_sociais .link_midias:hover{
-    opacity: 0.8;
+
+.link_midias:hover{
+    transform: scale(1.1) translateY(-3px); 
+    opacity: 0.9; 
 }
 /*tamanho do icone*/
 #midias_sociais .link_midias i{
