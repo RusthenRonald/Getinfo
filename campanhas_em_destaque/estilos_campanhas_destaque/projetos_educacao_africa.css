@@ -16,10 +16,12 @@ header{
     justify-content: center;
     align-items: center;
 }
+/*
 .texto_header {
     color: white;
     text-align: center;
 }
+*/
 /*main*/
 main{
     display: flex;
