@@ -2,6 +2,8 @@
 .diferenciais_container{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 .diferencial{
     display: flex;
@@ -10,4 +12,9 @@
 }
 .h2_diferencial{
     font-size: 1.8em;
+}
+.diferencial p {
+    font-size: 1rem; 
+    max-width: 300px; 
+    text-align: center; 
 }
