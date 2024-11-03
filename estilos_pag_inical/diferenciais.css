@@ -1,1 +1,10 @@
 @charset "UTF-8";
+.diferenciais_container{
+    display: flex;
+    justify-content: center;
+}
+.diferencial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
