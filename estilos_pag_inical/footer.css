@@ -83,6 +83,10 @@ footer{
 .footer_lista .link_midias:hover{
     color: #F15B43;
 }
+.link_midias:hover{
+    transform: scale(1.1) translateY(-3px); /* Aumenta o tamanho e eleva ligeiramente */
+    opacity: 0.9; /* Reduz um pouco a opacidade */
+}
 /*copyright*/
 #copyright{
     display: flex;
