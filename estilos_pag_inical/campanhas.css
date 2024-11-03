@@ -63,8 +63,12 @@ div#container_box{
     text-decoration: none;
 }
 /*Link que levará ao formulário*/
-div .a_doeagora{
+ .a_doeagora {
+    font-weight: bolder;
     color: white;
+}
+.a_doeagora:hover{
+    text-decoration: underline;
 }
 /*tamanho do texto das caixas*/
 div.box p{
