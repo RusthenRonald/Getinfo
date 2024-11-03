@@ -7,6 +7,20 @@ body{
     height: 100vh;
 }
 /*header*/
+header{
+    height: 700px;
+    background-image: url(../../img/projeto_educacao_africa2.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.texto_header {
+    color: white;
+    text-align: center;
+}
+/*menu*/
 #menu_hamburguer {/*não aparecerá por padrão*/
     display: none;
     font-size: 32px;
