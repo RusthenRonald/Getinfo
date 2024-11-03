@@ -12,9 +12,14 @@
 }
 .h2_diferencial{
     font-size: 1.8em;
+    margin-bottom: 30px;
 }
 .diferencial p {
     font-size: 1rem; 
     max-width: 300px; 
     text-align: center; 
+}
+/*titulo do diferenicial q esta na div*/
+.titulo_diferencial{
+    font-size: 1.0em;
 }

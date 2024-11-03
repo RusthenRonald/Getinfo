@@ -224,6 +224,10 @@ Breakpoint: min-width: 1441px
     .h2_diferencial{
         font-size: 2.0em;
     }
+    /*titulo do diferenicial q esta na div*/
+    .titulo_diferencial{
+        font-size: 1.1em;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -365,7 +369,10 @@ Breakpoint: min-width: 1441px
     .h2_diferencial{
         font-size: 2.2em;
     }
-    /*cabeçalho*/
+    /*titulo do diferenicial q esta na div*/
+    .titulo_diferencial{
+        font-size: 1.2em;
+    }
 
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
@@ -500,6 +507,10 @@ Breakpoint: min-width: 1441px
     .h2_diferencial{
         font-size: 2.5em;
     }
+    /*titulo do diferenicial q esta na div*/
+    .titulo_diferencial{
+        font-size: 1.3em;
+    }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -632,8 +643,13 @@ Breakpoint: min-width: 1441px
         font-size: 40px; 
         
     }
+    /*titulo principal Nossos diferenciais*/
     .h2_diferencial{
         font-size: 2.8em;
+    }
+    /*titulo do diferenicial q esta na div*/
+    .titulo_diferencial{
+        font-size: 1.5em;
     }
     /*cabeçalho*/
 }
