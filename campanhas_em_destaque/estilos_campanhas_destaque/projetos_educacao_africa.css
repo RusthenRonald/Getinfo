@@ -2,6 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    height: 100vh;
+}
 #menu_hamburguer {/*não aparecerá por padrão*/
     display: none;
     font-size: 32px;
@@ -111,8 +114,7 @@ button a {
 .dropdown:hover .dropdown-menu {
     display: block; /* Mostra o dropdown */
 }
-/*media query*/
-
+/*media query menu*/
 
 @media screen and (min-width:200px) and (max-width:420px){
     /* Para telas menores */
@@ -139,6 +141,9 @@ button a {
 .menu-aberto #menu_normal a {
     padding: 10px;
     border-top: 1px solid #f0f0f0;
+}
+.botao_header {
+    margin-bottom: 25px;
 }
 }
 /*Telas celulares maiores*/
@@ -169,7 +174,9 @@ button a {
 padding: 10px;
 border-top: 1px solid #f0f0f0;
 }
-
+.botao_header {
+    margin-bottom: 25px;
+}
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
