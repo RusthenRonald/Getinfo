@@ -187,7 +187,6 @@ Breakpoint: min-width: 1441px
     }
     /*Botão doe agora*/
      .botao-doe-agora {
-        padding: 10px 20px; 
         font-size: 12px; 
     }
     /*
@@ -339,7 +338,6 @@ Breakpoint: min-width: 1441px
     }
     /*Botão doe agora*/
      .botao-doe-agora {
-        padding: 10px 20px; 
         font-size: 14px; 
     }
     /*dados da plataforma*/
@@ -489,7 +487,6 @@ Breakpoint: min-width: 1441px
     }
     /*Botão doe agora*/
      .botao-doe-agora {
-        padding: 10px 20px; 
         font-size: 20px; 
     }
     /*dados da plataforma*/
@@ -635,11 +632,9 @@ Breakpoint: min-width: 1441px
         font-size: 10px; 
     }
     /*Botão doe agora*/
-     .botao-doe-agora {
-
-        font-size: 23px; 
+    .botao-doe-agora {
+        font-size: 20px; 
     }
-
     /*dados da plataforma*/
     div.dados_texto h2{
         font-size: 2.7em;
