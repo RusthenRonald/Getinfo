@@ -5,7 +5,10 @@
 /* Cor de fundo específica para telas de celular */
 @media screen and (max-width: 420px) {
     .container_login {
-        background-color: #fe8f20d7;
+        
+    }
+    .container_interno_login{
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
     }
      /* Para telas menores */
     #menu_normal {
@@ -77,12 +80,13 @@
             width: 350px;
             height: 420px;
             padding: 20px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
         }
         .img_login img{
             display: none;
         }
         .container_login {
-        background-color: #fe8f20d7;
+
     }
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
