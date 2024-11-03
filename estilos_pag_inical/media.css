@@ -228,6 +228,12 @@ Breakpoint: min-width: 1441px
     .titulo_diferencial{
         font-size: 1.1em;
     }
+    .fa-solid {
+        font-size: 25px;
+    }
+    .fa-regular{
+        font-size: 25px;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -373,7 +379,12 @@ Breakpoint: min-width: 1441px
     .titulo_diferencial{
         font-size: 1.2em;
     }
-
+    .fa-solid {
+        font-size: 30px;
+    }
+    .fa-regular{
+        font-size: 30px;
+    }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
@@ -511,6 +522,13 @@ Breakpoint: min-width: 1441px
     .titulo_diferencial{
         font-size: 1.3em;
     }
+    .fa-solid {
+        font-size: 35px;
+    }
+    .fa-regular{
+        font-size: 35px;
+    }
+
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -651,6 +669,11 @@ Breakpoint: min-width: 1441px
     .titulo_diferencial{
         font-size: 1.5em;
     }
-    /*cabeçalho*/
+    .fa-solid {
+        font-size: 40px;
+    }
+    .fa-regular{
+        font-size: 40px;
+    }
 }
 
