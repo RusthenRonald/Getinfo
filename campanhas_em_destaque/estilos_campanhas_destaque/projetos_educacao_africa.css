@@ -95,20 +95,27 @@ button:hover{
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
-
+    .texto_header h1{
+        font-size: 2.1em;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
-
+    .texto_header h1{
+        font-size: 2.6em;
+    }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
-
-
+    .texto_header h1{
+        font-size: 3em;
+    }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
-
+    .texto_header h1{
+        font-size: 3em;
+    }
 }
 /*menu*/
 #menu_hamburguer {/*não aparecerá por padrão*/
