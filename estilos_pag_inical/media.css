@@ -246,6 +246,10 @@ Breakpoint: min-width: 1441px
     .fa-regular{
         font-size: 25px;
     }
+    .carousel-slide img {
+        width: 100%;
+        height: 300px;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -406,6 +410,10 @@ Breakpoint: min-width: 1441px
     .fa-regular{
         font-size: 30px;
     }
+    .carousel-slide img {
+        width: 100%;
+        height: 400px;
+    }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
@@ -558,7 +566,10 @@ Breakpoint: min-width: 1441px
     .fa-regular{
         font-size: 35px;
     }
-
+    .carousel-slide img {
+        width: 100%;
+        height: 400px;
+    }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -713,5 +724,10 @@ Breakpoint: min-width: 1441px
     .fa-regular{
         font-size: 40px;
     }
+    .carousel-slide img {
+        width: 100%;
+        height: 400px;
+    }
+    
 }
 
