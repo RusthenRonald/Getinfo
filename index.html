@@ -201,6 +201,12 @@
                 <img src="img/carrosel 6.jpg" alt="Imagem 6">
                 <img src="img/carrosel 7.jpg" alt="Imagem 7">
                 <img src="img/carrosel 8.jpg" alt="Imagem 8">
+                <img src="img/carrosel 9.jpg" alt="Imagem 9">
+                <img src="img/carrosel 10.jpg" alt="Imagem 10">
+                <img src="img/carrosel 11.jpg" alt="Imagem 11">
+                <img src="img/carrosel 12.jpg" alt="Imagem 12">
+                <img src="img/carrosel 13.jpg" alt="Imagem 13">
+                <img src="img/carrosel 14.jpg" alt="Imagem 14">
             </div>
         </div>
         
@@ -300,15 +306,12 @@
 
     links.forEach(link => {
         link.addEventListener('click', function(event) {
-            event.preventDefault(); //para previnir o comportamento padrão do link
+            event.preventDefault(); 
 
-            // vai remover a classe 'active' de todos os links
             links.forEach(item => item.classList.remove('active'));
             
-            // Adicionei a classe 'active' ao link clicado
             this.classList.add('active');
 
-            // Mudei o texto do h3 com base no link clicado
             tituloAtivo.textContent = this.getAttribute('data-title');
         });
     });
@@ -342,7 +345,6 @@
     const missaoLink = document.getElementById('missao');
     const segundoParagrafo = document.getElementById('segundo_paragrafo');
 
-    // Função para alternar a visibilidade do segundo parágrafo
     function alternarParagrafo() {
         if (segundoParagrafo.style.display === 'none' || segundoParagrafo.style.display === '') {
             segundoParagrafo.style.display = 'block'; 
@@ -351,31 +353,32 @@
         }
     }
 
-    // Função para esconder o segundo parágrafo
     function esconderParagrafo() {
         segundoParagrafo.style.display = 'none';
     }
 
-    // Adiciona evento de clique para os links
     historiaLink.addEventListener('click', alternarParagrafo);
     valoresLink.addEventListener('click', esconderParagrafo);
     missaoLink.addEventListener('click', esconderParagrafo);
 </script>
 
 
+
 <script>
     const slide = document.querySelector('.carousel-slide');
     const images = document.querySelectorAll('.carousel-slide img');
-    
+
     let currentIndex = 0;
-    
+
     function showNextSlide() {
         currentIndex++;
         if (currentIndex >= images.length) {
-            currentIndex = 0; // Retorna à primeira imagem após a última
+            currentIndex = 0; 
         }
         slide.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    
-    setInterval(showNextSlide, 3000); // Muda a cada 3 segundos
+
+    // Inicia o carrossel automático
+    setInterval(showNextSlide, 4000); 
 </script>
+
