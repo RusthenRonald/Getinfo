@@ -202,10 +202,14 @@ nav a{
     font-size: 1.1em;
 }
 }
-
+main{
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .form-container {
     max-width: 500px;
-    margin: 0 auto;
     padding: 20px;
     background-color: #f4f4f9;
     border-radius: 10px;
