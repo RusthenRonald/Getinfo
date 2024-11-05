@@ -13,10 +13,11 @@
     color: rgba(0, 0, 0, 0.719);
 }
 .h2_diferencial{
-    font-size: 1.8em;
+    font-size: 1.7em;
     margin-top: 25vh;
     margin-bottom: 80px;
 }
+
 .diferencial p {
     font-size: 1rem; 
     max-width: 300px; 
