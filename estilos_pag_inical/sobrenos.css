@@ -5,6 +5,7 @@ div#container_sobre_nos {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    font-family: "Noto Sans", serif;
 }
 
 /*div menu do sobre nos*/

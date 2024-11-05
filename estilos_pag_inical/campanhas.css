@@ -26,7 +26,7 @@ div#container_box{
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
-    margin-bottom: 20vh;
+    margin-bottom: 25vh;
 }
 /*Configuração geral das caixas*/
 .box{
