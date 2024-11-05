@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="estilos_pag_inical/nospodemosmudaromundo.css">
     <link rel="stylesheet" href="estilos_pag_inical/dados.css">
     <link rel="stylesheet" href="estilos_pag_inical/diferenciais.css">
+    <link rel="stylesheet" href="estilos_pag_inical/carrosel.css">
     <link rel="stylesheet" href="estilos_pag_inical/footer.css">
     <!--Referente a todos os css da página inicial-->
     <link rel="stylesheet" href="estilos_pag_inical/media.css">
@@ -189,6 +190,16 @@
               </div>
             </div>
           </section>
+
+          <div class="carousel-container">
+            <div class="carousel-slide">
+                <img src="img/carrosel 1.jpg" alt="Imagem 1">
+                <img src="img/carrosel 2.jpg" alt="Imagem 2">
+                <img src="img/carrosel 3.jpg" alt="Imagem 3">
+                <img src="img/carrosel 4.jpg" alt="Imagem 4">
+            </div>
+        </div>
+        
     </main>
     <footer>
           <div id="footer_container">
@@ -348,4 +359,19 @@
 </script>
 
 
-<!--
+<script>
+    const slide = document.querySelector('.carousel-slide');
+    const images = document.querySelectorAll('.carousel-slide img');
+    
+    let currentIndex = 0;
+    
+    function showNextSlide() {
+        currentIndex++;
+        if (currentIndex >= images.length) {
+            currentIndex = 0; // Retorna à primeira imagem após a última
+        }
+        slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    
+    setInterval(showNextSlide, 3000); // Muda a cada 3 segundos
+</script>
