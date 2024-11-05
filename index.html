@@ -367,16 +367,27 @@
 <script>
     const slide = document.querySelector('.carousel-slide');
     const images = document.querySelectorAll('.carousel-slide img');
-
+    
     let currentIndex = 0;
-
+    let direction = 1; // 1 para frente, -1 para trás
+    
     function showNextSlide() {
-        currentIndex++;
+        // Atualiza o índice de acordo com a direção
+        currentIndex += direction;
+    
+        // Verifica se chegou ao final ou ao início
         if (currentIndex >= images.length) {
-            currentIndex = 0; 
+            currentIndex = images.length - 1; // Ajusta para a última imagem
+            direction = -1; // Muda a direção para trás
+        } else if (currentIndex < 0) {
+            currentIndex = 0; // Ajusta para a primeira imagem
+            direction = 1; // Muda a direção para frente
         }
+    
+        // Aplica a transformação
         slide.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-    setInterval(showNextSlide, 4000); 
+    
+    // Muda o slide a cada 4 segundos
+    setInterval(showNextSlide, 4000);
 </script>
-
