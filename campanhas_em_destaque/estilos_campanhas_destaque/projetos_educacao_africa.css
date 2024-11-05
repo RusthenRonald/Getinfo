@@ -9,19 +9,21 @@ body{
 /*header*/
 header{
     height: 550px;
-    background-image: url(../../img/projeto_educacao_africa2.jpg);
+    background-image: url(../../img/kids\ african.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply; 
     background-size: cover;
-    background-position: center;
+    background-position:center center;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*
-.texto_header {
-    color: white;
+.texto_header h1{
     text-align: center;
 }
-*/
+.texto_header h1{
+    color: white;
+}
 /*main*/
 main{
     margin-top: 10vh;
@@ -29,9 +31,58 @@ main{
     justify-content: center;
     gap: 50px;
     flex-wrap: wrap;
+    font-family: inter;
+    color: rgba(0, 0, 0, 0.719);
 }
+
 main>div{
     width: 400px;
+}
+/*botão doar*/
+.botao_doar{
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+}
+/*itens arrecadados*/
+.itens_arrecadados{
+    display: flex;
+    flex-direction: column;
+}
+/*Barra de progresso*/
+.progresso_barra{
+    width: 100%;
+    border-radius: 20px;
+    background-color:  #e0e0e0;
+}
+.progresso{
+    height: 20px;
+    border-radius: 20px;
+    background-color: #ff9807;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/*valor*/
+.container_valor{
+    display: flex;
+    justify-content: space-between;
+}
+.arrecadado{
+    display: flex;
+    gap: 5px;
+}
+button{
+    border: none;
+    height: 30px;
+    color: white;
+    background: linear-gradient(to right, #F15B43, #FE8F20); 
+    border-radius: 5px;
+}
+button:hover{
+    background: linear-gradient(to right,#FE8F20,#F15B43); 
+    transform: scale(1.01) translateY(-1px);
+    opacity: 0.9; 
 }
 /*menu*/
 #menu_hamburguer {/*não aparecerá por padrão*/
@@ -336,5 +387,14 @@ footer{
     #footer_container{
         grid-template-columns: repeat(1,1fr);
         
+    }
+}
+
+
+
+
+@media screen and (max-width:420px) {
+    main>div{
+        width: 300px;
     }
 }
