@@ -69,6 +69,11 @@ main>div{
     display: flex;
     justify-content: space-between;
 }
+.itens_arrecadados{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    border-radius: 10px;
+    padding: 20px;
+}
 .arrecadado{
     display: flex;
     gap: 5px;
