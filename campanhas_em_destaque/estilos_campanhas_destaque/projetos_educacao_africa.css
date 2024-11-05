@@ -24,6 +24,7 @@ header{
 .texto_header h1{
     color: white;
 }
+
 /*main*/
 main{
     margin-top: 10vh;
@@ -83,6 +84,31 @@ button:hover{
     background: linear-gradient(to right,#FE8F20,#F15B43); 
     transform: scale(1.01) translateY(-1px);
     opacity: 0.9; 
+}
+
+/*media do */
+@media screen and (min-width:200px) and (max-width:420px){
+    main>div{
+        width: 300px;
+    }
+
+}
+/*Telas celulares maiores*/
+@media screen and (min-width:420px) and (max-width:767px){
+
+}
+/*Telas de Tablet: entre 768px e 1024px*/
+@media screen and (min-width:768px) and (max-width:1024px){
+
+}
+/*Telas de desktop ou laptop: entre 1025px e 1440*/
+@media screen and (min-width:1025px) and (max-width:1440px){
+
+
+}
+/*Telas grandes : acima de 1441px*/
+@media screen and (min-width:1441px) {
+
 }
 /*menu*/
 #menu_hamburguer {/*não aparecerá por padrão*/
@@ -393,8 +419,3 @@ footer{
 
 
 
-@media screen and (max-width:420px) {
-    main>div{
-        width: 300px;
-    }
-}
