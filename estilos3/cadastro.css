@@ -130,7 +130,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     width: 80%;
-    height: 1000px;
+    height: 1100px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
     border-radius: 10px;
 }
