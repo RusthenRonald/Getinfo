@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -112,7 +113,7 @@ button a {
 
 /*quando passa*/
 .dropdown:hover .dropdown-menu {
-    display: block; /* Mostra o dropdown */
+    display: block; 
 }
 /*media query menu*/
 
@@ -197,7 +198,18 @@ nav a{
     font-size: 1.1em;
 }
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/*header*/
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../img/programa\ de\ acesso\ saude.jpg);
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply; 
+    background-size: cover;
+    height: 500px;
+}
 :root{
     --cor-neutra-branca:#f5f5f5;
     --cor-preta:#171717;
