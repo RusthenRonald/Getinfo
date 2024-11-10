@@ -168,24 +168,21 @@
 <script>
   // Função para verificar se o usuário está logado
   function isUserLoggedIn() {
-    // Substitua com sua lógica de verificação (ex.: sessão, token, etc.)
     return false; // Suponha que o usuário não está logado
   }
 
-  // Função para redirecionar para a página de login
   function redirectToLogin() {
-    window.location.href = "telalogin.html"; // Substitua pelo URL da página de login
+    window.location.href = "file:///C:/Users/Rusthen/OneDrive/Documentos/GitHub/Getinfo/telalogin.html"; 
   }
 
-  // Adiciona o evento ao botão "Doar"
-  document.getElementById("doarBtn").addEventListener("click", function() {
+  document.getElementById("doarBtn").addEventListener("click", function(event) {
+    // Verifica se o usuário está logado
     if (!isUserLoggedIn()) {
       alert("Você precisa estar logado para fazer uma doação.");
-      redirectToLogin(); // Redireciona para a página de login
+      event.preventDefault();
+      redirectToLogin(); 
     } else {
-      // Lógica para prosseguir com a doação
       alert("Obrigado por querer doar!");
-      // Coloque aqui o código para continuar com a doação
     }
   });
 </script>
