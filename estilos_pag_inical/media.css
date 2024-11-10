@@ -118,13 +118,13 @@ Breakpoint: min-width: 1441px
         height: 260px;
     }
     .campanhas_destaque h2{
-        font-size: 1.6em;
+        font-size: 1.9em;
     }
     /*linha laranja*/
     .campanhas_destaque h2::after{
         content: ' ';
         display: block;
-        width: 8.5rem;
+        width: 15.5rem;
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
@@ -275,7 +275,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2::after{
         content: ' ';
         display: block;
-        width: 13.5rem;
+        width: 20.5rem;
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
@@ -439,7 +439,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2::after{
         content: ' ';
         display: block;
-        width: 15rem;
+        width: 24.5rem;
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
@@ -596,7 +596,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2::after{
         content: ' ';
         display: block;
-        width: 15.5rem;
+        width: 25.5rem;
         height: 0.3rem;
         background-color: #F15B43;
         margin-bottom: 20px;
