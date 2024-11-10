@@ -39,6 +39,9 @@ main{
 main>div{
     width: 400px;
 }
+main h2{
+    margin-bottom: 15px;
+}
 /*botão doar*/
 .botao_doar{
     margin-top: 15vh;
