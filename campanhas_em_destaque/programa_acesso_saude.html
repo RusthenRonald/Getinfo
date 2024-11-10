@@ -69,7 +69,7 @@
                 </div>
                
             </div>
-            <button><a href="../formulario_doacao.html" style="color: white;">Doe Agora</a></button>
+            <button><a href="../formulario_doacao.html" style="color: white;" id="doarBtn">Doe Agora</a></button>
         </div>
     </main>
     <footer style="margin-top: 100px;">
@@ -159,4 +159,29 @@
     document.getElementById("menu_hamburguer").onclick = function() {
     document.querySelector("menu").classList.toggle("menu-aberto");
 }
+</script>
+
+<!-- Botão de Doação -->
+<button id="doarBtn">Doar</button>
+
+<script>
+  // Função para verificar se o usuário está logado
+  function isUserLoggedIn() {
+    return false; // Suponha que o usuário não está logado
+  }
+
+  function redirectToLogin() {
+    window.location.href = "file:///C:/Users/Rusthen/OneDrive/Documentos/GitHub/Getinfo/telalogin.html"; 
+  }
+
+  document.getElementById("doarBtn").addEventListener("click", function(event) {
+    // Verifica se o usuário está logado
+    if (!isUserLoggedIn()) {
+      alert("Você precisa estar logado para fazer uma doação.");
+      event.preventDefault();
+      redirectToLogin(); 
+    } else {
+      alert("Obrigado por querer doar!");
+    }
+  });
 </script>
