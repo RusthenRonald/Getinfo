@@ -211,7 +211,6 @@
                 <img src="img/carrosel 16.jpg" alt="Imagem 8">
                 <img src="img/carrosel 17.jpg" alt="Imagem 9">
                 <img src="img/carrosel 18.jpg" alt="Imagem 10">
-                <img src="img/carrosel 19.jpg" alt="Imagem 11">
                 <img src="img/carrosel 20.jpg" alt="Imagem 12">
                 <img src="img/carrosel 21.jpg" alt="Imagem 13">
                 <img src="img/carrosel 22.jpg" alt="Imagem 14">
@@ -373,29 +372,29 @@
 
 <!--carrosel-->
 <script>
+    const slideContainer = document.querySelector('.carousel-container');
     const slide = document.querySelector('.carousel-slide');
     const images = document.querySelectorAll('.carousel-slide img');
     
-    let currentIndex = 0;
-    let direction = 1; // 1 para frente, -1 para trás
+    let index = 0;
+    let direction = 1; 
+    const maxIndex = images.length - 9; // Ajuste para inverter antes da última imagem
     
-    function showNextSlide() {
-        // Atualiza o índice de acordo com a direção
-        currentIndex += direction;
+    function slideCarousel() {
+      // Atualiza o índice conforme a direção
+      index += direction;
     
-        // Verifica se chegou ao final ou ao início
-        if (currentIndex >= images.length) {
-            currentIndex = images.length - 1; // Ajusta para a última imagem
-            direction = -1; // Muda a direção para trás
-        } else if (currentIndex < 0) {
-            currentIndex = 0; // Ajusta para a primeira imagem
-            direction = 1; // Muda a direção para frente
-        }
+      // Inverte a direção antes de chegar na última ou primeira imagem
+      if (index >= maxIndex) {
+        direction = -1; // Muda para retroceder
+      } else if (index <= 0) {
+        direction = 1; // Muda para avançar
+      }
     
-        // Aplica a transformação
-        slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+      // Aplica o movimento ao carrossel
+      slide.style.transform = `translateX(${-index * images[0].clientWidth}px)`;
     }
     
-    // Muda o slide a cada 4 segundos
-    setInterval(showNextSlide, 4000);
+    // Intervalo para a transição das imagens
+    setInterval(slideCarousel, 2000); // Ajuste o tempo conforme desejado (1500ms = 1.5s)
 </script>
