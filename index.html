@@ -381,17 +381,16 @@
     const maxIndex = images.length - 9; // Ajuste para inverter antes da última imagem
     
     function slideCarousel() {
-      // Atualiza o índice conforme a direção
+      // Atualiza o índice 
       index += direction;
     
       // Inverte a direção antes de chegar na última ou primeira imagem
       if (index >= maxIndex) {
-        direction = -1; // Muda para retroceder
+        direction = -1; 
       } else if (index <= 0) {
-        direction = 1; // Muda para avançar
+        direction = 1; 
       }
     
-      // Aplica o movimento ao carrossel
       slide.style.transform = `translateX(${-index * images[0].clientWidth}px)`;
     }
     
