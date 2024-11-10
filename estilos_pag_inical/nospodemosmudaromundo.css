@@ -19,19 +19,6 @@ section.frase_motivacional h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
-.botao-ajude-agora {
-    display: inline-block;
-    border-radius: 20px;
-    color: white; 
-    background-color: rgba(209, 204, 204, 0.37); 
-    padding: 10px 20px; 
-    font-size: 7px; 
-    text-transform: uppercase; 
-    cursor: pointer;
-    font-weight: bolder;
-    margin-bottom: 20px;
-    transition: background-color 0.3s ease, color 0.3s ease; 
-}
 /*Botão doe agora*/
  .botao-doe-agora {
     display: flex;
