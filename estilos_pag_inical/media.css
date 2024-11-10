@@ -71,10 +71,6 @@ Breakpoint: min-width: 1441px
         width: 80vw;
         margin-left: 20px;
     }
-    .carousel-slide img {
-        width: 100%;
-        height: 230px;
-    }
     
 }
 /*Telas celulares maiores*/
@@ -417,7 +413,7 @@ Breakpoint: min-width: 1441px
     }
     .carousel-slide img {
         width: 100%;
-        height: 400px;
+        height: 350px;
     }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
@@ -568,7 +564,7 @@ Breakpoint: min-width: 1441px
     }
     .carousel-slide img {
         width: 100%;
-        height: 400px;
+        height: 370px;
     }
 }
 /*Telas grandes : acima de 1441px*/
