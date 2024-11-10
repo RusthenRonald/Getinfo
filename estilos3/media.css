@@ -48,7 +48,7 @@ Breakpoint: min-width: 1441px
         display: flex;
         justify-content: flex-start;
         width: 95%;
-        height: 1000px;
+        height: 1100px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
         border-radius: 10px;
     }
@@ -74,7 +74,11 @@ Breakpoint: min-width: 1441px
     .form {
         width: 100%; 
     }
-
+    .trocar_cadastro{
+        text-align: center;
+        font-size: 0.8em;
+        width: 100px;
+    }
 
 }
 /*Telas celulares maiores*/
@@ -168,7 +172,7 @@ Breakpoint: min-width: 1441px
          display: flex;
          justify-content: flex-start;
          width: 70%;
-         height: 1000px;
+         height: 1100px;
          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
          border-radius: 10px;
      }
