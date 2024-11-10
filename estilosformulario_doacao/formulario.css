@@ -7,7 +7,7 @@ body,html {
     scroll-behavior: smooth;
 }
 /*menu*/
-#menu_hamburguer {/*não aparecerá por padrão*/
+#menu_hamburguer {
     display: none;
     font-size: 32px;
     cursor: pointer;
@@ -16,7 +16,7 @@ menu{
     display: flex;
     height: 70px;
     justify-content: space-around;
-    position: fixed; /* Fixa o menu no topo */
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -33,7 +33,6 @@ nav{
     align-items: center;
     gap: 25px;
 }
-/* Estilos para os links do nav */
 .a_hover {
     text-decoration: none; 
     color: #333; 
@@ -70,7 +69,6 @@ nav{
 button a {
     text-decoration: none;
 }
-/* Estilos para o menu dropdown */
 .dropdown {
     position: relative;
 }
@@ -100,7 +98,7 @@ button a {
 
 /* links dentro do menu dropdown */
 .dropdown-menu a {
-    text-transform: capitalize;
+    text-transform: lowercase;
     display: block; 
     padding: 10px 15px; 
     color: #333; 
@@ -203,7 +201,7 @@ nav a{
 }
 }
 main{
-    height: 800px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,8 +333,8 @@ footer{
     color: #F15B43;
 }
 .link_midias:hover{
-    transform: scale(1.1) translateY(-3px); /* Aumenta o tamanho e eleva ligeiramente */
-    opacity: 0.9; /* Reduz um pouco a opacidade */
+    transform: scale(1.1) translateY(-3px); 
+    opacity: 0.9; 
 }
 /*copyright*/
 #copyright{
