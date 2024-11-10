@@ -21,7 +21,7 @@
         display: flex;
         height: 70px;
         justify-content: space-around;
-        position: fixed; /* Fixa o menu no topo */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
@@ -62,7 +62,7 @@
 .dropdown-menu {
     display: none; 
     position: absolute; 
-    top: 100%; /* Posicionei abaixo do link */
+    top: 100%; 
     left: 0;
     background-color: #fff; 
     border: 1px solid #ccc; 
@@ -71,7 +71,6 @@
     min-width: 130px; 
 }
 
-/*  itens do menu  */
 .dropdown-menu li {
     list-style: none; 
 
@@ -79,7 +78,7 @@
 
 /* links dentro do menu dropdown */
 .dropdown-menu a {
-    text-transform: capitalize;
+    text-transform:lowercase;
     display: block; 
     padding: 10px 15px; 
     color: #333; 
