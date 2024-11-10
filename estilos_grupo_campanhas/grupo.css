@@ -8,7 +8,9 @@
 body{
     height: 100vh;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 :root{
     --cor-neutra-branca:#f5f5f5;
     --cor-preta:#171717;

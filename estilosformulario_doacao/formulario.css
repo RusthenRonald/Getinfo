@@ -2,8 +2,9 @@
     margin: 0px;
     padding: 0px;
 }
-body {
+body,html {
     font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
 }
 /*menu*/
 #menu_hamburguer {/*não aparecerá por padrão*/
