@@ -103,7 +103,7 @@ nav{
 
 /* links dentro do menu dropdown */
 .dropdown-menu a {
-    text-transform: capitalize;
+    text-transform: lowercase;
     display: block; 
     padding: 10px 15px; 
     color: #333; 
