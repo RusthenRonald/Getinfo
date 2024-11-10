@@ -303,6 +303,9 @@ button:hover{
     .texto_header h1{
         font-size: 3em;
     }
+    .itens_arrecadados{
+        height: 130px;
+    }
 }
 /*footer*/
 :root{
