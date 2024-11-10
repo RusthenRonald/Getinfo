@@ -32,7 +32,6 @@ nav{
     align-items: center;
     gap: 25px;
 }
-/* Estilos para os links do nav */
 .a_hover {
     text-decoration: none; 
     color: #333; 
@@ -65,11 +64,9 @@ nav{
     transform: scale(1.005); 
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
 }
-/* Estilo para o link dentro do botão */
 button a {
     text-decoration: none;
 }
-/* Estilos para o menu dropdown */
 .dropdown {
     position: relative;
 }
@@ -82,7 +79,7 @@ button a {
 .dropdown-menu {
     display: none; 
     position: absolute; 
-    top: 100%; /* Posicionei abaixo do link */
+    top: 100%; 
     left: 0;
     background-color: #fff; 
     border: 1px solid #ccc; 
@@ -99,7 +96,7 @@ button a {
 
 /* links dentro do menu dropdown */
 .dropdown-menu a {
-    text-transform: capitalize;
+    text-transform: lowercase;
     display: block; 
     padding: 10px 15px; 
     color: #333; 
