@@ -381,7 +381,7 @@
       // Atualiza o índice 
       index += direction;
     
-      // Inverte a direção antes de chegar na última ou primeira imagem
+      // Inverte a direção antes de chegar da última 
       if (index >= maxIndex) {
         direction = -1; 
       } else if (index <= 0) {
@@ -391,6 +391,6 @@
       slide.style.transform = `translateX(${-index * images[0].clientWidth}px)`;
     }
     
-    // Intervalo para a transição das imagens
-    setInterval(slideCarousel, 2000); // Ajuste o tempo conforme desejado (1500ms = 1.5s)
+    // Intervalo para a transição 
+    setInterval(slideCarousel, 2000); 
 </script>
