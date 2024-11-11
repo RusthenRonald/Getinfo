@@ -103,7 +103,7 @@
 
 /*quando passa*/
 .dropdown:hover .dropdown-menu {
-    display: block; /* Mostra o dropdown */
+    display: block; 
 }
 .botao_header {
     display: flex;
@@ -134,7 +134,8 @@ button a {
 }
     /*login*/
     .img_login img{
-        border-radius: 15px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
         display: none;
     }
     /*container que envelopa a foto e o login*/
@@ -151,8 +152,8 @@ button a {
         padding: 10px;
         width: 300px;
         height: 420px;
-        padding: 20px;
-        border-radius: 20px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
         /**/
     }
     /*campo email*/
@@ -315,8 +316,6 @@ footer{
 
 
 /*media do login*/
-/*Só para adicionar a cor em tela de celular*/
-/* Cor de fundo específica para telas de celular */
 @media screen and (max-width: 420px) {
     .container_login {
         
@@ -324,7 +323,6 @@ footer{
     .container_interno_login{
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
     }
-     /* Para telas menores */
     #menu_normal {
         display: none;
     }
@@ -333,7 +331,6 @@ footer{
         display: block;
         cursor: pointer;
     }
-    /* Estilos para o menu hambúrguer quando ativado */
     .menu-aberto #menu_normal {
         display: flex;
         flex-direction: column;
