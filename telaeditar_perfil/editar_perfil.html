@@ -5,79 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="estiloseditar_perfil/perfil.css">
-    <title>Tela de cadastro</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tela de Perfil</title>
 </head>
 <body>
-    <div class="container">
-        <div class="perfil">
-            <div class="perfil-header">
-                <img src="../img/perfil.webp" alt="perfil" class="imagem-perfil">
-                <div class="perfil-texto-container">
-                    <h1 class="titulo-perfil">Front coding</h1>
-                    <p class="perfil-email">exemplo@gmail.com</p>
-                </div>
-            </div>
-
-            <div class="menu">
-                <a href="#"  class="menu-link"><i class="bi bi-person-circle"></i> Conta</a>
-                <a href="#"  class="menu-link"><i class="bi bi-journals"></i> Minhas campanhas</a>
-                <a href="#"  class="menu-link"><i class="bi bi-box-arrow-right"></i> Sair</a>
-            </div>
+    <menu>
+        <div class="logo_getinfo">
+            <img src="../img/logo getinfo2.jpg" alt="">
         </div>
-
-        <form class="conta">
-            <div class="conta-header">
-                <h1 class="conta-titulo">Configurações da conta</h1>
-                <div class="btn-container">
-                    <button class="btn-voltar">Voltar</button>
-                    <button class="btn-salvar">Salvar</button>
+        <nav id="menu_normal">
+            <a href="../index.html" class="a_hover">Home</a>
+            <div class="dropdown">
+                <a href="#" class="a_hover">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../grupo_campanhas.html" class="a_hover">Grupo de Campanhas</a></li>
+                    <li><a href="../index.html#campanhas_destaque" class="a_hover">Campanhas em Destaque</a></li>
+                </ul>
+            </div>
+            <a href="#" class="a_hover">Formulário</a>
+            <a href="../index.html#container_sobre_nos" class="a_hover">Sobre nós</a>
+            <a href="#"  class="a_hover">Login</a>
+            <button class="botao_header"><a href="#footer_container">Contato</a></button>
+        </nav>
+        <span id="menu_hamburguer" class="material-icons">menu</span>
+    </menu>
+    <main>
+        <div class="container">
+            <div class="perfil">
+                <div class="perfil-header">
+                    <img src="../img/perfil.webp" alt="perfil" class="imagem-perfil">
+                    <div class="perfil-texto-container">
+                        <h1 class="titulo-perfil">Front coding</h1>
+                        <p class="perfil-email">exemplo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="#"  class="menu-link"><i class="bi bi-person-circle"></i> Conta</a>
+                    <a href="#"  class="menu-link"><i class="bi bi-journals"></i> Minhas campanhas</a>
+                    <a href="#"  class="menu-link"><i class="bi bi-box-arrow-right"></i> Sair</a>
                 </div>
             </div>
-
-            <div class="editar-conta">
-                <div class="input-container">
-                    <label>Nome</label>
-                    <input type="text" placeholder="Nome">
+            <form class="conta">
+                <div class="conta-header">
+                    <h1 class="conta-titulo">Configurações da conta</h1>
+                    <div class="btn-container">
+                        <button class="btn-voltar">Voltar</button>
+                        <button class="btn-salvar">Salvar</button>
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label>Telefone</label>
-                    <input type="tel" placeholder="Telefone">
+                <div class="editar-conta">
+                    <div class="input-container">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="input-container">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="Telefone">
+                    </div>
+                    <div class="input-container">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div class="input-container">
+                        <label>Estado</label>
+                        <input type="text" placeholder="Estado">
+                    </div>
+                    <div class="input-container">
+                        <label>Cidade</label>
+                        <input type="text" placeholder="Cidade">
+                    </div>
+                    <div class="input-container">
+                        <label>Logradouro</label>
+                        <input type="text" placeholder="Logradouro">
+                    </div>
+                    <div class="input-container">
+                        <label>Numero</label>
+                        <input type="text" placeholder="Numero">
+                    </div>
+                    <div class="input-container">
+                        <label>CEP</label>
+                        <input type="text" placeholder="CEP">
+                    </div>
+                    <h2>Mudar senha</h2>
+                    <div class="input-container">
+                        <label>Senha atual</label>
+                        <input type="password" placeholder="Senha atual">
+                    </div>
+                    <div class="input-container">
+                        <label>Nova Senha</label>
+                        <input type="password" placeholder="Nova Senha">
+                    </div>
                 </div>
-                <div class="input-container">
-                    <label>E-mail</label>
-                    <input type="email" placeholder="E-mail">
-                </div>
-                <div class="input-container">
-                    <label>Estado</label>
-                    <input type="text" placeholder="Estado">
-                </div>
-                <div class="input-container">
-                    <label>Cidade</label>
-                    <input type="text" placeholder="Cidade">
-                </div>
-                <div class="input-container">
-                    <label>Logradouro</label>
-                    <input type="text" placeholder="Logradouro">
-                </div>
-                <div class="input-container">
-                    <label>Numero</label>
-                    <input type="text" placeholder="Numero">
-                </div>
-                <div class="input-container">
-                    <label>CEP</label>
-                    <input type="text" placeholder="CEP">
-                </div>
-                <h2>Mudar senha</h2>
-                <div class="input-container">
-                    <label>Senha atual</label>
-                    <input type="password" placeholder="Senha atual">
-                </div>
-                <div class="input-container">
-                    <label>Nova Senha</label>
-                    <input type="password" placeholder="Nova Senha">
-                </div>
-            </div>
-        </form>
-    </div>
+            </form>
+        </div>
+    </main>
 </body>
 </html>
+
+<!--Menu hmburguer-->
+<script>
+    document.getElementById("menu_hamburguer").onclick = function() {
+    document.querySelector("menu").classList.toggle("menu-aberto");
+}
+</script>

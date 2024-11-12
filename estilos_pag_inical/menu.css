@@ -100,7 +100,6 @@ button a {
     background-color: #f0f0f0; 
 }
 
-/*quando passa*/
 .dropdown:hover .dropdown-menu {
     display: block; 
 }
