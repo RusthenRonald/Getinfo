@@ -373,12 +373,15 @@ footer{
     .botao_header{
     margin-bottom: 25px;
     }
+    .container{
+        margin-top: 0;
+    }
     .container_interno{
         margin-top: 100px;
         display: flex;
         justify-content: flex-start;
         width: 95%;
-        height: 1100px;
+        height: 1150px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
         border-radius: 10px;
     }
@@ -457,7 +460,7 @@ footer{
 
     }
     .container{
-        height: 1200px;
+        height: 1300px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -466,7 +469,7 @@ footer{
         display: flex;
         justify-content: flex-start;
         width: 90%;
-        height: 1100px;
+        height: 1150px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
         border-radius: 10px;
     }
@@ -493,7 +496,7 @@ footer{
          width: 90%;
      }
      .container{
-         height: 1200px;
+         height: 1300px;
          display: flex;
          justify-content: center;
          align-items: center;
@@ -502,7 +505,7 @@ footer{
          display: flex;
          justify-content: flex-start;
          width: 70%;
-         height: 1100px;
+         height: 1150px;
          box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
          border-radius: 10px;
      }
@@ -532,6 +535,12 @@ footer{
      .form {
          width: 60%; 
      }
+     .container{
+         height: 1300px;
+     }
+     .container_interno{
+         height: 1150px;
+     }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
@@ -545,6 +554,12 @@ footer{
     .form {
         width: 50%; 
     }
+    .container{
+         height: 1300px;
+     }
+     .container_interno{
+         height: 1200px;
+     }
 }
 
 
@@ -643,8 +658,8 @@ footer{
                         </div>
                         <div class="input_box">
                             <label for="estado" style="margin-bottom: 5px;">Estado</label>
-                            <select id="estado" name="estado" required>
-                                <option value="">Selecione o Estado</option>
+                            <select id="estado" name="estado" required style="padding: 10px; border-radius: 5px;">
+                                <option value="" style="color: gray;">Selecione o Estado</option>
                                 <option value="AC">Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
@@ -673,7 +688,11 @@ footer{
                                 <option value="SE">Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
-                        </div>
+                        </div> 
+                        <div class="input_box">
+                            <label for="cidade">Cidade</label>
+                            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
+                        </div>                      
                         <div class="input_box">
                             <label for="endereco">Endereço</label>
                             <input id="end" type="text" name="end" placeholder="Endereço" required>
