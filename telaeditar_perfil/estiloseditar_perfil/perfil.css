@@ -343,7 +343,13 @@ main{
     margin-bottom: 25px;
     }
 
-
+    main{
+        height: 1650px;
+    }
+    .container {
+        margin-top: 150px;
+        width: 80%;
+    }
 
 }
     /*Telas celulares maiores*/
@@ -377,8 +383,21 @@ main{
         .botao_header{
         margin-bottom: 25px;
         }
+        main{
+            height: 1650px;
+        }
+        .container {
+            margin-top: 150px;
+            width: 80%;
+        }
+
+    
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
+        .container {
+            margin-top: 150px;
+            width: 80%;
+        }
         #menu_hamburguer{
             display: none;
         }
@@ -388,8 +407,19 @@ main{
         .botao_login{
             font-size: 1.1em;
         }
+        main{
+            height: 1450px;
+        }
+        .container {
+            flex-direction: column;
+            gap: 50px;
+        }
     }
     @media screen and (min-width:1025px) and (max-width:1440px) {
+        .container {
+            margin-top: 150px;
+            width: 80%;
+        }
         #menu_hamburguer{
             display: none;
         }
@@ -399,6 +429,14 @@ main{
     .botao_login{
         font-size: 1.2em;
     }
+    main{
+        height: 1050px;
+    }
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+
     }
     @media screen and (min-width:1441px) {
         #menu_hamburguer{
@@ -410,6 +448,114 @@ main{
     }
 
 
+    :root{
+        --cor-neutra-branca:#f5f5f5;
+        --cor-preta:#171717;
+        --cor-copyright:#0e0c0c;
+        --cor-ciza:#a8a29e;
+    }
+    footer{
+        height: 220px;
+        font-family: 'Inter',sans-serif;
+        letter-spacing: 1px;
+        width: 100%;
+        color: var(--cor-neutra-branca);
+    }
+    /*container*/
+    #footer_container{
+        background-color: var(--cor-preta);
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        padding: 3rem 3.5rem;
+    }
+    /*palavra logo*/
+    #footer_contatos h4{
+        margin-bottom: 0.75rem;
+    }
+    /*container dos icones*/
+    #midias_sociais{
+        display: flex;
+        gap: 2rem;
+    }
+    /*links e icones*/
+    #midias_sociais .link_midias{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: var(--cor-neutra-branca);
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+    /*configuração do link*/
+    #midias_sociais .link_midias{
+        text-decoration: none;
+    }
+    #midias_sociais .link_midias:hover{
+        opacity: 0.8;
+    }
+    .link_midias:hover{
+        transform: scale(1.1) translateY(-3px); 
+        opacity: 0.9; 
+    }
+    /*tamanho do icone*/
+    #midias_sociais .link_midias i{
+        font-size: 1.25rem;
+    }
+    /*icone em individual*/
+    #instagram{
+        background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
+    }
+    #facebook{
+        background-color: #4267b3;
+    }
+    #linkedin {
+        background-color: #0A66C2; 
+    }
+    
+    #email {
+        background-color: #5f6368; 
+    }
+    /*listas*/
+    .footer_lista{ 
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    /*links da parte de listas*/
+    .footer_lista .link_midias{
+        text-decoration: none;
+        color:var(--cor-ciza) ;
+        transition: all 0.4s;
+    }
+    .footer_lista .link_midias:hover{
+        color: #F15B43;
+    }
+    /*copyright*/
+    #copyright{
+        display: flex;
+        justify-content: center;
+        background-color:var(--cor-copyright);
+        padding: 1.2rem;
+    }
+    
+    
+
+    /*media query só pra footer*/
+@media screen and (max-width:968px){
+    #footer_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:626px){
+    #footer_container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+  
 
 
 
@@ -417,22 +563,7 @@ main{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*media*/
+/*media do main*/
 @media screen and (max-width: 768px) {
     .container {
         flex-direction: column;
