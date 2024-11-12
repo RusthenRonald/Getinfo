@@ -31,36 +31,42 @@
         <span id="menu_hamburguer" class="material-icons">menu</span>
     </menu>
 <main>
-    <div class="form-container">
-        <h2>Formulário de Doação <br>Programa de Acesso a Saúde</h2>
-        <form action="processa_doacao.php" method="post">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
-    
-            <label for="e-mail">E-mail</label>
-            <input type="email" name="e-mail" id="" required placeholder="E-mail">
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
-    
-            <label for="item">Item a ser doado:</label>
-            <select id="item" name="item" required>
-                <option value="">Selecione o item</option>
-                <option value="Medicamentos Básicos">Medicamentos Básicos (analgésicos, antitérmicos)</option>
-                <option value="Equipamentos de Proteção">Equipamentos de Proteção (máscaras, luvas)</option>
-                <option value="Materiais de Primeiros Socorros">Materiais de Primeiros Socorros (kits de primeiros socorros)</option>
-                <option value="Equipamentos Médicos">Equipamentos Médicos (termômetros, oxímetros)</option>
-                <option value="Produtos de Higiene">Produtos de Higiene (sabão, álcool em gel)</option>
-                <option value="Material Educativo">Material Educativo sobre Saúde e Prevenção</option>
-                <option value="Alimentos Nutritivos">Alimentos Nutritivos (fórmulas, suplementos)</option>
-                <option value="Serviços de Saúde">Serviços de Saúde (consultas, exames)</option>
-            </select>
-    
-            <label for="descricao">Descrição do item:</label>
-            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o item que você deseja doar"></textarea>
-    
-            <button type="submit">Enviar Doação</button>
-        </form>
+    <div class="container_form">
+        <div class="img_form">
+            <img src="../img/img form doaçao 2.jpg" alt="">
+        </div>
+        <div class="form-container" >
+            <h2>Formulário de Doação <br> Projetos de Educação na África</h2>
+            <form action="processa_doacao.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+        
+                <label for="e-mail">E-mail</label>
+                <input type="email" name="e-mail" id="" required placeholder="E-mail">
+        
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+        
+                <label for="item">Item a ser doado:</label>
+                <select id="item" name="item" required>
+                    <option value="">Selecione o item</option>
+                    <option value="Materiais Escolares">Materiais Escolares (cadernos, canetas, lápis)</option>
+                    <option value="Livros Educacionais">Livros Educacionais</option>
+                    <option value="Roupas">Roupas e Calçados</option>
+                    <option value="Equipamentos de Informática">Equipamentos de Informática (notebooks, tablets)</option>
+                    <option value="Jogos Educativos">Jogos Educativos e Brinquedos</option>
+                    <option value="Materiais Artísticos">Materiais Artísticos (tintas, pincéis)</option>
+                    <option value="Material Esportivo">Material Esportivo (bolas, raquetes)</option>
+                    <option value="Produtos de Higiene">Produtos de Higiene e Saúde</option>
+                    <option value="Outros">Outros</option>
+                </select>
+        
+                <label for="descricao">Descrição do item:</label>
+                <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o item que você deseja doar"></textarea>
+        
+                <button type="submit">Enviar Doação</button>
+            </form>
+        </div>
     </div>
 </main>
 <footer>
