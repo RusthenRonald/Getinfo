@@ -5,6 +5,7 @@
 body,html {
     font-family: Arial, sans-serif;
     scroll-behavior: smooth;
+    background-color: #e6e4e4;
 }
 /*menu*/
 #menu_hamburguer {
@@ -82,7 +83,7 @@ button a {
 .dropdown-menu {
     display: none; 
     position: absolute; 
-    top: 100%; /* Posicionei abaixo do link */
+    top: 100%; 
     left: 0;
     background-color: #fff; 
     border: 1px solid #ccc; 
@@ -208,9 +209,9 @@ main{
     align-items: center;
 }
 .form-container {
+    background-color: white;
     width: 500px;
     padding: 40px;
-    background-color: #f4f4f9;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
 }
