@@ -16,7 +16,6 @@
         height: 100vh;
         scroll-behavior: smooth;
     }
-    /*menu*/
     menu{
         display: flex;
         height: 70px;
@@ -38,7 +37,6 @@
         align-items: center;
         gap: 25px;
     }
-    /* Estilos para os links do nav */
     .a_hover {
         text-decoration: none; 
         color: #333; 
@@ -49,7 +47,6 @@
     .a_hover:hover {
         color: #F15B43; 
     }
-    /* Estilos para o menu dropdown */
 .dropdown {
     position: relative;
 }
@@ -91,7 +88,7 @@
 
 /*quando passa*/
 .dropdown:hover .dropdown-menu {
-    display: block; /* Mostra o dropdown */
+    display: block; 
 }
 .botao_header {
     display: flex;
@@ -156,7 +153,6 @@ button a {
         /**/
     }
     
-    /*campo email*/
     .campo_email label{
         display: block;
     }

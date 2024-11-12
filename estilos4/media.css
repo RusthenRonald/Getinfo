@@ -1,16 +1,14 @@
 
 
 /*media do login*/
-/*Só para adicionar a cor em tela de celular*/
-/* Cor de fundo específica para telas de celular */
 @media screen and (max-width: 420px) {
     .container_login {
         
     }
     .container_interno_login{
+        padding: 20px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
     }
-     /* Para telas menores */
     #menu_normal {
         display: none;
     }
@@ -19,7 +17,7 @@
         display: block;
         cursor: pointer;
     }
-    /* Estilos para o menu hambúrguer quando ativado */
+    /*  quando ativado */
     .menu-aberto #menu_normal {
         display: flex;
         flex-direction: column;
