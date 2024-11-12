@@ -10,8 +10,7 @@
 body {
     background-color: #fff;
 }
-/*menu*/
-#menu_hamburguer {/*não aparecerá por padrão*/
+#menu_hamburguer {
     display: none;
     font-size: 32px;
     cursor: pointer;
@@ -115,6 +114,12 @@ button a {
 
 .dropdown:hover .dropdown-menu {
     display: block; 
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
 }
 .container {
     display: flex;
