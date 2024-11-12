@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estiloseditar_perfil/perfil.css">
+    <title>Tela de cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="perfil">
+            <div class="perfil-header">
+                <img src="../img/perfil.webp" alt="perfil" class="imagem-perfil">
+                <div class="perfil-texto-container">
+                    <h1 class="titulo-perfil">Front coding</h1>
+                    <p class="perfil-email">exemplo@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="menu">
+                <a href="#"  class="menu-link"><i class="bi bi-person-circle"></i> Conta</a>
+                <a href="#"  class="menu-link"><i class="bi bi-journals"></i> Minhas campanhas</a>
+                <a href="#"  class="menu-link"><i class="bi bi-box-arrow-right"></i> Sair</a>
+            </div>
+        </div>
+
+        <form class="conta">
+            <div class="conta-header">
+                <h1 class="conta-titulo">Configurações da conta</h1>
+                <div class="btn-container">
+                    <button class="btn-voltar">Voltar</button>
+                    <button class="btn-salvar">Salvar</button>
+                </div>
+            </div>
+
+            <div class="editar-conta">
+                <div class="input-container">
+                    <label>Nome</label>
+                    <input type="text" placeholder="Nome">
+                </div>
+                <div class="input-container">
+                    <label>Telefone</label>
+                    <input type="tel" placeholder="Telefone">
+                </div>
+                <div class="input-container">
+                    <label>E-mail</label>
+                    <input type="email" placeholder="E-mail">
+                </div>
+                <div class="input-container">
+                    <label>Estado</label>
+                    <input type="text" placeholder="Estado">
+                </div>
+                <div class="input-container">
+                    <label>Cidade</label>
+                    <input type="text" placeholder="Cidade">
+                </div>
+                <div class="input-container">
+                    <label>Logradouro</label>
+                    <input type="text" placeholder="Logradouro">
+                </div>
+                <div class="input-container">
+                    <label>Numero</label>
+                    <input type="text" placeholder="Numero">
+                </div>
+                <div class="input-container">
+                    <label>CEP</label>
+                    <input type="text" placeholder="CEP">
+                </div>
+                <h2>Mudar senha</h2>
+                <div class="input-container">
+                    <label>Senha atual</label>
+                    <input type="password" placeholder="Senha atual">
+                </div>
+                <div class="input-container">
+                    <label>Nova Senha</label>
+                    <input type="password" placeholder="Nova Senha">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
