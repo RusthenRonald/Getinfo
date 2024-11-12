@@ -225,7 +225,16 @@ button a {
     background-clip: text;
     color: transparent; 
 }
+/* Remover o fundo azul do autopreenchimento */
+input:-webkit-autofill {
+    background-color: #fff !important; 
+    transition: background-color 5000s ease-in-out 0s; 
+}
 
+input:-webkit-autofill::first-line {
+    color: #000; 
+    font-size: 16px; 
+}
 /*Inicio do footer*/
 footer{
     
