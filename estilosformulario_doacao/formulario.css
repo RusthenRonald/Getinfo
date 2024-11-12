@@ -141,8 +141,13 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     .botao_header{
     margin-bottom: 25px;
     }
-
-
+    /*img do form*/
+    .img_form img{
+        display: none;
+    }
+    .container_form{
+        width: 400px;
+    }
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
@@ -175,11 +180,16 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     .botao_header{
     margin-bottom: 25px;
     }
-
+    /*img do form*/
+    .img_form img{
+        display: none;
+    }
+    .container_form{
+        width: 460px;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
-     /*menu hamburguer*/
      #menu_hamburguer{
         display: none;
     }
@@ -189,14 +199,12 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
-     /*menu hamburguer*/
      #menu_hamburguer{
         display: none;
     }
 }
 /*Telas grandes : acima de 1441px*/
 @media screen and (min-width:1441px) {
-     /*menu hamburguer*/
      #menu_hamburguer{
         display: none;
     }
@@ -214,9 +222,9 @@ main{
     border-radius: 20px;
 }
 .img_form img{
-    width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    width: 100%; 
     height: 100%;
-    max-width: 550px; /* Limita a largura máxima da imagem */
+    max-width: 550px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
