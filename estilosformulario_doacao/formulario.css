@@ -206,13 +206,25 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
+}
+.container_form{
+    display: flex;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    border-radius: 20px;
+}
+.img_form img{
+    width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: 100%;
+    max-width: 550px; /* Limita a largura máxima da imagem */
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 .form-container {
     background-color: white;
     width: 500px;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
+    
 }
 
 .form-container h2 {
@@ -367,3 +379,9 @@ footer{
         
     }
 }
+
+
+
+
+/*
+
