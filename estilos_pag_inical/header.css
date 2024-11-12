@@ -25,3 +25,11 @@ span.h1_cor{
     width: 70vw;
     color: rgb(110, 110, 110);
 }
+
+
+
+.texto_header{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
