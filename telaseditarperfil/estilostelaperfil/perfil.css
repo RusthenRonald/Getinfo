@@ -486,13 +486,13 @@ footer{
         margin-bottom: 25px;
         }
         .container{
-            margin-top: 100px;
+            margin-top: 150px;
             width: 80%;
             flex-direction: column;
             gap: 40px;
         }
         main{
-            height: 1400px;
+            height: 1450px;
         }
         .conta{
             padding-bottom: 40px;
@@ -511,15 +511,16 @@ footer{
             font-size: 1.1em;
         }
         .container{
+            margin-top: 100px;
             width: 70%;
             flex-direction: column;
             gap: 40px;
         }
         main{
-            height: 1400px;
+            height: 1500px;
         }
         .conta{
-            padding-bottom: 50px;
+            padding-bottom: 40px;
             padding-left: 10px;
         }
     }
@@ -533,8 +534,11 @@ footer{
     .botao_login{
         font-size: 1.2em;
     }
+    .container{
+        margin-top: 150px;
+    }
     main{
-        height: 1100px;
+        height: 1250px;
     }
     .conta{
         padding-bottom: 50px;
@@ -554,7 +558,10 @@ footer{
         font-size: 1.2em;
     }
     main{
-        height: 750px;
+        height: 800px;
+    }
+    .container{
+        margin-top: 100px;
     }
     .conta{
         padding-bottom: 50px;
