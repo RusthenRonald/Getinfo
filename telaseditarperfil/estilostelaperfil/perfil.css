@@ -447,9 +447,12 @@ footer{
         gap: 30px;
     }
     main{
-        height: 1400px;
+        height: 1450px;
     }
-
+    .conta{
+        padding-bottom: 40px;
+        padding-left: 10px;
+    }
 
 }   /*Media query*/
     /*Telas celulares maiores*/
@@ -491,6 +494,11 @@ footer{
         main{
             height: 1400px;
         }
+        .conta{
+            padding-bottom: 40px;
+            padding-left: 10px;
+        }
+        
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
         #menu_hamburguer{
@@ -510,6 +518,10 @@ footer{
         main{
             height: 1400px;
         }
+        .conta{
+            padding-bottom: 50px;
+            padding-left: 10px;
+        }
     }
     @media screen and (min-width:1025px) and (max-width:1440px) {
         #menu_hamburguer{
@@ -523,6 +535,10 @@ footer{
     }
     main{
         height: 1100px;
+    }
+    .conta{
+        padding-bottom: 50px;
+        padding-left: 10px;
     }
     }
     @media screen and (min-width:1441px) {
@@ -539,6 +555,10 @@ footer{
     }
     main{
         height: 750px;
+    }
+    .conta{
+        padding-bottom: 50px;
+        padding-left: 10px;
     }
     }
 
