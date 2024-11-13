@@ -7,7 +7,6 @@
     --cor-copyright:#0e0c0c;
     --cor-ciza:#a8a29e;
 }
-/*Inicio do cabeçalho*/
 footer{
     height: 220px;
     font-family: 'Inter',sans-serif;
@@ -83,8 +82,8 @@ footer{
     color: #F15B43;
 }
 .link_midias:hover{
-    transform: scale(1.1) translateY(-3px); /* Aumenta o tamanho e eleva ligeiramente */
-    opacity: 0.9; /* Reduz um pouco a opacidade */
+    transform: scale(1.1) translateY(-3px); 
+    opacity: 0.9; 
 }
 /*copyright*/
 #copyright{
