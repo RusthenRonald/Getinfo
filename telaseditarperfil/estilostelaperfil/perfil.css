@@ -483,6 +483,8 @@ footer{
         margin-bottom: 25px;
         }
         .container{
+            margin-top: 100px;
+            width: 80%;
             flex-direction: column;
             gap: 40px;
         }
@@ -501,6 +503,7 @@ footer{
             font-size: 1.1em;
         }
         .container{
+            width: 70%;
             flex-direction: column;
             gap: 40px;
         }
