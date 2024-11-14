@@ -40,6 +40,10 @@ Breakpoint: min-width: 1441px
     .botao_header{
         margin-bottom: 25px;
     }
+    /*campanhas em destaque*/
+    .a_doeagora {
+        padding: 5px;
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -71,7 +75,10 @@ Breakpoint: min-width: 1441px
         width: 80vw;
         margin-left: 20px;
     }
-    
+    /*diferenciais*/
+    .h2_diferencial{
+        margin-bottom: 25px;
+    }
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
