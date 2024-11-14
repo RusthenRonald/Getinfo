@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*container principal que separa img e texto*/
 div#container_sobre_nos {
+    margin-top: 15vh;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
