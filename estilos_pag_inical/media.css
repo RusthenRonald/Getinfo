@@ -77,7 +77,12 @@ Breakpoint: min-width: 1441px
     }
     /*diferenciais*/
     .h2_diferencial{
+        margin-top: 10vh;
         margin-bottom: 25px;
+    }
+    /*sobre nós*/
+    div#container_sobre_nos {
+        margin-top: 10vh;
     }
 }
 /*Telas celulares maiores*/
