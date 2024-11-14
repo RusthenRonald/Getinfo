@@ -222,38 +222,14 @@ main{
     margin: 1em;
 }
 
-.btn-container {
-    margin-right: 5px;
-}
-
-.btn-voltar {
-    width: 8rem;
-    height: 3rem;
-    cursor: pointer;
-    border: 1px solid #768499;
-    border-radius: 2rem;
-    color: black;
-    font-weight: bold;
-    margin-right: 5px;
-    background-color: white;
-}
-
-.btn-voltar:hover {
-    box-shadow: rgba(0, 0, 0, 0.1);
-    background-color: #f1f5f9;
-}
-
-.btn-salvar {
-    width: 8rem;
-    height: 3rem;
-    cursor: pointer;
-    border: none;
-    border-radius: 2rem;
-    color: #fff;
-    font-weight: bold;
+.btn-container .btn-salvar{
+    text-decoration: none;
+    color: white;
     background: linear-gradient(to right, #F15B43, #FE8F20);
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 10px;
 }
-
 
 .btn-salvar:hover {
     background: linear-gradient(to right, #FE8F20, #F15B43);
@@ -266,6 +242,7 @@ main{
     gap: 15px;
     justify-content: space-between;
     margin: 15px 0;
+    margin-bottom: 50px;
 }
 
 .editar-conta h2 {
