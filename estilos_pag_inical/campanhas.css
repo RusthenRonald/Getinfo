@@ -66,18 +66,22 @@ div#container_box{
 }
 /*Link que levará ao formulário*/
 .doe{
-    margin-top: 10px;
+    margin-top: 15px;
 }
- .a_doeagora {
+.a_doeagora {
     border: 2px solid white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 20px;
     font-weight: bolder;
     color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
-.a_doeagora:hover{
-    
+
+.a_doeagora:hover {
+    background-color: white; 
+    color: #434b56d3;
 }
+
 /*tamanho do texto das caixas*/
 div.box p{
     font-size: 1.4em;
