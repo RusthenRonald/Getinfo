@@ -227,16 +227,6 @@ Breakpoint: min-width: 1441px
     .h2_diferencial{
         font-size: 2.3em;
     }
-    .h2_diferencial::after {
-        content: "";
-        display: block;
-        width: 260px; 
-        height: 4px; 
-        background-color: #F15B43; 
-        margin: 0 auto;
-        margin-top: 5px;
-        border-radius: 5px; 
-    }
     /*titulo do diferenicial q esta na div*/
     .titulo_diferencial{
         font-size: 1.1em;
@@ -390,16 +380,6 @@ Breakpoint: min-width: 1441px
     }
     .h2_diferencial{
         font-size: 2.6em;
-    }
-    .h2_diferencial::after {
-        content: "";
-        display: block;
-        width: 300px; 
-        height: 4px; 
-        background-color: #F15B43; 
-        margin: 0 auto;
-        margin-top: 5px;
-        border-radius: 5px; 
     }
     /*titulo do diferenicial q esta na div*/
     .titulo_diferencial{
@@ -561,16 +541,6 @@ Breakpoint: min-width: 1441px
     }
     .h2_diferencial{
         font-size: 3.0em;
-    }
-    .h2_diferencial::after {
-        content: "";
-        display: block;
-        width: 330px; 
-        height: 4px; 
-        background-color: #F15B43; 
-        margin: 0 auto;
-        margin-top: 5px;
-        border-radius: 5px; 
     }
     /*titulo do diferenicial q esta na div*/
     .titulo_diferencial{
@@ -735,16 +705,7 @@ Breakpoint: min-width: 1441px
     .h2_diferencial{
         font-size: 3.5em;
     }
-    .h2_diferencial::after {
-        content: "";
-        display: block;
-        width: 350px; 
-        height: 4px; 
-        background-color: #F15B43; 
-        margin: 0 auto;
-        margin-top: 5px;
-        border-radius: 5px; 
-    }
+    
     /*titulo do diferenicial q esta na div*/
     .titulo_diferencial{
         font-size: 1.5em;
