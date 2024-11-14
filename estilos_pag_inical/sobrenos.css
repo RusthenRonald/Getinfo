@@ -21,7 +21,7 @@ div#menu_sobre_nos a {
     border-radius: 3px;
     border-bottom: 3px solid #F15B43;
     text-decoration: none;
-    display: inline-block; /* Melhora a área clicável */
+    display: inline-block;
 }
 /*link ao passar mouse*/
 div#menu_sobre_nos a:hover{

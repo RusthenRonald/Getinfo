@@ -66,6 +66,9 @@ Breakpoint: min-width: 1441px
         width: 25vw;
     }
     /*dados da plataforma*/
+    .dados_container{
+        margin-top: 90px;
+    }
     div.dados_texto h2{
         font-size: 2.0em;
         margin-left: 20px;
@@ -209,8 +212,9 @@ Breakpoint: min-width: 1441px
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
-        align-items: center;
+        align-items: center; 
     }
+    
     .dados_caixas{
         display: flex;
         flex-direction: column;
@@ -297,7 +301,11 @@ Breakpoint: min-width: 1441px
         transition: transform 0.3s ease;
     }
     .box:hover {
-        transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+        transform: scale(1.05); 
+    }
+    /*campanhas em destaque*/
+    .a_doeagora {
+        padding: 8px;
     }
     /*tamanho do texto das caixas*/
     div.box p{
@@ -472,6 +480,10 @@ Breakpoint: min-width: 1441px
     }
     .box:hover {
         transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+    }
+    /*campanhas em destaque*/
+    .a_doeagora {
+        padding: 8px;
     }
     /*tamanho do texto das caixas*/
     div.box p{
