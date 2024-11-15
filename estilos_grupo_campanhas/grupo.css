@@ -153,6 +153,7 @@ main {
     width: 60px;
     background-color: #F15B43;
     color: white;
+    cursor: pointer;
 }
 .container_grupo{
     display: flex;
