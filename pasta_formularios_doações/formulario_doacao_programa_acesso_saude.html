@@ -37,15 +37,15 @@
         </div>
         <div class="form-container" >
             <h2>Formulário de Doação <br> Programa de Acesso a Saúde</h2>
-            <form action="processa_doacao.php" method="post">
+            <form onsubmit="redirecionar(); return false;"  logmethod="post">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo"  value="Gabriel Ribeiro Passos Mota">
         
                 <label for="e-mail">E-mail</label>
-                <input type="email" name="e-mail" id="" required placeholder="E-mail">
+                <input type="email" name="e-mail" id="" required placeholder="E-mail" value="gabriel.ribeiro@souunit.com.br">
         
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" value="797688-4229">
         
                 <label for="item">Item a ser doado:</label>
                 <select id="item" name="item" required>
@@ -53,7 +53,7 @@
                     <option value="Medicamentos">Medicamentos (analgésicos, anti-inflamatórios, etc.)</option>
                     <option value="Equipamentos de Saúde">Equipamentos de Saúde (termômetros, medidores de pressão)</option>
                     <option value="Materiais de Primeiros Socorros">Materiais de Primeiros Socorros (gazes, ataduras)</option>
-                    <option value="Produtos de Higiene">Produtos de Higiene Pessoal (sabonete, shampoo)</option>
+                    <option value="Produtos de Higiene" selected>Produtos de Higiene Pessoal (sabonete, shampoo)</option>
                     <option value="Produtos de Limpeza">Produtos de Limpeza (álcool gel, desinfetantes)</option>
                     <option value="Fraldas e Absorventes">Fraldas e Absorventes</option>
                     <option value="Equipamentos de Proteção">Equipamentos de Proteção (máscaras, luvas)</option>
@@ -156,3 +156,10 @@
     document.querySelector("menu").classList.toggle("menu-aberto");
 }
 </script>
+
+<script>
+    function redirecionar() {
+        // Redireciona para a página de perfil logado
+        window.location.href = "../index_logado.html";
+    }
+    </script>
