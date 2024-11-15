@@ -221,7 +221,17 @@ main{
     font-weight: 500;
     margin: 1em;
 }
+.btn-voltar{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    padding: 15px;
+    border-radius: 20px;
+}
 
+.btn-voltar:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
 .btn-container .btn-salvar{
     text-decoration: none;
     color: white;
