@@ -134,6 +134,18 @@ main {
     justify-content: center;
     align-items: center;
 }
+.container_busca {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 400px;
+}
+
+#busca {
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
 .container_grupo{
     display: flex;
     flex-wrap: wrap;
