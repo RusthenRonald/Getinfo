@@ -623,15 +623,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2{
         font-size: 3em;
     }
-    /*linha laranja*/
-    .campanhas_destaque h2::after{
-        content: ' ';
-        display: block;
-        width: 25.5rem;
-        height: 0.3rem;
-        background-color: #F15B43;
-        margin-bottom: 20px;
-    }
+
     #mao{
         font-size: 3em;
     }
@@ -647,7 +639,7 @@ Breakpoint: min-width: 1441px
         padding-bottom: 40px;
     }
     .box:hover {
-        transform: scale(1.05); /* Aumenta a escala quando passar o mouse */
+        transform: scale(1.05); 
     }
     /*tamanho do texto das caixas*/
     div.box p{

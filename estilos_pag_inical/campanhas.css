@@ -13,16 +13,7 @@
 #mao{
     font-size: 1.8em;
 }
-/*linha laranja*/
-.campanhas_destaque h2::after{
-    content: ' ';
-    display: block;
-    margin: 0 auto;
-    width: 11.5rem;
-    height: 0.3rem;
-    background-color: #F15B43;
-    margin-bottom: 20px;
-}
+
 div#container_box{
     display: flex;
     flex-wrap: wrap;
