@@ -32,7 +32,7 @@
     </menu>
     <main >
         <div class="container_busca">
-            <input type="text" id="busca" placeholder="Pesquise uma causa..." oninput="filtrarCampanhas()> 
+            <input type="text" id="busca" placeholder="Pesquise uma causa..." oninput="filtrarCampanhas()"> 
             <div class="icone_busca"><i class="fa fa-search" aria-hidden="true"></i></div>
         </div>
         <div class="container_grupo"> 
@@ -219,3 +219,26 @@
 }
 </script>
 
+<script>
+    function filtrarCampanhas() {
+        // Obtenha o texto inserido na caixa de pesquisa
+        const busca = document.getElementById("busca").value.toLowerCase();
+
+        // Obtenha todos os elementos de campanha
+        const campanhas = document.querySelectorAll(".grupo");
+
+        // Para cada campanha, verificar se o nome contém o texto da busca
+        campanhas.forEach(function(campanha) {
+            const titulo = campanha.querySelector("h1").textContent.toLowerCase();
+
+            // Se o título da campanha contiver o texto da busca, mostramos a campanha
+            if (titulo.includes(busca)) {
+                campanha.style.display = "block";
+            } else {
+                // Caso contrário, escondemos a campanha
+                campanha.style.display = "none";
+            }
+        });
+        document.querySelector("main").style.height = "auto"; // Ajusta a altura para o conteúdo restante
+    }
+</script>
