@@ -158,6 +158,11 @@ main {
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
     height: 500px;
     width: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.grupo:hover {
+    transform: scale(1.04); /* Efeito de aumento ao passar o mouse */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Aumenta o sombreado para destacar mais */
 }
 /*todas com mesma largura*/
 .img_grupo {
