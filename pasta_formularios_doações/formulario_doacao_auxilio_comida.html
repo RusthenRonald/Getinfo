@@ -37,7 +37,7 @@
         </div>
         <div class="form-container" >
             <h2>Formulário de Doação <br> Auxilio de Comida para Refugiados</h2>
-            <form action="../index_logado.html" >
+            <form onsubmit="redirecionar(); return false;"  logmethod="post">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" value="Gabriel Ribeiro Passos Mota">
         
@@ -156,3 +156,9 @@
     document.querySelector("menu").classList.toggle("menu-aberto");
 }
 </script>
+<script>
+    function redirecionar() {
+        // Redireciona para a página de perfil logado
+        window.location.href = "../index_logado.html";
+    }
+    </script>
