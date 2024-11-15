@@ -331,7 +331,8 @@ Breakpoint: min-width: 1441px
         width: 15vw;
     }
     div#container_sobre_nos {
-        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center;
     }
     div#sobre_nos h2{
         font-size: 2.9em;
@@ -341,8 +342,8 @@ Breakpoint: min-width: 1441px
         width: 50vw;
     }
     img#kids2{
-        margin-top: 300px;
-        width: 40vw;
+        margin-top: 100px;
+        width: 65vw;
         height: 360px;
         border-radius: 5px;
     }
