@@ -128,7 +128,7 @@ button a {
 }
 /*grupo de capmanhas*/
 main {
-    height: 1400px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,14 +151,14 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
-    width: 70%;
+    margin-bottom: 20px;
 }
 .grupo{
     border: none;
     border-radius: 5px;
     box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.603);
     height: 500px;
-    width: 30%; /* Cada grupo ocupará 30% do espaço do container */
+    width: 350px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .grupo:hover {

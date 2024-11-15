@@ -13,7 +13,6 @@ Breakpoint: min-width: 1441px
 
 /*criado para tela de celular em especifico , caso tenha alguma configuração que n faça no geral*/
 @media screen and (min-width:200px) and (max-width:420px){
-    /* Para telas menores */
     #menu_normal {
         display: none;
     }
@@ -42,7 +41,7 @@ Breakpoint: min-width: 1441px
     margin-bottom: 25px;
 }
 main{
-    height: 4000px;
+    height: auto;
 }
 }
 /*Telas celulares maiores*/
@@ -79,14 +78,14 @@ margin-bottom: 25px;
 
 main{
     margin-top: 60px;
-    height: 4000px;
+    height: auto;
 }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
     main{
         margin-top: 100px;
-        height: 2200px;
+        height: auto;
     }
 nav a{
     font-size: 0.9em;
@@ -98,12 +97,11 @@ nav a{
 @media screen and (min-width:1025px) and (max-width:1440px){
 main{
     margin-top: 100px;
-    height: 1700px;
+    height: auto;
 }
 nav a{
     font-size: 1.0em;
 }
-
 
 }
 /*Telas grandes : acima de 1441px*/
@@ -116,6 +114,13 @@ nav a{
     font-size: 1.1em;
 }
 
+.container_grupo{
+    gap: 50px;
+    width: 70%;
+}
+.grupo{
+    width: 30%; /* Cada grupo ocupará 30% do espaço do container */
+}
 }
 
 
