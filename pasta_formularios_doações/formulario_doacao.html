@@ -38,15 +38,15 @@
         </div>
         <div class="form-container" >
             <h2>Formulário de Doação <br> Projetos de Educação na África</h2>
-            <form action="../index_logado.html" method="post">
+            <form onsubmit="redirecionar(); return false;" autocomplete="on">
                 <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo" value="Gabriel Ribeiro Passos Mota">
         
                 <label for="e-mail">E-mail</label>
-                <input type="email" name="e-mail" id="" required placeholder="E-mail">
+                <input type="email" name="e-mail" id="" required placeholder="E-mail" value="gabriel.ribeiro@souunit.com.br">
         
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" value="797688-4229">
         
                 <label for="item">Item a ser doado:</label>
                 <select id="item" name="item" required>
@@ -56,7 +56,7 @@
                     <option value="Roupas">Roupas e Calçados</option>
                     <option value="Equipamentos de Informática">Equipamentos de Informática (notebooks, tablets)</option>
                     <option value="Jogos Educativos">Jogos Educativos e Brinquedos</option>
-                    <option value="Materiais Artísticos">Materiais Artísticos (tintas, pincéis)</option>
+                    <option value="Materiais Artísticos" selected>Materiais Artísticos (tintas, pincéis)</option>
                     <option value="Material Esportivo">Material Esportivo (bolas, raquetes)</option>
                     <option value="Produtos de Higiene">Produtos de Higiene e Saúde</option>
                     <option value="Outros">Outros</option>
@@ -159,7 +159,9 @@
 }
 </script>
 
-
-<!--
-
--->
+<script>
+    function redirecionar() {
+        // Redireciona para a página de perfil logado
+        window.location.href = "../index_logado.html";
+    }
+    </script>
