@@ -204,6 +204,10 @@ Breakpoint: min-width: 1441px
     section.frase_motivacional h2{
         font-size: 1.3em;
     }
+    section.frase_motivacional p{
+        font-size: 1.0em;
+        text-align:center ;
+    }
     /*Botão doe agora*/
      .botao-doe-agora {
         font-size: 12px; 
@@ -363,7 +367,11 @@ Breakpoint: min-width: 1441px
     }
     /*frase_motivacional*/
     section.frase_motivacional h2{
-        font-size: 2.3em;
+        font-size: 2.0em;
+    }
+    section.frase_motivacional p{
+        font-size: 1.4em;
+        text-align:center ;
     }
     /*Botão doe agora*/
      .botao-doe-agora {
@@ -537,6 +545,10 @@ Breakpoint: min-width: 1441px
     section.frase_motivacional h2{
         font-size: 2.6em;
     }
+    section.frase_motivacional p{
+        font-size: 1.6em;
+        text-align:center ;
+    }
     /*Botão doe agora*/
      .botao-doe-agora {
         font-size: 20px; 
@@ -685,15 +697,16 @@ Breakpoint: min-width: 1441px
         font-size: 1.5em;
         color: rgba(128, 128, 128, 0.774);
     }
-    /*Foto com frase motivacional*/
     section.frase_motivacional{
         height: 500px;
     }
-    /*frase_motivacional*/
     section.frase_motivacional h2{
         font-size: 2.8em;
     }
-    /*Botão doe agora*/
+    section.frase_motivacional p{
+        font-size: 1.6em;
+        text-align:center ;
+    }
     .botao-doe-agora {
         font-size: 20px; 
     }

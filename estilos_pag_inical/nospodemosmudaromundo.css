@@ -14,9 +14,14 @@ section.frase_motivacional{
 }
 section.frase_motivacional h2{
     color: white;
-    font-size: 0.9em;
+    font-size: 1.0em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
+    text-align: center;
+}
+section.frase_motivacional p{
+    font-size: 0.7em;
+    text-align:center ;
 }
 /*Botão doe agora*/
 .criar_campanhas{
