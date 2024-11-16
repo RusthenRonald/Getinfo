@@ -411,7 +411,7 @@
     document.getElementById("criar_campanha").addEventListener("click", function(event) {
       // Verifica se o usuário está logado
       if (!isUserLoggedIn()) {
-        alert("Você precisa estar logado como pessoa jurídica.");
+        alert("Você precisa estar logado como pessoa jurídica para poder criar campanhas!");
         event.preventDefault();
         redirectToLogin(); 
       } else {
