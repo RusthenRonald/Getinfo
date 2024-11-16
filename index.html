@@ -408,10 +408,10 @@
       window.location.href = "../telas_login/login_auxilio_comida_refugiados.html"; 
     }
   
-    document.getElementById("doarBtn").addEventListener("click", function(event) {
+    document.getElementById("criar_campanha").addEventListener("click", function(event) {
       // Verifica se o usuário está logado
       if (!isUserLoggedIn()) {
-        alert("Você precisa estar logado para fazer uma doação.");
+        alert("Você precisa estar logado como pessoa jurídica.");
         event.preventDefault();
         redirectToLogin(); 
       } else {
