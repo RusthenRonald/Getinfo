@@ -30,6 +30,7 @@ section.frase_motivacional h2{
     border: 1px solid white;
     background-color: transparent;
     color: white;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 .criar_campanhas button:hover{
     background-color: white;
