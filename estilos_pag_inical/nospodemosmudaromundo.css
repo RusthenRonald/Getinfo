@@ -31,4 +31,8 @@ section.frase_motivacional h2{
     background-color: transparent;
     color: white;
 }
+.criar_campanhas button:hover{
+    background-color: white;
+    color: #434b56;
+}
 
