@@ -4,6 +4,10 @@
     flex-direction: column;
     align-items: center;
 }
+.clientes{
+    display: flex;
+    gap: 50px;
+}
 .clientes img{
     width: 200px;
 }
