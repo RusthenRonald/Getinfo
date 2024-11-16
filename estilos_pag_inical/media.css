@@ -282,15 +282,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2{
         font-size: 2.6em;
     }
-    /*linha laranja*/
-    .campanhas_destaque h2::after{
-        content: ' ';
-        display: block;
-        width: 20.5rem;
-        height: 0.3rem;
-        background-color: #F15B43;
-        margin-bottom: 20px;
-    }
+
     #mao{
         font-size: 2.4em;
     }
@@ -465,15 +457,7 @@ Breakpoint: min-width: 1441px
     .campanhas_destaque h2{
         font-size: 2.9em;
     }
-    /*linha laranja*/
-    .campanhas_destaque h2::after{
-        content: ' ';
-        display: block;
-        width: 24.5rem;
-        height: 0.3rem;
-        background-color: #F15B43;
-        margin-bottom: 20px;
-    }
+
     #mao{
         font-size: 2.7em;
     }
