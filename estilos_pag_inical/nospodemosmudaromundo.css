@@ -18,7 +18,17 @@ section.frase_motivacional h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bolder;
 }
+/*Botão doe agora*/
 .criar_campanhas{
+    display: flex;
+    gap: 20px;
     margin-top: 20px;
 }
-/*Botão doe agora*/
+.criar_campanhas button{
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
