@@ -31,7 +31,8 @@ section.frase_motivacional p{
     margin-top: 20px;
 }
 .criar_campanhas button{
-    padding: 12px;
+    padding: 10px;
+    font-size: 0.7em;
     border-radius: 20px;
     border: 1px solid white;
     background-color: transparent;

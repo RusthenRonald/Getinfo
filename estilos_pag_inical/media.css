@@ -365,9 +365,10 @@ Breakpoint: min-width: 1441px
         font-size: 1.4em;
         text-align:center ;
     }
-    /*Botão doe agora*/
-     .botao-doe-agora {
-        font-size: 14px; 
+    .criar_campanhas button{
+        padding: 12px;
+        font-size: 1.0em;
+        border-radius: 30px;
     }
     /*dados da plataforma*/
     .dados_container{
@@ -533,9 +534,10 @@ Breakpoint: min-width: 1441px
         font-size: 1.6em;
         text-align:center ;
     }
-    /*Botão doe agora*/
-     .botao-doe-agora {
-        font-size: 20px; 
+    .criar_campanhas button{
+        padding: 12px;
+        font-size: 1.2em;
+        border-radius: 30px;
     }
     /*dados da plataforma*/
     div.dados_texto h2{
@@ -691,8 +693,10 @@ Breakpoint: min-width: 1441px
         font-size: 1.6em;
         text-align:center ;
     }
-    .botao-doe-agora {
-        font-size: 20px; 
+    .criar_campanhas button{
+        padding: 12px;
+        font-size: 1.4em;
+        border-radius: 30px;
     }
     /*dados da plataforma*/
     div.dados_texto h2{
