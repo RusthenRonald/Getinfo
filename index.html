@@ -91,7 +91,7 @@
             </div>
             <div class="criar_campanhas">
                 <a href="grupo_campanhas.html"><button >Ver Campanhas</button></a>
-                <a href="tela_criar_campanha.html"><button>Criar Campanhas</button></a>
+                <a href="tela_criar_campanha.html" id="criar_campanha"><button>Criar Campanhas</button></a>
             </div>
         </section>
         
@@ -396,3 +396,27 @@
     // Intervalo para a transição 
     setInterval(slideCarousel, 2000); 
 </script>
+
+<!-- Botão de Doação -->
+<script>
+    // Função para verificar se o usuário está logado
+    function isUserLoggedIn() {
+      return false; 
+    }
+  
+    function redirectToLogin() {
+      window.location.href = "../telas_login/login_auxilio_comida_refugiados.html"; 
+    }
+  
+    document.getElementById("doarBtn").addEventListener("click", function(event) {
+      // Verifica se o usuário está logado
+      if (!isUserLoggedIn()) {
+        alert("Você precisa estar logado para fazer uma doação.");
+        event.preventDefault();
+        redirectToLogin(); 
+      } else {
+        alert("Obrigado por querer doar!");
+      }
+    });
+  </script>
+  
