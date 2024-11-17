@@ -30,3 +30,12 @@
     width: 170px;
     height: 55px;
 }
+.clientes_4{
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+}
+.clientes_4 img{
+    width: 170px;
+    height: 65px;
+}
