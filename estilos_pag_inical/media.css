@@ -47,6 +47,38 @@ Breakpoint: min-width: 1441px
     div#container_box{
         margin-bottom: 8vh;
     }
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_2{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_2 img{
+        display: none;
+    }
+    .clientes_3{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_3 img{
+        display: none;
+    }
+    .clientes_4{
+        flex-direction: column;
+        margin-top: 40px;
+        display: flex;
+        gap: 50px;
+    }
+    .clientes_4 img{
+        display: none;
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -70,7 +102,7 @@ Breakpoint: min-width: 1441px
     }
     /*dados da plataforma*/
     .dados_container{
-        margin-top: 90px;
+        margin-top:0;
     }
     div.dados_texto h2{
         font-size: 2.0em;
@@ -215,7 +247,29 @@ Breakpoint: min-width: 1441px
      .botao-doe-agora {
         font-size: 12px; 
     }
-    /*
+    .clientes{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_2{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_3{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+    .clientes_4{
+        flex-direction: column;
+        margin-top: 40px;
+        display: flex;
+        gap: 50px;
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -277,9 +331,9 @@ Breakpoint: min-width: 1441px
         font-size: 0.9em;
     }
     div h1{
-        margin-left: 70px; /*espaçamento lateral esquerdo*/
+        margin-left: 70px; 
     }
-    #p_header{ /*espaçamento na parte de baixo e lateral do p*/
+    #p_header{
         margin-left: 70px;
     }
     .campanhas_destaque h2{
@@ -372,6 +426,23 @@ Breakpoint: min-width: 1441px
         padding: 12px;
         font-size: 1.0em;
         border-radius: 30px;
+    }
+    /*clientes*/
+    .clientes img{
+        width: 100px;
+        height: 45px;
+    }
+    .clientes_2 img{
+        width: 100px;
+        height: 55px;
+    }
+    .clientes_3 img{
+        width: 100px;
+        height: 55px;
+    }
+    .clientes_4 img{
+        width: 100px;
+        height: 65px;
     }
     /*dados da plataforma*/
     .dados_container{
@@ -542,6 +613,23 @@ Breakpoint: min-width: 1441px
         font-size: 1.2em;
         border-radius: 30px;
     }
+    /*clientes*/
+    .clientes img{
+        width: 140px;
+        height: 45px;
+    }
+    .clientes_2 img{
+        width: 140px;
+        height: 55px;
+    }
+    .clientes_3 img{
+        width: 140px;
+        height: 55px;
+    }
+    .clientes_4 img{
+        width: 140px;
+        height: 65px;
+    }
     /*dados da plataforma*/
     div.dados_texto h2{
         font-size: 2.5em;
@@ -700,6 +788,23 @@ Breakpoint: min-width: 1441px
         padding: 12px;
         font-size: 1.4em;
         border-radius: 30px;
+    }
+    /*clientes*/
+    .clientes img{
+        width: 170px;
+        height: 50px;
+    }
+    .clientes_2 img{
+        width: 170px;
+        height: 55px;
+    }
+    .clientes_3 img{
+        width: 170px;
+        height: 55px;
+    }
+    .clientes_4 img{
+        width: 170px;
+        height: 65px;
     }
     /*dados da plataforma*/
     div.dados_texto h2{
