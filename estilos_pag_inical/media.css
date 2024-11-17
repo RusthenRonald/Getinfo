@@ -44,6 +44,9 @@ Breakpoint: min-width: 1441px
     .a_doeagora {
         padding: 5px;
     }
+    div#container_box{
+        margin-bottom: 8vh;
+    }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
