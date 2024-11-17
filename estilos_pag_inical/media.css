@@ -270,6 +270,9 @@ Breakpoint: min-width: 1441px
         display: flex;
         gap: 50px;
     }
+    .h2_clientes{
+        font-size: 2.5em;
+     }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -444,6 +447,9 @@ Breakpoint: min-width: 1441px
         width: 80px;
         height: 65px;
     }
+    .h2_clientes{
+        font-size: 2.0em;
+     }
     /*dados da plataforma*/
     .dados_container{
         flex-direction: column;
@@ -630,6 +636,9 @@ Breakpoint: min-width: 1441px
         width: 140px;
         height: 65px;
     }
+    .h2_clientes{
+        font-size: 2.5em;
+     }
     /*dados da plataforma*/
     div.dados_texto h2{
         font-size: 2.5em;
@@ -805,6 +814,9 @@ Breakpoint: min-width: 1441px
     .clientes_4 img{
         width: 170px;
         height: 65px;
+    }
+    .h2_clientes{
+       font-size: 2.8em;
     }
     /*dados da plataforma*/
     div.dados_texto h2{
