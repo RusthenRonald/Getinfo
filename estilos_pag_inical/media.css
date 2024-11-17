@@ -350,6 +350,10 @@ Breakpoint: min-width: 1441px
     #p_header{
         margin-left: 70px;
     }
+    .campanhas_destaque{
+        margin-top: 8vh;
+        margin-bottom: 8vh;
+    }
     .campanhas_destaque h2{
         font-size: 2.6em;
     }
@@ -361,6 +365,7 @@ Breakpoint: min-width: 1441px
         display: flex;
         flex-wrap: nowrap;
         gap: 0px;
+        margin-bottom: 10vh;
     }
     .box {
         width: calc(33.33%);
@@ -392,7 +397,7 @@ Breakpoint: min-width: 1441px
     /*container principal que separa img e texto*/
     /*sobre nós*/
     div#container_sobre_nos {
-        margin-top: 180px;
+        margin-top: 10vh;
     }
     div#menu_sobre_nos a {
         width: 15vw;
@@ -424,6 +429,10 @@ Breakpoint: min-width: 1441px
         color: #F15B43;
         font-size: 1.8em;
     }
+    /*diferencial*/
+    .h2_diferencial{
+        margin-top: 8vh;
+    }
     /*Foto com frase motivacional*/
     section.frase_motivacional{
         height: 400px;
@@ -442,24 +451,40 @@ Breakpoint: min-width: 1441px
         border-radius: 30px;
     }
     /*clientes*/
+    .clientes{
+        display: flex;
+        gap: 70px;
+    }
     .clientes img{
         width: 80px;
         height: 45px;
     }
     .clientes_2 img{
         width: 80px;
-        height: 55px;
+        height: 55px7
+    }
+    .clientes_2{
+        display: flex;
+        gap: 70px;
     }
     .clientes_3 img{
         width: 80px;
         height: 55px;
     }
+    .clientes_3{
+        display: flex;
+        gap: 70px;
+    }
     .clientes_4 img{
         width: 80px;
         height: 65px;
     }
+    .clientes_4{
+        display: flex;
+        gap: 70px;
+    }
     .h2_clientes{
-        font-size: 2.0em;
+        font-size: 2.4em;
      }
     /*dados da plataforma*/
     .dados_container{
@@ -631,6 +656,10 @@ Breakpoint: min-width: 1441px
         border-radius: 30px;
     }
     /*clientes*/
+    .clientes{
+        display: flex;
+        gap: 70px;
+    }
     .clientes img{
         width: 140px;
         height: 45px;
@@ -639,13 +668,25 @@ Breakpoint: min-width: 1441px
         width: 140px;
         height: 55px;
     }
+    .clientes_2{
+        display: flex;
+        gap: 70px;
+    }
     .clientes_3 img{
         width: 140px;
         height: 55px;
     }
+    .clientes_3{
+        display: flex;
+        gap: 70px;
+    }
     .clientes_4 img{
         width: 140px;
         height: 65px;
+    }
+    .clientes_4{
+        display: flex;
+        gap: 70px;
     }
     .h2_clientes{
         font-size: 2.5em;
@@ -810,6 +851,10 @@ Breakpoint: min-width: 1441px
         border-radius: 30px;
     }
     /*clientes*/
+    .clientes{
+        display: flex;
+        gap: 100px;
+    }
     .clientes img{
         width: 170px;
         height: 50px;
@@ -818,13 +863,25 @@ Breakpoint: min-width: 1441px
         width: 170px;
         height: 55px;
     }
+    .clientes_2{
+        display: flex;
+        gap: 100px;
+    }
     .clientes_3 img{
         width: 170px;
         height: 55px;
     }
+    .clientes_3{
+        display: flex;
+        gap: 100px;
+    }
     .clientes_4 img{
         width: 170px;
         height: 65px;
+    }
+    .clientes_4{
+        display: flex;
+        gap: 100px;
     }
     .h2_clientes{
        font-size: 2.8em;
