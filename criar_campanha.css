@@ -144,14 +144,23 @@ main{
 }
 .container_criar_campanha{
     height: 400px;
-    width: 600px;
+    width: 700px;
     background-color: #f15a430e;
     border-radius: 10px;
 }
 /*input*/
 .grupo_input{
+    color: #F15B43;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
+}
+.grupo_input input{
+    margin-top: 5px;
+    height: 25px;
+    width: 40%;
 }
 footer{
     height: 220px;
