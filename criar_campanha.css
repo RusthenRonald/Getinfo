@@ -127,6 +127,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+/*todos as div input*/
 .campos{
     padding: 20px;
     display: flex;
@@ -153,9 +154,10 @@ main{
 .container_criar_campanha{
     height: 600px;
     width: 600px;
-    background-color: #f15a431c;
+    background-color: #f15a430e;
     border-radius: 10px;
 }
+
 footer{
     height: 220px;
     font-family: 'Inter',sans-serif;
@@ -349,3 +351,5 @@ footer{
         
     }
 }
+
+

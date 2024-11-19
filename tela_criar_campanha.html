@@ -41,6 +41,7 @@
                         <label for="itens">Quantos itens estão sendo solicitados?</label>
                         <input type="number" id="itens">
                     </div>
+                   
                 </form>
             </div>
         </div>
@@ -134,26 +135,3 @@
 }
 </script>
 
-<!-- Botão de Doação -->
-<script>
-    // Função para verificar se o usuário está logado
-    function isUserLoggedIn() {
-      return false; 
-    }
-  
-    function redirectToLogin() {
-      window.location.href = "../telas_login/login_auxilio_comida_refugiados.html"; 
-    }
-  
-    document.getElementById("doarBtn").addEventListener("click", function(event) {
-      // Verifica se o usuário está logado
-      if (!isUserLoggedIn()) {
-        alert("Você precisa estar logado para fazer uma doação.");
-        event.preventDefault();
-        redirectToLogin(); 
-      } else {
-        alert("Obrigado por querer doar!");
-      }
-    });
-  </script>
-  
