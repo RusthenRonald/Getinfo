@@ -148,7 +148,11 @@ main{
     background-color: #f15a430e;
     border-radius: 10px;
 }
-
+/*input*/
+.grupo_input{
+    display: flex;
+    flex-direction: column;
+}
 footer{
     height: 220px;
     font-family: 'Inter',sans-serif;
