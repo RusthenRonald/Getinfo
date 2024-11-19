@@ -37,8 +37,45 @@
             </div>
             <div class="container_criar_campanha">
                 <form action="cadastro.html" method="post" class="info_input">
+                     <!-- Input de quantidade de itens -->
+                    <div class="input_group">
+                        <label for="quantidade">Quantidade de Itens a Serem Arrecadados</label>
+                        <input type="number" id="quantidade" name="quantidade" placeholder="Ex: 100" required>
+                    </div>
                     
-                    
+                    <!-- Select com categoria -->
+                    <div class="input_group">
+                        <label for="categoria">Categoria da Campanha</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="saude">Saúde</option>
+                            <option value="educacao">Educação</option>
+                            <option value="fome">Fome</option>
+                            <option value="outros">Outros</option>
+                        </select>
+                    </div>
+
+                    <!-- Input de descrição -->
+                    <div class="input_group">
+                        <label for="descricao">Descrição da Campanha</label>
+                        <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva os objetivos da campanha" required></textarea>
+                    </div>
+
+                    <!-- Input de data limite -->
+                    <div class="input_group">
+                        <label for="data_limite">Data Limite para Doações</label>
+                        <input type="date" id="data_limite" name="data_limite" required>
+                    </div>
+
+                    <!-- Input de valor monetário (opcional) -->
+                    <div class="input_group">
+                        <label for="valor_meta">Meta Financeira (opcional)</label>
+                        <input type="number" id="valor_meta" name="valor_meta" placeholder="Ex: 5000" step="0.01">
+                    </div>
+
+                    <!-- Botão para submeter -->
+                    <div class="input_group">
+                        <button type="submit">Criar Campanha</button>
+                    </div>
                 </form>
             </div>
         </div>
