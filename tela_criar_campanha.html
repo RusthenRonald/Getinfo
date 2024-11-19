@@ -41,19 +41,6 @@
                         <label for="itens">Defina sua meta de itens: </label>
                         <input type="number"  id="itens">
                     </div>
-                      <!-- Nova div de upload de imagem -->
-                    <div class="upload-imagem" id="upload-container">
-                        <h4 class="texto-imagem">Arraste sua imagem aqui<br>ou</h4>
-                        <!-- Botão personalizado -->
-                        <label for="upload-image" class="custom-upload-btn">Upload</label>
-                        <!-- Input real, escondido -->
-                        <input type="file" id="upload-image" accept="image/*" onchange="previewImage(this.files)" style="display: none;" />
-                        <!-- Área de visualização -->
-                        <div id="preview-container" style="display: none; position: relative;">
-                            <span id="remove-image" onclick="removeImage()">✖</span>
-                            <img id="preview" src="" alt="Pré-visualização da imagem" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;" />
-                        </div>
-                    </div>
                     <div class="grupo_input">
                         <label for="categoria">Escolha a Categoria da Campanha:</label>
                         <select id="categoria" name="categoria">
