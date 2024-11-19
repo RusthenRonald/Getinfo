@@ -121,7 +121,7 @@ button a {
 }
 /*main e criar campanha*/
 main{
-    height: 900px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
