@@ -128,13 +128,19 @@ main{
     align-items: center;
 }
 .nome_campanha{
+    color: #F15B43;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
+}
+.nome_campanha input{
+    padding: 5px;
 }
 .container_criar_campanha{
     height: 600px;
     width: 600px;
-    background-color: #f15a434d;
+    background-color: #f15a432f;
     border-radius: 10px;
 }
 footer{
