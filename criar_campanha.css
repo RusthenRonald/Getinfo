@@ -128,11 +128,15 @@ main{
     align-items: center;
 }
 .nome_campanha{
+    font-weight: bold;
     color: #F15B43;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+}
+.nome_campanha label{
+    margin-bottom: 5px;
 }
 .nome_campanha input{
     padding: 5px;
