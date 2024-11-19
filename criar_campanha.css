@@ -121,15 +121,16 @@ button a {
 }
 /*main e criar campanha*/
 main{
-    height: 600px;
+    height: 900px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .container_criar_campanha{
-    height: 300px;
-    width: 300px;
-    background-color: #0e0c0c;
+    height: 600px;
+    width: 600px;
+    background-color: #f15a434d;
+    border-radius: 10px;
 }
 footer{
     height: 220px;
