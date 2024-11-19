@@ -127,6 +127,15 @@ main{
     justify-content: center;
     align-items: center;
 }
+.campos{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.campos input{
+    margin-top: 5px;
+    width: 43%;
+}
 .nome_campanha{
     font-weight: bold;
     color: #F15B43;
@@ -144,7 +153,7 @@ main{
 .container_criar_campanha{
     height: 600px;
     width: 600px;
-    background-color: #f15a432f;
+    background-color: #f15a431c;
     border-radius: 10px;
 }
 footer{
