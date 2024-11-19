@@ -127,6 +127,10 @@ main{
     justify-content: center;
     align-items: center;
 }
+.nome_campanha{
+    display: flex;
+    flex-direction: column;
+}
 .container_criar_campanha{
     height: 600px;
     width: 600px;
