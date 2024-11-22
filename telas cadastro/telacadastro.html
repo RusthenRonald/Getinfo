@@ -615,7 +615,7 @@ footer{
                 <form id="pessoa_fisica" action="../telaseditarperfil/tela_perfil_1.html" >
                     <div class="form_header">
                         <div class="titulo" id="titulo-cadastro">
-                            <h1>Cadastre-se como <br> Pessoa Física</h1>
+                            <h1>Cadastre-se como <br> <span id="tipo-titulo">Pessoa Física</span></h1>
                         </div>
                         <div class="trocar_cadastro">
                             <label for="tipo_cadastro">Tipo de Cadastro:</label>
@@ -872,3 +872,14 @@ footer{
 </body>
 </html>
 <!--Menu hmburguer-->
+<script>
+    document.getElementById('tipo_cadastro').addEventListener('change', function () {
+        const tituloCadastro = document.getElementById('titulo-cadastro');
+        if (this.value === 'juridica') {
+            tituloCadastro.innerHTML = 'Cadastre-se como <br> Pessoa Jurídica';
+        } else {
+            tituloCadastro.innerHTML = 'Cadastre-se como <br> Pessoa Física';
+        }
+    });
+</script>
+
