@@ -38,8 +38,8 @@ menu{
     z-index: 1000; 
 }
 .logo_getinfo img{
-    margin-top: 10px;
-    width: 140px;
+    width: 100px;
+    height: 70px;
 }
 nav{
     display: flex;
@@ -583,7 +583,7 @@ footer{
 <body>
     <menu>
         <div class="logo_getinfo">
-            <img src="../img/logo getinfo2.jpg" alt="">
+            <img src="../img/logo do a do.jpg" alt="">
         </div>
         <nav id="menu_normal">
             <a href="../index.html" class="a_hover">Home</a>
@@ -621,27 +621,27 @@ footer{
                     <div class="inputs">
                         <div class="input_box ">
                             <label for="primeiro_nome">Nome</label>
-                            <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required>
+                            <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required value=" João Silva">
                         </div>
                         <div class="input_box">
                             <label for="cpf">CPF</label>
-                            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
+                            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required value="123.456.789-10">
                         </div>
                         <div class="input_box">
                             <label for="data-nasc">Data de nascimento</label>
-                            <input id="date" type="date" name="date" required>
+                            <input id="date" type="date" name="date" required value="1990-05-15">
                         </div>
                             <div class="genero_titulo">
                                 <h6>Gênero</h6>
                             </div>
                             <div class="genero_grupo">
                                 <div class="genero_input">
-                                    <input type="radio" id="feminino" name="genero">
+                                    <input type="radio" id="feminino" name="genero" >
                                     <label for="feminino">Feminino</label>
                                 </div>
                                 <div class="genero_input">
-                                    <input type="radio" id="masculino" name="genero">
-                                    <label for="masculino">Masculino</label>
+                                    <input type="radio" id="masculino" name="genero" checked>
+                                    <label for="masculino"  >Masculino</label>
                                 </div>
                                 <div class="genero_input">
                                     <input type="radio" id="outro" name="genero">
@@ -654,13 +654,13 @@ footer{
                             </div>
                         <div class="input_box">
                             <label for="cep">CEP</label>
-                            <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required>
+                            <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required value="12345-678">
                         </div>
                         <div class="input_box">
                             <label for="estado" style="margin-bottom: 5px;">Estado</label>
                             <select id="estado" name="estado" required style="padding: 10px; border-radius: 5px; border: none; box-shadow: 1px 1px 6px #0000001c;">
                                 <option value="" style="color: gray;">Selecione o Estado</option>
-                                <option value="AC">Acre</option>
+                                <option value="AC" >Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
                                 <option value="AM">Amazonas</option>
@@ -685,25 +685,25 @@ footer{
                                 <option value="RR">Roraima</option>
                                 <option value="SC">Santa Catarina</option>
                                 <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
+                                <option value="SE" selected>Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
                         </div> 
                         <div class="input_box">
                             <label for="cidade">Cidade</label>
-                            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
+                            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required value="Nossa Senhora do Socorro">
                         </div>                      
                         <div class="input_box">
                             <label for="endereco">Endereço</label>
-                            <input id="end" type="text" name="end" placeholder="Endereço" required>
+                            <input id="end" type="text" name="end" placeholder="Endereço" required value="Rua das Flores, 123">
                         </div>
                         <div class="input_box">
                             <label for="tel">Telefone</label>
-                            <input id="tel" type="tel" name="tel" placeholder="Telefone" required>
+                            <input id="tel" type="tel" name="tel" placeholder="Telefone" required value=" (11) 98765-4321">
                         </div>
                         <div class="input_box">
                             <label for="e-mail">E-mail</label>
-                            <input id="e-mail" type="email"  required placeholder="E-mail">
+                            <input id="e-mail" type="email"  required placeholder="E-mail" value="joao.silva@email.com">
                         </div>
                         <div class="input_box">
                             <label for="senha">Senha</label>
@@ -781,7 +781,7 @@ footer{
     <footer >
         <div id="footer_container" >
             <div id="footer_contatos">
-                <img style="margin-bottom: 20px; width: 160px;" src="../img/logo getinfo_processed.jpg" alt="">
+                <img style="margin-bottom: 30px; width: 160px;" src="" alt="">
 
                 <div id="midias_sociais">
                     <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
