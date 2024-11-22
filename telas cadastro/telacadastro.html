@@ -163,6 +163,8 @@ nav{
 /*Botão*/
 .trocar_cadastro{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .trocar_cadastro a{
@@ -615,8 +617,12 @@ footer{
                             <h1>Cadastre-se como <br> Pessoa Física</h1>
                         </div>
                         <div class="trocar_cadastro">
-                            <a id="empresa" class="empresa" href="#" onclick="toggleForms()">Cadastro Juridico</a>
-                        </div>
+                            <label for="tipo_cadastro">Tipo de Cadastro:</label>
+                            <select id="tipo_cadastro" class="empresa" onchange="toggleForms(this.value)">
+                                <option value="fisica">Cadastro Física</option>
+                                <option value="juridica">Cadastro Jurídica</option>
+                            </select>
+                        </div>                        
                     </div>
                     <div class="inputs">
                         <div class="input_box ">
@@ -868,15 +874,5 @@ footer{
 </script>
 <!--ALterna entre pessoa fisica e juridica-->
 <script>
-    function toggleForms() {
-        const formFisica = document.getElementById('pessoa_fisica');
-        const formJuridica = document.getElementById('pessoa_juridica');
-        if (formFisica.style.display === 'none') {
-            formFisica.style.display = 'block';
-            formJuridica.style.display = 'none';
-        } else {
-            formFisica.style.display = 'none';
-            formJuridica.style.display = 'block';
-        }
-    }
+    
 </script>
