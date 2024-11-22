@@ -165,22 +165,18 @@ nav{
 /*Botão*/
 .trocar_cadastro{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-.trocar_cadastro a{
-    border: none;
-    font-weight: 550;
-    background: linear-gradient(to right, #F15B43, #FE8F20);
-    color: white;
-    padding: 0.4rem 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 2.8s ease, box-shadow 2.8s ease;
+.trocar_cadastro select{
+    padding: 8px;
+    }
+.trocar_cadastro option{
+    padding: 8px;
 }
-.trocar_cadastro a:hover{
-    background: linear-gradient(to right,  #FE8F20,#F15B43);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+.trocar_cadastro label{
+    margin-bottom: 5px;
 }
 .titulo{
     margin-top:15px ;
@@ -414,7 +410,12 @@ footer{
         font-size: 0.8em;
         width: 100px;
     }
-
+    .trocar_cadastro select{
+    padding: 5px;
+    }
+    .trocar_cadastro option{
+        padding: 5px;
+    }
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
@@ -621,8 +622,12 @@ footer{
                             <h1>Cadastre-se como <br> Pessoa Física</h1>
                         </div>
                         <div class="trocar_cadastro">
-                            <a id="empresa" class="empresa" href="#" onclick="toggleForms()">Cadastro Juridico</a>
-                        </div>
+                            <label for="tipo_cadastro">Tipo de Cadastro:</label>
+                            <select id="tipo_cadastro" class="empresa" >
+                                <option value="fisica">Pessoa Física</option>
+                                <option value="juridica">Pessoa Jurídica</option>
+                            </select>
+                        </div>  
                     </div>
                     <div class="inputs">
                         <div class="input_box ">
@@ -733,8 +738,12 @@ footer{
                             <h1>Cadastre-se como <br> Pessoa Jurídica</h1>
                         </div>
                         <div class="trocar_cadastro">
-                            <a id="toggle_form" href="#" onclick="toggleForms()">Cadastro Físico</a>
-                        </div>
+                            <label for="tipo_cadastro">Tipo de Cadastro:</label>
+                            <select id="tipo_cadastro" class="empresa" >
+                                <option value="fisica">Pessoa Física</option>
+                                <option value="juridica">Pessoa Jurídica</option>
+                            </select>
+                        </div>  
                     </div>
                     <div class="inputs">
                         <div class="input_box">
