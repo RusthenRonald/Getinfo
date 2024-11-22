@@ -615,7 +615,7 @@ footer{
                 <img src="../img/foto_cadastro.svg">
             </div>
             <div class="form">
-                <form id="pessoa_fisica" action="../pasta_formularios_doações/formulario_doacao_auxilio_comida.html">
+                <form id="pessoa_fisica" action="../pasta_formularios_doações/formulario_doacao_programa_acesso_saude.html">
                     <div class="form_header">
                         <div class="titulo">
                             <h1>Cadastre-se como <br> Pessoa Física</h1>
@@ -627,15 +627,15 @@ footer{
                     <div class="inputs">
                         <div class="input_box ">
                             <label for="primeiro_nome">Nome</label>
-                            <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required>
+                            <input id="primeiro_nome" type="text" name="primeiro_nome" placeholder="Digite seu Nome" required value=" João Silva">
                         </div>
                         <div class="input_box">
                             <label for="cpf">CPF</label>
-                            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required>
+                            <input id="cpf" type="text" name="cpf" placeholder="xxx.xxx.xxx-xx" maxlength="14" required value="123.456.789-10">
                         </div>
                         <div class="input_box">
                             <label for="data-nasc">Data de nascimento</label>
-                            <input id="date" type="date" name="date" required>
+                            <input id="date" type="date" name="date" required value="1990-05-15">
                         </div>
                             <div class="genero_titulo">
                                 <h6>Gênero</h6>
@@ -646,8 +646,8 @@ footer{
                                     <label for="feminino">Feminino</label>
                                 </div>
                                 <div class="genero_input">
-                                    <input type="radio" id="masculino" name="genero">
-                                    <label for="masculino">Masculino</label>
+                                    <input type="radio" id="masculino" name="genero" checked>
+                                    <label for="masculino" >Masculino</label>
                                 </div>
                                 <div class="genero_input">
                                     <input type="radio" id="outro" name="genero">
@@ -660,10 +660,10 @@ footer{
                             </div>
                         <div class="input_box">
                             <label for="cep">CEP</label>
-                            <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required>
+                            <input id="cep" type="text" name="cep" placeholder="Seu CEP"  required value="12345-678">
                         </div>
                         <div class="input_box">
-                            <label for="estado" style="margin-bottom: 5px;  ">Estado</label>
+                            <label for="estado" style="margin-bottom: 5px;">Estado</label>
                             <select id="estado" name="estado" required style="padding: 10px; border-radius: 5px;  border: none; box-shadow: 1px 1px 6px #0000001c;">
                                 <option value="" style="color: gray;">Selecione o Estado</option>
                                 <option value="AC">Acre</option>
@@ -691,26 +691,25 @@ footer{
                                 <option value="RR">Roraima</option>
                                 <option value="SC">Santa Catarina</option>
                                 <option value="SP">São Paulo</option>
-                                <option value="SE">Sergipe</option>
+                                <option value="SE" selected>Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
                         </div>
                         <div class="input_box">
                             <label for="cidade">Cidade</label>
-                            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required>
+                            <input id="cidade" type="text" name="cidade" placeholder="Cidade" required value="Nossa Senhora do Socorro">
                         </div>  
                         <div class="input_box">
                             <label for="endereco">Endereço</label>
-                            <input id="end" type="text" name="end" placeholder="Endereço" required>
+                            <input id="end" type="text" name="end" placeholder="Endereço" required value="Rua das Flores, 123">
                         </div>
-                       
                         <div class="input_box">
                             <label for="tel">Telefone</label>
-                            <input id="tel" type="tel" name="tel" placeholder="Telefone" required>
+                            <input id="tel" type="tel" name="tel" placeholder="Telefone" required value=" (11) 98765-4321">
                         </div>
                         <div class="input_box">
                             <label for="e-mail">E-mail</label>
-                            <input id="e-mail" type="email"  required placeholder="E-mail">
+                            <input id="e-mail" type="email"  required placeholder="E-mail" value="joao.silva@email.com">
                         </div>
                         <div class="input_box">
                             <label for="senha">Senha</label>
@@ -727,8 +726,8 @@ footer{
                 </form>
 
                 
-                <!-- Formulário de Pessoa Jurídica -->
-                <form id="pessoa_juridica" action="../pasta_formularios_doações/formulario_doacao_auxilio_comida.html" style="display: none; ">
+                 <!-- Formulário de Pessoa Jurídica -->
+                 <form id="pessoa_juridica" action="../pasta_formularios_doações/formulario_doacao_programa_acesso_saude.html" style="display: none; ">
                     <div class="form_header">
                         <div class="titulo">
                             <h1>Cadastre-se como <br> Pessoa Jurídica</h1>
@@ -740,31 +739,31 @@ footer{
                     <div class="inputs">
                         <div class="input_box">
                             <label for="nome_empresa">Nome da Empresa</label>
-                            <input id="nome_empresa" type="text" name="nome_empresa" placeholder="Digite o Nome da Empresa" required>
+                            <input id="nome_empresa" type="text" name="nome_empresa" placeholder="Digite o Nome da Empresa" required value="Tech Solutions LTDA">
                         </div>
                         <div class="input_box">
                             <label for="cnpj">CNPJ</label>
-                            <input id="cnpj" type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" maxlength="18" required>
+                            <input id="cnpj" type="text" name="cnpj" placeholder="xx.xxx.xxx/xxxx-xx" maxlength="18" required value="12.345.678/0001-90">
                         </div>
                         <div class="input_box">
                             <label for="razao_social">Razão Social</label>
-                            <input id="razao_social" type="text" name="razao_social" placeholder="Digite a Razão Social" required>
-                        </div>
-                        <div class="input_box">
-                            <label for="endereco_empresa">Endereço</label>
-                            <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço da Empresa" required>
-                        </div>
-                        <div class="input_box">
-                            <label for="telefone_empresa">Telefone</label>
-                            <input id="telefone_empresa" type="tel" name="telefone_empresa" placeholder="Telefone da Empresa" required>
-                        </div>
-                        <div class="input_box">
-                            <label for="email_empresa">E-mail</label>
-                            <input id="email_empresa" type="email" name="email_empresa" placeholder="E-mail da Empresa" required>
+                            <input id="razao_social" type="text" name="razao_social" placeholder="Digite a Razão Social" required value="Tech Solutions Tecnologia e Inovação">
                         </div>
                         <div class="input_box">
                             <label for="cep_empresa">CEP</label>
-                            <input id="cep_empresa" type="text" name="cep_empresa" placeholder="CEP da Empresa" required>
+                            <input id="cep_empresa" type="text" name="cep_empresa" placeholder="CEP da Empresa" required  value=" 01001-000">
+                        </div>
+                        <div class="input_box">
+                            <label for="endereco_empresa">Endereço</label>
+                            <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço da Empresa" required value="Rua da Inovação, 123, Centro" >
+                        </div>
+                        <div class="input_box">
+                            <label for="telefone_empresa">Telefone</label>
+                            <input id="telefone_empresa" type="tel" name="telefone_empresa" placeholder="Telefone da Empresa" required value=" (11) 98765-4321">
+                        </div>
+                        <div class="input_box">
+                            <label for="email_empresa">E-mail</label>
+                            <input id="email_empresa" type="email" name="email_empresa" placeholder="E-mail da Empresa" required value=" contato@techsolutions.com">
                         </div>
                         <div class="input_box">
                             <label for="senha_empresa">Senha</label>
