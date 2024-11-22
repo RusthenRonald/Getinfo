@@ -874,12 +874,11 @@ footer{
 <!--Menu hmburguer-->
 <script>
     document.getElementById('tipo_cadastro').addEventListener('change', function () {
-        const tituloCadastro = document.getElementById('titulo-cadastro');
+        const tipoTitulo = document.getElementById('tipo-titulo');
         if (this.value === 'juridica') {
-            tituloCadastro.innerHTML = 'Cadastre-se como <br> Pessoa Jurídica';
+            tipoTitulo.textContent = 'Pessoa Jurídica';
         } else {
-            tituloCadastro.innerHTML = 'Cadastre-se como <br> Pessoa Física';
+            tipoTitulo.textContent = 'Pessoa Física';
         }
     });
 </script>
-
