@@ -614,10 +614,10 @@ footer{
                 <img src="../img/foto_cadastro.svg">
             </div>
             <div class="form">
-                <form id="pessoa_fisica" action="../pasta_formularios_doações/formulario_doacao_programa_acesso_saude.html">
+                <form id="pessoa_fisica" action="../telaseditarperfil/tela_perfil_1.html" >
                     <div class="form_header">
-                        <div class="titulo">
-                            <h1>Cadastre-se como <br> Pessoa Física</h1>
+                        <div class="titulo" id="titulo-cadastro">
+                            <h1>Cadastre-se como <br> <span id="tipo-titulo">Pessoa Física</span></h1>
                         </div>
                         <div class="trocar_cadastro">
                             <label for="tipo_cadastro">Tipo de Cadastro:</label>
@@ -625,7 +625,7 @@ footer{
                                 <option value="fisica">Pessoa Física</option>
                                 <option value="juridica">Pessoa Jurídica</option>
                             </select>
-                        </div>       
+                        </div>                        
                     </div>
                     <div class="inputs">
                         <div class="input_box ">
@@ -645,12 +645,12 @@ footer{
                             </div>
                             <div class="genero_grupo">
                                 <div class="genero_input">
-                                    <input type="radio" id="feminino" name="genero">
+                                    <input type="radio" id="feminino" name="genero" >
                                     <label for="feminino">Feminino</label>
                                 </div>
                                 <div class="genero_input">
                                     <input type="radio" id="masculino" name="genero" checked>
-                                    <label for="masculino" >Masculino</label>
+                                    <label for="masculino"  >Masculino</label>
                                 </div>
                                 <div class="genero_input">
                                     <input type="radio" id="outro" name="genero">
@@ -667,9 +667,9 @@ footer{
                         </div>
                         <div class="input_box">
                             <label for="estado" style="margin-bottom: 5px;">Estado</label>
-                            <select id="estado" name="estado" required style="padding: 10px; border-radius: 5px;  border: none; box-shadow: 1px 1px 6px #0000001c;">
+                            <select id="estado" name="estado" required style="padding: 10px; border-radius: 5px; border: none; box-shadow: 1px 1px 6px #0000001c;">
                                 <option value="" style="color: gray;">Selecione o Estado</option>
-                                <option value="AC">Acre</option>
+                                <option value="AC" >Acre</option>
                                 <option value="AL">Alagoas</option>
                                 <option value="AP">Amapá</option>
                                 <option value="AM">Amazonas</option>
@@ -697,11 +697,11 @@ footer{
                                 <option value="SE" selected>Sergipe</option>
                                 <option value="TO">Tocantins</option>
                             </select>
-                        </div>
+                        </div> 
                         <div class="input_box">
                             <label for="cidade">Cidade</label>
                             <input id="cidade" type="text" name="cidade" placeholder="Cidade" required value="Nossa Senhora do Socorro">
-                        </div>  
+                        </div>                      
                         <div class="input_box">
                             <label for="endereco">Endereço</label>
                             <input id="end" type="text" name="end" placeholder="Endereço" required value="Rua das Flores, 123">
@@ -730,18 +730,18 @@ footer{
 
                 
                 <!-- Formulário de Pessoa Jurídica -->
-                <form id="pessoa_juridica" action="../pasta_formularios_doações/formulario_doacao_programa_acesso_saude.html" style="display: none; ">
+                <form id="pessoa_juridica" action="../telaseditarperfil/estilostelaperfil/" style="display: none; ">
                     <div class="form_header">
-                        <div class="titulo">
+                        <div class="titulo" id="titulo-cadastro-juridica">
                             <h1>Cadastre-se como <br> Pessoa Jurídica</h1>
                         </div>
                         <div class="trocar_cadastro">
                             <label for="tipo_cadastro">Tipo de Cadastro:</label>
-                            <select id="tipo_cadastro" class="empresa" >
+                            <select id="tipo_cadastro" class="empresa">
                                 <option value="fisica">Pessoa Física</option>
                                 <option value="juridica">Pessoa Jurídica</option>
                             </select>
-                        </div>  
+                        </div> 
                     </div>
                     <div class="inputs">
                         <div class="input_box">
@@ -758,11 +758,11 @@ footer{
                         </div>
                         <div class="input_box">
                             <label for="cep_empresa">CEP</label>
-                            <input id="cep_empresa" type="text" name="cep_empresa" placeholder="CEP da Empresa" required  value=" 01001-000">
+                            <input id="cep_empresa" type="text" name="cep_empresa" placeholder="CEP da Empresa" required value=" 01001-000">
                         </div>
                         <div class="input_box">
                             <label for="endereco_empresa">Endereço</label>
-                            <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço da Empresa" required value="Rua da Inovação, 123, Centro" >
+                            <input id="endereco_empresa" type="text" name="endereco_empresa" placeholder="Endereço da Empresa" required value="Rua da Inovação, 123, Centro">
                         </div>
                         <div class="input_box">
                             <label for="telefone_empresa">Telefone</label>
@@ -794,7 +794,7 @@ footer{
     <footer >
         <div id="footer_container" >
             <div id="footer_contatos">
-                <img style="margin-bottom: 30px; width: 160px;" src="../" alt="">
+                <img style="margin-bottom: 30px; width: 160px;" src="" alt="">
 
                 <div id="midias_sociais">
                     <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
@@ -875,21 +875,12 @@ footer{
 </html>
 <!--Menu hmburguer-->
 <script>
-    document.getElementById("menu_hamburguer").onclick = function() {
-    document.querySelector("menu").classList.toggle("menu-aberto");
-}
-</script>
-<!--ALterna entre pessoa fisica e juridica-->
-<script>
-    function toggleForms() {
-        const formFisica = document.getElementById('pessoa_fisica');
-        const formJuridica = document.getElementById('pessoa_juridica');
-        if (formFisica.style.display === 'none') {
-            formFisica.style.display = 'block';
-            formJuridica.style.display = 'none';
+    document.getElementById('tipo_cadastro').addEventListener('change', function () {
+        const tipoTitulo = document.getElementById('tipo-titulo');
+        if (this.value === 'juridica') {
+            tipoTitulo.textContent = 'Pessoa Jurídica';
         } else {
-            formFisica.style.display = 'none';
-            formJuridica.style.display = 'block';
+            tipoTitulo.textContent = 'Pessoa Física';
         }
-    }
+    });
 </script>
