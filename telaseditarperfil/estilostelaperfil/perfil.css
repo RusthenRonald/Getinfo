@@ -31,8 +31,8 @@ menu{
     z-index: 1000; 
 }
 .logo_getinfo img{
-    margin-top: 10px;
-    width: 140px;
+    width: 100px;
+    height: 70px;
 }
 nav{
     display: flex;
