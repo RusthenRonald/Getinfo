@@ -875,6 +875,11 @@ footer{
 </html>
 <!--Menu hmburguer-->
 <script>
+    document.getElementById("menu_hamburguer").onclick = function() {
+    document.querySelector("menu").classList.toggle("menu-aberto");
+}
+</script>
+<script>
     document.getElementById('tipo_cadastro').addEventListener('change', function () {
         const tipoTitulo = document.getElementById('tipo-titulo');
         if (this.value === 'juridica') {
