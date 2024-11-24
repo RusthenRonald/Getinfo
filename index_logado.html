@@ -397,3 +397,27 @@
     // Intervalo para a transição 
     setInterval(slideCarousel, 2000); 
 </script>
+
+<!--validação criar campanha-->
+<script>
+    // Função para verificar se o usuário está logado
+    function isUserLoggedIn() {
+      return false; 
+    }
+  
+    function redirectToLogin() {
+      window.location.href = "telas_login/login_criar_campanha.html"; 
+    }
+  
+    document.getElementById("criar_campanha").addEventListener("click", function(event) {
+      // Verifica se o usuário está logado
+      if (!isUserLoggedIn()) {
+        alert("Você precisa estar logado como pessoa jurídica para poder criar campanhas!");
+        event.preventDefault();
+        redirectToLogin(); 
+      } else {
+        alert("Obrigado por querer doar!");
+      }
+    });
+  </script>
+  
