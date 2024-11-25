@@ -222,6 +222,17 @@ main {
 .botao_doar a {
     color: white;
 }
+.categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FEF7E8;
+    color: #F9BD69;
+    border-radius: 10px;
+    width: 150px;
+    height: 30px;
+}
+/*icone salvar*/
 #salvar{
     font-size: 30px;
 }
