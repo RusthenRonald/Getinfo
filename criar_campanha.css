@@ -121,7 +121,7 @@ button a {
 }
 /*main e criar campanha*/
 main {
-    height: 1000px;
+    height: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +130,7 @@ main {
 .campanha-form {
     margin-top: 50px;
     width: 500px;
-    height: 800px;
+    height: 900px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -161,6 +161,7 @@ input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: #F15B43;
 }
+/*imagem*/
 .area-upload {
     width: 100%;
     max-width: 400px;
@@ -192,7 +193,27 @@ input[type="file"] {
     background-color: #e8f5e9;
     border-color: #ff9807;
 }
+/* Feedback de imagem carregada */
+.feedback {
+    text-align: center;
+    margin-top: 10px;
+}
 
+/* Imagem de pré-visualização */
+.preview-img {
+    max-width: 100%;
+    max-height: 150px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    border: 2px solid #4CAF50;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    color: #4CAF50;
+    font-size: 14px;
+    font-weight: bold;
+}
 button.botao {
     width: 100%;
     padding: 10px;

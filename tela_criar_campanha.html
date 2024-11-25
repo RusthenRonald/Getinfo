@@ -54,7 +54,12 @@
                     <span class="upload-text">Clique ou arraste uma imagem aqui</span>
                     <input type="file" id="imagem" name="imagem" accept="image/*">
                 </label>
+                <div class="feedback" id="feedback" style="display: none;">
+                    <img id="preview" alt="Imagem carregada" class="preview-img">
+                    <p class="success-message">Imagem salva com sucesso!</p>
+                </div>
             </div>
+            
 
             <label for="local">Local de Entrega:</label>
             <input type="text" id="local" name="local" placeholder="Ex: Rua das Flores, 123 - Centro" required>
@@ -185,3 +190,15 @@
 }
 </script>
 
+<script>
+    document.getElementById("imagem").addEventListener("change", function (event) {
+        const feedback = document.getElementById("feedback");
+        const preview = document.getElementById("preview");
+        const file = event.target.files[0];
+    
+        if (file) {
+            preview.src = URL.createObjectURL(file); // Mostrar preview da imagem
+            feedback.style.display = "block"; // Exibir o feedback
+        }
+    });
+</script>
