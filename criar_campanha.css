@@ -120,51 +120,53 @@ button a {
     display: block; 
 }
 /*main e criar campanha*/
-main{
-    height: 700px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+main {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nome_campanha{
-    font-weight: bold;
-    color: #F15B43;
-    width: 100%;
+.campanha-form {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    gap: 15px;
 }
-.nome_campanha label{
+
+label {
+    font-weight: bold;
     margin-bottom: 5px;
 }
-.nome_campanha input{
-    padding: 5px;
-}
-.container_criar_campanha{
-    height: 400px;
-    width: 700px;
-    background-color: #f15a430e;
-    border-radius: 10px;
-}
-/*input*/
-.grupo_input{
-    color: #F15B43;
-    font-weight: bold;
-    padding-top: 10px;
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-.grupo_input input,select{
-    margin-top: 5px;
-    height: 25px;
-    width: 40%;
-}
-textarea{
+
+input, select, textarea, button {
+    width: 100%;
     padding: 10px;
-    width: 95%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+
+button.botao {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button.botao:hover {
+    background-color: #45a049;
 }
 footer{
     height: 220px;
