@@ -222,6 +222,9 @@ main {
 .botao_doar a {
     color: white;
 }
+#salvar{
+    font-size: 30px;
+}
 /*Inicio do cabeçalho*/
 footer{
     height: 220px;
