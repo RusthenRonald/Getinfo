@@ -6,7 +6,7 @@
         margin-top: 50px;
     }
     .container_interno_login{
-        padding: 30px;
+        padding: 35px;
         box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
     }
     #menu_normal {
@@ -76,8 +76,8 @@
         /*container de todo a parte de campos e botoes*/
         .container_interno_login{
             width: 350px;
-            height: 420px;
-            padding: 20px;
+            height: 520px;
+            padding: 40px;
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
         }
         .img_login img{
@@ -102,13 +102,13 @@
         /*container de todo a parte de campos e botoes*/
         .container_interno_login{
         width: 400px;
-        height: 450px;
+        height: 500px;
         padding: 20px;
     }
     .img_login img{
         display: block;
         width: 330px;
-        height: 490px;
+        height: 540px;
     }
     }
     @media screen and (min-width:1025px) and (max-width:1440px) {
@@ -126,13 +126,13 @@
         /*container de todo a parte de campos e botoes*/
         .container_interno_login{
             width: 400px;
-            height: 450px;
+            height: 500px;
             padding: 30px;
     }
     .img_login img{
         display: block;
         width: 450px;
-        height: 510px;
+        height: 560px;
     }
     }
     @media screen and (min-width:1441px) {
