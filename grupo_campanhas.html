@@ -237,7 +237,6 @@
         //  todos os elementos de campanha
         const campanhas = document.querySelectorAll(".grupo");
 
-        //  verificar se o nome contém o texto da busca
         campanhas.forEach(function(campanha) {
             const titulo = campanha.querySelector("h1").textContent.toLowerCase();
             const titulo2 = campanha.querySelector("h4").textContent.toLowerCase();
@@ -252,7 +251,7 @@
                 campanha.style.display = "none";
             }
         });
-        document.querySelector("main").style.height = "auto"; // Ajusta a altura para o conteúdo restante
+        document.querySelector("main").style.height = "auto"; 
     }
 </script>
 <script>
