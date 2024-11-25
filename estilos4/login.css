@@ -201,20 +201,22 @@ button a {
         background: linear-gradient(to right, #FE8F20, #F15B43); 
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
     }
-    .botao_voltar{
-        margin-top: 5px;
-        display: flex;
-        background-color: #ecedd53d;
+    .voltar{
+        margin-top: 10px;
+        width: 100%;
         padding: 15px;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+        border: 1px solid #ccc;
         border-radius: 10px;
+        font-size: 16px;
+        background-color: #ecedd53d;
+        color: black;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+        border: none;
+        cursor: pointer;
+        display: flex;
         justify-content: center;
     }
-    .botao_voltar a{
-        text-decoration: none;
-        color: black;
-    }
-    .botao_voltar:hover{
+    .voltar:hover{
         transform: scale(1.005); 
     }
     /*redes*/

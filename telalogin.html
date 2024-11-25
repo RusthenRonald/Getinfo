@@ -50,8 +50,8 @@
                         <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
                     </div>
                     <button type="submit" class="botao_login" >Entrar</button>
-                    <div class="botao_voltar"><a href="campanhas_em_destaque/projetos_educacao_africa.html" >Voltar</a></div>
                 </form>
+                <button class="voltar">Voltar</button>
                 <div class="redes">
                 <a href="#"><i class="bi bi-instagram"></i></a>
                 <a href="#"><i class="bi bi-facebook"></i></a>
@@ -211,4 +211,12 @@
     
     window.addEventListener('load', modifyMenuForMobile);
     window.addEventListener('resize', modifyMenuForMobile);
+</script>
+<!--Botão de voltar-->
+<script>
+    const botaoVoltar = document.querySelector('.voltar');
+
+    botaoVoltar.addEventListener('click', () => {
+        window.location.href = 'campanhas_em_destaque/projetos_educacao_africa.html';
+    });
 </script>
