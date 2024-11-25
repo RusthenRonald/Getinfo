@@ -161,6 +161,37 @@ input:focus, select:focus, textarea:focus {
     outline: none;
     border-color: #F15B43;
 }
+.area-upload {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    border: 2px dashed #F15B43;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.upload-text {
+    font-size: 16px;
+    color: #F15B43;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input[type="file"] {
+    display: none; 
+}
+
+.area-upload:hover {
+    background-color: #e8f5e9;
+    border-color: #ff9807;
+}
 
 button.botao {
     width: 100%;
