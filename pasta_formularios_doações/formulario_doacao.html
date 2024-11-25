@@ -95,7 +95,6 @@
         <img src="../img_carrosel_form_educação/img16.jpg" alt="Imagem 10">
         <img src="../img_carrosel_form_educação/img17.jpg" alt="Imagem 11">
         
-        
     </div>
 </div>
 
@@ -198,7 +197,6 @@
     const maxIndex = images.length - 9; // Ajuste para inverter antes da última imagem
     
     function slideCarousel() {
-      // Atualiza o índice 
       index += direction;
     
       // Inverte a direção antes de chegar da última 
@@ -211,12 +209,10 @@
       slide.style.transform = `translateX(${-index * images[0].clientWidth}px)`;
     }
     
-    // Intervalo para a transição 
     setInterval(slideCarousel, 2000); 
 </script>
 <script>
     function redirecionar() {
-        // Redireciona para a página de perfil logado
         window.location.href = "../index_logado.html";
     }
     </script>
