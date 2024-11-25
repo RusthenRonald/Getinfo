@@ -405,6 +405,9 @@ footer{
         .botao_header{
         margin-bottom: 25px;
         }
+        .fa-solid {
+            font-size: 30px;
+        }
     }
     @media screen and (min-width:768px) and (max-width:1024px) {
         #menu_hamburguer{
@@ -412,6 +415,9 @@ footer{
         }
         nav a{
             font-size: 0.9em;
+        }
+        .fa-solid {
+            font-size: 35px;
         }
     }
     @media screen and (min-width:1025px) and (max-width:1440px) {
@@ -421,6 +427,9 @@ footer{
         nav a{
             font-size: 1.0em;
         }
+        .fa-solid {
+            font-size: 35px;
+        }
     }
     @media screen and (min-width:1441px) {
         /*menu hamburguer*/
@@ -429,6 +438,9 @@ footer{
         }
         nav a{
             font-size: 1.1em;
+        }
+        .fa-solid {
+            font-size: 40px;
         }
     }
 
