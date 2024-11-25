@@ -232,6 +232,18 @@ main {
     width: 150px;
     height: 30px;
 }
+#meio_ambiente{
+    background-color: #EDFAF0;
+    color: #54a392;
+}
+#educacao{
+    background-color: #EDFAF0;
+    color: #6DD4A4;
+}
+#animal{
+    background-color: #EDFAF0;
+    color: #F15B43;
+}
 /*icone salvar*/
 #salvar{
     font-size: 30px;
