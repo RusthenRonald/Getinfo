@@ -186,28 +186,31 @@
 <script>
     // Função para modificar o menu dependendo do tamanho da tela
     function modifyMenuForMobile() {
-        const menu = document.getElementById('menu_normal'); 
-        const dropdown = document.querySelector('.dropdown'); 
-        const links = document.querySelectorAll('#menu_normal a'); 
-        const contatoButton = document.querySelector('.botao_header'); 
+        const menu = document.getElementById('menu_normal');
+        const dropdown = document.querySelector('.dropdown');
+        const contatoButton = document.querySelector('.botao_header');
     
-        if (window.innerWidth <= 767) { 
-            if (dropdown) {
-                dropdown.style.display = 'none';
+        const existingLinks = document.querySelectorAll('.a_hover[data-added="true"]');
+        const linksAlreadyAdded = existingLinks.length > 0;
     
-                // Exibe os links diretamente
+        if (window.innerWidth <= 767) {
+            // Só adiciona os links se eles ainda não tiverem sido adicionados
+            if (dropdown && !linksAlreadyAdded) {
+                dropdown.style.display = 'none'; 
+    
                 const newLinks = dropdown.querySelectorAll('ul li a');
                 newLinks.forEach(link => {
                     const newLink = document.createElement('a');
                     newLink.href = link.href;
                     newLink.classList.add('a_hover');
                     newLink.textContent = link.textContent;
+                    newLink.setAttribute('data-added', 'true'); 
     
-                    menu.insertBefore(newLink, contatoButton); // Insere os novos links acima do botão "Contato"
+                    menu.insertBefore(newLink, contatoButton); 
                 });
             }
         } else {
-            // Caso o tamanho da tela seja maior que 768px, retorna o menu ao estado normal
+            // Caso o tamanho da tela seja maior que 767px, retorna o menu ao estado normal
             if (!dropdown) {
                 const newDropdown = document.createElement('div');
                 newDropdown.classList.add('dropdown');
@@ -218,12 +221,16 @@
                         <li><a href="#container_box" class="a_hover">Campanhas em Destaque</a></li>
                     </ul>
                 `;
-                menu.insertBefore(newDropdown, menu.children[1]); // Insere o dropdown novamente no menu
+                menu.insertBefore(newDropdown, menu.children[1]); 
             }
+    
+            // Remove os links de "Campanhas" caso existam
+            existingLinks.forEach(link => {
+                link.remove();
+            });
         }
     }
     
     window.addEventListener('load', modifyMenuForMobile);
-    
     window.addEventListener('resize', modifyMenuForMobile);
 </script>
