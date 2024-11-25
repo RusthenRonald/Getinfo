@@ -69,6 +69,7 @@
                
             </div>
             <button id="doarBtn"><a href="../formulario_doacao.html" style="color: white;" >Doe Agora</a></button>
+            
         </div>
     </main>
     <footer>
@@ -174,7 +175,6 @@
   }
 
   document.getElementById("doarBtn").addEventListener("click", function(event) {
-    // Verifica se o usuário está logado
     if (!isUserLoggedIn()) {
       alert("Você precisa estar logado para fazer uma doação.");
       event.preventDefault();
@@ -195,7 +195,6 @@
         const linksAlreadyAdded = existingLinks.length > 0;
     
         if (window.innerWidth <= 767) {
-            // Só adiciona os links se eles ainda não tiverem sido adicionados
             if (dropdown && !linksAlreadyAdded) {
                 dropdown.style.display = 'none'; 
     
