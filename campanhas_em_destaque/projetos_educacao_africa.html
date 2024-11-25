@@ -184,3 +184,47 @@
     }
   });
 </script>
+<script>
+    // Função para modificar o menu dependendo do tamanho da tela
+    function modifyMenuForMobile() {
+        const menu = document.getElementById('menu_normal'); 
+        const dropdown = document.querySelector('.dropdown'); 
+        const links = document.querySelectorAll('#menu_normal a'); 
+        const contatoButton = document.querySelector('.botao_header'); 
+    
+        if (window.innerWidth <= 767) { 
+            if (dropdown) {
+                dropdown.style.display = 'none';
+    
+                // Exibe os links diretamente
+                const newLinks = dropdown.querySelectorAll('ul li a');
+                newLinks.forEach(link => {
+                    const newLink = document.createElement('a');
+                    newLink.href = link.href;
+                    newLink.classList.add('a_hover');
+                    newLink.textContent = link.textContent;
+    
+                    menu.insertBefore(newLink, contatoButton); // Insere os novos links acima do botão "Contato"
+                });
+            }
+        } else {
+            // Caso o tamanho da tela seja maior que 768px, retorna o menu ao estado normal
+            if (!dropdown) {
+                const newDropdown = document.createElement('div');
+                newDropdown.classList.add('dropdown');
+                newDropdown.innerHTML = `
+                    <a href="#container_box" class="a_hover">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="grupo_campanhas.html" class="a_hover">Grupo de Campanhas</a></li>
+                        <li><a href="#container_box" class="a_hover">Campanhas em Destaque</a></li>
+                    </ul>
+                `;
+                menu.insertBefore(newDropdown, menu.children[1]); // Insere o dropdown novamente no menu
+            }
+        }
+    }
+    
+    window.addEventListener('load', modifyMenuForMobile);
+    
+    window.addEventListener('resize', modifyMenuForMobile);
+</script>
