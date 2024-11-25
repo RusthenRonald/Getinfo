@@ -200,6 +200,18 @@ button a {
         background: linear-gradient(to right, #FE8F20, #F15B43); 
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
     }
+    .botao_voltar{
+        margin-top: 5px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.527);
+        background-color: #ecedd53d;
+        width: 100%;
+        padding: 15px;
+    }
+    .botao_voltar:hover{
+        transform: scale(1.005); 
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.158); 
+    }
     /*redes*/
     .redes{
         margin-top: 35px;
@@ -221,6 +233,7 @@ button a {
     background-clip: text;
     color: transparent; 
 }
+
 /*Inicio do footer*/
 footer{
     
