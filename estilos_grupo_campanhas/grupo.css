@@ -202,6 +202,7 @@ main {
 }
 .container_botao_doar{
     display: flex;
+    gap: 200px;
 }
 .botao_doar {
     padding-left: 10px;

@@ -122,6 +122,7 @@
                     <div class="botao_doar">
                         <button><a href="#">Saiba mais</a></button>
                     </div>
+                    <i class="fa-regular fa-bookmark icone-favorito" data-favorito="false" title="Favoritar"></i>
                 </div>
             </div>
         </div>
@@ -287,4 +288,28 @@
     
     window.addEventListener('load', modifyMenuForMobile);
     window.addEventListener('resize', modifyMenuForMobile);
+</script>
+
+<script>
+    // Seleciona todos os ícones de favorito
+    const iconesFavoritos = document.querySelectorAll('.icone-favorito');
+
+    // Adiciona evento de clique a cada ícone
+    iconesFavoritos.forEach(icone => {
+        icone.addEventListener('click', () => {
+            const isFavorito = icone.getAttribute('data-favorito') === 'true';
+
+            // Alterna o estado de favorito
+            icone.setAttribute('data-favorito', !isFavorito);
+
+            // Atualiza a classe e o ícone
+            if (!isFavorito) {
+                icone.classList.remove('fa-regular');
+                icone.classList.add('fa-solid', 'favoritado');
+            } else {
+                icone.classList.remove('fa-solid', 'favoritado');
+                icone.classList.add('fa-regular');
+            }
+        });
+    });
 </script>
