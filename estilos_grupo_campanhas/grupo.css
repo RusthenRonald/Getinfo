@@ -138,7 +138,7 @@ main {
     display: flex;
     text-align: center;
     margin-bottom: 20px;
-    width: 400px;
+    width: 500px;
 }
 
 #busca {
@@ -200,30 +200,6 @@ main {
     text-align: justify;
     padding: 10px;
 }
-.barra_progresso {
-    margin: auto;
-    width: 90%; 
-    height: 20px; 
-    background-color: #e0e0e0; 
-    border-radius: 25px; 
-    margin-top: 10px; 
-}
-
-.progresso {
-    text-align: center;
-    color: white;
-    height: 100%; 
-    background: linear-gradient(to right, #F15B43, #FE8F20);
-    border-radius: 25px; 
-    transition: width 0.3s;
-}
-.valores{
-    margin-top: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-
-}
 .container_botao_doar{
     display: flex;
 }
@@ -245,6 +221,33 @@ main {
 .botao_doar a {
     color: white;
 }
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination a {
+    padding: 10px;
+    text-decoration: none;
+    color: #F15B43;
+    margin: 0 5px;
+  }
+  
+  .pagination a:hover {
+    background-color: #f1f1f1;
+    border-radius: 5px;
+  }
+  
+  .pagination .page-number.active {
+    font-weight: bold;
+  }
+  
+  .pagination a.disabled {
+    color: #ccc;
+    pointer-events: none;
+  }
+  
 /*Inicio do cabeçalho*/
 footer{
     height: 220px;
