@@ -149,6 +149,13 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     .container_form{
         width: 400px;
     }
+    .texto_carrosel h2{
+        font-size: 1.1em;
+    }
+    .texto_carrosel p{
+        font-size: 1.0em;
+        width: 330px;
+    }
 }
 /*Telas celulares maiores*/
 @media screen and (min-width:420px) and (max-width:767px){
@@ -188,6 +195,13 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     .container_form{
         width: 460px;
     }
+    .texto_carrosel h2{
+        font-size: 1.5em;
+    }
+    .texto_carrosel p{
+        font-size: 1.2em;
+        width: 450px;
+    }
 }
 /*Telas de Tablet: entre 768px e 1024px*/
 @media screen and (min-width:768px) and (max-width:1024px){
@@ -197,11 +211,25 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
     nav a{
         font-size: 0.9em;
     }
+    .texto_carrosel h2{
+        font-size: 1.7em;
+    }
+    .texto_carrosel p{
+        font-size: 1.2em;
+        width: 700px;
+    }
 }
 /*Telas de desktop ou laptop: entre 1025px e 1440*/
 @media screen and (min-width:1025px) and (max-width:1440px){
      #menu_hamburguer{
         display: none;
+    }
+    .texto_carrosel h2{
+        font-size: 1.9em;
+    }
+    .texto_carrosel p{
+        font-size: 1.4em;
+        width: 750px;
     }
 }
 /*Telas grandes : acima de 1441px*/
@@ -209,10 +237,16 @@ box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
      #menu_hamburguer{
         display: none;
     }
-
+    .texto_carrosel h2{
+        font-size: 2.0em;
+    }
+    .texto_carrosel p{
+        font-size: 1.5em;
+        width: 800px;
+    }
 }
 main{
-    height: 900px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -285,11 +319,16 @@ input:-webkit-autofill::first-line {
 }
 .texto_carrosel{
     display: flex;
+    gap: 25px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
 }
+.texto_carrosel p{
+    text-align: justify;
+}
+
 /*footer*/
 
 :root{
