@@ -237,13 +237,29 @@ input[type="file"] {
 .btn-remover:active {
     transform: scale(0.95);
 }
+.voltar{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #ecedd53d;
+    color: black;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.329);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.voltar:hover{
+    transform: scale(1.005); 
+}
 /*botao criar*/
 button.botao {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px;
     background-color: #F15B43;
     color: white;
     border: none;
