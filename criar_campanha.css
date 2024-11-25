@@ -121,7 +121,7 @@ button a {
 }
 /*main e criar campanha*/
 main {
-    height: 1200px;
+    height: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -129,8 +129,8 @@ main {
 
 .campanha-form {
     margin-top: 50px;
-    width: 500px;
-    height: 900px;
+    width: 600px;
+    height: 1100px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -228,7 +228,7 @@ input[type="file"] {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-/* Efeitos no botão */
+
 .btn-remover:hover {
     background-color: #F15B43;
 }
@@ -236,7 +236,7 @@ input[type="file"] {
 .btn-remover:active {
     transform: scale(0.95);
 }
-
+/*botao criar*/
 button.botao {
     width: 100%;
     padding: 10px;
