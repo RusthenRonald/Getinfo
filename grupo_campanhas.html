@@ -240,8 +240,13 @@
         //  verificar se o nome contém o texto da busca
         campanhas.forEach(function(campanha) {
             const titulo = campanha.querySelector("h1").textContent.toLowerCase();
-
+            const titulo2 = campanha.querySelector("h4").textContent.toLowerCase();
             if (titulo.includes(busca)) {
+                campanha.style.display = "block";
+            } else {
+                campanha.style.display = "none";
+            }
+            if (titulo2.includes(busca)) {
                 campanha.style.display = "block";
             } else {
                 campanha.style.display = "none";
