@@ -121,7 +121,7 @@ button a {
 }
 /*main e criar campanha*/
 main {
-    height: 800px;
+    height: 1000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,13 +130,13 @@ main {
 .campanha-form {
     margin-top: 50px;
     width: 500px;
-    height: 600px;
+    height: 800px;
     display: flex;
     flex-direction: column;
     gap: 15px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.315);
     border-radius: 10px;
-    padding: 35px;
+    padding: 45px;
 }
 
 label {
@@ -153,9 +153,7 @@ input, select {
 }
 
 textarea {
-    padding-bottom: 30px;
-    padding-left: 10px;
-    padding-top: 5px;
+    padding: 10px;
     resize: vertical;
 }
 
