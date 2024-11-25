@@ -57,9 +57,9 @@
                 <div class="feedback" id="feedback" style="display: none;">
                     <img id="preview" alt="Imagem carregada" class="preview-img">
                     <p class="success-message">Imagem salva com sucesso!</p>
+                    <button type="button" id="remover" class="btn-remover">Remover Imagem</button>
                 </div>
             </div>
-            
 
             <label for="local">Local de Entrega:</label>
             <input type="text" id="local" name="local" placeholder="Ex: Rua das Flores, 123 - Centro" required>
@@ -190,6 +190,7 @@
 }
 </script>
 
+<!--Para mostrar img-->
 <script>
     document.getElementById("imagem").addEventListener("change", function (event) {
         const feedback = document.getElementById("feedback");
@@ -198,7 +199,30 @@
     
         if (file) {
             preview.src = URL.createObjectURL(file); // Mostrar preview da imagem
+            feedback.style.display = "block"; 
+        }
+    });
+</script>
+<!--Para remover botao de img-->
+<script>
+    const imagemInput = document.getElementById("imagem");
+    const feedback = document.getElementById("feedback");
+    const preview = document.getElementById("preview");
+    const removerBtn = document.getElementById("remover");
+    
+    // Evento para exibir preview e feedback ao carregar uma imagem
+    imagemInput.addEventListener("change", function (event) {
+        const file = event.target.files[0];
+        if (file) {
+            preview.src = URL.createObjectURL(file); // Mostrar preview da imagem
             feedback.style.display = "block"; // Exibir o feedback
         }
+    });
+    
+    // Evento para remover a imagem carregada
+    removerBtn.addEventListener("click", function () {
+        imagemInput.value = ""; // Resetar o input file
+        preview.src = ""; // Limpar o preview da imagem
+        feedback.style.display = "none"; // Esconder o feedback
     });
 </script>
