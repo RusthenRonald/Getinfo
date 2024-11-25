@@ -221,33 +221,6 @@ main {
 .botao_doar a {
     color: white;
 }
-.pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .pagination a {
-    padding: 10px;
-    text-decoration: none;
-    color: #F15B43;
-    margin: 0 5px;
-  }
-  
-  .pagination a:hover {
-    background-color: #f1f1f1;
-    border-radius: 5px;
-  }
-  
-  .pagination .page-number.active {
-    font-weight: bold;
-  }
-  
-  .pagination a.disabled {
-    color: #ccc;
-    pointer-events: none;
-  }
-  
 /*Inicio do cabeçalho*/
 footer{
     height: 220px;
