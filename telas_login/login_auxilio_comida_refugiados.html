@@ -185,6 +185,7 @@ button a {
     }
     /*botao login*/
     .botao_login{
+        cursor: pointer;
         display: block;
         margin-top: 35px;
         width: 100%;
@@ -201,6 +202,22 @@ button a {
         transform: scale(1.005); 
         background: linear-gradient(to right, #FE8F20, #F15B43); 
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    }
+    .botao_voltar{
+        margin-top: 5px;
+        display: flex;
+        background-color: #ecedd53d;
+        padding: 15px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.349);
+        border-radius: 10px;
+        justify-content: center;
+    }
+    .botao_voltar a{
+        text-decoration: none;
+        color: black;
+    }
+    .botao_voltar:hover{
+        transform: scale(1.005); 
     }
     /*redes*/
     .redes{
@@ -512,6 +529,7 @@ footer{
             <a href="../index.html#container_sobre_nos" class="a_hover">Sobre nós</a>
             <a href="#"  class="a_hover">Login</a>
             <button class="botao_header"><a href="#footer_container">Contato</a></button>
+            
         </nav>
         <span id="menu_hamburguer" class="material-icons">menu</span>
     </menu>
@@ -533,6 +551,7 @@ footer{
                         <input type="password" name="senha" placeholder="Digite sua senha" autocomplete="current-password" required minlength="10" maxlength="20">
                     </div>
                     <button type="submit" class="botao_login" >Entrar</button>
+                    <div class="botao_voltar"><a href="campanhas_em_destaque/projetos_educacao_africa.html" >Voltar</a></div>
                 </form>
                 <div class="redes">
                 <a href="#"><i class="bi bi-instagram"></i></a>
