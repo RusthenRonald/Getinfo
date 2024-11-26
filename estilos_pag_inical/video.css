@@ -13,6 +13,13 @@
 }
 
 .texto_video h2{
+    font-size: 3em;
     text-align: center;
+    color: white;
+}
+.texto_video p{
+    font-size: 1.2em;
+    width: 400px;
+    text-align: justify;
     color: white;
 }
