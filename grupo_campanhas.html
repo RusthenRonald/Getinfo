@@ -229,36 +229,34 @@
     document.querySelector("menu").classList.toggle("menu-aberto");
 }
 </script>
-
+<!--Filtrar campanhas-->
 <script>
     function filtrarCampanhas() {
         const busca = document.getElementById("busca").value.toLowerCase();
     
-        // Selecionar todas as campanhas
         const campanhas = document.querySelectorAll(".grupo");
     
         if (busca.trim() === "") {
-            // Se a busca estiver vazia, mostrar todas as campanhas
+           
             campanhas.forEach(function(campanha) {
-                campanha.style.display = "block"; // Mostrar a campanha
+                campanha.style.display = "block"; 
             });
         } else {
-            // Filtrar as campanhas com base na busca
+            
             campanhas.forEach(function(campanha) {
-                // Obter o texto do título e da categoria
+               
                 const titulo = campanha.querySelector("h1").textContent.toLowerCase();
                 const categoria = campanha.querySelector(".categoria h4").textContent.toLowerCase();
     
-                // Verificar se a busca está incluída no título ou na categoria
+                
                 if (titulo.includes(busca) || categoria.includes(busca)) {
-                    campanha.style.display = "block"; // Mostrar a campanha
+                    campanha.style.display = "block"; 
                 } else {
-                    campanha.style.display = "none"; // Esconder a campanha
+                    campanha.style.display = "none";
                 }
             });
         }
     
-        // Ajustar a altura do container principal se necessário
         document.querySelector("main").style.height = "auto";
     }
 </script>
