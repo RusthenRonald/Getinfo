@@ -26,3 +26,18 @@ iframe{
     width: 400px;
     color: white;
 }
+@media screen and (min-width:768px) and (max-width:1024px){
+    .container_video{
+        flex-direction: column;
+        height: 800px;
+    }
+    iframe{
+        width: 550px;
+    }
+    .texto_video h2{
+        text-align: center;
+    }
+    .texto_video p{
+        width: 500px;
+    }
+}
