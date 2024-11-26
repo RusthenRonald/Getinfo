@@ -233,27 +233,28 @@
 <script>
     function filtrarCampanhas() {
         const busca = document.getElementById("busca").value.toLowerCase();
-
-        //  todos os elementos de campanha
+    
+        // Selecionar todas as campanhas
         const campanhas = document.querySelectorAll(".grupo");
-
+    
         campanhas.forEach(function(campanha) {
+            // Obter o texto do título e da categoria
             const titulo = campanha.querySelector("h1").textContent.toLowerCase();
-            const titulo2 = campanha.querySelector("h4").textContent.toLowerCase();
-            if (titulo.includes(busca)) {
-                campanha.style.display = "block";
+            const categoria = campanha.querySelector(".categoria h4").textContent.toLowerCase();
+    
+            // Verificar se a busca está incluída no título ou na categoria
+            if (titulo.includes(busca) || categoria.includes(busca)) {
+                campanha.style.display = "block"; // Mostrar a campanha
             } else {
-                campanha.style.display = "none";
-            }
-            if (titulo2.includes(busca)) {
-                campanha.style.display = "block";
-            } else {
-                campanha.style.display = "none";
+                campanha.style.display = "none"; // Esconder a campanha
             }
         });
-        document.querySelector("main").style.height = "auto"; 
+    
+        // Ajustar a altura do container principal se necessário
+        document.querySelector("main").style.height = "auto";
     }
 </script>
+
 <script>
     // Função para modificar o menu dependendo do tamanho da tela
     function modifyMenuForMobile() {

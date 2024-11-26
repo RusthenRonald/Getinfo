@@ -462,11 +462,11 @@
         const dropdown = document.querySelector('.dropdown');
         const contatoButton = document.querySelector('.botao_header');
 
-        // Remove links duplicados ou adicionados anteriormente
+    
         const extraLinks = document.querySelectorAll('.mobile-link');
         extraLinks.forEach(link => link.remove());
 
-        // Remove o dropdown recriado, se já existir
+    
         const recreatedDropdown = document.querySelector('.recreated-dropdown');
         if (recreatedDropdown) {
             recreatedDropdown.remove();
@@ -481,17 +481,17 @@
                 newLinks.forEach(link => {
                     const newLink = document.createElement('a');
                     newLink.href = link.href;
-                    newLink.classList.add('a_hover', 'mobile-link'); // Adiciona uma classe para identificar os links móveis
+                    newLink.classList.add('a_hover', 'mobile-link');
                     newLink.textContent = link.textContent;
 
-                    menu.insertBefore(newLink, contatoButton); // Insere os novos links acima do botão "Contato"
+                    menu.insertBefore(newLink, contatoButton); 
                 });
             }
         } else {
             // Caso o tamanho da tela seja maior que 768px, retorna o menu ao estado normal
             if (!dropdown) {
                 const newDropdown = document.createElement('div');
-                newDropdown.classList.add('dropdown', 'recreated-dropdown'); // Identifica o dropdown recriado
+                newDropdown.classList.add('dropdown', 'recreated-dropdown');
                 newDropdown.innerHTML = `
                     <a href="#container_box" class="a_hover">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
                     <ul class="dropdown-menu">
@@ -499,7 +499,7 @@
                         <li><a href="#container_box" class="a_hover">Campanhas em Destaque</a></li>
                     </ul>
                 `;
-                menu.insertBefore(newDropdown, menu.children[1]); // Insere o dropdown novamente no menu
+                menu.insertBefore(newDropdown, menu.children[1]);
             } else {
                 dropdown.style.display = '';
             }
