@@ -1,4 +1,8 @@
 .container_video{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 80px;
     height: 600px;
     background-image: url(../img/img\ do\ fundo\ do\ video.jpg);
