@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="estilostelaperfil/perfil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Tela de cadastro</title>
+    <style>
+        @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --cor-neutra-branca:#f5f5f5;
+    --cor-preta:#171717;
+    --cor-copyright:#0e0c0c;
+    --cor-ciza:#a8a29e;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#menu_hamburguer {/*não aparecerá por padrão*/
+    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+menu{
+    display: flex;
+    height: 70px;
+    justify-content: space-around;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+}
+.logo_getinfo img{
+    width: 100px;
+    height: 70px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.a_hover {
+    text-decoration: none; 
+    color: #333; 
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.a_hover:hover {
+    color: #F15B43; 
+}
+.botao_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F15B43; 
+    color: #fff; 
+    height: 30px;
+    border: none; 
+    border-radius: 5px; 
+    padding: 10px 20px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.botao_header a{
+    color: white;
+}
+.botao_header:hover{
+    transform: scale(1.005); 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+/* Estilo para o link dentro do botão */
+button a {
+    text-decoration: none;
+}
+/* Estilos para o menu dropdown */
+.dropdown {
+    position: relative;
+}
+
+#iconenav {
+    vertical-align: middle; 
+}
+
+/* Estilos para o menu dropdown */
+.dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); 
+    z-index: 1000; 
+    min-width: 130px; 
+}
+
+.dropdown-menu li {
+    list-style: none; 
+
+}
+
+/* links dentro do menu dropdown */
+.dropdown-menu a {
+    text-transform: lowercase;
+    display: block; 
+    padding: 10px 15px; 
+    color: #333; 
+    text-decoration: none; 
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0; 
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; 
+}
+
+main{
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: 50px 10px;
+}
+
+.perfil {
+    flex: 1;
+    margin-right: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+    border-radius: 5px;
+    height: max-content;
+}
+
+.perfil-header {
+    display: flex;
+    margin: 20px;
+}
+
+.imagem-perfil {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.perfil-texto-container {
+    line-height: 1;
+}
+
+.titulo-perfil {
+    /* font-family: #; */
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.perfil-email {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.menu {
+    margin: 20px;
+}
+
+.menu-link {
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.menu-link i {
+    margin-right: 10px;
+}
+
+.menu-link:first-child {
+    color: #fff;
+    background: linear-gradient(to right, #F15B43, #FE8F20);
+}
+
+.menu-link:hover {
+    background-color: #f1f5f9;
+    color: black;
+}
+
+.menu-link:first-child:hover {
+    background-color: #536dfe;
+    color: #fff;
+}
+
+.conta {
+    flex: 2;
+    margin-left: 10px;
+    background-color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.514);
+    border-radius: 5px;
+    height: max-content;
+}
+
+.conta-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.conta-titulo {
+    font-size: 20px;
+    color: black;
+    font-weight: 500;
+    margin: 1em;
+}
+.btn-voltar{
+    text-decoration: none;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.btn-voltar:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-container .btn-salvar{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #F15B43, #FE8F20);
+    border-radius: 20px;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.btn-salvar:hover {
+    background: linear-gradient(to right, #FE8F20, #F15B43);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.editar-conta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: space-between;
+    margin: 15px 0;
+    margin-bottom: 50px;
+}
+
+.editar-conta h2 {
+    flex: 1 1 100%; 
+    font-size: 18px;
+    margin: 15px 10px 0 10px;
+    padding-left: 10px;
+    color: black;
+}
+
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex: 1 1 45%;
+    flex-direction: column;
+    margin: 0 20px;
+
+}
+
+.input-container label {
+    color: black;
+    font-size: 14px;
+}
+
+.input-container input {
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    margin-top: 0.4rem;
+    border: none;
+    padding: 0.8rem;
+}
+
+.input-container input:focus {
+    outline: none;
+    border: 1.5px solid #F15B43;
+}
+
+.input-container textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    padding: 5px;
+    border: 1.5px solid #768499;
+    border-radius: 5px;
+    color: #768499;
+}
+
+.input-container textarea:focus {
+    outline: none;
+    border: 1.5px solid #536dfe;
+}
+
+
+
+footer{
+    height: 220px;
+    font-family: 'Inter',sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    color: var(--cor-neutra-branca);
+}
+/*container*/
+#footer_container{
+    background-color: var(--cor-preta);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 3rem 3.5rem;
+}
+/*palavra logo*/
+#footer_contatos h4{
+    margin-bottom: 0.75rem;
+}
+/*container dos icones*/
+#midias_sociais{
+    display: flex;
+    gap: 2rem;
+}
+/*links e icones*/
+#midias_sociais .link_midias{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--cor-neutra-branca);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+/*configuração do link*/
+#midias_sociais .link_midias{
+    text-decoration: none;
+}
+#midias_sociais .link_midias:hover{
+    opacity: 0.8;
+}
+/*tamanho do icone*/
+#midias_sociais .link_midias i{
+    font-size: 1.25rem;
+}
+/*icone em individual*/
+#instagram{
+    background: linear-gradient(#7f37c9, #Ff2992, #ff9807); 
+}
+#facebook{
+    background-color: #4267b3;
+}
+#linkedin {
+    background-color: #0A66C2; 
+}
+
+#email {
+    background-color: #5f6368; 
+}
+/*listas*/
+.footer_lista{ /*para adiconar gap */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+/*links da parte de listas*/
+.footer_lista .link_midias{
+    text-decoration: none;
+    color:var(--cor-ciza) ;
+    transition: all 0.4s;
+}
+.footer_lista .link_midias:hover{
+    color: #F15B43;
+}
+.link_midias:hover{
+    transform: scale(1.1) translateY(-3px); 
+    opacity: 0.9; 
+}
+/*copyright*/
+#copyright{
+    display: flex;
+    justify-content: center;
+    background-color:var(--cor-copyright);
+    padding: 1.2rem;
+}
+
+/*media do login*/
+@media screen and (max-width: 420px) {
+    .container_login {
+        
+    }
+    .container_interno_login{
+        padding: 20px;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.342);
+    }
+    #menu_normal {
+        display: none;
+    }
+    #menu_hamburguer {
+        margin-top: 20px;
+        display: block;
+        cursor: pointer;
+    }
+    /*  quando ativado */
+    .menu-aberto #menu_normal {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff;
+        width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Links do menu no modo hambúrguer */
+    .menu-aberto #menu_normal a {
+    padding: 10px;
+    border-top: 1px solid #f0f0f0;
+    }
+    .botao_header{
+    margin-bottom: 25px;
+    }
+    .container{
+        margin-top: 130px;
+        flex-direction: column;
+        gap: 30px;
+    }
+    main{
+        height: 1550px;
+    }
+    .conta{
+        padding-bottom: 40px;
+        padding-left: 10px;
+    }
+
+}   /*Media query*/
+    /*Telas celulares maiores*/
+    @media screen and (min-width:420px) and (max-width:767px){
+        #menu_normal {
+            display: none;
+        }
+        #menu_hamburguer {
+            margin-top: 20px;
+            display: block;
+            cursor: pointer;
+        }
+        /* Estilos para o menu hambúrguer quando ativado */
+        .menu-aberto #menu_normal {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 0;
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Links do menu no modo hambúrguer */
+        .menu-aberto #menu_normal a {
+        padding: 10px;
+        border-top: 1px solid #f0f0f0;
+        }
+        .botao_header{
+        margin-bottom: 25px;
+        }
+        .container{
+            margin-top: 150px;
+            width: 80%;
+            flex-direction: column;
+            gap: 40px;
+        }
+        main{
+            height: 1550px;
+        }
+        .conta{
+            padding-bottom: 40px;
+            padding-left: 10px;
+        }
+        
+    }
+    @media screen and (min-width:768px) and (max-width:1024px) {
+        #menu_hamburguer{
+            display: none;
+        }
+        nav a{
+            font-size: 0.9em;
+        }
+        .botao_login{
+            font-size: 1.1em;
+        }
+        .container{
+            margin-top: 100px;
+            width: 70%;
+            flex-direction: column;
+            gap: 40px;
+        }
+        main{
+            height: 1500px;
+        }
+        .conta{
+            padding-bottom: 40px;
+            padding-left: 10px;
+        }
+    }
+    @media screen and (min-width:1025px) and (max-width:1440px) {
+        #menu_hamburguer{
+            display: none;
+        }
+        nav a{
+            font-size: 1.0em;
+        }
+    .botao_login{
+        font-size: 1.2em;
+    }
+    .container{
+        margin-top: 150px;
+    }
+    main{
+        height: 1250px;
+    }
+    .conta{
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+    }
+    @media screen and (min-width:1441px) {
+        /*menu hamburguer*/
+        #menu_hamburguer{
+            display: none;
+        }
+        nav a{
+            font-size: 1.1em;
+        }
+        /*botao login*/
+    .botao_login{
+        font-size: 1.2em;
+    }
+    main{
+        height: 800px;
+    }
+    .container{
+        margin-top: 100px;
+    }
+    .conta{
+        padding-bottom: 50px;
+        padding-left: 10px;
+    }
+    }
+
+
+/*media query só pra footer*/
+@media screen and (max-width:968px){
+    #footer_container{
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:626px){
+    #footer_container{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+}
+    </style>
+</head>
+<body>
+    <menu>
+        <div class="logo_getinfo">
+            <img src="../img/logo do a do.jpg" alt="">
+        </div>
+        <nav id="menu_normal" >
+            <a href="../index.html" class="a_hover">Home</a>
+            <div class="dropdown">
+                <a href="#container_box" class="a_hover">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="../grupo_campanhas.html" class="a_hover">Grupo de Campanhas</a></li>
+                    <li><a href="../index.html#campanhas_destaque" class="a_hover">Campanhas em Destaque</a></li>
+                </ul>
+            </div>
+            <a href="../index.html#container_sobre_nos" class="a_hover">Sobre nós</a>
+            <a href="#"  rel="external" class="a_hover">Login</a>
+            <button class="botao_header"><a href="#footer_container">Contato</a></button>
+        </nav>
+        <span id="menu_hamburguer" class="material-icons">menu</span>
+    </menu>
+    <main>
+        <div class="container">
+            <div class="perfil">
+                <div class="perfil-header">
+                    <img src="../img/perfil.webp" alt="perfil" class="imagem-perfil">
+                    <div class="perfil-texto-container">
+                        <h1 class="titulo-perfil">Front coding</h1>
+                        <p class="perfil-email">exemplo@gmail.com</p>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a href="#"  class="menu-link"><i class="bi bi-person-circle"></i> Conta</a>
+                    <a href="#"  class="menu-link"><i class="bi bi-journals"></i> Minhas campanhas</a>
+                    <a href="#"  class="menu-link"><i class="fas fa-history"></i>Histórico de Doações</a>
+                    <a href="#"  class="menu-link"><i class="fas fa-bookmark"></i>Favoritos/Campanhas Salvas</a>
+                    <a href="#"  class="menu-link"><i class="bi bi-box-arrow-right"></i> Sair</a>
+                </div>
+            </div>
+            <form class="conta">
+                <div class="conta-header">
+                    <h1 class="conta-titulo"> <i class="fas fa-cog"></i> Configurações da conta</h1>
+                </div>
+                <div class="editar-conta">
+                    <div class="input-container">
+                        <label>Nome</label>
+                        <input type="text" placeholder="Nome" value="Gabriel Ribeiro Passos Mota">
+                    </div>
+                    <div class="input-container">
+                        <label>Telefone</label>
+                        <input type="tel" placeholder="Telefone" value="797688-4229">
+                    </div>
+                    <div class="input-container">
+                        <label>E-mail</label>
+                        <input type="email" placeholder="E-mail" value="gabriel.ribeiro@souunit.com.br">
+                    </div>
+                    <div class="input-container">
+                        <label>Estado</label>
+                        <input type="text" placeholder="Estado" value="Sergipe">
+                    </div>
+                    <div class="input-container">
+                        <label>Cidade</label>
+                        <input type="text" placeholder="Cidade" value="Nossa Senhora do Socorro">
+                    </div>
+                    <div class="input-container">
+                        <label>Logradouro</label>
+                        <input type="text" placeholder="Logradouro" value="Avenida dos Sonhos, 456 ">
+                    </div>
+                    <div class="input-container">
+                        <label>Numero</label>
+                        <input type="text" placeholder="Numero" value="797688-4229">
+                    </div>
+                    <div class="input-container">
+                        <label>CEP</label>
+                        <input type="text" placeholder="CEP" value="12345-678">
+                    </div>
+                    <h2>Mudar senha</h2>
+                    <div class="input-container">
+                        <label>Senha atual</label>
+                        <input type="password" placeholder="Senha atual">
+                    </div>
+                    <div class="input-container">
+                        <label>Nova Senha</label>
+                        <input type="password" placeholder="Nova Senha">
+                    </div>
+                </div>
+                <div class="btn-container">
+                    <a href="../telalogin.html" class="btn-voltar">Voltar</a>
+                    <a href="../pasta_formularios_doações/formulario_doacao.html" class="btn-salvar">Salvar</a>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="footer_container">
+              <div id="footer_contatos">
+                  <img style="margin-bottom: 30px; width: 160px;" src="" alt="">
+
+                  <div id="midias_sociais">
+                      <a href="https://www.instagram.com/getinfomobile/" target="_blank" class="link_midias" id="instagram">
+                          <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <a href="https://www.facebook.com/getinfosolucoes/ " target="_blank" class="link_midias" id="facebook">
+                          <i class="fa-brands fa-facebook-f"></i>
+                      </a>
+                      <a href="https://mail.google.com/mail/u/0/#search/contato%40getinfo.net.br?compose=new" target="_blank" class="link_midias" id="email">
+                          <i class="fa-regular fa-envelope"></i>
+                      </a>
+                      <a href="https://www.linkedin.com/company/getinfocolucoes/" target="_blank" class="link_midias" id="linkedin" >
+                          <i class="fa-brands fa-linkedin-in"></i>
+                      </a>
+                  </div>
+              </div>
+
+              <ul class="footer_lista">
+                  <li>
+                      <h3>Navegação</h3>
+                  </li>
+                  <li>
+                      <a href="#container_box" class="link_midias">Campanhas</a>
+                  </li>
+                  <li>
+                      <a href="#container_sobre_nos" class="link_midias">Sobre Nós</a>
+                  </li>
+                  <li>
+                      <a href="#dados" class="link_midias">Dados da Plataforma</a>
+                  </li>
+                  <li>
+                      <a href="#form_container" class="link_midias">Doe Agora</a>
+                  </li>
+              </ul>
+              <ul class="footer_lista">
+                  <li>
+                      <h3>Servicos</h3>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">Desenvolvimento de Software</a>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">Business Intelligence (BI)</a>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">Governança de TI</a>
+                  </li>
+              </ul>
+              <ul class="footer_lista">
+                  <li>
+                      <h3>Contato</h3>
+                  </li>
+                  <li>
+                      <a target="_blank" href="https://www.google.com/maps/@-10.9206848,-37.0561677,3a,75y,277.58h,90t/data=!3m7!1e1!3m5!1sU8RQn-RUf3xqfRFF-WCVsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DU8RQn-RUf3xqfRFF-WCVsw%26yaw%3D277.58!7i16384!8i8192?coh=205410&entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">Rua Zaqueu Brandão, 226, Bairro São José</a>
+                  </li>
+                  <li>
+                      <a target="_blank" href="https://www.google.com/maps/place/R.+Zaqueu+Brand%C3%A3o+-+S%C3%A3o+Jos%C3%A9,+Aracaju+-+SE,+49015-330/@-10.9218321,-37.056242,19z/data=!4m6!3m5!1s0x71ab39eaea4a853:0xac9ac8d5055e894c!8m2!3d-10.9217076!4d-37.056189!16s%2Fg%2F1trcgmhk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D" class="link_midias">CEP 49015-330 | Aracaju - SE</a>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">Av. José Conrado de Araujo, 731, Bairro Rosa Elze, <br> SergipeTec  - Bloco B3 - Sala 06</a>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">CEP 49100-000 | São Cristóvão - SE</a>
+                  </li>
+                  <li>
+                      <a href="#" class="link_midias">(79) 3022-9002</a>
+                  </li>
+                  
+              </ul>
+              
+        </div> 
+          <div id="copyright">
+              &#169
+              2024 Todos os direitos reservados
+          </div>
+  </footer>
+</body>
+</html>
+
+<!--Menu hmburguer-->
+<script>
+    document.getElementById("menu_hamburguer").onclick = function() {
+    document.querySelector("menu").classList.toggle("menu-aberto");
+}
+</script>
+<script>
+    // Função para modificar o menu dependendo do tamanho da tela
+    function modifyMenuForMobile() {
+        const menu = document.getElementById('menu_normal');
+        const dropdown = document.querySelector('.dropdown');
+        const contatoButton = document.querySelector('.botao_header');
+    
+        const existingLinks = document.querySelectorAll('.a_hover[data-added="true"]');
+        const linksAlreadyAdded = existingLinks.length > 0;
+    
+        if (window.innerWidth <= 767) {
+            // Só adiciona os links se eles ainda não tiverem sido adicionados
+            if (dropdown && !linksAlreadyAdded) {
+                dropdown.style.display = 'none'; 
+    
+                const newLinks = dropdown.querySelectorAll('ul li a');
+                newLinks.forEach(link => {
+                    const newLink = document.createElement('a');
+                    newLink.href = link.href;
+                    newLink.classList.add('a_hover');
+                    newLink.textContent = link.textContent;
+                    newLink.setAttribute('data-added', 'true'); 
+    
+                    menu.insertBefore(newLink, contatoButton); 
+                });
+            }
+        } else {
+            // Caso o tamanho da tela seja maior que 767px, retorna o menu ao estado normal
+            if (!dropdown) {
+                const newDropdown = document.createElement('div');
+                newDropdown.classList.add('dropdown');
+                newDropdown.innerHTML = `
+                    <a href="#container_box" class="a_hover">Campanhas <span class="material-icons" id="iconenav">expand_more</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="grupo_campanhas.html" class="a_hover">Grupo de Campanhas</a></li>
+                        <li><a href="#container_box" class="a_hover">Campanhas em Destaque</a></li>
+                    </ul>
+                `;
+                menu.insertBefore(newDropdown, menu.children[1]); 
+            }
+    
+            // Remove os links de "Campanhas" caso existam
+            existingLinks.forEach(link => {
+                link.remove();
+            });
+        }
+    }
+    
+    window.addEventListener('load', modifyMenuForMobile);
+    window.addEventListener('resize', modifyMenuForMobile);
+</script>
