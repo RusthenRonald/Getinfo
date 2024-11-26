@@ -623,7 +623,7 @@ footer{
                         </div>
                         <div class="trocar_cadastro">
                             <label for="tipo_cadastro">Tipo de Cadastro:</label>
-                            <select id="tipo_cadastro" class="empresa" >
+                            <select id="tipo_cadastro" class="empresa" onchange="alternarFormulario()">
                                 <option value="fisica">Pessoa Física</option>
                                 <option value="juridica">Pessoa Jurídica</option>
                             </select>
@@ -882,12 +882,23 @@ footer{
 }
 </script>
 <script>
-    document.getElementById('tipo_cadastro').addEventListener('change', function () {
-        const tipoTitulo = document.getElementById('tipo-titulo');
-        if (this.value === 'juridica') {
-            tipoTitulo.textContent = 'Pessoa Jurídica';
-        } else {
-            tipoTitulo.textContent = 'Pessoa Física';
+    function alternarFormulario() {
+        const select = document.getElementById('tipo_cadastro');
+        const formFisica = document.getElementById('pessoa_fisica');
+        const formJuridica = document.getElementById('pessoa_juridica');
+    
+        if (select.value === 'fisica') {
+            formFisica.style.display = 'block';
+            formJuridica.style.display = 'none';
+        } else if (select.value === 'juridica') {
+            formFisica.style.display = 'none';
+            formJuridica.style.display = 'block';
         }
+    }
+    
+    // Para garantir que a exibição inicial seja correta:
+    document.addEventListener('DOMContentLoaded', () => {
+        alternarFormulario();
     });
+    
 </script>
