@@ -1,0 +1,9 @@
+.container_video{
+    margin-top: 80px;
+    height: 600px;
+    background-image: url(../img/img\ do\ fundo\ do\ video.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply; 
+    background-size: cover;
+    background-position: bottom;
+}
