@@ -1,8 +1,8 @@
 .container_video{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 80px;
     margin-top: 80px;
     height: 600px;
     background-image: url(../img/img\ do\ fundo\ do\ video.jpg);
@@ -11,6 +11,8 @@
     background-size: cover;
     background-position: bottom;
 }
+
 .texto_video h2{
+    text-align: center;
     color: white;
 }
