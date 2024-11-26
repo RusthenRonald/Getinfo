@@ -11,9 +11,11 @@
     background-size: cover;
     background-position: bottom;
 }
-
+iframe{
+    border-radius: 10px;
+}
 .texto_video h2{
-    font-size: 3em;
+    font-size: 2.9em;
     text-align: center;
     color: white;
 }
