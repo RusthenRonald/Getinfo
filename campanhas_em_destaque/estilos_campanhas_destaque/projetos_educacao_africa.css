@@ -48,6 +48,7 @@ main h2{
     display: flex;
     justify-content: center;
 }
+
 /*itens arrecadados*/
 .itens_arrecadados{
     display: flex;
