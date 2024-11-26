@@ -617,7 +617,7 @@ footer{
                         </div>
                         <div class="trocar_cadastro">
                             <label for="tipo_cadastro">Tipo de Cadastro:</label>
-                            <select id="tipo_cadastro">
+                            <select id="tipo_cadastro" onchange="alternarFormulario()">
                                 <option value="fisica">Pessoa Física</option>
                                 <option value="juridica">Pessoa Jurídica</option>
                             </select>
@@ -726,7 +726,7 @@ footer{
 
                 
                 <!-- Formulário de Pessoa Jurídica -->
-                <form id="pessoa_juridica" action="../telaseditarperfil/estilostelaperfil/" style="display: none; ">
+                <form id="pessoa_juridica" action="telaeditarperfil_principal.html" style="display: none; ">
                     <div class="form_header">
                         <div class="titulo" id="titulo-cadastro-juridica">
                             <h1>Cadastre-se como <br> Pessoa Jurídica</h1>
@@ -913,3 +913,24 @@ footer{
 }
 </script>
 
+<script>
+    function alternarFormulario() {
+        const select = document.getElementById('tipo_cadastro');
+        const formFisica = document.getElementById('pessoa_fisica');
+        const formJuridica = document.getElementById('pessoa_juridica');
+    
+        if (select.value === 'fisica') {
+            formFisica.style.display = 'block';
+            formJuridica.style.display = 'none';
+        } else if (select.value === 'juridica') {
+            formFisica.style.display = 'none';
+            formJuridica.style.display = 'block';
+        }
+    }
+    
+    // Para garantir que a exibição inicial seja correta:
+    document.addEventListener('DOMContentLoaded', () => {
+        alternarFormulario();
+    });
+    
+</script>
