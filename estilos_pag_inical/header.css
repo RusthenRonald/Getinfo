@@ -32,9 +32,13 @@ span.h1_cor{
     background-color: #FE8F20;
     color: white;
     border: none;
-    padding: 20px;
-    width: 200px;
-    border-radius: 30px;
+    padding: 25px;
+    width: 250px;
+    border-radius: 35px;
+    font-weight: bolder;
+}
+.doe_agora_header:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
 }
 
 .texto_header{
