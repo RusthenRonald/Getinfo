@@ -4,7 +4,9 @@ header{
     background-image: url(../img/header.png);
     height: 550px;
     display: flex;
-    flex-direction: row;
+    gap: 100px;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.308);
 }
@@ -26,7 +28,14 @@ span.h1_cor{
     color: black;
 }
 
-
+.doe_agora_header{
+    background-color: #FE8F20;
+    color: white;
+    border: none;
+    padding: 20px;
+    width: 200px;
+    border-radius: 30px;
+}
 
 .texto_header{
     display: flex;
