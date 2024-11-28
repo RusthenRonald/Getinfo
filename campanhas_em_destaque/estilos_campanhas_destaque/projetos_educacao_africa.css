@@ -97,6 +97,7 @@ menu>button:hover{
 }
 .itens_arrecadados button{
     border: none;
+    font-weight: bolder;
     height: 30px;
     color: white;
     background-color:#FE8F20; 
