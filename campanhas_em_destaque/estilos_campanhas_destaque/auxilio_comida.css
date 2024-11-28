@@ -13,7 +13,7 @@ body{
 }
 menu{
     display: flex;
-    height: 70px;
+    height: 90px;
     justify-content: space-around;
     position: fixed;
     top: 0;
@@ -25,7 +25,7 @@ menu{
 }
 .logo_getinfo img{
     width: 100px;
-    height: 70px;
+    height: 85px;
 }
 nav{
     display: flex;
