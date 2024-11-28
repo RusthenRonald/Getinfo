@@ -324,7 +324,7 @@ input, select, textarea {
     width: 100%;
 }
 .form-container button:hover{
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.233);
     transform: scale(1.01) translateY(-1px);
     opacity: 0.9; 
 }
