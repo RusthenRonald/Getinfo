@@ -26,7 +26,7 @@ html{
 }
 menu{
     display: flex;
-    height: 70px;
+    height: 90px;
     justify-content: space-around;
     position: fixed; /* Fixa o menu no topo */
     top: 0;
@@ -38,7 +38,7 @@ menu{
 }
 .logo_getinfo img{
     width: 100px;
-    height: 70px;
+    height: 90px;
 }
 nav{
     display: flex;
