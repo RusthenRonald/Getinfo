@@ -40,6 +40,11 @@ Breakpoint: min-width: 1441px
     header{
         padding-top: 80px;
         gap: 40px;
+        align-items: center;
+    }
+    form{
+        display: flex;
+        justify-content: center;
     }
     div h1{
         font-size: 1.7em;
@@ -366,6 +371,10 @@ Breakpoint: min-width: 1441px
     div h1{
         margin-left: 70px; 
     }
+    /*botao doe agora header*/
+    form{
+        padding-left: 85px;
+    }
     #p_header{
         margin-left: 70px;
     }
@@ -587,6 +596,10 @@ Breakpoint: min-width: 1441px
     div h1{
         margin-left: 100px;
     }
+    /*botao doe agora header*/
+    form{
+        padding-left: 125px;
+    }
     #p_header{
         margin-left: 100px;
     }
@@ -788,6 +801,10 @@ Breakpoint: min-width: 1441px
     #p_header{
         margin-left: 125px;
         font-size: 1.2em;
+    }
+    /*botao doe agora header*/
+    form{
+        padding-left: 125px;
     }
     .campanhas_destaque h2{
         font-size: 3em;
