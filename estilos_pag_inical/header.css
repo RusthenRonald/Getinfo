@@ -31,7 +31,7 @@ span.h1_cor{
     padding: 25px;
     width: 250px;
     border-radius: 35px;
-    font-weight: bolder;
+    cursor: pointer;
 }
 .doe_agora_header:hover{
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.418);
