@@ -37,6 +37,24 @@ Breakpoint: min-width: 1441px
         padding: 10px;
         border-top: 1px solid #f0f0f0;
     }
+    header{
+        gap: 30px;
+    }
+    div h1{
+        font-size: 1.7em;
+    }
+    .texto_header{
+        width: 90vw;
+    }
+    .texto_header p{
+        font-size: 0.8em;
+        width: 100vw;
+    }
+    .doe_agora_header{
+        padding: 20px;
+        width: 200px;
+        border-radius: 35px;
+    }
     .botao_header{
         margin-bottom: 25px;
     }
