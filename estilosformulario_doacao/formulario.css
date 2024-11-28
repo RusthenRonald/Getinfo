@@ -313,20 +313,17 @@ input, select, textarea {
 }
 
 .form-container button {
-    width: 100%;
-    padding: 10px;
-    background: linear-gradient(to right, #F15B43, #FE8F20); 
-    color: white;
+    margin-top: 10px;
     border: none;
+    font-weight: bolder;
+    height: 30px;
+    color: white;
+    background-color:#FE8F20; 
     border-radius: 5px;
-    font-size: 16px;
     cursor: pointer;
-    margin-top: 20px;
+    width: 100%;
 }
 
-.form-container button:hover {
-    background-color: #45a049;
-}
 /* Remover o fundo azul do autopreenchimento */
 input:-webkit-autofill {
     background-color: #fff !important; 
