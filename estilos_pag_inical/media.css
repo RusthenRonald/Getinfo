@@ -38,7 +38,8 @@ Breakpoint: min-width: 1441px
         border-top: 1px solid #f0f0f0;
     }
     header{
-        gap: 30px;
+        padding-top: 80px;
+        gap: 40px;
     }
     div h1{
         font-size: 1.7em;
