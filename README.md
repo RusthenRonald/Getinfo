@@ -6,7 +6,7 @@
 
 <br>
 
->Criação de um site de doações realizado na Unit em parceria com o Porto Digital e a Getinfo
+>Criação de um site de doações realizado na Unit em parceria com o Porto Digital 
 >Todos os direitos reservados a Getinfo
 
 <br>
