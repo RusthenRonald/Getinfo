@@ -52,20 +52,20 @@ Siga estas etapas:
 
 Abaixo está uma breve explicação sobre os diretórios principais do projeto:
 
--index.html : página inicial/principal do site
--campanhas_em_destaque: pasta em que contém cada campanha em desataque do site
--grupo_campanhas.html: página dos grupos de campanhas
--telas_cadastro: telas de cadastro para cada campanha em específico no site
--telas_login: telas de login para cada campanha em específico no site
-pasta_formulario_doações: Todos os formulário de doações do site , cada um para sua campanha em específico
--img: imagens do site
--img_clientes_logo: Imagens das logos dos clientes do site
--img carrosel: Imagens do carrosel dos formulários de doação
--tela_editar_perfil.html:  Tela para editar perfil do usuário
--tela_criar_campanha.html : Tela de criação de campanhas
--estilos_pag_inicial: todos os estilos css relacionados a página inicial do site
+-index.html : página inicial/principal do site <br>
+-campanhas_em_destaque: pasta em que contém cada campanha em desataque do site <br>
+-grupo_campanhas.html: página dos grupos de campanhas <br>
+-telas_cadastro: telas de cadastro para cada campanha em específico no site <br>
+-telas_login: telas de login para cada campanha em específico no site <br>
+pasta_formulario_doações: Todos os formulário de doações do site , cada um para sua campanha em específico <br>
+-img: imagens do site <br>
+-img_clientes_logo: Imagens das logos dos clientes do site <br>
+-img carrosel: Imagens do carrosel dos formulários de doação <br>
+-tela_editar_perfil.html:  Tela para editar perfil do usuário <br>
+-tela_criar_campanha.html : Tela de criação de campanhas <br>
+-estilos_pag_inicial: todos os estilos css relacionados a página inicial do site <br>
 
-Javascript : Todo o javascript foi usado como estilo local , ou seja , está conectado com o html , ele pode ser encontrado ao final de cada arquivo
+Javascript : Todo o javascript foi usado como estilo local , ou seja , está conectado com o html , ele pode ser encontrado ao final de cada arquivo 
 
 
 
