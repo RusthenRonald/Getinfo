@@ -6,7 +6,7 @@
 
 <br>
 
->Plataforma de doações feita por alunos da Universidade Tiradentes em parceria com o Porto Digital junto à empresa Getinfo.
+>Plataforma de doações em parceria com UNIT e Porto digital 
 
 <br>
 
