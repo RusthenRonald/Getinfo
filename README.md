@@ -18,7 +18,7 @@ git clone https://github.com/RusthenRonald/Getinfo
 
 3. Acesse o diretório do projeto
 Entre na pasta do projeto clonado:
-cd Squad_09
+cd Getinfo
 
 4. Abra no editor de código
 Se estiver usando o VS Code, abra o projeto com:
