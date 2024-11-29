@@ -14,7 +14,7 @@ Servidor Local (opcional): Utilize a extensão Live Server no VS Code ou outro s
 Passos para Configuração
 1. Clone o repositório
 Abra o terminal e execute:
-git clone https://github.com/Mutter289/Squad_09.git
+git clone https://github.com/RusthenRonald/Getinfo
 
 3. Acesse o diretório do projeto
 Entre na pasta do projeto clonado:
