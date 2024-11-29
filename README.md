@@ -1,5 +1,6 @@
 # Getinfo
  Criação de website responsivo com o tema "Doações" para apresentar para a empresa getinfo
+ 
 Guia para Rodar o Projeto Localmente
 Este guia detalha como configurar e executar o projeto localmente no seu computador.
 Pré-requisitos
