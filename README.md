@@ -1,47 +1,70 @@
-# Getinfo
- Criação de website responsivo com o tema "Doações" para apresentar para a empresa getinfo
- 
-Guia para Rodar o Projeto Localmente
-Este guia detalha como configurar e executar o projeto localmente no seu computador.
-Pré-requisitos
-Antes de começar, certifique-se de que os seguintes itens estão instalados na sua máquina:
 
-Git: Para clonar o repositório.
-Editor de Código: Recomendamos o Visual Studio Code (VS Code), mas qualquer editor serve.
-Navegador Atualizado: Para visualizar o projeto.
-Servidor Local (opcional): Utilize a extensão Live Server no VS Code ou outro servidor de sua preferência.
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 
-Passos para Configuração
-1. Clone o repositório
-Abra o terminal e execute:
-git clone https://github.com/RusthenRonald/Getinfo
 
-3. Acesse o diretório do projeto
-Entre na pasta do projeto clonado:
-cd Getinfo
+<br>
 
-4. Abra no editor de código
-Se estiver usando o VS Code, abra o projeto com:
-code .
+>Plataforma de doações feita por alunos da Universidade Tiradentes em parceria com o Porto Digital junto à empresa Getinfo.
 
-Executando o Projeto
-Opção 1: Abrindo diretamente no navegador
-Se o projeto é estático (HTML, CSS e JavaScript):
+<br>
 
-1. Localize o arquivo index.html no diretório.
-2. Clique duas vezes para abri-lo no navegador.
+## 💻 Pré-requisitos
 
-Opção 2: Usando um servidor local
-Para uma experiência mais fluida:
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-1. No VS Code, instale a extensão Live Server (se ainda não tiver).
-2. Clique com o botão direito no arquivo index.html e selecione Open with Live Server.
-3. O projeto será aberto automaticamente no navegador.
+- Possui [Github Desktop](https://desktop.github.com/download/).
+- Possui Visual Studio Code instalado em sua máquina.
+- Navegador de internet, por exemplo Chrome ou Edge.
+- Servidor Local (opcional) como [Extensão Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+ no Visual Studio Code.
 
-Estrutura do Projeto
-Abaixo está um resumo da organização das pastas e arquivos principais:
+<br>
 
-/htmls/: Contém as páginas HTML.
-/css/: Arquivos de estilo CSS para o design do projeto.
-/js/: Contém os scripts JavaScript.
-/assets/: Inclui imagens e outros recursos estáticos.
+## 🚀 Instalando
+
+Siga estas etapas:
+
+1. No GitHub Desktop:
+
+- Clique em *File* no menu superior.
+- Escolha a opção *Clone Repository*.
+
+2. Escolha o Repositório:
+- No painel, clique na aba *URL*.
+- Cole o *link* abaixo no campo correspondente. 
+
+
+<https://github.com/RusthenRonald/Getinfo>
+
+
+4. Selecione o Local no Computador:
+- Clique em *Choose* e escolha a pasta onde deseja salvar o repositório clonado no seu computador.
+
+5. Clone o Repositório:
+- Clique no botão *Clone*. O GitHub Desktop baixará todos os arquivos do repositório para a pasta escolhida.
+
+
+
+## ☕ Usando
+
+Para usar <nome_do_projeto>, siga estas etapas:
+
+
+<exemplo_de_uso>
+
+
+Adicione comandos de execução e exemplos que você acha que os usuários acharão úteis. Forneça uma referência de opções para pontos de bônus!
+
+
+## Ajustes e melhorias
+
+O projeto ainda está em desenvolvimento e as próximas atualizações serão voltadas para as seguintes tarefas:
+
+- [ ] Criação de app mobile.
+- [ ] Integração com banco de dados.
+
+## 📝 Licença
+
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
