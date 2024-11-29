@@ -53,7 +53,7 @@ Siga estas etapas:
 Abaixo está uma breve explicação sobre os diretórios principais do projeto:
 
 -index.html : página inicial/principal do site <br>
--campanhas_em_destaque: pasta em que contém cada campanha em desataque do site <br>
+-campanhas_em_destaque: pasta em que contém cada campanha em destaque do site <br>
 -grupo_campanhas.html: página dos grupos de campanhas <br>
 -telas_cadastro: telas de cadastro para cada campanha em específico no site <br>
 -telas_login: telas de login para cada campanha em específico no site <br>
